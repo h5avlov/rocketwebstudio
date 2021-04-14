@@ -1,3 +1,5 @@
-<h{{ include.level }}>
+<h{{ include.level }} 
+    class= "heading {% if include.className %} {{ include.className }}{% endif %}" 
+>
     {{ include.text }}
 </h{{ include.level }}> 
