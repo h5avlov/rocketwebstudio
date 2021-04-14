@@ -1,10 +1,5 @@
 <nav class= "main-nav"> 
     {% include heading.html level= "5" className= "accessibility-heading" text= include.data.title %} 
-    <ul class= "entry-list"> 
-        {% for entry in include.data.entryList %} 
-            <li class= "nav-entry"> 
-                {% include link.html className= "nav-link" target= entry.target text= entry.text %} 
-            </li>
-        {% endfor %}
-    </ul>
+    
+    {% include nav.html data= include.data.entryList %} 
 </nav>

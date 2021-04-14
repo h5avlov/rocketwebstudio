@@ -1,5 +1,5 @@
 <a 
-    class= "link" 
+    class= "link{% if include.className %} {{ include.className }}{% endif %}" 
     href= "{{ include.target }}" 
 >
     {{ include.text }} 

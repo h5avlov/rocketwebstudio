@@ -1,0 +1,7 @@
+<ul class= "entry-list"> 
+    {% for entry in include.data %} 
+        <li class= "nav-entry"> 
+            {% include link.html className= "nav-link" target= entry.target text= entry.text %} 
+        </li>
+    {% endfor %}
+</ul> 
