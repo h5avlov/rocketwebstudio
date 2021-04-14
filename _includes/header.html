@@ -1,4 +1,6 @@
 <header class= "header site-header"> 
-    {% include id.html text= "{{ include.id.text }}" tagline= "{{ include.id.tagline }}" %} 
+    {% include id.html data = site.data.id %} 
+
+    {% include main-nav.html data = site.data.mainNav %} 
 
 </header>

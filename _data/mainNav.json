@@ -1,0 +1,36 @@
+{ 
+    "title": "", 
+    "entryList": [ 
+        { 
+            "target": "/", 
+            "text": "Home" 
+        }, 
+
+        { 
+            "target": "/workflow", 
+            "text": "Workflow" 
+        }, 
+
+        { 
+            "target": "/portfolio", 
+            "text": "Portfolio" 
+        }, 
+
+        { 
+            "target": "/reviews", 
+            "text": "Reviews" 
+        }, 
+
+        { 
+            "target": "/about", 
+            "text": "About" 
+        }, 
+
+        { 
+            "target": "/contact", 
+            "text": "Contact" 
+        } 
+
+    ]
+
+}
