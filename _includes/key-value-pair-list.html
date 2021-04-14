@@ -1,0 +1,5 @@
+<section class= "key-value-pair-list{% if include.className %} {{ include.className }}{% endif %}"> 
+    {% for entry in include .data %} 
+        {% include key-value-pair.html key= entry.key value= entry.value %} 
+    {% endfor %}
+</section>

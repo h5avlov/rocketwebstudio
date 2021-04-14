@@ -1,0 +1,9 @@
+{% assign year = site.time | date: "%Y" %} 
+
+<section class= "copyright-notice"> 
+    {% include key-value-pair.html className= "year" key= "year" value= year %} 
+
+    {% include key-value-pair.html className= "company" key= "company" value= site.data.id.text %} 
+
+    {% include paragraph.html className= "notice" text= "All Rights Reserved" %} 
+</section>
