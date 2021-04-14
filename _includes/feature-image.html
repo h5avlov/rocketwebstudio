@@ -1,0 +1,7 @@
+<figure class= "feature-image{% if include.className %} {{ include.className }}{% endif %}"> 
+    {% include image.html src= "" alt= "" %} 
+
+    {% if include.caption %}
+        <figcaption>{{ include.caption }}</figcaption> 
+    {% endif %}
+</figure>
