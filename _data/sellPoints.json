@@ -13,7 +13,8 @@
                     "text": "Paragraph"
                 }
             ], 
-            "image": {
+            "image": { 
+                "type": "featured", 
                 "src": "/", 
                 "alt": "Entry Image" 
             }, 
@@ -33,6 +34,7 @@
                 }
             ], 
             "image": {
+                "type": "featured", 
                 "src": "/", 
                 "alt": "Entry Image" 
             }, 

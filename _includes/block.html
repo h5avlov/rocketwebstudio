@@ -1,0 +1,27 @@
+{% assign block = include.block %} 
+
+{% include heading.html 
+    level= include.level 
+    text= block.heading.text 
+%} 
+
+{% for paragraph in block.paragraphs %} 
+    {% include paragraph.html 
+        text= paragraph.text 
+    %} 
+{% endfor %} 
+
+{% if block.image.type == "featured" %}
+    {% include featured-image.html 
+       image= block.image 
+    %}
+{% else %}
+    {% include image.html 
+        src= block.image.src 
+        alt= block.image.alt 
+    %}
+{% endif %}
+
+{% include button.html 
+    text= block.button.text 
+%}  

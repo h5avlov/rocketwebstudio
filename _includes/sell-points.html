@@ -1,30 +1,16 @@
-<section> 
+<section class= "sell-points"> 
     {% include heading.html 
         level= 5 
-        text= site.data.sellPoints.heading.text 
+        text= include.data.heading.text 
     %} 
 
-    <ul>
-    {% for entry in site.data.sellPoints.entryList %} 
+    <ul class= "entry-list sell-points-entry-list"> 
+    {% for entry in include.data.entryList %} 
         <li> 
-            {% include heading.html 
+            {% include block.html 
                 level= 3 
-                text= entry.heading.text 
-            %} 
-
-            {% for paragraph in entry.paragraphs %} 
-                {% include paragraph.html 
-                    text= paragraph.text 
-                %} 
-            {% endfor %} 
-
-            {% include feature-image.html 
-                image= entry.image  
+                block= entry
             %}
- 
-            {% include button.html 
-                text= entry.button.text 
-            %}  
         </li> 
     {% endfor %}
     </ul>
