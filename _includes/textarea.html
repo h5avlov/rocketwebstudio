@@ -1,5 +1,8 @@
 <textarea
     class= "field long-text-field" 
     placeholder= "{{ include.placeholder }}" 
+    {% if include.required %}
+        required= "required" 
+    {% endif %} 
 >
 </textarea>

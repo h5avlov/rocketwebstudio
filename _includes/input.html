@@ -2,5 +2,8 @@
     type= "{{ include.type }}"
     class= "field short-text-field" 
     placeholder= "{{ include.placeholder }}" 
+    {% if include.required %}
+        required= "required" 
+    {% endif %} 
 
 />
