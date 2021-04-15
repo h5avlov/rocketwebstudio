@@ -1,0 +1,7 @@
+<form class= "form send-message-form" method= "POST"> 
+    {% for field in include.fields %}
+        {% include field-holder.html field= field %} 
+    {% endfor %} 
+
+    {% include button.html type= include.button.type text= include.button.text %} 
+</form>

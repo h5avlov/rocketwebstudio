@@ -1,0 +1,13 @@
+{% if include.field.type != "message" %}
+   {% assign template = "input" %} 
+{% else %} 
+    {% assign template = "textarea" %}
+{% endif %} 
+
+{% assign template = template | append: ".html" %} 
+
+{% include {{ template }} 
+    type= include.field.type 
+    placeholder= include.field.placeholder 
+    required= include.field.required 
+%} 

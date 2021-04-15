@@ -1,0 +1,44 @@
+{
+    "heading": { 
+        "level": "", 
+        "text": "Send us a Message"
+    }, 
+
+    "paragraphs": [ 
+        { 
+            "text": "Rdfbdzfv eadfvdesv feavtv earvevteavtv vawc vevetvtev eavearvreva aevearvreavv." 
+        }
+    ], 
+
+    "form": {
+
+        "fields": [ 
+            { 
+                "type": "text", 
+                "placeholder": "Your Name", 
+                "required": true 
+            }, 
+
+            { 
+                "type": "email", 
+                "placeholder": "Your Email", 
+                "required": true 
+            }, 
+
+            { 
+                "type": "message", 
+                "placeholder": "Your Message", 
+                "required": true 
+            } 
+
+
+        ], 
+
+        "button": { 
+            "type": "submit", 
+            "text": "Send" 
+        } 
+
+    }
+
+}
