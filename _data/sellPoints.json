@@ -1,0 +1,46 @@
+{ 
+    "heading": { 
+        "text": "Sell Points" 
+    }, 
+
+    "entryList": [ 
+        { 
+            "heading": {
+                "text": "Heading"
+            }, 
+            "paragraphs": [ 
+                { 
+                    "text": "Paragraph"
+                }
+            ], 
+            "image": {
+                "src": "/", 
+                "alt": "Entry Image" 
+            }, 
+            "button": { 
+                "text": "Read More" 
+
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "Heading"
+            }, 
+            "paragraphs": [ 
+                { 
+                    "text": "Paragraph"
+                }
+            ], 
+            "image": {
+                "src": "/", 
+                "alt": "Entry Image" 
+            }, 
+            "button": { 
+                "text": "Read More" 
+
+            }
+        }
+    ]
+
+}

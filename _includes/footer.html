@@ -1,5 +1,7 @@
 <footer class= "footer site-footer"> 
-    {% include id.html description= site.data.id.description %} 
+    {% include id.html 
+        description= site.data.id.description 
+    %} 
 
     {% include send-message.html 
         heading= site.data.sendMessage.heading 
@@ -7,7 +9,9 @@
         form= site.data.sendMessage.form 
     %} 
 
-    {% include quick-contact.html contacts= site.data.contacts %} 
+    {% include quick-contact.html 
+        contacts= site.data.contacts 
+    %} 
 
     {% include copyright-notice.html %} 
 </footer>

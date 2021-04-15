@@ -1,11 +1,19 @@
-<section class= ""> 
+<section class= "send-message"> 
     {% if include.heading %}
-        {% include heading.html level= include.heading.level text= include.heading.text %} 
+        {% include heading.html 
+            level= include.heading.level 
+            text= include.heading.text 
+        %} 
     {% endif %}
 
     {% for paragraph in include.paragraphs %}
-        {% include paragraph.html text= paragraph.text %} 
+        {% include paragraph.html 
+            text= paragraph.text 
+        %} 
     {% endfor %} 
 
-    {% include form.html fields= include.form.fields button= include.form.button %} 
+    {% include form.html 
+        fields= include.form.fields 
+        button= include.form.button 
+    %} 
 </section>
