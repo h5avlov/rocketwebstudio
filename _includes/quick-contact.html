@@ -1,15 +1,38 @@
-<article class= "quick-contact"> 
-    {% for contact in include.contact %} 
-        <ul class= "entry-list contact-entry-list {{ contact.type | append: '-list' }}"> 
-        {% for entry in contact.entryList %} 
-            <li class= "contact-entry {{ contact.type }}"> 
-                {% include contact-entry.html 
-                    key= entry.key 
-                    value= entry.value 
-                    text= entry.text 
-                %}
-            </li>
-        {% endfor %}
-        </ul> 
+<section class= "quick-contact"> 
+    {% if include.contacts.heading %}
+        {% include heading.html 
+            className= "section-heading" 
+            level= include.contacts.heading.level 
+            text= include.contacts.heading.text 
+        %} 
+    {% endif %}
+
+    {% for paragraph in include.contacts.paragraphs %}
+        {% include paragraph.html 
+            className= "section-text-entry" 
+            text= paragraph.text 
+        %} 
     {% endfor %} 
-</article>
+
+    {% for contact in include.contacts.entryList %} 
+        <article class= "{{ contact.type }}"> 
+            {% include heading.html 
+                className= "contact-heading" 
+                level= 3 
+                text= contact.title 
+            %} 
+
+            <ul class= "entry-list contact-entry-list {{ contact.type | append: '-entry-list' }}"> 
+            {% for entry in contact.entryList %} 
+                <li class= "contact-entry {{ contact.type | append: '-entry' }}"> 
+                    {% include contact-entry.html 
+                        key= entry.key 
+                        value= entry.value 
+                        text= entry.text 
+                    %}
+                </li>
+            {% endfor %}
+            </ul> 
+        </article>
+    {% endfor %} 
+</section> 

@@ -1,0 +1,45 @@
+{
+    "heading": { 
+        "level": "2", 
+        "text": "Reach us" 
+    }, 
+
+    "paragraphs": [ 
+        { 
+            "text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+        }
+    ], 
+
+    "entryList": [
+        {
+            "type": "phone", 
+            "title": "Our Phones", 
+            "entryList": [
+                { 
+                    "key": "mobile", 
+                    "value": "087712356", 
+                    "text": "Call me" 
+                }, 
+
+                { 
+                    "key": "office", 
+                    "value": "087712356", 
+                    "text": "Call me" 
+                }
+            ]
+        }, 
+
+        {
+            "type": "email", 
+            "title": "Our Emails", 
+            "entryList": [
+                { 
+                    "key": "company", 
+                    "value": "ico@icopavlov.com", 
+                    "text": "Write me" 
+                }
+            ] 
+        }
+    ]
+
+}
