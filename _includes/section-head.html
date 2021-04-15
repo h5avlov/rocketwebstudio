@@ -1,0 +1,17 @@
+{% if include.subheading %}
+    {% include heading.html className= "sub-heading" %} 
+{% endif %} 
+
+{% include heading.html %} 
+
+{% for paragraph in block.paragraphs %} 
+    {% include paragraph.html 
+        text= paragraph.text 
+    %} 
+{% endfor %} 
+
+{% if include.image %}
+    {% include featured-image.html 
+        image= block.image 
+    %}
+{% endif %} 
