@@ -1,7 +1,15 @@
-<article> 
-    <article> 
-        {% include key-value-pair.html key= include.phone.key value= include.phone.value %} 
-        {% include paragraph.html text= include.phone.text %} 
-    </article>
-
+<article class= "quick-contact"> 
+    {% for contact in include.contact %} 
+        <ul class= "entry-list contact-entry-list {{ contact.type | append: '-list' }}"> 
+        {% for entry in contact.entryList %} 
+            <li class= "contact-entry {{ contact.type }}"> 
+                {% include contact-entry.html 
+                    key= entry.key 
+                    value= entry.value 
+                    text= entry.text 
+                %}
+            </li>
+        {% endfor %}
+        </ul> 
+    {% endfor %} 
 </article>

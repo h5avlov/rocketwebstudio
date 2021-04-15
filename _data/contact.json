@@ -1,0 +1,29 @@
+[
+    {
+        "type": "phone",
+        "entryList": [
+            { 
+                "key": "mobile", 
+                "value": "087712356", 
+                "text": "Call me" 
+            }, 
+
+            { 
+                "key": "office", 
+                "value": "087712356", 
+                "text": "Call me" 
+            }
+        ]
+    }, 
+
+    {
+        "type": "email", 
+        "entryList": [
+            { 
+                "key": "company", 
+                "value": "ico@icopavlov.com", 
+                "text": "Write me" 
+            }
+        ] 
+    }
+]
