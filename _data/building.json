@@ -1,5 +1,21 @@
 { 
-    "head": {}, 
+    "head": { 
+        "heading": { 
+            "text": "Building" 
+        }, 
+
+        "subheading": { 
+            "text": "Our Expertise" 
+
+        }, 
+
+        "paragraphs": [ 
+            {
+                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }
+        ]
+    }, 
+
     "body": { 
         "overallPrice": { 
             "text": "You Pay",  

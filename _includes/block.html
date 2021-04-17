@@ -3,6 +3,7 @@
 {% if block.subheading %}
     {% include heading.html 
         level= 5 
+        className= "subheading" 
         text= block.subheading.text 
     %} 
 {% endif %}
@@ -14,21 +15,25 @@
     %} 
 {% endif %}
 
-{% for paragraph in block.paragraphs %} 
-    {% include paragraph.html 
-        text= paragraph.text 
-    %} 
-{% endfor %} 
+{% if block.paragraphs %} 
+    {% for paragraph in block.paragraphs %} 
+        {% include paragraph.html 
+            text= paragraph.text 
+        %} 
+    {% endfor %} 
+{% endif %}
 
-{% if block.image.type == "featured" %}
-    {% include featured-image.html 
-       image= block.image 
-    %}
-{% else %}
-    {% include image.html 
-        src= block.image.src 
-        alt= block.image.alt 
-    %}
+{% if block.image %}
+    {% if block.image.type == "featured" %} 
+        {% include featured-image.html 
+        image= block.image 
+        %}
+    {% else %}
+        {% include image.html 
+            src= block.image.src 
+            alt= block.image.alt 
+        %}
+    {% endif %}
 {% endif %}
 
 {% if block.button %} 

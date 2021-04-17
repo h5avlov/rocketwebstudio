@@ -1,0 +1,11 @@
+<section class= "section reviews-section"> 
+    {% include section-head.html head= include.data.head %} 
+
+    <ul class= "entry-list review-entry-list"> 
+    {% for entry in include.data.entryList %} 
+        <li class= "entry review-entry"> 
+            {% include review-entry.html reviewEntry= entry %} 
+        </li> 
+    {% endfor %}
+    </ul>
+</section>
