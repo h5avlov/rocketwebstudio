@@ -1,0 +1,19 @@
+.contact-entry:before { 
+    display: block; 
+    margin: auto; 
+
+    font-family: var( --icon-font-family ); 
+    font-size: var( --icon-font-size ); 
+} 
+
+.phone:before { 
+    content: var( --contact-phone-icon ); 
+} 
+
+.email:before { 
+    content: var( --contact-email-icon ); 
+} 
+
+.working-hours:before { 
+    content: var( --contact-working-hours-icon ); 
+}

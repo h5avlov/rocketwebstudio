@@ -1,0 +1,12 @@
+
+/* Registers heading font */ 
+@font-face {
+    font-family: var( --heading-font-family );
+    src: url( "/assets/fonts/impact.ttf" ); 
+} 
+
+/* Registers icon font */ 
+@font-face {
+    font-family: var( --icon-font-family ); 
+    src: url( "/assets/fonts/ionicons.ttf" ); 
+}

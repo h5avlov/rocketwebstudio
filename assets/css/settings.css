@@ -66,12 +66,12 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --icon-font-family: ""; 
-    --icon-font-size: "";
+    --icon-font-family: "Ionicons"; 
+    --icon-font-size: "1.2rem";
 
-    --contact-phone-icon: ""; 
-    --contact-working-hours-icon: ""; 
-    --contact-email-icon: ""; 
+    --contact-phone-icon: "\f2d2"; 
+    --contact-working-hours-icon: "\f3b3"; 
+    --contact-email-icon: "\f132"; 
     
 } 
 
