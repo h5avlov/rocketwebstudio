@@ -1,0 +1,21 @@
+{% assign head= include.data.head %}
+{% assign body= include.data.body %} 
+
+<section class= "section building-section">
+    {% include section-head.html head= head %} 
+
+    <article> 
+        <section class= "overall-price"> 
+            {% include heading.html level= 3 text= body.overallPrice.text %} 
+            {% include price.html price= body.overallPrice.price %}  
+        </section>
+
+        <ul class= "entry-list building-block-entry-list"> 
+        {% for buildingBlock in body.entryList %} 
+            <li class= "entry building-block-entry"> 
+                {% include building-block.html buildingBlock= buildingBlock %} 
+            </li>
+        {% endfor %} 
+        </ul> 
+    </article>
+</section>

@@ -1,7 +1,9 @@
+{% assign price= include.price %}
+
 <article class= "price">  
     <section class= "value">
-        {% include key-value-pair.html className= "int" key= "int" value= include.int %} 
-        {% include key-value-pair.html className= "fr" key= "fr" value= include.fr %} 
+        {% include key-value-pair.html className= "int" key= "int" value= price.value.int %} 
+        {% include key-value-pair.html className= "fr" key= "fr" value= price.value.fr %} 
     </section> 
-    {% include key-value-pair.html className= "currency" key= "currency" value= include.currency %} 
+    {% include key-value-pair.html className= "currency" key= "currency" value= price.currency %} 
 </article>
