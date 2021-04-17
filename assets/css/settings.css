@@ -73,4 +73,20 @@
     --contact-working-hours-icon: ""; 
     --contact-email-icon: ""; 
     
+} 
+
+/*-----------------------------------------------------------
+    Buttons
+------------------------------------------------------------*/ 
+
+:root { 
+    --button-height: ""; 
+    --button-padding-x: ""; 
+    --button-padding-y: ""; 
+    
+    --button-font-family: ""; 
+    --button-font-size: "";
+
+    --button-icon: ""; 
+    
 }
