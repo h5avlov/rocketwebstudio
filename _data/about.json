@@ -1,0 +1,38 @@
+{
+    "head": {
+        "heading": { 
+            "text": "About" 
+        }, 
+
+        "subheading": { 
+            "text": "Our Goals" 
+
+        }, 
+
+        "paragraphs": [ 
+            {
+                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }
+        ] 
+    }, 
+
+    "body": {
+        "heading": { 
+            "text": "About" 
+        }, 
+
+        "paragraphs": [ 
+            {
+                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }, 
+
+            {
+                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }, 
+
+            {
+                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }
+        ]
+    }
+}
