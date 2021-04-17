@@ -2,6 +2,8 @@
 {% assign review= include.reviewEntry.review %} 
 
 <article class= "reviewer"> 
+    {% include heading.html level= 5 text= "Client" %} 
+    
     {% include client.html className= "client" client= reviewer %} 
 </article> 
 

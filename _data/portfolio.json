@@ -21,16 +21,22 @@
             "head": { 
                 "image": { 
                     "src": "", 
-                    "alt": ""
+                    "alt": "Project Screenshot" 
                 } 
             }, 
 
             "body": { 
                 "client": { 
-                    "name": "", 
-                    "description": "", 
-                    "company": "", 
-                    "url": "" 
+                    "name": "Damon Salvatore", 
+                    "picture": { 
+                        "src": "", 
+                        "alt": "Damon Riding His Chevrolet Torque" 
+                    }, 
+                    "company": { 
+                        "name": "Vampire Solutions", 
+                        "url": "www.vampiresolutions.com", 
+                        "location": "Canada" 
+                    }
                 }, 
                 "description": [ 
                     {
@@ -38,9 +44,9 @@
                     }
                 ], 
                 "roles": [ 
-                    "design"
+                    "design", "code" 
                 ], 
-                "url": ""
+                "url": "www.vampiresolutions.com" 
             }
         }
     ]

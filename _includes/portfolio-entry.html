@@ -1,0 +1,46 @@
+{% assign head= include.portfolioEntry.head %} 
+{% assign body= include.portfolioEntry.body %} 
+
+
+{% include heading.html level= 3 text= "Project" %} 
+
+<section class= "portfolio-entry-head"> 
+    {% include featured-image.html image= head.image %} 
+    {% include button.html text= "Look Closer" %} 
+</section>
+
+<section class= "portfolio-entry-body project-details"> 
+    <section class= "client"> 
+        {% include heading.html level= 5 text= "Client" %} 
+        
+        {% include client.html client= body.client %} 
+    </section> 
+
+    <section class= "description">
+        {% include heading.html level= 5 text= "Description" %} 
+
+        {% for paragraph in body.description %} 
+            {% include paragraph.html 
+                text= paragraph.text 
+            %} 
+        {% endfor %} 
+    </section> 
+
+    <section class= "roles"> 
+        {% include heading.html level= 5 text= "Roles" %} 
+
+        <ul class= "entry-list role-entry-list"> 
+        {% for role in body.roles %} 
+            <li class= "entry role-entry"> 
+                {{ role }}
+            </li>
+        {% endfor %}
+        </ul>
+    </section> 
+
+    <section class= "url">
+        {% include heading.html level= 5 text= "Web Address" %} 
+
+        {% include link.html text= "www.vampiresolutions.com" %} 
+    </section> 
+</section>
