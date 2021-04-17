@@ -1,0 +1,9 @@
+{% include price.html %} 
+
+<ul>
+{% for block in include.blocks %} 
+    <li> 
+        {% include building-block.html %}
+    </li>
+{% endfor %} 
+</ul>

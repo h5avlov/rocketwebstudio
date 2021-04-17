@@ -1,9 +1,18 @@
 {% assign block = include.block %} 
 
-{% include heading.html 
-    level= include.level 
-    text= block.heading.text 
-%} 
+{% if block.subheading %}
+    {% include heading.html 
+        level= 5 
+        text= block.subheading.text 
+    %} 
+{% endif %}
+
+{% if block.heading %}
+    {% include heading.html 
+        level= include.level 
+        text= block.heading.text 
+    %} 
+{% endif %}
 
 {% for paragraph in block.paragraphs %} 
     {% include paragraph.html 
@@ -22,6 +31,8 @@
     %}
 {% endif %}
 
-{% include button.html 
-    text= block.button.text 
-%}  
+{% if block.button %} 
+    {% include button.html 
+        text= block.button.text 
+    %}  
+{% endif %}

@@ -1,10 +1,12 @@
-<section> 
-    {% include section-head.html %} 
+<section class= "section workflow-section"> 
+    {% include section-head.html head= include.data.head %} 
 
-    <ul> 
-        <li> 
-            {% include workflow-entry.html %} 
-        </li>
+    <ul class= "entry-list workflow-entry-list"> 
+    {% for entry in include.data.entryList %} 
+        <li class= "entry workflow-entry"> 
+            {% include workflow-entry.html workflowEntry= entry %} 
+        </li> 
+    {% endfor %}
     </ul>
 
 </section>

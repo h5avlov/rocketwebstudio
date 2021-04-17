@@ -1,0 +1,20 @@
+{% assign head= include.workflowEntry.head %}
+{% assign body= include.workflowEntry.body %}
+
+
+<section class= "head"> 
+    {% include heading.html level= 3 text= head.heading.text %} 
+    {% include button.html text= "Read More" %} 
+</section>
+<section class= "body"> 
+    {% if body.heading %}
+        {% include heading.html level= 3 text= body.heading.text %} 
+    {% endif %}
+
+    {% for paragraph in body.paragraphs %} 
+        {% include paragraph.html 
+            text= paragraph.text 
+        %} 
+    {% endfor %} 
+   
+</section>
