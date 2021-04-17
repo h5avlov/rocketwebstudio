@@ -1,24 +1,8 @@
 {% assign reviewer= include.reviewEntry.reviewer %} 
-{% assign picture= reviewer.picture %} 
-{% assign company= reviewer.company %} 
 {% assign review= include.reviewEntry.review %} 
 
 <article class= "reviewer"> 
-    {% include heading.html level= 5 text= "Reviewer" %} 
-
-    {% include key-value-pair.html className= "name" key= "name" value= reviewer.name %} 
-
-    {% capture reviewerPicture %} 
-        {% include image.html src= picture.src alt= picture.alt %} 
-    {% endcapture %}
-    {% include key-value-pair.html className= "name" key= "picture" value= reviewerPicture %} 
-
-    {% capture reviewerCompany %} 
-        {% include key-value-pair.html className= "company-name" key= "name" value= company.name %} 
-        {% include key-value-pair.html className= "company-location" key= "location" value= company.location %}
-        {% include key-value-pair.html className= "company-url" key= "web address" value= company.url %} 
-    {% endcapture %}
-    {% include key-value-pair.html className= "company" key= "company" value= reviewerCompany %} 
+    {% include client.html className= "client" client= reviewer %} 
 </article> 
 
 <blockquote class= "review"> 

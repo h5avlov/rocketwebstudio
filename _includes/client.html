@@ -1,0 +1,18 @@
+{% assign client= include.client %} 
+
+
+{% include heading.html level= 5 text= "Client" %} 
+
+{% include key-value-pair.html className= "name" key= "name" value= client.name %} 
+
+{% capture reviewerPicture %} 
+    {% include image.html src= client.picture.src alt= client.picture.alt %} 
+{% endcapture %}
+{% include key-value-pair.html className= "name" key= "picture" value= reviewerPicture %} 
+
+{% capture reviewerCompany %} 
+    {% include key-value-pair.html className= "company-name" key= "name" value= client.company.name %} 
+    {% include key-value-pair.html className= "company-location" key= "location" value= client.company.location %}
+    {% include key-value-pair.html className= "company-url" key= "web address" value= client.company.url %} 
+{% endcapture %}
+{% include key-value-pair.html className= "company" key= "company" value= reviewerCompany %} 
