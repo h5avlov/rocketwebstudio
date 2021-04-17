@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------
+    Layout
+------------------------------------------------------------*/ 
+
+:root { 
+    --page-max-width: ""; 
+    --page-inner-width: ""; 
+
+    --header-margin-bottom: ""; 
+    --header-padding-top: ""; 
+    --header-padding-bottom: ""; 
+    --nav-height: ""; 
+    --nav-margin-bottom: ""; 
+    --nav-entry-padding-x: ""; 
+    --nav-entry-padding-y: "";
+    --header-id-margin-bottom: "";  
+
+    --banner-padding-top: ""; 
+    --banner-padding-bottom: ""; 
+    --banner-heading-margin-bottom: ""; 
+    --banner-paragraph-margin-bottom: ""; 
+
+    --section-margin-bottom: ""; 
+    --heading-margin-bottom: ""; 
+    --subheading-margin-bottom: ""; 
+    --paragraph-margin-bottom: ""; 
+
+    --footer-margin-top: ""; 
+    --footer-padding-top: ""; 
+    --footer-padding-bottom: "";
+    --footer-id-margin-bottom: ""; 
+    --send-message-margin-bottom: ""; 
+    --footer-contacts-margin-bottom: ""; 
+     
+}
+
+/*-----------------------------------------------------------
+    Typography
+------------------------------------------------------------*/ 
+
+:root {
+    --heading-font-family: ""; 
+    --heading-font-size: "";  
+
+    --subheading-font-family: ""; 
+    --subheading-font-size: ""; 
+
+    --text-font-family: ""; 
+    --text-font-size: ""; 
+}
+
+/*-----------------------------------------------------------
+    Color
+------------------------------------------------------------*/ 
+
+:root { 
+    --text-color: ""; 
+    --background-color: ""; 
+    --highlight-color: ""; 
+    --overlay-color: ""; 
+    
+}
+
+/*-----------------------------------------------------------
+    Icons
+------------------------------------------------------------*/ 
+
+:root { 
+    --icon-font-family: ""; 
+    --icon-font-size: "";
+
+    --contact-phone-icon: ""; 
+    --contact-working-hours-icon: ""; 
+    --contact-email-icon: ""; 
+    
+}
