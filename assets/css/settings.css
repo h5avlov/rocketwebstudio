@@ -82,12 +82,19 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: ""; 
-    --button-padding-x: ""; 
+    --button-height: 3em; 
+    --button-padding-x: 1.7em; 
     --button-padding-y: ""; 
+
+    --button-border-width: 1px; 
+    --button-border-color: red; 
+    --button-border-radius: 100px; 
+
+    --button-text-color: red; 
+    --button-background-color: transparent; 
     
-    --button-font-family: ""; 
-    --button-font-size: "";
+    --button-font-family: Arial; 
+    --button-font-size: 12px; 
 
     --button-icon: ""; 
     

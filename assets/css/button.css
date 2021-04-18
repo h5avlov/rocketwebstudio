@@ -1,0 +1,23 @@
+.button { 
+    /* Ensures button width would depend on button text length */ 
+    display: inline-block; 
+    height: var( --button-height ); 
+    /* Centers button text vertically */ 
+    line-height: var( --button-height ); 
+    /* Gives horizontal space around button text  */
+    padding-left: var( --button-padding-x ); padding-right: var( --button-padding-x ); 
+
+    /* Sets button border */
+    border-width: var( --button-border-width ); border-style: solid; border-color: var( --button-border-color ); 
+    border-radius: var( --button-border-radius ); 
+
+    /* Sets button color */
+    background-color: var( --button-background-color ); 
+    color: var( --button-text-color ); 
+
+    /* Sets button font */
+    font-family: var( --button-font-family ); 
+    font-size: var( --button-font-size ); 
+    text-transform: uppercase; 
+
+}
