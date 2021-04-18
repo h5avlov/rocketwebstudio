@@ -1,2 +1,47 @@
 @import url( "./price.css" ); 
 
+
+.overall-price {
+    text-align: center; 
+}
+
+/* Sets number of columns and column gutters */
+.building-block-entry-list { 
+    --column-count: 4; 
+    --column-gutter-x-width: 0.2rem; 
+
+} 
+
+.building-block-entry:nth-child( 4n ) { 
+    margin-right: 0; 
+}
+
+.building-block-entry .head { 
+    padding-top: var( --building-block-head-padding-y ); padding-bottom: var( --building-block-head-padding-y ); 
+    text-align: center; 
+} 
+
+/* Sets default bottom margins of block element */
+.building-block-entry .head > * { 
+    margin-bottom: 0.85em; 
+
+}
+
+/* Styles block checkbox */
+.building-block-entry .add-block { 
+    display: inline-block;  
+    width: var( --building-block-add-block-side ); height: var( --building-block-add-block-side ); 
+
+} 
+
+.building-block-entry .heading { 
+    font-size: 0.85rem; 
+    text-transform: uppercase; 
+
+} 
+
+/* Hides block body until button click */
+.building-block-entry .body { 
+    height: 0; overflow: hidden; 
+
+}

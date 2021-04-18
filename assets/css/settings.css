@@ -119,10 +119,21 @@
 :root { 
     --price-font-family: Arial; 
     --price-base-font-size: 1rem; 
-    --price-accent-font-size: 2em; 
+    --price-accent-font-size: 2.5em; 
 
     --price-currency-font-family: Tahoma; 
-    --price-currency-font-size: 1rem; 
+    --price-currency-font-size: 0.85rem; 
    
 } 
+
+/*-----------------------------------------------------------
+    Building Block 
+------------------------------------------------------------*/ 
+
+:root { 
+    --building-block-head-padding-y: 2rem; 
+
+    --building-block-add-block-side: 1.5rem; 
+
+}
 

@@ -4,7 +4,7 @@
 
 .price-value { 
     /* Aligns price fragments in a row */
-    display: flex; flex-direction: row; 
+    display: flex; flex-direction: row; justify-content: center; 
     /* Sets price font family */
     font-family: var( --price-font-family ); 
     /* Sets price elements base font size, meant to specify 'fr' element font size */
@@ -21,4 +21,5 @@
     font-family: var( --price-currency-font-family ); 
     font-size: var( --price-currency-font-size ); 
     text-transform: uppercase; 
+    text-align: center; 
 }

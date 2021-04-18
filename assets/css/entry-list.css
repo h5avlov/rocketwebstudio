@@ -1,25 +1,30 @@
+/* Defines number of columns, column gutterwidths and calculates column width based on their values */
 .entry-list { 
     --column-count: 1; 
-    --gutter-x-width: 0.2rem; 
-    --gutter-y-width: var( --gutter-x-width ); 
-    --column-width: calc( ( 100% - ( var( --gutter-x-width ) * ( var( --column-count ) - 1 ) ) ) / var( --column-count ) ); 
+    --column-gutter-x-width: 0.2rem; 
+    --column-gutter-y-width: var( --column-gutter-x-width ); 
+    --column-width: calc( ( 100% - ( var( --column-gutter-x-width ) * ( var( --column-count ) - 1 ) ) ) / var( --column-count ) ); 
 
 }
 
+/* Entries are put on a row and move to another row when their number exceeds the specified column count */
 .entry-list { 
     display: flex; flex-direction: row; flex-wrap: wrap; 
 } 
 
+/* Sets entry width and represents gutters with entry margins */ 
 .entry { 
     width: var( --column-width ); 
-    margin-right: var( --gutter-x-width ); margin-top: var( --gutter-y-width ); 
+    margin-right: var( --column-gutter-x-width ); margin-top: var( --column-gutter-y-width ); 
 
 } 
 
+/* Removes unneccessary margin top from entries, located on the first row */
 .entry:nth-child( -n + var( --column-count ) ) { 
     margin-top: 0; 
 } 
 
+/* Removes unneccessary margin right from entries, located on the last column */
 .entry:nth-child( 2n ) { 
     margin-right: 0; 
 }

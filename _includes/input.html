@@ -1,6 +1,6 @@
-<input 
+<input  
     type= "{{ include.type }}"
-    class= "field short-text-field" 
+    class= "field short-text-field{% if include.className %} {{ include.className }}{% endif %}" 
     placeholder= "{{ include.placeholder }}" 
     {% if include.required %}
         required= "required" 

@@ -10,5 +10,11 @@
     border-width: 1px; border-style: solid; border-color: inherit; 
     background-color: transparent; 
     color: inherit;  
+} 
 
-}
+/* Styles checkbox */
+.building-block-entry .add-block { 
+    appearance: none; 
+  
+} 
+

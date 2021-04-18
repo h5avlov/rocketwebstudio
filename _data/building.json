@@ -55,7 +55,91 @@
                     ]
 
                 }
-            }
+            }, 
+
+            { 
+                "head": {
+                    "heading": { 
+                        "text": "Code" 
+                    }, 
+                    "price": { 
+                        "value": { 
+                            "int": "450", 
+                            "fr": "00"
+                        }, 
+                        "currency": "USD" 
+                    }
+                }, 
+
+                "body": { 
+                    "heading": { 
+                        "text": "Design" 
+                    }, 
+
+                    "paragraphs": [ 
+                        { 
+                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
+                        } 
+                    ]
+
+                }
+            }, 
+
+            { 
+                "head": {
+                    "heading": { 
+                        "text": "Copy" 
+                    }, 
+                    "price": { 
+                        "value": { 
+                            "int": "250", 
+                            "fr": "00"
+                        }, 
+                        "currency": "USD" 
+                    }
+                }, 
+
+                "body": { 
+                    "heading": { 
+                        "text": "Design" 
+                    }, 
+
+                    "paragraphs": [ 
+                        { 
+                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
+                        } 
+                    ]
+
+                }
+            }, 
+
+            { 
+                "head": {
+                    "heading": { 
+                        "text": "SEO" 
+                    }, 
+                    "price": { 
+                        "value": { 
+                            "int": "150", 
+                            "fr": "00"
+                        }, 
+                        "currency": "USD" 
+                    }
+                }, 
+
+                "body": { 
+                    "heading": { 
+                        "text": "Design" 
+                    }, 
+
+                    "paragraphs": [ 
+                        { 
+                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
+                        } 
+                    ]
+
+                }
+            } 
         ]
 
     }
