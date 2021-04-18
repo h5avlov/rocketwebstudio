@@ -20,7 +20,7 @@
     --banner-heading-margin-bottom: ""; 
     --banner-paragraph-margin-bottom: ""; 
 
-    --section-margin-bottom: ""; 
+    --section-margin-bottom: 5rem; 
     --heading-margin-bottom: ""; 
     --subheading-margin-bottom: ""; 
     --paragraph-margin-bottom: ""; 
@@ -38,15 +38,19 @@
     Typography
 ------------------------------------------------------------*/ 
 
-:root {
-    --heading-font-family: ""; 
-    --heading-font-size: "";  
+:root { 
+    --heading-margin-bottom: 1em; 
+    --heading-font-family: Impact; 
+    --heading-font-size: 1.5rem;  
 
-    --subheading-font-family: ""; 
-    --subheading-font-size: ""; 
+    --subheading-margin-bottom: 1em; 
+    --subheading-font-family: Tahoma; 
+    --subheading-font-size: 0.75rem; 
 
-    --text-font-family: ""; 
-    --text-font-size: ""; 
+    --text-margin-bottom: 2rem; 
+    --text-font-family: Arial; 
+    --text-font-size: 14px; 
+    --text-line-height: 1.4; 
 }
 
 /*-----------------------------------------------------------

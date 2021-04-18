@@ -3,7 +3,7 @@
 
     <ul class= "entry-list workflow-entry-list"> 
     {% for entry in include.data.entryList %} 
-        <li class= "entry workflow-entry"> 
+        <li class= "entry workflow-entry entry-expandable"> 
             {% include workflow-entry.html workflowEntry= entry %} 
         </li> 
     {% endfor %}

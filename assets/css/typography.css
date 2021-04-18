@@ -9,4 +9,11 @@
 @font-face {
     font-family: var( --icon-font-family ); 
     src: url( "/assets/fonts/ionicons.ttf" ); 
+} 
+
+body { 
+    font-family: var( --text-font-family ); 
+    font-size: var( --text-font-size ); 
+    line-height: var( --text-line-height ); 
+
 }

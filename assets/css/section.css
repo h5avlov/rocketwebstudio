@@ -1,11 +1,25 @@
-.section-heading { 
-    font-family: Impact; 
-    font-size: 2rem; 
+.section { 
+    margin-bottom: var( --section-margin-bottom ); 
+    text-align: center; 
+}
 
+.section > .heading { 
+    text-transform: uppercase; 
+}
+
+.section-heading { 
+    margin-bottom: var( --heading-margin-bottom ); 
+    font-family: var(  --heading-font-family); 
+    font-size: var( --heading-font-size ); 
 } 
 
 .section-subheading { 
-    font-family: Arial; 
-    font-size: 1rem; 
+    margin-bottom: var( --subheading-margin-bottom ); 
+    font-family: var( --subheading-font-family ); 
+    font-size: var( --subheading-font-size ); 
+} 
+
+.section-head-text-entry:last-of-type { 
+    margin-bottom: var( --text-margin-bottom ); 
 
 }

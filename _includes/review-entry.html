@@ -1,14 +1,12 @@
 {% assign reviewer= include.reviewEntry.reviewer %} 
 {% assign review= include.reviewEntry.review %} 
 
-<article class= "reviewer"> 
+<article class= "entry-head review-entry-head"> 
     {% include heading.html level= 5 text= "Client" %} 
-    
     {% include client.html className= "client" client= reviewer %} 
 </article> 
 
-<blockquote class= "review"> 
+<blockquote class= "entry-body review-entry-body"> 
     {% include heading.html level= 5 text= "Review" %} 
-
     {% include block.html level= 3 block= review %} 
 </blockquote>

@@ -8,12 +8,13 @@
 
 {% include heading.html 
     className= "section-heading" 
-    level= include.level 
+    level= 2 
     text= head.heading.text 
 %} 
 
 {% for paragraph in head.paragraphs %} 
     {% include paragraph.html 
+        className= "section-head-text-entry" 
         text= paragraph.text 
     %} 
 {% endfor %} 

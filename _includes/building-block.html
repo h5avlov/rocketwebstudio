@@ -1,13 +1,13 @@
 {% assign head= include.buildingBlock.head %}
 {% assign body= include.buildingBlock.body %} 
 
-<section class= "head"> 
+<section class= "entry-head"> 
     {% include input.html className= "add-block" type= "checkbox" text= "Add Block" %} 
     {% include heading.html level= 3 text= head.heading.text %} 
     {% include price.html price= head.price %} 
     {% include button.html text= "Read More" %} 
 </section>
 
-<section class= "body"> 
+<section class= "entry-body"> 
     {% include block.html level= 3 block= body %} 
 </section>

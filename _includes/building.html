@@ -12,7 +12,7 @@
 
         <ul class= "entry-list building-block-entry-list"> 
         {% for buildingBlock in body.entryList %} 
-            <li class= "entry building-block-entry"> 
+            <li class= "entry building-block-entry entry-expandable"> 
                 {% include building-block.html buildingBlock= buildingBlock %} 
             </li>
         {% endfor %} 
