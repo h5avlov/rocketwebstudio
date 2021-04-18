@@ -8,12 +8,12 @@
     padding-left: var( --button-padding-x ); padding-right: var( --button-padding-x ); 
 
     /* Sets button border */
-    border-width: var( --button-border-width ); border-style: solid; border-color: var( --button-border-color ); 
+    border-width: var( --button-border-width ); border-style: solid; border-color: inherit; 
     border-radius: var( --button-border-radius ); 
 
     /* Sets button color */
     background-color: var( --button-background-color ); 
-    color: var( --button-text-color ); 
+    color: inherit; 
 
     /* Sets button font */
     font-family: var( --button-font-family ); 

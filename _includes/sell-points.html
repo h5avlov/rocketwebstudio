@@ -6,7 +6,7 @@
 
     <ul class= "entry-list sell-points-entry-list"> 
     {% for entry in include.data.entryList %} 
-        <li> 
+        <li class= "entry sell-points-entry"> 
             {% include block.html 
                 level= 3 
                 block= entry
@@ -14,5 +14,4 @@
         </li> 
     {% endfor %}
     </ul>
-
-</section>
+</section> 

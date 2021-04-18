@@ -1,0 +1,30 @@
+.sell-points-entry { 
+    padding-top: var( --sell-points-entry-padding-y ); padding-bottom: var( --sell-points-entry-padding-y ); 
+    padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
+    position: relative; 
+    text-align: center; 
+
+} 
+
+.sell-points-entry .heading { 
+    margin-bottom: var( --sell-points-entry-heading-margin-bottom ); 
+    font-family: Impact; 
+    font-size: 2.25rem; 
+
+} 
+
+.sell-points-entry .text-entry { 
+    margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
+
+} 
+
+.sell-points-entry .text-entry:last-of-type { 
+    margin-bottom: var( --sell-points-entry-text-margin-bottom ); 
+
+} 
+
+.sell-points-entry .feature-image { 
+    width: 100%; height: 100%; 
+    position: absolute; left: 0; top: 0; 
+
+}
