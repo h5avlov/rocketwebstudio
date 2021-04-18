@@ -1,0 +1,16 @@
+.workflow-entry { 
+    margin-bottom: var( --workflow-entry-margin-bottom ); 
+
+}
+
+.workflow-entry .heading:before { 
+    display: block;  
+} 
+
+.workflow-entry .heading { 
+    margin-bottom: var( --workflow-entry-heading-margin-bottom ); 
+    font-family: var( --heading-font-family ); 
+    font-size: var( --workflow-entry-heading-font-size ); 
+    text-transform: uppercase; 
+} 
+

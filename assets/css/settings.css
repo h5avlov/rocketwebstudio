@@ -155,5 +155,16 @@
     --copyright-notice-background-color: red; 
     --copyright-notice-text-color: white; 
 
+} 
+
+/*-----------------------------------------------------------
+    Workflow
+------------------------------------------------------------*/ 
+
+:root { 
+    --workflow-entry-margin-bottom: 2rem; 
+    --workflow-entry-heading-margin-bottom: 0.75em; 
+    --workflow-entry-heading-font-size: 1.2rem; 
+
 }
 

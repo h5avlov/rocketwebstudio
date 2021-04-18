@@ -1,1 +1,23 @@
 @import url( "./workflow-entry.css" ); 
+
+
+.workflow-entry-list { 
+    --column-count: 5; 
+
+} 
+
+.workflow-entry:nth-child( 5n ) { 
+    margin-right: 0; 
+}
+
+.workflow { 
+    counter-reset: workflow-entry-number; 
+} 
+
+.workflow-entry { 
+    counter-increment: workflow-entry-number; 
+} 
+
+.workflow-entry .heading:before { 
+    content: counter( workflow-entry-number ); 
+} 
