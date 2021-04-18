@@ -1,4 +1,4 @@
-<dl class= "key-value-pair">
+<dl class= "key-value-pair{% if include.className %} {{ include.className }}{% endif %}">
     <dt class= "key">{{ include.key }}</dt> 
     <dd class= "value">{{ include.value }}</dd> 
 </dl>
