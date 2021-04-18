@@ -1,0 +1,23 @@
+.copyright-notice { 
+    /* Places elements on a row and centers them */ 
+    display: flex; flex-direction: row; justify-content: center; 
+    padding-top: var( --copyright-notice-padding-y ); padding-bottom: var( --copyright-notice-padding-y ); 
+
+    /* Sets copyright notice color */
+    background-color: var( --copyright-notice-background-color ); 
+    color: var( --copyright-notice-text-color ); 
+
+    /* Sets copyright notice font */ 
+    font-family: var( --copyright-notice-font-family ); 
+    font-size: var( --copyright-notice-font-size ); 
+} 
+
+/* Sets horizontal distance between elements */ 
+.copyright-notice > *:not( :last-child ) { 
+    margin-right: var( --copyright-notice-element-margin-x ); 
+}
+
+.copyright-notice .key { 
+    display: none; 
+
+}

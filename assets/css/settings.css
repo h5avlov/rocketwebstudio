@@ -135,5 +135,21 @@
 
     --building-block-add-block-side: 1.5rem; 
 
+} 
+
+/*-----------------------------------------------------------
+    Copyright Notice
+------------------------------------------------------------*/ 
+
+:root { 
+    --copyright-notice-padding-y: 1rem; 
+    --copyright-notice-element-margin-x: 0.7rem; 
+
+    --copyright-notice-font-family: inherit; 
+    --copyright-notice-font-size: inherit; 
+    
+    --copyright-notice-background-color: red; 
+    --copyright-notice-text-color: white; 
+
 }
 
