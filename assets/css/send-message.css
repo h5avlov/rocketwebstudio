@@ -1,0 +1,56 @@
+/* Defines a simple grid to align form fields */
+.send-message-form { 
+    /* Column count */
+    --form-column-count: 2; 
+    /* Gutter width */
+    --form-column-gutter-x-width: 0.8rem; 
+    --form-column-gutter-y-width: var( --form-column-gutter-x-width ); 
+    --form-column-gutter-count: calc( var( --form-column-count ) - 1 ); 
+    /* Calculates column width based on specified above column count and gutter width */
+    --form-column-width: calc( ( 100% - ( var( --form-column-gutter-count ) * var( --form-column-gutter-x-width ) ) ) / var( --form-column-count ) ); 
+
+}
+
+.send-message-form { 
+    /* Ensures submit button centering */ 
+    justify-content: center; 
+    width: var( --send-message-form-width ); 
+    /* Centers form */ 
+    margin-left: auto; margin-right: auto; 
+
+} 
+
+.send-message-form .field-holder { 
+    width: var( --form-column-width ); 
+    /* Sets column gutter */ 
+    margin-right: var( --form-column-gutter-x-width ); margin-bottom: var( --form-column-gutter-y-width ); 
+} 
+
+/* Removes gutter from elements located in the last column */
+.send-message-form .field-holder:nth-child( 2n ), 
+.send-message-form .message-field-holder { 
+    margin-right: 0; 
+} 
+
+/* Message element expands to the whole form width */
+.send-message-form .message-field-holder { 
+    width: 100%; 
+} 
+
+/* Expands form elements to the full width of their holding element */
+.send-message .field {  
+    width: 100%; 
+
+} 
+
+.send-message .short-text-field {  
+    height: var( --send-message-field-height ); 
+} 
+
+.send-message .long-text-field { 
+    height: var( --send-message-long-text-field-height ); 
+} 
+
+.send-message-form .button { 
+    border-radius: 0; 
+}

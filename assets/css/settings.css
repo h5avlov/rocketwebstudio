@@ -110,4 +110,11 @@
     --field-background-color: transparent; 
     --field-text-color: inherit; 
 
-}
+    --send-message-form-width: 40rem; 
+    --send-message-field-height: 2.5rem; 
+    --send-message-short-to-long-text-ratio: 3; 
+    --send-message-long-text-field-height: calc( var( --send-message-short-to-long-text-ratio ) * var( --send-message-field-height ) ); 
+    /* --send-message-field-width: 10rem;  */ 
+
+} 
+

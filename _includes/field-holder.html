@@ -1,4 +1,4 @@
-<label class= "field-holder"> 
+<label class= "field-holder{% if include.className %} {{ include.className | append: '-field-holder' }}{% endif %}"> 
    {% include field.html 
         field= include.field 
    %}

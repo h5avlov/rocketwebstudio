@@ -15,18 +15,21 @@
         "fields": [ 
             { 
                 "type": "text", 
+                "name": "name", 
                 "placeholder": "Your Name", 
                 "required": true 
             }, 
 
             { 
                 "type": "email", 
+                "name": "email", 
                 "placeholder": "Your Email", 
                 "required": true 
             }, 
 
             { 
                 "type": "message", 
+                "name": "message", 
                 "placeholder": "Your Message", 
                 "required": true 
             } 

@@ -1,4 +1,12 @@
+.form { 
+    /* Directs form elements in a row with the intention to imply columns by assigning widths */
+    display: flex; flex-direction: row; flex-wrap: wrap; 
+
+} 
+
 .field { 
+    box-sizing: border-box; 
+    display: block; 
     border-width: var( --field-border-width ); border-style: solid; border-color: var( --field-border-color ); 
     background-color: var( --field-background-color ); 
     color: var( --field-text-color );  
