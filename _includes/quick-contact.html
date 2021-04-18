@@ -15,7 +15,7 @@
     {% endfor %} 
 
     {% for contact in include.contacts.entryList %} 
-        <article class= "{{ contact.type }}"> 
+        <article class= "contact {{ contact.type }}"> 
             {% include heading.html 
                 className= "contact-heading" 
                 level= 3 

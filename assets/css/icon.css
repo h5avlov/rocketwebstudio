@@ -1,4 +1,4 @@
-.contact-entry:before { 
+.contact:before { 
     display: block; 
     /* Sets icon size */ 
     width: var( --icon-side ); height: var( --icon-side ); 
@@ -10,10 +10,12 @@
     /* Sets icon font */
     font-family: var( --icon-font-family ); 
     font-size: var( --icon-font-size ); 
+
+    /* background-color: blue;  */ 
 } 
 
 .phone:before { 
-    content: var( --contact-phone-icon ); 
+    content: var( --contact-phone-icon );   
 } 
 
 .email:before { 
