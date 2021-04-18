@@ -1,1 +1,19 @@
-{% include block.html level= 2 block= include.head %} 
+{% assign head = include.head %} 
+
+{% include heading.html 
+    level= 5 
+    className= "subheading section-subheading" 
+    text= head.subheading.text 
+%} 
+
+{% include heading.html 
+    className= "section-heading" 
+    level= include.level 
+    text= head.heading.text 
+%} 
+
+{% for paragraph in head.paragraphs %} 
+    {% include paragraph.html 
+        text= paragraph.text 
+    %} 
+{% endfor %} 
