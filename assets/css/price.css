@@ -1,0 +1,24 @@
+.price .key-value-pair .key { 
+    display: none; 
+} 
+
+.price-value { 
+    /* Aligns price fragments in a row */
+    display: flex; flex-direction: row; 
+    /* Sets price font family */
+    font-family: var( --price-font-family ); 
+    /* Sets price elements base font size, meant to specify 'fr' element font size */
+    font-size: var( --price-base-font-size ); 
+
+} 
+
+.price-int { 
+    /* Sets 'int' element font size */
+    font-size: var( --price-accent-font-size ); 
+} 
+
+.price-currency { 
+    font-family: var( --price-currency-font-family ); 
+    font-size: var( --price-currency-font-size ); 
+    text-transform: uppercase; 
+}
