@@ -54,7 +54,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --text-color: ""; 
+    --text-color: red; 
     --background-color: ""; 
     --highlight-color: ""; 
     --overlay-color: ""; 
@@ -98,4 +98,16 @@
 
     --button-icon: ""; 
     
+} 
+
+/*-----------------------------------------------------------
+    Forms
+------------------------------------------------------------*/ 
+
+:root { 
+    --field-border-width: 1px; 
+    --field-border-color: auto; 
+    --field-background-color: transparent; 
+    --field-text-color: inherit; 
+
 }

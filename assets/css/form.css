@@ -1,0 +1,6 @@
+.field { 
+    border-width: var( --field-border-width ); border-style: solid; border-color: var( --field-border-color ); 
+    background-color: var( --field-background-color ); 
+    color: var( --field-text-color );  
+
+}
