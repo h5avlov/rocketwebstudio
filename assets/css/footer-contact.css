@@ -1,6 +1,13 @@
+/* Defines an entry set of contacts (i.e. 'phone'), each containing a list of its own entries (i.e. 'home', 'office' etc.) */
 .quick-contact-entry-set { 
     --column-count: 3; 
     --column-gutter-x-width: 0.4rem; 
+} 
+
+/* Defines the number of columns, aligning contact entries */
+.contact-entry-list { 
+    --column-count: 1; 
+    --column-gutter-x-width: 0rem; 
 } 
 
 /* Removes last column right margin */
@@ -8,15 +15,12 @@
     margin-right: 0; 
 }
 
-.contact-entry-list { 
-    --column-count: 1; 
-    --column-gutter-x-width: 0rem; 
-} 
-
+/* Defines a single contact entry in a single contact */
 .quick-contact-entry { 
     text-align: center; 
 } 
 
+/* Styles contact heading */
 .contact-heading { 
     margin-bottom: var( --contact-heading-margin-bottom ); 
     font-size: var( --contact-heading-font-size ); 
@@ -24,6 +28,7 @@
 
 }
 
+/* Single entry value in a contact */ 
 .quick-contact-entry .value { 
     margin-bottom: var( --contact-entry-value-margin-bottom ); 
     font-family: var( --contact-entry-value-font-family );  
@@ -31,20 +36,23 @@
 
 } 
 
+/* Sets default icon font size */
 .contact:before { 
     font-size: var( --contact-icon-font-size ); 
-
 }
 
+/* Phone icon */
 .phone:before { 
     font-size: calc( 0.8 * var( --contact-icon-font-size ) ); 
     content: var( --contact-phone-icon );   
 } 
 
+/* Email icon */
 .email:before { 
     content: var( --contact-email-icon ); 
 } 
 
+/* Working-hours icon */
 .working-hours:before { 
     content: var( --contact-working-hours-icon ); 
 }
