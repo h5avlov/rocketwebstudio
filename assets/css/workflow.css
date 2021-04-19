@@ -2,13 +2,13 @@
 
 
 .workflow-entry-list { 
-    --column-count: 5; 
+    --column-count: 1; 
 
 } 
 
-.workflow-entry:nth-child( 5n ) { 
+/* .workflow-entry:nth-child( 5n ) { 
     margin-right: 0; 
-}
+} */
 
 .workflow { 
     counter-reset: workflow-entry-number; 
