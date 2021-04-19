@@ -1,3 +1,11 @@
 @import url( "./id.css" ); 
 @import url( "./main-nav.css" ); 
 @import url( "./quick-contact.css" ); 
+
+
+.site-header .id, 
+.site-header .quick-contact { 
+    display: none; 
+    
+
+}

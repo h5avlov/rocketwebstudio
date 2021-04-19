@@ -1,17 +1,22 @@
 .main-nav { 
     display: flex; flex-direction: row; justify-content: center; 
+    width: 100%; 
+    padding-top: var( --main-nav-padding-y ); padding-bottom: var( --main-nav-padding-y ); 
+    position: absolute; 
+    background-color: var( --main-nav-background-color ); 
 
 } 
 
 .nav-entry {   
     position: relative; 
+    color: var( --main-nav-text-color ); 
 } 
 
 .nav-entry-current:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
-    background-color: red; 
+    background-color: var( --main-nav-link-current-mark-color ); 
     content: ""; 
 } 
 
