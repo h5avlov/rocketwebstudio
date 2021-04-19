@@ -1,0 +1,51 @@
+.quick-contact-entry-set { 
+    --column-count: 3; 
+    --column-gutter-x-width: 0.4rem; 
+} 
+
+/* Removes last column right margin */
+.quick-contact-entry:nth-child( 3n ) { 
+    margin-right: 0; 
+}
+
+.contact-entry-list { 
+    --column-count: 1; 
+    --column-gutter-x-width: 0rem; 
+} 
+
+.quick-contact-entry { 
+    text-align: center; 
+} 
+
+.contact-heading { 
+    margin-bottom: var( --contact-heading-margin-bottom ); 
+    font-size: var( --contact-heading-font-size ); 
+    text-transform: uppercase; 
+
+}
+
+.quick-contact-entry .value { 
+    margin-bottom: var( --contact-entry-value-margin-bottom ); 
+    font-family: var( --contact-entry-value-font-family );  
+    font-size: var( --contact-entry-value-font-size ); 
+
+} 
+
+.contact:before { 
+    font-size: var( --contact-icon-font-size ); 
+
+}
+
+.phone:before { 
+    font-size: calc( 0.8 * var( --contact-icon-font-size ) ); 
+    content: var( --contact-phone-icon );   
+} 
+
+.email:before { 
+    content: var( --contact-email-icon ); 
+} 
+
+.working-hours:before { 
+    content: var( --contact-working-hours-icon ); 
+}
+

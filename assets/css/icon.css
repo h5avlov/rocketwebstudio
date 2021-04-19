@@ -1,27 +1,12 @@
-.contact:before { 
+.has-icon:before { 
     display: block; 
     /* Sets icon size */ 
     width: var( --icon-side ); height: var( --icon-side ); 
     /* Centers icon element in horizontal direction */
-    margin-left: auto; margin-right: auto; margin-bottom: var( --icon-margin-bottom ); 
+    margin-left: auto; margin-right: auto;  
     /* Centers icon character in horizontal and vertical direction */ 
     text-align: center; line-height: var( --icon-side ); 
 
     /* Sets icon font */
     font-family: var( --icon-font-family ); 
-    font-size: var( --icon-font-size ); 
-
-    /* background-color: blue;  */ 
 } 
-
-.phone:before { 
-    content: var( --contact-phone-icon );   
-} 
-
-.email:before { 
-    content: var( --contact-email-icon ); 
-} 
-
-.working-hours:before { 
-    content: var( --contact-working-hours-icon ); 
-}
