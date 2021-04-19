@@ -1,0 +1,10 @@
+.main-nav { 
+    display: flex; flex-direction: row; justify-content: center; 
+
+} 
+
+.nav-entry { 
+    height: 2.5rem; line-height: 2.5rem; 
+    padding-left: 1.2rem; padding-right: 1.2rem; 
+
+}

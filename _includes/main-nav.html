@@ -1,5 +1,12 @@
 <nav class= "main-nav"> 
-    {% include heading.html level= "5" className= "accessibility-heading" text= include.data.title %} 
+    {% include heading.html 
+        level= "5" 
+        className= "accessibility-heading" 
+        text= include.data.title 
+    %} 
     
-    {% include nav.html data= include.data.entryList %} 
+    {% include nav.html 
+        data= include.data.entryList 
+        current= page.url 
+    %}  
 </nav>

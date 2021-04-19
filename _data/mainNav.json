@@ -3,32 +3,38 @@
     "entryList": [ 
         { 
             "target": "/", 
-            "text": "Home" 
+            "text": "Home", 
+            "className": "home"
         }, 
 
         { 
             "target": "/workflow", 
-            "text": "Workflow" 
+            "text": "Workflow", 
+            "className": "workflow" 
         }, 
 
         { 
             "target": "/portfolio", 
-            "text": "Portfolio" 
+            "text": "Portfolio", 
+            "className": "portfolio" 
         }, 
 
         { 
             "target": "/reviews", 
-            "text": "Reviews" 
+            "text": "Reviews", 
+            "className": "reviews"
         }, 
 
         { 
             "target": "/about", 
-            "text": "About" 
+            "text": "About", 
+            "className": "about" 
         }, 
 
         { 
             "target": "/contact", 
-            "text": "Contact" 
+            "text": "Contact", 
+            "className": "contact" 
         } 
 
     ]
