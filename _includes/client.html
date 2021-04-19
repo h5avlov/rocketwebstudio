@@ -1,12 +1,12 @@
 {% assign client= include.client %} 
  
 
-{% include key-value-pair.html className= "name" key= "name" value= client.name %} 
+{% include key-value-pair.html className= "client-name" key= "name" value= client.name %} 
 
 {% capture reviewerPicture %} 
     {% include image.html src= client.picture.src alt= client.picture.alt %} 
 {% endcapture %}
-{% include key-value-pair.html className= "name" key= "picture" value= reviewerPicture %} 
+{% include key-value-pair.html className= "client-picture" key= "picture" value= reviewerPicture %} 
 
 {% capture reviewerCompany %} 
     {% include key-value-pair.html className= "company-name" key= "name" value= client.company.name %} 
