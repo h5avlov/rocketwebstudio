@@ -9,10 +9,13 @@
     --header-margin-bottom: ""; 
     --header-padding-top: ""; 
     --header-padding-bottom: ""; 
-    --nav-height: ""; 
-    --nav-margin-bottom: ""; 
-    --nav-entry-padding-x: ""; 
-    --nav-entry-padding-y: "";
+
+    --main-nav-height: 2.5rem; 
+    --main-nav-margin-bottom: 1.2rem; 
+    --main-nav-link-padding-x: 1.2rem; 
+    --main-nav-link-padding-y: ""; 
+    --main-nav-link-current-mark-height: 2px; 
+
     --header-id-margin-bottom: "";  
 
     --banner-padding-top: ""; 

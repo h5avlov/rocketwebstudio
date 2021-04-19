@@ -3,8 +3,21 @@
 
 } 
 
-.nav-entry { 
-    height: 2.5rem; line-height: 2.5rem; 
-    padding-left: 1.2rem; padding-right: 1.2rem; 
+.nav-entry {   
+    position: relative; 
+} 
+
+.nav-entry-current:after { 
+    display: block; 
+    width: 100%; height: var( --main-nav-link-current-mark-height ); 
+    position: absolute; left: 0; top: 0; 
+    background-color: red; 
+    content: ""; 
+} 
+
+.nav-link { 
+    display: block; 
+    height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
+    padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
 
 }
