@@ -1,0 +1,38 @@
+.review-entry { 
+    box-sizing: border-box; 
+    padding-top: 2.5rem; padding-bottom: 2.5rem; 
+    /* border-left: 1px solid; */ 
+    /* color: white; 
+    background-color: rgb( 255, 0, 0 );  */ 
+
+} 
+
+.review-entry:first-child { 
+    border: none; 
+
+}
+
+.client-picture { 
+    display: block; 
+    width: 25%; padding-top: 25%; 
+    margin-left: auto; margin-right: auto; 
+    margin-bottom: 1.2rem;  
+    border: 1px solid red; 
+    border-radius: 50%; 
+    background-color: red;  
+
+} 
+
+.client-name { 
+    margin-bottom: 0.8rem; 
+
+}
+
+.client-company { 
+    margin-bottom: 1.2rem; 
+
+}
+
+.client-picture img { 
+    display: none; 
+}
