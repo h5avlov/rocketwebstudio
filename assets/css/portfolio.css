@@ -1,1 +1,7 @@
 @import url( "./rotator.css" ); 
+
+.portfolio-entry { 
+    width: 100%; height: 20rem; 
+    background-color: red; 
+
+}
