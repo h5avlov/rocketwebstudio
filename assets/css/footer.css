@@ -2,3 +2,13 @@
 @import url( "./send-message.css" ); 
 @import url( "./footer-contact.css" ); 
 @import url( "./copyright-notice.css" ); 
+
+.footer { 
+    margin-top: var( --footer-margin-top );
+
+} 
+
+.footer > *:not( :last-child ) { 
+    margin-bottom: var( --footer-members-margin-bottom ); 
+
+}

@@ -30,9 +30,10 @@
     --subheading-margin-bottom: ""; 
     --paragraph-margin-bottom: ""; 
 
-    --footer-margin-top: ""; 
+    --footer-margin-top: 4rem; 
     --footer-padding-top: ""; 
-    --footer-padding-bottom: "";
+    --footer-padding-bottom: ""; 
+    --footer-members-margin-bottom: 2.5rem; 
     --footer-id-margin-bottom: ""; 
     --send-message-margin-bottom: ""; 
     --footer-contacts-margin-bottom: ""; 
