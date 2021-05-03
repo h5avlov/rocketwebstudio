@@ -4,7 +4,7 @@
 @import url( "./copyright-notice.css" ); 
 
 .footer { 
-    margin-top: var( --footer-margin-top );
+    margin-top: var( --footer-margin-top ); 
 
 } 
 

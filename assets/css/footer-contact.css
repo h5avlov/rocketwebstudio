@@ -10,11 +10,6 @@
     --column-gutter-x-width: 0rem; 
 } 
 
-.quick-contact { 
-    margin-bottom: var( --footer-contacts-margin-bottom ); 
-
-}
-
 /* Removes last column right margin */
 .quick-contact-entry:nth-child( 3n ) { 
     margin-right: 0; 
