@@ -21,7 +21,8 @@
 } 
 
 /* Styles contact heading */
-.contact-heading { 
+.contact-heading {  
+    display: none; 
     margin-bottom: var( --contact-heading-margin-bottom ); 
     font-size: var( --contact-heading-font-size ); 
     text-transform: uppercase; 
@@ -33,6 +34,7 @@
     margin-bottom: var( --contact-entry-value-margin-bottom ); 
     font-family: var( --contact-entry-value-font-family );  
     font-size: var( --contact-entry-value-font-size ); 
+    /* text-transform: uppercase; */ 
 
 } 
 
