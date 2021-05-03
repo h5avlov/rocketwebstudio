@@ -23,18 +23,6 @@
         }, 
 
         {
-            "type": "email", 
-            "title": "Our Emails", 
-            "entryList": [
-                { 
-                    "key": "company", 
-                    "value": "ico@icopavlov.com", 
-                    "text": "Write me" 
-                }
-            ] 
-        }, 
-
-        {
             "type": "working-hours", 
             "title": "Our Working Time", 
             "entryList": [

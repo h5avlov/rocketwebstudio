@@ -204,5 +204,11 @@
     --contact-entry-value-font-family: Tahoma; 
     --contact-entry-value-font-size: 1.5em; 
 
+    --contact-separator-width: 1px; 
+    --contact-separator-height: 120%; 
+    --contact-separator-padding-top: 0.25rem; 
+    --contact-separator-padding-bottom: 0; 
+    --contact-separator-color: red; 
+
 } 
 

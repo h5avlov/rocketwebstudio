@@ -1,7 +1,7 @@
 /* Defines an entry set of contacts (i.e. 'phone'), each containing a list of its own entries (i.e. 'home', 'office' etc.) */
 .quick-contact-entry-set { 
-    --column-count: 3; 
-    --column-gutter-x-width: 0.4rem; 
+    --column-count: 2; 
+    --column-gutter-x-width: 0rem; 
 } 
 
 /* Defines the number of columns, aligning contact entries */
@@ -10,15 +10,43 @@
     --column-gutter-x-width: 0rem; 
 } 
 
+.quick-contact-entry-set { 
+    margin-left: auto; margin-right: auto; 
+    width: var( --send-message-form-width ); 
+
+}
+
 /* Removes last column right margin */
-.quick-contact-entry:nth-child( 3n ) { 
+.quick-contact-entry:nth-child( 2n ) { 
     margin-right: 0; 
+} 
+
+/* Removes unneccessary margin top from entries, located on the first row */
+.quick-contact-entry:nth-child( -n + var( --column-count ) ) { 
+    margin-top: 0; 
 }
 
 /* Defines a single contact entry in a single contact */
 .quick-contact-entry { 
+    position: relative; 
     text-align: center; 
 } 
+
+/* Defines entry separator */
+.quick-contact-entry:not( :last-child ):after { 
+    box-sizing: border-box; background-clip: content-box; 
+    display: block; 
+    width: var( --contact-separator-width ); 
+    /* Sets separator height */
+    height: var( --contact-separator-height ); 
+    /* Sets separator vertical position in a sense, because of the 'border-box' setting */ 
+    padding-top: var( --contact-separator-padding-top ); padding-bottom: var( --contact-separator-padding-bottom ); 
+    /* Positions separator absolutely and centers it vertically */
+    position: absolute; right: 0; top: 50%; transform: translateY( -50% ); 
+    background-color: var( --contact-separator-color );  
+    content: ""; 
+
+}
 
 /* Styles contact heading */
 .contact-heading {  
