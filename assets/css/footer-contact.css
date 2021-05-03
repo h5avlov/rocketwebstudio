@@ -43,7 +43,7 @@
 
 /* Phone icon */
 .phone:before { 
-    font-size: calc( 0.8 * var( --contact-icon-font-size ) ); 
+    /* font-size: calc( 0.8 * var( --contact-icon-font-size ) );  */ 
     content: var( --contact-phone-icon );   
 } 
 
