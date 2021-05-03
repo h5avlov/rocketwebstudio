@@ -3,12 +3,26 @@
 @import url( "./footer-contact.css" ); 
 @import url( "./copyright-notice.css" ); 
 
+
+/* Specifies last section to footer vertical distance */ 
 .footer { 
     margin-top: var( --footer-margin-top ); 
 
 } 
 
-.footer > *:not( :last-child ) { 
+/* Specifies footer members vertical distance */
+.footer > * { 
     margin-bottom: var( --footer-members-margin-bottom ); 
 
+} 
+
+.footer > :last-child { 
+    margin-bottom: 0; 
+
 }
+
+.footer-section-heading, 
+.footer-section-text-entry { 
+    display: none;  
+
+} 

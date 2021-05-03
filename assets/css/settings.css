@@ -33,8 +33,11 @@
     --footer-margin-top: 4rem; 
     --footer-padding-top: ""; 
     --footer-padding-bottom: ""; 
-    --footer-members-margin-bottom: 2rem; 
-    --footer-id-margin-bottom: ""; 
+    --footer-members-margin-bottom: 3.5rem; 
+    --footer-logo-width: 100px; 
+    --footer-logo-height: var( --footer-logo-width ); 
+    --footer-logo-margin-bottom: 0.8rem; 
+    --footer-id-margin-bottom: 4.5rem; 
     --send-message-margin-bottom: ""; 
     --footer-contacts-margin-bottom: 2rem; 
      
