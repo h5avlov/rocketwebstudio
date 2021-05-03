@@ -1,18 +1,9 @@
 <section class= "quick-contact"> 
-    {% if include.contacts.heading %}
-        {% include heading.html 
-            className= "section-heading" 
-            level= include.contacts.heading.level 
-            text= include.contacts.heading.text 
-        %} 
-    {% endif %}
-
-    {% for paragraph in include.contacts.paragraphs %}
-        {% include paragraph.html 
-            className= "section-text-entry" 
-            text= paragraph.text 
-        %} 
-    {% endfor %} 
+    {% include footer-section-head.html 
+        heading= site.data.contacts.heading 
+        headingClassName= "quick-contact-heading" 
+        paragraphs= site.data.contacts.paragraphs 
+    %}
 
     <section class= "entry-set quick-contact-entry-set"> 
     {% for contact in include.contacts.entryList %} 

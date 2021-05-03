@@ -1,17 +1,9 @@
 <section class= "send-message"> 
-    {% if include.heading %}
-        {% include heading.html 
-            className= "section-heading" 
-            level= include.heading.level 
-            text= include.heading.text 
-        %} 
-    {% endif %}
-
-    {% for paragraph in include.paragraphs %}
-        {% include paragraph.html 
-            text= paragraph.text 
-        %} 
-    {% endfor %} 
+    {% include footer-section-head.html 
+        heading= site.data.sendMessage.heading 
+        headingClassName= "send-message-heading" 
+        paragraphs= site.data.sendMessage.paragraphs 
+    %}
 
     {% include form.html 
         fields= include.form.fields 

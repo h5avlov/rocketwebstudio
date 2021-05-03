@@ -1,0 +1,17 @@
+{% assign headingClassName= "footer-section-heading" %}
+{% if include.headingClassName %}
+    {% assign headingClassName= headingClassName | append: " " | append: include.headingClassName %} 
+{% endif %}
+
+{% include heading.html 
+    className= headingClassName 
+    level= 3 
+    text= include.heading.text 
+%} 
+
+{% for paragraph in include.paragraphs %}
+    {% include paragraph.html 
+        className= "footer-section-text-entry" 
+        text= paragraph.text 
+    %} 
+{% endfor %} 
