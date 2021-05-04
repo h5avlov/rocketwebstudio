@@ -21,11 +21,11 @@
 } 
 
 .nav-entry:after, 
-.main-nav:hover .nav-entry:after { 
+.main-nav .entry-list:hover .nav-entry:after { 
     opacity: 0; 
 }
 
-.main-nav .nav-entry:hover:after, 
+.main-nav .entry-list:hover .nav-entry:hover:after, 
 .nav-entry-current:after { 
     opacity: 1; 
 
