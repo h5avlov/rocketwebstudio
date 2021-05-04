@@ -10,7 +10,11 @@
 
 {% capture reviewerCompany %} 
     {% include key-value-pair.html className= "company-name" key= "name" value= client.company.name %} 
-    {% include key-value-pair.html className= "company-location" key= "location" value= client.company.location %}
-    {% include key-value-pair.html className= "company-url" key= "web address" value= client.company.url %} 
+    {% include key-value-pair.html className= "company-location" key= "location" value= client.company.location %} 
+
+    {% capture reviewerUrl %} 
+        {% include link.html target= client.company.url text= client.company.url %} 
+    {% endcapture %}
+    {% include key-value-pair.html className= "company-url" key= "web address" value= reviewerUrl %} 
 {% endcapture %}
 {% include key-value-pair.html className= "client-company" key= "company" value= reviewerCompany %} 
