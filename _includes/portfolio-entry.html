@@ -6,17 +6,16 @@
 
 <section class= "entry-head portfolio-entry-head"> 
     {% include featured-image.html image= head.image %} 
-    {% include button.html text= "Look Closer" %} 
 </section>
 
 <section class= "entry-body portfolio-entry-body body-expandable project-details"> 
-    <section class= "client"> 
+    <section class= "project-details-section client"> 
         {% include details-section-heading.html text= "Client" %} 
         
         {% include client.html client= body.client %} 
     </section> 
 
-    <section class= "description"> 
+    <section class= "project-details-section description"> 
         {% include details-section-heading.html text= "Description" %}
 
         {% for paragraph in body.description %} 
@@ -26,7 +25,7 @@
         {% endfor %} 
     </section> 
 
-    <section class= "roles"> 
+    <section class= "project-details-section roles"> 
         {% include details-section-heading.html text= "Roles" %}
 
         <ul class= "entry-list role-entry-list"> 
@@ -38,7 +37,7 @@
         </ul>
     </section> 
 
-    <section class= "url">
+    <section class= "project-details-section url">
         {% include details-section-heading.html text= "Web Address" %} 
 
         {% include link.html text= "www.vampiresolutions.com" %} 

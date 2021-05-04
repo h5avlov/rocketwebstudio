@@ -1,3 +1,5 @@
+@import url( "./client.css" ); 
+
 .review-entry { 
     box-sizing: border-box; 
     padding-top: 2.5rem; 
@@ -10,30 +12,16 @@
 
 .review-entry:first-child { 
     border: none; 
-
 } 
 
-.client-picture { 
-    display: block; 
-    width: 25%; padding-top: 25%; 
-    margin-left: auto; margin-right: auto; 
-    margin-bottom: 1.2rem;  
-    border: 1px solid red; 
-    border-radius: 50%; 
-    /* background-color: red;   */ 
-
-} 
-
-.client-name { 
-    margin-bottom: 0.8rem; 
-
-}
-
-.client-company { 
+.review-entry-head > * { 
     margin-bottom: 1.2rem; 
-
 }
 
-.client-picture img { 
-    display: none; 
+/* .review-entry .client-name { 
+    margin-bottom: 0.8rem; 
 }
+
+.review-entry .client-company { 
+    margin-bottom: 1.2rem; 
+} */
