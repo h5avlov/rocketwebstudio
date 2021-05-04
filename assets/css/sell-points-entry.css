@@ -1,5 +1,5 @@
 .sell-points-entry { 
-    padding-top: var( --sell-points-entry-padding-y ); padding-bottom: var( --sell-points-entry-padding-y ); 
+    padding-top: var( --sell-points-entry-padding-top ); padding-bottom: var( --sell-points-entry-padding-bottom ); 
     padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
     position: relative; 
     text-align: center; 
