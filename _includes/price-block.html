@@ -1,0 +1,15 @@
+{% assign className= "price-block" %}
+{% if include.className %}
+    {% assign className= className | append: " " | append: include.className %} 
+{% endif %}
+
+<section class= "{{ className }}"> 
+    {% include heading.html 
+        className= "price-block-heading" 
+        level= 3 
+        text= include.text 
+    %} 
+    {% include price.html 
+        price= include.price 
+    %} 
+</section>

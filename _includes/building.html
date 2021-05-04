@@ -5,10 +5,11 @@
     {% include section-head.html head= head %} 
 
     <article> 
-        <section class= "overall-price"> 
-            {% include heading.html level= 3 text= body.overallPrice.text %} 
-            {% include price.html price= body.overallPrice.price %}  
-        </section>
+        {% include price-block.html 
+            className= "overall-price"
+            text= body.overallPrice.text 
+            price= body.overallPrice.price 
+        %} 
 
         <ul class= "entry-list building-block-entry-list"> 
         {% for buildingBlock in body.entryList %} 

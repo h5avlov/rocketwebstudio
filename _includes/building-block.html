@@ -2,12 +2,26 @@
 {% assign body= include.buildingBlock.body %} 
 
 <section class= "entry-head"> 
-    {% include input.html className= "add-block" type= "checkbox" text= "Add Block" %} 
-    {% include heading.html level= 3 text= head.heading.text %} 
-    {% include price.html price= head.price %} 
-    {% include button.html text= "Read More" %} 
+    {% include input.html 
+        className= "add-block" 
+        type= "checkbox" 
+        text= "Add Block" 
+    %} 
+
+    {% include price-block.html 
+        className= "building-block-price" 
+        text= head.heading.text 
+        price= head.price 
+    %} 
+
+    {% include button.html 
+        text= "Read More"
+    %} 
 </section>
 
 <section class= "entry-body body-expandable"> 
-    {% include block.html level= 3 block= body %} 
+    {% include block.html 
+        level= 3 
+        block= body 
+    %} 
 </section>
