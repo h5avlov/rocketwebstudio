@@ -1,13 +1,30 @@
+.logo { 
+    display: inline-block; 
+    margin-bottom: 1.2rem; 
+    width: var( --logo-width ); height: var( --logo-height ); 
+    background-image: url( "/assets/images/logo-white.png" ); 
+    background-size: contain; background-repeat: no-repeat; background-position: center; 
+    text-indent: -10000px; 
+}
+
+.id .description { 
+    box-sizing: border-box; 
+    margin-left: auto; margin-right: auto; 
+    padding-left: 10rem; padding-right: 10rem; 
+    width: var( --page-inner-width ); 
+} 
+
+.id .tagline { 
+    position: absolute; left: -10000px; 
+
+}
+
 .footer .id { 
     margin-bottom: var( --footer-id-margin-bottom ); 
-    text-align: center; 
+    text-align: center;  
 } 
 
 .footer .logo { 
-    display: inline-block; 
-    width: var( --footer-logo-width ); height: var( --footer-logo-height ); 
     margin-bottom: var( --footer-logo-margin-bottom ); 
-    background-color: rgb( 255, 0, 0 ); 
-    text-indent: -10000px; 
-
-}
+    background-image: url( "/assets/images/logo-red.png" ); 
+} 

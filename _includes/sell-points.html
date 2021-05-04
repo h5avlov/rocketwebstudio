@@ -7,6 +7,10 @@
     <ul class= "entry-list sell-points-entry-list"> 
     {% for entry in include.data.entryList %} 
         <li class= "entry sell-points-entry"> 
+            {% include id.html 
+                tagline= site.data.id.tagline 
+            %} 
+            
             {% include block.html 
                 level= 3 
                 block= entry

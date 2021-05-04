@@ -6,10 +6,16 @@
 
 } 
 
+.sell-points-entry > * { 
+    position: relative; z-index: 2; 
+
+}
+
 .sell-points-entry .heading { 
     margin-bottom: var( --sell-points-entry-heading-margin-bottom ); 
     font-family: Impact; 
-    font-size: 2.25rem; 
+    font-size: var( --sell-points-entry-heading-font-size ); 
+    text-transform: uppercase; 
 
 } 
 
@@ -25,6 +31,6 @@
 
 .sell-points-entry .feature-image { 
     width: 100%; height: 100%; 
-    position: absolute; left: 0; top: 0; 
+    position: absolute; left: 0; top: 0; z-index: 1; 
 
 }

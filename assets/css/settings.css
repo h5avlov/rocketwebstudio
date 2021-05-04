@@ -9,6 +9,8 @@
     --header-margin-bottom: 0; 
     --header-padding-top: 1.5rem; 
     --header-padding-bottom: 0; 
+    --logo-width: 4rem; 
+    --logo-height: var( --logo-width ); 
 
     --main-nav-height: 3.5rem; 
     --main-nav-padding-top: 1.7rem; 
@@ -33,9 +35,7 @@
     --footer-margin-top: 4rem; 
     --footer-padding-top: ""; 
     --footer-padding-bottom: ""; 
-    --footer-members-margin-bottom: 3.5rem; 
-    --footer-logo-width: 100px; 
-    --footer-logo-height: var( --footer-logo-width ); 
+    --footer-members-margin-bottom: 3.5rem;  
     --footer-logo-margin-bottom: 0.8rem; 
     --footer-id-margin-bottom: 4.5rem; 
     --send-message-margin-bottom: ""; 
@@ -184,10 +184,12 @@
 :root {  
     --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
     --sell-points-entry-padding-x: 5rem; 
-    --sell-points-entry-padding-y: 5rem; 
-    --sell-points-entry-heading-margin-bottom: 2rem; 
-    --sell-points-entry-text-entry-margin-bottom: 0.8rem; 
-    --sell-points-entry-text-margin-bottom: var( --sell-points-entry-heading-margin-bottom ); 
+    --sell-points-entry-padding-y: 4rem; 
+    --sell-points-entry-heading-margin-bottom: 1.4rem; 
+    --sell-points-entry-text-entry-margin-bottom: 1.8rem; 
+    --sell-points-entry-text-margin-bottom: 1.8rem; 
+
+    --sell-points-entry-heading-font-size: 1.8rem; 
    
 
 } 
@@ -205,8 +207,8 @@
     --contact-entry-value-font-size: 1.5em; 
 
     --contact-separator-width: 1px; 
-    --contact-separator-height: 120%; 
-    --contact-separator-padding-top: 0.25rem; 
+    --contact-separator-height: 100%; 
+    --contact-separator-padding-top: 0; 
     --contact-separator-padding-bottom: 0; 
     --contact-separator-color: red; 
 
