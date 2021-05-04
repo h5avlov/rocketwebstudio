@@ -140,6 +140,32 @@
 } 
 
 /*-----------------------------------------------------------
+    Price Block
+------------------------------------------------------------*/ 
+
+:root {  
+    --price-block-margin-bottom: 1.5rem; 
+    --price-block-heading-margin-bottom: 0.2rem; 
+
+    --price-block-font-size: 0.85rem; 
+   
+} 
+
+/*-----------------------------------------------------------
+    Overall Price 
+------------------------------------------------------------*/ 
+
+:root { 
+    --building-section-text-margin-bottom: 4rem; 
+
+    --overall-price-padding: 2.5rem; 
+    --overall-price-margin-bottom: 4rem; 
+    --overall-price-border-width: 1px; 
+
+
+} 
+
+/*-----------------------------------------------------------
     Building Block 
 ------------------------------------------------------------*/ 
 

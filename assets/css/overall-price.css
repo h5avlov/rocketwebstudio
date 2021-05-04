@@ -1,0 +1,6 @@
+.overall-price { 
+    display: inline-block; 
+    margin-bottom: var( --overall-price-margin-bottom ); 
+    padding: var( --overall-price-padding ); 
+    border: var( --overall-price-border-width ) solid; 
+}
