@@ -12,13 +12,24 @@
     color: var( --main-nav-text-color ); 
 } 
 
-.nav-entry-current:after { 
+.nav-entry:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
     background-color: var( --main-nav-link-current-mark-color ); 
-    content: ""; 
+    content: "";  
 } 
+
+.nav-entry:after, 
+.main-nav:hover .nav-entry:after { 
+    opacity: 0; 
+}
+
+.main-nav .nav-entry:hover:after, 
+.nav-entry-current:after { 
+    opacity: 1; 
+
+}
 
 .nav-link { 
     display: block; 

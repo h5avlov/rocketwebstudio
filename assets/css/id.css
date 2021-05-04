@@ -2,7 +2,7 @@
     display: inline-block; 
     margin-bottom: 1.2rem; 
     width: var( --logo-width ); height: var( --logo-height ); 
-    background-image: url( "/assets/images/logo-white.png" ); 
+    background-image: url( "/assets/images/logo.png" ); 
     background-size: contain; background-repeat: no-repeat; background-position: center; 
     text-indent: -10000px; 
 }
@@ -26,5 +26,5 @@
 
 .footer .logo { 
     margin-bottom: var( --footer-logo-margin-bottom ); 
-    background-image: url( "/assets/images/logo-red.png" ); 
+    background-image: url( "/assets/images/logo-footer.png" ); 
 } 

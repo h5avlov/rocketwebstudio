@@ -1,6 +1,9 @@
 .workflow-entry { 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
+} 
 
+.workflow-entry:last-of-type { 
+    margin-bottom: 0; 
 }
 
 .workflow-entry .heading:before { 
