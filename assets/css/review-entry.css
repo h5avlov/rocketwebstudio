@@ -11,7 +11,7 @@
 .review-entry:first-child { 
     border: none; 
 
-}
+} 
 
 .client-picture { 
     display: block; 
@@ -20,7 +20,7 @@
     margin-bottom: 1.2rem;  
     border: 1px solid red; 
     border-radius: 50%; 
-    background-color: red;  
+    /* background-color: red;   */ 
 
 } 
 

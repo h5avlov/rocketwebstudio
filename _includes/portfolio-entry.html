@@ -11,13 +11,13 @@
 
 <section class= "entry-body portfolio-entry-body body-expandable project-details"> 
     <section class= "client"> 
-        {% include heading.html level= 5 text= "Client" %} 
+        {% include details-section-heading.html text= "Client" %} 
         
         {% include client.html client= body.client %} 
     </section> 
 
-    <section class= "description">
-        {% include heading.html level= 5 text= "Description" %} 
+    <section class= "description"> 
+        {% include details-section-heading.html text= "Description" %}
 
         {% for paragraph in body.description %} 
             {% include paragraph.html 
@@ -27,7 +27,7 @@
     </section> 
 
     <section class= "roles"> 
-        {% include heading.html level= 5 text= "Roles" %} 
+        {% include details-section-heading.html text= "Roles" %}
 
         <ul class= "entry-list role-entry-list"> 
         {% for role in body.roles %} 
@@ -39,7 +39,7 @@
     </section> 
 
     <section class= "url">
-        {% include heading.html level= 5 text= "Web Address" %} 
+        {% include details-section-heading.html text= "Web Address" %} 
 
         {% include link.html text= "www.vampiresolutions.com" %} 
     </section> 
