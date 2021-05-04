@@ -1,1 +1,13 @@
  @import url( "./building-block.css" ); 
+
+
+.building-section > .section-head-text-entry:last-of-type { 
+    margin-bottom: 4rem; 
+}
+
+.overall-price { 
+    display: inline-block; 
+    margin-bottom: 4rem; 
+    padding: 2.5rem; 
+    border: 1px solid; 
+}

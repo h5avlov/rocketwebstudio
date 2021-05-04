@@ -1,0 +1,9 @@
+.price-block { 
+    margin-bottom: 1.5rem; 
+} 
+
+.price-block-heading { 
+    margin-bottom: 0.2rem; 
+    font-size: 0.85rem; 
+    text-transform: uppercase; 
+} 
