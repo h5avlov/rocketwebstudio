@@ -6,7 +6,7 @@
     /* Aligns price fragments in a row */
     display: flex; flex-direction: row; justify-content: center; 
     /* Sets price font family */
-    font-family: var( --price-font-family ); 
+    font-family: "var( --price-font-family )"; 
     /* Sets price elements base font size, meant to specify 'fr' element font size */
     font-size: var( --price-base-font-size ); 
 

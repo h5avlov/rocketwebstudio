@@ -25,4 +25,9 @@
 
     box-shadow: 0 0 5px 5px rgba( 0, 0, 0, 0.2 ); 
 
+} 
+
+.sell-points-entry .heading { 
+    font-family: "var( --sell-points-entry-heading-font-family )"; 
+
 }

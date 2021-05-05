@@ -1,15 +1,32 @@
 
 /* Registers heading font */ 
-@font-face {
+/* @font-face {
     font-family: var( --heading-font-family );
     src: url( "/assets/fonts/impact.ttf" ); 
-} 
+}  */ 
+
+@font-face {
+    font-family: "var( --heading-font-family )"; 
+    src: url( "/assets/fonts/A1SerifBold.ttf" ); 
+}
 
 /* Registers icon font */ 
 @font-face {
     font-family: var( --icon-font-family ); 
     src: url( "/assets/fonts/ionicons.ttf" ); 
 } 
+
+/* Registers sell points entry heading font */ 
+/* @font-face {
+    font-family: "var( --sell-points-entry-heading-font-family )"; 
+    src: url( "/assets/fonts/A1SerifBold.ttf" ); 
+} */
+
+/* Registers price font */ 
+@font-face {
+    font-family: "var( --price-font-family )"; 
+    src: url( "/assets/fonts/AlfaSlabOneRegular.ttf" ); 
+}  
 
 body { 
     font-family: var( --text-font-family ); 

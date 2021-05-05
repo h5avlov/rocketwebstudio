@@ -49,7 +49,7 @@
 
 :root { 
     --heading-margin-bottom: 1em; 
-    --heading-font-family: Impact; 
+    --heading-font-family: A1SerifBold; 
     --heading-font-size: 1.5rem;  
 
     --subheading-margin-bottom: 1em; 
@@ -80,7 +80,7 @@
 
 :root { 
     --icon-side: 2.5rem; 
-    --icon-font-family: "Ionicons"; 
+    --icon-font-family: Ionicons; 
 
     --contact-icon-font-size: 1.4rem; 
     --contact-phone-icon: "\f4b8"; 
@@ -130,7 +130,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --price-font-family: Arial; 
+    --price-font-family: "AlfaSlabOneRegular"; 
     --price-base-font-size: 1rem; 
     --price-accent-font-size: 2.5em; 
 
@@ -217,6 +217,7 @@
     --sell-points-entry-text-entry-margin-bottom: 1.8rem; 
     --sell-points-entry-text-margin-bottom: 1.8rem; 
 
+    --sell-points-entry-heading-font-family: "A1SerifBold"; 
     --sell-points-entry-heading-font-size: 1.8rem; 
    
 

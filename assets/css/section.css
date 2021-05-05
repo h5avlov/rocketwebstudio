@@ -14,7 +14,7 @@
 
 .section-heading { 
     margin-bottom: var( --heading-margin-bottom ); 
-    font-family: var(  --heading-font-family); 
+    font-family: "var( --heading-font-family )"; 
     font-size: var( --heading-font-size ); 
 } 
 
