@@ -36,31 +36,48 @@
 
 } 
 
-.project-details-section { 
-    margin-bottom: 1.2rem; 
+.project-details-section {  
+    margin-bottom: 1.2rem; margin-right: 1.8rem; 
 
 }
 
 .details-section-heading { 
     margin-bottom: 0.2rem; 
-    border-bottom: 1px solid; 
+    border-bottom: 1px solid;  
     /* font-family: Impact;   */ 
     font-weight: 800; 
 
-}
+} 
+
+.project-details .client-details {  
+    position: relative; 
+
+} 
+
+/* .project-details .client:after { 
+    display: block; 
+    width: 0; height: 0; overflow: hidden; 
+    clear: both; 
+    content: ""; 
+
+} */
 
 .project-details .client-picture { 
-    width: 4%; padding-top: 4%; 
-    margin: 0; 
-    /* position: absolute; right: 0; margin-right: 1.4rem; top: auto;   */ 
+    margin-left: 0; margin-bottom: 0;   
+    width: 10%; height: 100%; 
+    padding-top: 0; 
+    /* padding-top: 8%;   */ 
+    /* position: relative;  */ 
+    position: absolute; left: 0; top: auto; 
     border-radius: 0; 
 } 
 
-.project-details .client-company > .value { 
-    display: flex; flex-direction: row; 
-} 
+.project-details .client-name, 
+.project-details .client-company { 
+    padding-left: 10%; margin-left: 0.8rem; 
+
+}
 
 .project-details .role-entry { 
     width: auto; 
-
 }
