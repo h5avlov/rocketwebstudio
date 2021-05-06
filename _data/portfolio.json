@@ -22,7 +22,17 @@
                 "image": { 
                     "src": "", 
                     "alt": "Project Screenshot" 
-                } 
+                }, 
+
+                "heading": { 
+                    "text": "Project Title" 
+                }, 
+
+                "description": [ 
+                    {
+                        "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar." 
+                    }
+                ]
             }, 
 
             "body": { 

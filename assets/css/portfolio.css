@@ -8,11 +8,30 @@
 } 
 
 .portfolio-entry-head { 
-    height: 20rem;  
+    color: white; 
 } 
 
-.portfolio-entry-head > * { 
+.project-preview { 
+    /* height: 20rem;   */ 
+    padding-top: 4rem; padding-bottom: 4rem; padding-left: 2rem; padding-right: 2rem; 
+}
+
+.project-preview > * { 
     position: relative; z-index: 2; 
+} 
+
+.project-preview-text-content > * { 
+    margin-bottom: 1.4rem; 
+    position: relative; z-index: 2; 
+} 
+
+.project-preview .project-details-button-set > *:not( :last-child ) { 
+    margin-right: 0.7rem; 
+
+}
+
+.project-preview-heading { 
+    font-size: 1.5rem; 
 
 }
 
@@ -87,7 +106,7 @@
     width: auto; 
 } 
 
-.button-open-project-details { 
+.button-open { 
     color: white; 
 
 }
