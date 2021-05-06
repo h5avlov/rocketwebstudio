@@ -2,7 +2,7 @@
 
 .review-entry { 
     box-sizing: border-box; 
-    padding-top: 2.5rem; 
+    /* padding-top: 2.5rem;  */ 
     position: relative; 
 
 } 
@@ -10,6 +10,11 @@
 .review-entry:first-child { 
     border: none; 
 } 
+
+/* .review-entry-head { 
+    border: 1px solid; 
+
+} */
 
 .review-entry-head > * { 
     margin-bottom: 1.2rem; 
