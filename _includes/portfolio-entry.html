@@ -4,42 +4,46 @@
 
 {% include heading.html level= 3 text= "Project" %} 
 
-<section class= "entry-head portfolio-entry-head"> 
+<section class= "entry-head portfolio-entry-head">  
+    {% include button.html className= "button-open button-open-project-details" text= "Read More" %} 
     {% include featured-image.html image= head.image %} 
 </section>
 
-<section class= "entry-body portfolio-entry-body body-expandable project-details"> 
-    <section class= "project-details-section client"> 
-        {% include details-section-heading.html text= "Client" %} 
-        
-        {% include client.html client= body.client %} 
-    </section> 
+<section class= "entry-body portfolio-entry-body body-expandable"> 
+    <article class= "project-details"> 
+        <section class= "project-details-section client"> 
+            {% include details-section-heading.html text= "Client" %} 
+            
+            {% include client.html client= body.client %} 
+        </section> 
 
-    <section class= "project-details-section description"> 
-        {% include details-section-heading.html text= "Description" %}
+        <section class= "project-details-section description"> 
+            {% include details-section-heading.html text= "Description" %}
 
-        {% for paragraph in body.description %} 
-            {% include paragraph.html 
-                text= paragraph.text 
-            %} 
-        {% endfor %} 
-    </section> 
+            {% for paragraph in body.description %} 
+                {% include paragraph.html 
+                    text= paragraph.text 
+                %} 
+            {% endfor %} 
+        </section> 
 
-    <section class= "project-details-section roles"> 
-        {% include details-section-heading.html text= "Roles" %}
+        <section class= "project-details-section roles"> 
+            {% include details-section-heading.html text= "Roles" %}
 
-        <ul class= "entry-list role-entry-list"> 
-        {% for role in body.roles %} 
-            <li class= "entry role-entry"> 
-                {{ role }}
-            </li>
-        {% endfor %}
-        </ul>
-    </section> 
+            <ul class= "entry-list role-entry-list"> 
+            {% for role in body.roles %} 
+                <li class= "entry role-entry"> 
+                    {{ role }}
+                </li>
+            {% endfor %}
+            </ul>
+        </section> 
 
-    <section class= "project-details-section url">
-        {% include details-section-heading.html text= "Web Address" %} 
+        <section class= "project-details-section url">
+            {% include details-section-heading.html text= "Web Address" %} 
 
-        {% include link.html text= "www.vampiresolutions.com" %} 
-    </section> 
+            {% include link.html text= "www.vampiresolutions.com" %} 
+        </section> 
+    </article> 
+    {% include button.html className= "button-close button-close-project-details" text= "Close" %} 
 </section>

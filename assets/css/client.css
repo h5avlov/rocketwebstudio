@@ -5,13 +5,8 @@
 
 .client-picture { 
     display: block; 
-    width: 100%; padding-top: 50%; 
     margin-left: auto; margin-right: auto; 
-    margin-bottom: 1.2rem;  
-    /* border: 1px solid red;  */
-    /* border-radius: 50%;  */ 
     background-color: rgb( 255, 0, 0 );   
-
 } 
 
 .client-picture img { 
