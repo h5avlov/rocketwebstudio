@@ -3,11 +3,11 @@
 /* @font-face {
     font-family: var( --heading-font-family );
     src: url( "/assets/fonts/impact.ttf" ); 
-}  */ 
+}   */
 
 @font-face {
     font-family: "var( --heading-font-family )"; 
-    src: url( "/assets/fonts/A1SerifBold.ttf" ); 
+    src: url( "/assets/fonts/RobotoSlab-Black.ttf" ); 
 }
 
 /* Registers icon font */ 
@@ -17,21 +17,31 @@
 } 
 
 /* Registers sell points entry heading font */ 
-/* @font-face {
+@font-face {
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     src: url( "/assets/fonts/A1SerifBold.ttf" ); 
-} */
+} 
+
+
+/* Registers price font */ 
+/* @font-face {
+    font-family: "var( --price-font-family )"; 
+    src: url( "/assets/fonts/AlfaSlabOneRegular.ttf" ); 
+}   */
 
 /* Registers price font */ 
 @font-face {
     font-family: "var( --price-font-family )"; 
-    src: url( "/assets/fonts/AlfaSlabOneRegular.ttf" ); 
-}  
+    src: url( "/assets/fonts/RobotoSlab-Bold.ttf" ); 
+} 
 
 body { 
     font-family: var( --text-font-family ); 
     font-size: var( --text-font-size ); 
     /* font-weight: bold;  */
     line-height: var( --text-line-height ); 
+} 
 
+.heading { 
+    font-family: "var( --heading-font-family )"; 
 }
