@@ -7,7 +7,10 @@
     {% include button.html text= "Read More" %} 
 </article> 
 
-<blockquote class= "entry-body review-entry-body body-expandable"> 
-    {% include heading.html level= 5 text= "Review" %} 
-    {% include block.html level= 3 block= review %} 
-</blockquote>
+<section class= "entry-body review-entry-body body-expandable"> 
+    <blockquote class= "review"> 
+        {% include featured-image.html src= "" %} 
+        {% include block.html level= 3 block= review %}  
+    </blockquote>
+    {% include button.html className= "button-review-close" text= "Close" %} 
+</section>

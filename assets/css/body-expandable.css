@@ -1,3 +1,4 @@
 .body-expandable { 
     height: 0; overflow: hidden; 
+    position: absolute; 
 }
