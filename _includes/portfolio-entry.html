@@ -35,6 +35,12 @@
             {% include client.html client= body.client %} 
         </section> 
 
+        <section class= "project-details-section client-review"> 
+            {% include details-section-heading.html text= "Client Review" %} 
+            
+            {% include client.html client= body.client %} 
+        </section>
+
         <section class= "project-details-section description"> 
             {% include details-section-heading.html text= "Description" %}
 

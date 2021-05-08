@@ -2,12 +2,11 @@
   
 
 <article class= "client-details"> 
-{% capture reviewerPicture %} 
-    {% include image.html src= client.picture.src alt= client.picture.alt %} 
-{% endcapture %}
-{% include key-value-pair.html className= "client-picture" key= "picture" value= reviewerPicture %} 
-
-{% include key-value-pair.html className= "client-name" key= "name" value= client.name %} 
+{% include person.html 
+    name= client.name  
+    picture= client.picture 
+    role= "client" 
+%} 
 
 {% capture reviewerCompany %} 
     {% include key-value-pair.html className= "company-name" key= "name" value= client.company.name %} 

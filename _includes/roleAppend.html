@@ -1,0 +1,12 @@
+{% assign basePrefix= include.basePrefix %} 
+{% assign nameSuffix= '-name' %} 
+{% assign pictureSuffix= '-picture' %}
+{% assign rolePrefix= include.rolePrefix %} 
+
+
+{% assign nameClassName= basePrefix | append: nameSuffix %} 
+{% assign pictureClassName= basePrefix | append: pictureSuffix %}
+{% if include.rolePrefix %}
+    {% assign nameClassName= nameClassName | append: " " | append: rolePrefix | append: nameSuffix %} 
+    {% assign pictureClassName= pictureClassName | append: " " | append: rolePrefix | append: pictureSuffix %} 
+{% endif %}
