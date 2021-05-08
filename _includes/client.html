@@ -1,4 +1,5 @@
 {% assign client= include.client %} 
+{% assign occupation= client.occupation %}
   
 
 <article class= "client-details"> 
@@ -8,14 +9,8 @@
     role= "client" 
 %} 
 
-{% capture reviewerCompany %} 
-    {% include key-value-pair.html className= "company-name" key= "name" value= client.company.name %} 
-    {% include key-value-pair.html className= "company-location" key= "location" value= client.company.location %} 
-
-    {% capture reviewerUrl %} 
-        {% include link.html target= client.company.url text= client.company.url %} 
-    {% endcapture %}
-    {% include key-value-pair.html className= "company-url" key= "web address" value= reviewerUrl %} 
-{% endcapture %}
-{% include key-value-pair.html className= "client-company" key= "company" value= reviewerCompany %} 
+{% include occupation.html 
+    job= occupation.job 
+    company= occupation.company 
+%} 
 </article> 

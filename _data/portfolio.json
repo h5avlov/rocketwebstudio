@@ -43,8 +43,8 @@
                         "alt": "Damon Riding His Chevrolet Torque" 
                     }, 
 
-                    "occupationalData": { 
-                        "occupation": "Bloodsucker", 
+                    "occupation": { 
+                        "job": "Bloodsucker", 
                         "company": { 
                             "name": "Vampire Solutions", 
                             "url": "www.vampiresolutions.com", 

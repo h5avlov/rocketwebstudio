@@ -1,0 +1,23 @@
+{% assign company= include.company %} 
+
+
+<article class= "company"> 
+    {% include key-value-pair.html 
+        className= "company-name" 
+        key= "name" 
+        value= company.name 
+    %} 
+    {% include key-value-pair.html 
+        className= "company-location" 
+        key= "location" 
+        value= company.location 
+    %} 
+
+    {% capture companyUrl %} 
+        {% include link.html 
+            target= company.url 
+            text= company.url 
+        %} 
+    {% endcapture %}
+    {% include key-value-pair.html className= "company-url" key= "web address" value= companyUrl %} 
+</article>
