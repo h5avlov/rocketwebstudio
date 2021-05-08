@@ -19,30 +19,39 @@
                 %} 
             {% endfor %} 
             <section class= "button-set project-details-button-set"> 
-                {% include button.html className= "button-open button-open-project-details" text= "Project Details" %} 
-                {% include button.html className= "button-open button-open-project-review" text= "Project Review" %} 
+                {% include button.html 
+                    className= "button-open button-open-project-details" 
+                    text= "Project Details" 
+                %} 
+                {% include button.html 
+                    className= "button-open button-open-project-review" 
+                    text= "Project Review" 
+                %} 
             </section> 
         </section>
-        {% include featured-image.html image= head.image %}
+        {% include featured-image.html 
+            image= head.image 
+        %}
     </article> 
 </section>
 
 <section class= "entry-body portfolio-entry-body body-expandable"> 
     <article class= "project-details"> 
+
         <section class= "project-details-section client"> 
-            {% include details-section-heading.html text= "Client" %} 
+            {% include details-section-heading.html 
+                text= "Client" 
+            %} 
             
-            {% include client.html client= body.client %} 
+            {% include client.html 
+                client= body.client 
+            %} 
         </section> 
 
-        <section class= "project-details-section client-review"> 
-            {% include details-section-heading.html text= "Client Review" %} 
-            
-            {% include client.html client= body.client %} 
-        </section>
-
         <section class= "project-details-section description"> 
-            {% include details-section-heading.html text= "Description" %}
+            {% include details-section-heading.html 
+                text= "Description" 
+            %}
 
             {% for paragraph in body.description %} 
                 {% include paragraph.html 
@@ -52,7 +61,9 @@
         </section> 
 
         <section class= "project-details-section roles"> 
-            {% include details-section-heading.html text= "Roles" %}
+            {% include details-section-heading.html 
+                text= "Roles" 
+            %}
 
             <ul class= "entry-list role-entry-list"> 
             {% for role in body.roles %} 
@@ -63,11 +74,30 @@
             </ul>
         </section> 
 
-        <section class= "project-details-section url">
-            {% include details-section-heading.html text= "Web Address" %} 
+        {% if body.client.review %}
+            <section class= "project-details-section client-review"> 
+                {% include details-section-heading.html 
+                    text= "Client Review" 
+                %} 
+                
+                {% include review.html 
+                    review= body.client.review 
+                %} 
+            </section> 
+        {% endif %}
 
-            {% include link.html text= "www.vampiresolutions.com" %} 
+        <section class= "project-details-section url">
+            {% include details-section-heading.html 
+                text= "Web Address" 
+            %} 
+
+            {% include link.html 
+                text= "www.vampiresolutions.com" 
+            %} 
         </section> 
     </article> 
-    {% include button.html className= "button-close button-close-project-details" text= "Close" %} 
+    {% include button.html 
+        className= "button-close button-close-project-details" 
+        text= "Close" 
+    %} 
 </section>
