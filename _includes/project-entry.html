@@ -1,0 +1,20 @@
+{% assign projectEntry= include.projectEntry %} 
+
+
+{% include heading.html level= 5 text= "Project" %} 
+
+<section class= "entry-head portfolio-entry-head">  
+    <article class= "project-preview"> 
+        {% include project-preview.html 
+            projectPreview= projectEntry.head 
+        %} 
+    </article> 
+</section>
+
+<section class= "entry-body portfolio-entry-body body-expandable"> 
+    <article class= "project-details"> 
+        {% include project-body.html 
+            projectBody= projectEntry.body 
+        %} 
+    </article> 
+</section>

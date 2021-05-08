@@ -1,0 +1,65 @@
+{% assign body= include.projectBody %} 
+
+
+<section class= "project-details-section client"> 
+    {% include details-section-heading.html 
+        text= "Client" 
+    %} 
+    
+    {% include client.html 
+        client= body.client 
+    %} 
+</section> 
+
+<section class= "project-details-section description"> 
+    {% include details-section-heading.html 
+        text= "Description" 
+    %}
+
+    {% for paragraph in body.description %} 
+        {% include paragraph.html 
+            text= paragraph.text 
+        %} 
+    {% endfor %} 
+</section> 
+
+<section class= "project-details-section roles"> 
+    {% include details-section-heading.html 
+        text= "Roles" 
+    %}
+
+    <ul class= "entry-list role-entry-list"> 
+    {% for role in body.roles %} 
+        <li class= "entry role-entry"> 
+            {{ role }}
+        </li>
+    {% endfor %}
+    </ul>
+</section> 
+
+{% if body.client.review %}
+    <section class= "project-details-section client-review"> 
+        {% include details-section-heading.html 
+            text= "Client Review" 
+        %} 
+        
+        {% include review.html 
+            review= body.client.review 
+        %} 
+    </section> 
+{% endif %}
+
+<section class= "project-details-section url">
+    {% include details-section-heading.html 
+        text= "Web Address" 
+    %} 
+
+    {% include link.html 
+        text= "www.vampiresolutions.com" 
+    %} 
+</section> 
+
+{% include button.html 
+    className= "button-close button-close-project-details" 
+    text= "Close" 
+%} 
