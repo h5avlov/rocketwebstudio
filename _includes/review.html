@@ -1,14 +1,10 @@
 <article class= "review"> 
-    <blockquote class= "review-text"> 
-        {% for paragraph in include.client.review.paragraphs %} 
-            {% include paragraph.html 
-                text= paragraph.text 
-            %} 
-        {% endfor %} 
-    </blockquote> 
+    {% include review-body.html 
+        reviewBody= include.client.review 
+    %} 
     
     {% include client.html 
-        className= "client" 
+        className= "review-author" 
         clientProfile= include.client.profile 
     %} 
 </article>
