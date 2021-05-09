@@ -12,16 +12,10 @@
 </article> 
 
 <section class= "entry-body review-entry-body body-expandable"> 
-    <blockquote class= "review"> 
-        {% include featured-image.html 
-            src= "" 
-        %} 
-
-        {% include review.html 
-            review= include.client.review 
-        %}  
-    </blockquote> 
-
+    {% include review.html 
+        client= include.client 
+    %}  
+        
     {% include button.html 
         className= "button button-close button-review-close" 
         text= "Close" 

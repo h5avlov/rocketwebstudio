@@ -4,11 +4,11 @@
     %} 
 
     <ul class= "entry-list review-entry-list"> 
-    {% for entry in include.data %} 
-        {% if entry.body.client.review %} 
+    {% for entry in include.clients %} 
+        {% if entry.review %} 
             <li class= "entry review-entry entry-expandable"> 
                 {% include review-entry.html 
-                    client= entry.body.client 
+                    client= entry 
                 %} 
             </li> 
         {% endif %}

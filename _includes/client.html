@@ -1,16 +1,16 @@
-{% assign client= include.clientProfile %} 
-{% assign occupation= client.occupation %} 
+{% assign clientProfile= include.clientProfile %} 
+{% assign occupation= clientProfile.occupation %} 
   
 
-<article class= "client-details"> 
-{% include person.html 
-    name= client.name  
-    picture= client.picture 
-    role= "client" 
-%} 
+<footer class= "client-details"> 
+    {% include person.html 
+        name= clientProfile.name  
+        picture= clientProfile.picture 
+        role= "client" 
+    %} 
 
-{% include occupation.html 
-    job= occupation.job 
-    company= occupation.company 
-%} 
-</article> 
+    {% include occupation.html 
+        job= occupation.job 
+        company= occupation.company 
+    %} 
+</footer> 

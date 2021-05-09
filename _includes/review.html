@@ -1,7 +1,14 @@
-<h5>{{ client }}</h5> 
-
-{% for paragraph in include.review.paragraphs %} 
-    {% include paragraph.html 
-        text= paragraph.text 
+<article class= "review"> 
+    <blockquote class= "review-text"> 
+        {% for paragraph in include.client.review.paragraphs %} 
+            {% include paragraph.html 
+                text= paragraph.text 
+            %} 
+        {% endfor %} 
+    </blockquote> 
+    
+    {% include client.html 
+        className= "client" 
+        clientProfile= include.client.profile 
     %} 
-{% endfor %} 
+</article>
