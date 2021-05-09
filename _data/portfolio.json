@@ -37,18 +37,20 @@
 
             "body": { 
                 "client": { 
-                    "name": "Damon Salvatore",  
-                    "picture": { 
-                        "src": "", 
-                        "alt": "Damon Riding His Chevrolet Torque" 
-                    }, 
+                    "profile": { 
+                        "name": "Damon Salvatore",  
+                        "picture": { 
+                            "src": "", 
+                            "alt": "Damon Riding His Chevrolet Torque" 
+                        }, 
 
-                    "occupation": { 
-                        "job": "Bloodsucker", 
-                        "company": { 
-                            "name": "Vampire Solutions", 
-                            "url": "www.vampiresolutions.com", 
-                            "location": "Canada" 
+                        "occupation": { 
+                            "job": "Bloodsucker", 
+                            "company": { 
+                                "name": "Vampire Solutions", 
+                                "url": "www.vampiresolutions.com", 
+                                "location": "Canada" 
+                            }
                         }
                     }, 
 

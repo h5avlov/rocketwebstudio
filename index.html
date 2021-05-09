@@ -10,6 +10,9 @@ layout: page
 
 {% include projects.html data= site.data.portfolio %} 
 
-{% include reviews.html data= site.data.reviews %} 
+{% include reviews.html 
+    head= site.data.reviews.head 
+    data= site.data.portfolio.entryList 
+%} 
 
 {% include about.html data= site.data.about %} 

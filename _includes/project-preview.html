@@ -7,11 +7,13 @@
         level= 3 
         text= head.heading.text 
     %} 
+
     {% for paragraph in head.description %} 
         {% include paragraph.html 
             text= paragraph.text 
         %} 
     {% endfor %} 
+
     <section class= "button-set project-details-button-set"> 
         {% include button.html 
             className= "button-open button-open-project-details" 
@@ -23,6 +25,7 @@
         %} 
     </section> 
 </section>
+
 {% include featured-image.html 
     image= head.image 
 %}
