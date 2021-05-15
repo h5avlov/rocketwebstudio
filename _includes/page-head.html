@@ -1,0 +1,15 @@
+<section class= "page-head"> 
+    {% include id.html 
+        tagline= site.data.id.tagline 
+    %} 
+
+    {% include paragraph.html 
+        text= include.text 
+    %} 
+
+    {% if include.image %}
+        {% include featured-image.html 
+            image= include.image 
+        %} 
+    {% endif %}
+</section>
