@@ -1,7 +1,6 @@
 <section class= "sell-points"> 
-    {% include heading.html 
-        level= 5 
-        text= include.data.heading.text 
+    {% include accessibility-heading.html 
+        text= include.data.heading.tex 
     %} 
 
     <ul class= "entry-list sell-points-entry-list"> 
@@ -13,7 +12,7 @@
             
             {% include block.html 
                 level= 3 
-                block= entry
+                block= entry 
             %}
         </li> 
     {% endfor %}

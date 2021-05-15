@@ -2,17 +2,27 @@
 layout: page 
 --- 
 
-{% include sell-points.html data= site.data.sellPoints %} 
+{% include sell-points.html 
+    data= site.data.sellPoints 
+%} 
 
-{% include workflow.html data= site.data.workflow %} 
+{% include workflow.html 
+    data= site.data.workflow 
+%} 
 
-{% include building.html data= site.data.building %} 
+{% include building.html 
+    data= site.data.building 
+%} 
 
-{% include projects.html data= site.data.projects %} 
+{% include projects.html 
+    data= site.data.projects 
+%} 
 
 {% include reviews.html 
     head= site.data.reviews.head 
     clients= site.data.clients 
 %} 
 
-{% include about.html data= site.data.about %} 
+{% include about.html 
+    data= site.data.about 
+%} 
