@@ -1,0 +1,26 @@
+.page-heading { 
+    display: none; 
+
+}
+
+.page-head { 
+    padding-top: var( --sell-points-padding-y ); 
+    border-bottom-width: 4rem; border-style: solid; border-color: transparent; 
+    background-clip: padding-box; 
+    background-color: red; 
+    color: white; 
+    text-align: center; 
+
+}
+
+.page-head-text-entry { 
+    width: var( --page-inner-width ); height: 8rem; line-height: 8rem; 
+    margin-left: auto; margin-right: auto; 
+    margin-bottom: -4rem;  
+    background-color: red; 
+    font-family: "var( --sell-points-entry-heading-font-family )"; 
+    font-size: var( --sell-points-entry-heading-font-size );  
+    /* text-transform: uppercase;  */ 
+    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
+
+}
