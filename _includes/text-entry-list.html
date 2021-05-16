@@ -1,0 +1,5 @@
+{% for paragraph in include.paragraphs %} 
+    {% include paragraph.html 
+        text= paragraph.text 
+    %} 
+{% endfor %} 

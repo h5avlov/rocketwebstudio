@@ -1,0 +1,107 @@
+{ 
+        "heading": { 
+            "text": "Workflow" 
+        }, 
+
+        "subheading": { 
+            "text": "Our Process"
+
+        }, 
+
+        "paragraphs": [ 
+            {
+                "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            }, 
+
+            {
+                "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+            } 
+        ], 
+
+        "image": { 
+            "src": "/", 
+            "alt": "" 
+        }, 
+
+        "entryList": [ 
+            { 
+                "head": { 
+                    "heading": {
+                        "text": "Analysis"
+                    }
+                }, 
+
+                "body": { 
+                    "paragraphs": [ 
+                        {
+                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+                        }
+                    ]
+                }
+            }, 
+
+            { 
+                "head": { 
+                    "heading": {
+                        "text": "Planning" 
+                    }
+                }, 
+
+                "body": { 
+                    "paragraphs": [ 
+                        {
+                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+                        }
+                    ]
+                }
+            }, 
+
+            { 
+                "head": { 
+                    "heading": {
+                        "text": "Building" 
+                    }
+                }, 
+
+                "body": { 
+                    "paragraphs": [ 
+                        {
+                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+                        }
+                    ]
+                }
+            }, 
+
+            { 
+                "head": { 
+                    "heading": {
+                        "text": "Deploying" 
+                    }
+                }, 
+
+                "body": { 
+                    "paragraphs": [ 
+                        {
+                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+                        }
+                    ]
+                }
+            }, 
+
+            { 
+                "head": { 
+                    "heading": {
+                        "text": "Improving" 
+                    }
+                }, 
+
+                "body": { 
+                    "paragraphs": [ 
+                        {
+                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+                        }
+                    ]
+                }
+            }
+        ] 
+}

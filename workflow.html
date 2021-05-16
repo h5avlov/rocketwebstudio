@@ -1,3 +1,33 @@
 --- 
 layout: inner-page 
---- 
+---  
+
+
+{% assign workflow= site.data.workflowPage %} 
+
+
+{% include subheading.html 
+    text= workflow.subheading.text 
+%} 
+
+{% include page-heading.html 
+    text= workflow.heading.text 
+%}
+
+{% include text-entry-list.html 
+    paragraphs= workflow.paragraphs 
+%} 
+
+{% if workflow.image %} 
+    {% include featured-image.html image= workflow.image %} 
+{% endif %}
+
+<ul>
+{% for entry in workflow.entryList %} 
+    <li>
+        {% include workflow-entry.html 
+            workflowEntry= entry 
+        %} 
+    </li>
+{% endfor %}
+</ul>

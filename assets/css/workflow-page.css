@@ -1,0 +1,21 @@
+.page-body { 
+    width: var( --page-inner-width ); 
+    margin-left: auto; margin-right: auto; 
+    text-align: center; 
+
+}
+
+.page-body .text-entry { 
+    margin-bottom: 0.75rem; 
+    text-align: left; 
+} 
+
+.page-body .text-entry:last-of-type { 
+    margin-bottom: 1.75rem; 
+} 
+
+.page-body .feature-image { 
+    height: 15rem; 
+    background-color: red; 
+
+}
