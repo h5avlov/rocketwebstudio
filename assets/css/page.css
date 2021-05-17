@@ -27,8 +27,15 @@
     text-align: left; 
 } 
 
+/* Sets paragraph to paragraph vertical distance */ 
 .text-entry + .text-entry { 
     margin-top: var( --text-entry-margin-bottom ); 
+} 
+
+/* Sets last paragraph from a sequence of paragraphs to any element following vertical distance */ 
+.text-entry + :not( .text-entry ) { 
+    margin-top: 2rem; 
+
 } 
 
 /* .text-entry:last-of-type { 

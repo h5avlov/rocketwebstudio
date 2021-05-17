@@ -23,6 +23,12 @@
     {% endfor %} 
 {% endif %}
 
+{% if block.button %} 
+    {% include button.html 
+        text= block.button.text 
+    %}  
+{% endif %} 
+
 {% if block.image %}
     {% if block.image.type == "featured" %} 
         {% include featured-image.html 
@@ -34,10 +40,4 @@
             alt= block.image.alt 
         %}
     {% endif %}
-{% endif %}
-
-{% if block.button %} 
-    {% include button.html 
-        text= block.button.text 
-    %}  
 {% endif %}

@@ -18,15 +18,15 @@
 
 } 
 
-.sell-points-entry .text-entry { 
+/* .sell-points-entry .text-entry { 
     margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
 
-} 
+}  */
 
-.sell-points-entry .text-entry:last-of-type { 
+/* .sell-points-entry .text-entry:last-of-type { 
     margin-bottom: var( --sell-points-entry-text-margin-bottom ); 
 
-} 
+}  */
 
 .sell-points-entry .feature-image { 
     width: 100%; height: 100%; 
