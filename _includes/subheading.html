@@ -1,5 +1,10 @@
+{% include concat-class-names.html 
+    leftClassName= "subheading" 
+    rightClassName= include.className 
+%}
+
 {% include heading.html 
-    className= "subheading" 
+    className= outputClassName 
     level= 5 
     text= include.text 
 %} 
