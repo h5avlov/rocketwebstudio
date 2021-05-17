@@ -1,0 +1,42 @@
+.heading { 
+    margin-bottom: var( --heading-margin-bottom ); 
+    font-family: "var( --heading-font-family )"; 
+    text-transform: uppercase;
+} 
+
+.subheading { 
+    margin-bottom: var( --subheading-margin-bottom ); 
+    font-family: var( --subheading-font-family );
+} 
+
+.page-body { 
+    width: var( --page-inner-width ); 
+    margin-left: auto; margin-right: auto; 
+    text-align: center; 
+} 
+
+.page-heading { 
+    font-size: var( --page-heading-font-size ); 
+} 
+
+.page-subheading { 
+    font-size: var( --page-subheading-font-size ); 
+} 
+
+.page-body .text-entry { 
+    text-align: left; 
+} 
+
+.text-entry + .text-entry { 
+    margin-top: var( --text-entry-margin-bottom ); 
+} 
+
+/* .text-entry:last-of-type { 
+    margin-bottom: var( --text-margin-bottom ); 
+}  */ 
+
+.page-body .feature-image { 
+    margin-top: 2rem; 
+    height: 15rem; 
+    background-color: red; 
+} 

@@ -41,7 +41,3 @@ body {
     /* font-weight: bold;  */
     line-height: var( --text-line-height ); 
 } 
-
-.heading { 
-    font-family: "var( --heading-font-family )"; 
-}

@@ -1,6 +1,9 @@
+@import url( "./page.css" ); 
+
 .section {  
     width: var( --page-inner-width ); 
-    margin-left: auto; margin-right: auto; margin-bottom: var( --section-margin-bottom ); 
+    margin-left: auto; margin-right: auto; 
+    margin-bottom: var( --section-margin-bottom ); 
     text-align: center; 
 } 
 
@@ -8,24 +11,14 @@
     margin-bottom: 0; 
 }
 
-.section > .heading { 
-    text-transform: uppercase; 
-}
+.section-head-text-entry:last-of-type { 
+    margin-bottom: var( --text-margin-bottom ); 
+} 
 
 .section-heading { 
-    margin-bottom: var( --heading-margin-bottom ); 
-    /* font-family: "var( --heading-font-family )";  */
     font-size: var( --heading-font-size ); 
-    font-weight: 900; 
 } 
 
 .section-subheading { 
-    margin-bottom: var( --subheading-margin-bottom ); 
-    font-family: var( --subheading-font-family ); 
     font-size: var( --subheading-font-size ); 
 } 
-
-.section-head-text-entry:last-of-type { 
-    margin-bottom: var( --text-margin-bottom ); 
-
-}

@@ -1,8 +1,10 @@
 {% assign head= include.data.head %}
 {% assign body= include.data.body %} 
 
-<section class= "section building-section">
-    {% include section-head.html head= head %} 
+<section class= "section page-preview-section building-section"> 
+    {% include section-head.html 
+        head= head 
+    %} 
 
     <article> 
         {% include price-block.html 

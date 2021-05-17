@@ -7,6 +7,7 @@ layout: inner-page
 
 
 {% include subheading.html 
+    className= "page-subheading" 
     text= workflow.subheading.text 
 %} 
 
@@ -19,12 +20,14 @@ layout: inner-page
 %} 
 
 {% if workflow.image %} 
-    {% include featured-image.html image= workflow.image %} 
+    {% include featured-image.html 
+        image= workflow.image 
+    %} 
 {% endif %}
 
-<ul>
+<ul class= "entry-list workflow-entry-list"> 
 {% for entry in workflow.entryList %} 
-    <li>
+    <li class= "entry workflow-entry"> 
         {% include workflow-entry.html 
             workflowEntry= entry 
         %} 

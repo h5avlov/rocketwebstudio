@@ -50,16 +50,21 @@
 :root { 
     --heading-margin-bottom: 1em; 
     --heading-font-family: A1SerifBold; 
-    --heading-font-size: 1.5rem;  
+    --heading-font-size: 1.7em;  
+    --heading-subheading-font-size-ratio: 0.5; 
 
-    --subheading-margin-bottom: 1em; 
+    --subheading-margin-bottom: 0.5em; 
     --subheading-font-family: Tahoma; 
-    --subheading-font-size: 0.75rem; 
+    --subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --heading-font-size ) ); 
 
-    --text-margin-bottom: 2rem; 
+    --text-entry-margin-bottom: 0.5em; 
+    --text-margin-bottom: 1em; 
     --text-font-family: Arial; 
     --text-font-size: 14px; 
     --text-line-height: 1.4; 
+
+    --page-heading-font-size: var( --heading-font-size );  
+    --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) ); 
 }
 
 /*-----------------------------------------------------------
