@@ -16,7 +16,7 @@
     background-color: red; 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     font-size: var( --heading-font-size );  
-    /* text-transform: uppercase;  */ 
+    text-transform: capitalize;  
     box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
 
 }

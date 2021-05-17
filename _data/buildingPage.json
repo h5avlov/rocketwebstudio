@@ -1,10 +1,10 @@
 { 
         "heading": { 
-            "text": "Workflow" 
+            "text": "Building" 
         }, 
 
         "subheading": { 
-            "text": "Our Process"
+            "text": "Our Know How" 
 
         }, 
 
@@ -27,7 +27,7 @@
             { 
                 "head": { 
                     "heading": {
-                        "text": "Analysis"
+                        "text": "Design"
                     }
                 }, 
 
@@ -43,7 +43,7 @@
             { 
                 "head": { 
                     "heading": {
-                        "text": "Planning" 
+                        "text": "Code" 
                     }
                 }, 
 
@@ -59,7 +59,7 @@
             { 
                 "head": { 
                     "heading": {
-                        "text": "Building" 
+                        "text": "Copy" 
                     }
                 }, 
 
@@ -75,7 +75,7 @@
             { 
                 "head": { 
                     "heading": {
-                        "text": "Deploying" 
+                        "text": "SEO" 
                     }
                 }, 
 
@@ -86,22 +86,6 @@
                         }
                     ]
                 }
-            }, 
-
-            { 
-                "head": { 
-                    "heading": {
-                        "text": "Improving" 
-                    }
-                }, 
-
-                "body": { 
-                    "paragraphs": [ 
-                        {
-                            "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
-                        }
-                    ]
-                }
-            }
+            } 
         ] 
 }
