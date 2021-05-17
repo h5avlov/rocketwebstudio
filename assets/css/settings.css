@@ -104,7 +104,7 @@
     --button-padding-x: 1.7em; 
     --button-padding-y: ""; 
 
-    --button-border-width: 1px; 
+    --button-border-width: calc( 1 / 12 * 1em ); 
     --button-border-color: red; 
     --button-border-radius: 100px; 
 
