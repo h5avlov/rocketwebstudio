@@ -1,7 +1,8 @@
 .heading { 
     margin-bottom: var( --heading-margin-bottom ); 
     font-family: "var( --heading-font-family )"; 
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    text-align: center; 
 } 
 
 .subheading { 

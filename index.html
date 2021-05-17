@@ -1,12 +1,18 @@
 ---
 layout: front-page 
 label: home 
-title: Home 
+title: Home  
 --- 
 
 
 {% include sell-points.html 
     data= site.data.sellPoints 
+%} 
+
+{% include heading.html 
+    className= "page-heading" 
+    level= 1 
+    text= "Rocket Web Studio" 
 %} 
 
 {% include workflow.html 
