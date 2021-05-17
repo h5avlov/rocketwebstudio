@@ -1,7 +1,4 @@
-@import url( "./workflow-entry.css" ); 
-
-
-.workflow-entry-list { 
+ .overview-page-entry-list { 
     --column-count: 1; 
 
 } 
@@ -10,14 +7,14 @@
     margin-right: 0; 
 } */
 
-.workflow { 
+.overview-page-entry-list { 
     counter-reset: workflow-entry-number; 
 } 
 
-.workflow-entry { 
+.overview-page-entry { 
     counter-increment: workflow-entry-number; 
 } 
 
-.workflow-entry .heading:before { 
+.overview-page-entry .heading:before { 
     content: counter( workflow-entry-number ); 
 } 

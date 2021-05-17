@@ -4,35 +4,7 @@ label: workflow
 title: Workflow 
 ---  
 
-
-{% assign workflow= site.data.workflowPage %} 
-
-
-{% include subheading.html 
-    className= "page-subheading" 
-    text= workflow.subheading.text 
-%} 
-
-{% include page-heading.html 
-    text= workflow.heading.text 
+{% include overview-page.html 
+    classNamePrefix= "workflow-page" 
+    data= site.data.workflowPage 
 %}
-
-{% include text-entry-list.html 
-    paragraphs= workflow.paragraphs 
-%} 
-
-{% if workflow.image %} 
-    {% include featured-image.html 
-        image= workflow.image 
-    %} 
-{% endif %}
-
-<ul class= "entry-list workflow-entry-list"> 
-{% for entry in workflow.entryList %} 
-    <li class= "entry workflow-entry"> 
-        {% include workflow-entry.html 
-            workflowEntry= entry 
-        %} 
-    </li>
-{% endfor %}
-</ul>

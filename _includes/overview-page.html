@@ -1,0 +1,32 @@
+{% assign data= include.data %} 
+{% assign prefix= include.classNamePrefix %} 
+
+
+{% include subheading.html 
+    className= "page-subheading" 
+    text= data.subheading.text 
+%} 
+
+{% include page-heading.html 
+    text= data.heading.text 
+%}
+
+{% include text-entry-list.html 
+    paragraphs= data.paragraphs 
+%} 
+
+{% if data.image %} 
+    {% include featured-image.html 
+        image= data.image 
+    %} 
+{% endif %}
+
+<ul class= "entry-list overview-page-entry-list"> 
+{% for entry in data.entryList %} 
+    <li class= "entry overview-page-entry"> 
+        {% include overview-page-entry.html 
+            entry= entry 
+        %} 
+    </li>
+{% endfor %} 
+</ul>

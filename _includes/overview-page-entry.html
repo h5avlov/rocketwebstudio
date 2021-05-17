@@ -1,17 +1,19 @@
-{% assign head= include.workflowEntry.head %}
-{% assign body= include.workflowEntry.body %}
+{% assign head= include.entry.head %}
+{% assign body= include.entry.body %}
 
 
-<section class= "entry-head workflow-entry-head"> 
+<section class= "entry-head overview-page-entry-head"> 
     {% include heading.html 
-        className= "workflow-entry-heading" 
+        className= "overview-page-entry-heading" 
         level= 3 
         text= head.heading.text 
     %} 
-    {% include button.html text= "Read More" %} 
+    {% include button.html 
+        text= "Read More" 
+    %} 
 </section> 
 
-<section class= "entry-body workflow-entry-body body-expandable"> 
+<section class= "entry-body overview-page-entry-body body-expandable"> 
     {% if body.heading %}
         {% include heading.html 
             level= 3 
