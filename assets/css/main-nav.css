@@ -35,5 +35,9 @@
     display: block; 
     height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
+    font-family: var( --main-nav-font-family ); 
+    font-size: var( --main-nav-font-size ); 
+    /* font-weight: 700;   */ 
+    text-transform: uppercase; 
 
 }
