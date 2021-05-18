@@ -237,7 +237,7 @@
     --contact-heading-font-size: 1.2em; 
 
     --contact-entry-value-margin-bottom: 0.2rem; 
-    --contact-entry-value-font-family: Tahoma; 
+    --contact-entry-value-font-family: "var( --heading-font-family )"; 
     --contact-entry-value-font-size: 1.5em; 
 
     --contact-separator-width: 1px; 

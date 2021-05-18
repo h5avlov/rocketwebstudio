@@ -60,9 +60,9 @@
 /* Single entry value in a contact */ 
 .quick-contact-entry .value { 
     margin-bottom: var( --contact-entry-value-margin-bottom ); 
-    /* font-family: var( --contact-entry-value-font-family );  */ 
-    font-family: "var( --heading-font-family )"; 
+    font-family: var( --contact-entry-value-font-family ); 
     font-size: var( --contact-entry-value-font-size ); 
+    font-weight: 700; 
     /* text-transform: uppercase; */ 
 
 } 
