@@ -17,12 +17,6 @@
             "target": "/building", 
             "text": "Building", 
             "className": "building" 
-        },
-
-        { 
-            "target": "/portfolio", 
-            "text": "Portfolio", 
-            "className": "portfolio" 
         }, 
 
         { 
