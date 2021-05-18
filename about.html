@@ -4,4 +4,14 @@ permalink: /about
 title: About Us
 subtitle: Our Story 
 label: about us 
----
+--- 
+
+<ul class= "entry-list overview-page-entry-list"> 
+{% for entry in site.data.aboutPage.entryList %} 
+    <li class= "entry overview-page-entry"> 
+        {% include overview-page-entry.html 
+            entry= entry 
+        %} 
+    </li>
+{% endfor %} 
+</ul> 
