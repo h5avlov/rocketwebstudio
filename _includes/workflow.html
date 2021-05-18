@@ -3,13 +3,7 @@
         head= include.data.head 
     %} 
 
-    <ul class= "entry-list overview-page-entry-list"> 
-    {% for entry in include.data.entryList %} 
-        <li class= "entry overview-page-entry"> 
-            {% include overview-page-entry.html 
-                entry= entry 
-            %} 
-        </li>
-    {% endfor %} 
-    </ul>
+    {% include overview-entry-list.html 
+        entryList= include.data.entryList 
+    %} 
 </section>
