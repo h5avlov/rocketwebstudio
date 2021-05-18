@@ -40,6 +40,9 @@
 /* Expands form elements to the full width of their holding element */
 .send-message .field {  
     width: 100%; 
+    padding-left: 0.8em;  
+    font-family: var( --text-font-family ); 
+    font-size: 0.8rem; 
 
 } 
 
@@ -49,8 +52,19 @@
 
 .send-message .long-text-field { 
     height: var( --send-message-long-text-field-height ); 
+    padding-top: 0.8em; 
 } 
 
 .send-message-form .button { 
+    display: flex; flex-direction: row-reverse; justify-content: center; 
+    border: none; 
     border-radius: 0; 
+} 
+
+.send-message-form .button:before { 
+    display: block; 
+    margin-left: 0.4em; 
+    font-family: var( --icon-font-family ); 
+    font-size: 1.4em; 
+    content: "\f2c3"; 
 }
