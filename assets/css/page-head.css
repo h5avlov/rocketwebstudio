@@ -1,22 +1,36 @@
+:root { 
+    /* Value of page heading negative bottom margin and compensating it page head bottom border width */ 
+    --page-heading-height-half: calc( var( --page-heading-height ) / 2 ); 
+
+}
+
 .page-head { 
-    margin-bottom: 5rem; 
+    /* Sets vertical distance between page head and the next page section */ 
+    margin-bottom: var( --page-head-margin-bottom ); 
     padding-top: var( --sell-points-padding-y ); 
-    border-bottom-width: 4rem; border-style: solid; border-color: transparent; 
+    /* Fills space, cut under page head after pulling page head bottom border up */
+    border-bottom-width: var( --page-heading-height-half ); border-style: solid; border-color: transparent; 
+    /* Prevents page head background color from colorizing page head bottom border */
     background-clip: padding-box; 
     background-color: red; 
-    color: white; 
+    color: white;
+    /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
+    font-size: var( --page-heading-font-size ); 
+    /* Centers page head text horizontally */
     text-align: center; 
 
 }
 
 .page-heading { 
-    width: var( --page-inner-width ); height: 8rem; line-height: 8rem; 
-    margin-left: auto; margin-right: auto; 
-    margin-bottom: -4rem;  
+    width: var( --page-inner-width ); 
+    /* Sets page heading element height and centers its text vertically */ 
+    height: var( --page-heading-height ); line-height: var( --page-heading-height ); 
+    margin-left: auto; margin-right: auto;  
+    /* Pulls page head element bottom border up */ 
+    margin-bottom: calc( -1 * var( --page-heading-height-half ) );  
     background-color: red; 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
-    font-size: var( --heading-font-size );  
-    text-transform: capitalize;  
+    font-size: 1em; 
     box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
 
-}
+} 
