@@ -1,13 +1,19 @@
-{
-    "heading": { 
-        "text": "Send us a Message" 
-    }, 
+{ 
+    "head": { 
+        "heading": { 
+            "text": "Send us a Message" 
+        }, 
 
-    "paragraphs": [ 
-        { 
-            "text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
-        }
-    ], 
+        "subheading": { 
+            "text": "Dont Hesitate to" 
+        }, 
+
+        "paragraphs": [ 
+            { 
+                "text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+            }
+        ] 
+    }, 
 
     "form": {
 

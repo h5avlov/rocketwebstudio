@@ -63,7 +63,7 @@
     --text-font-size: 14px; 
     --text-line-height: 1.4; 
 
-    --page-heading-font-size: var( --heading-font-size );  
+    --page-heading-font-size: 2em;  
     --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) ); 
 }
 
