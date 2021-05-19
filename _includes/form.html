@@ -1,7 +1,12 @@
 <form class= "form send-message-form" method= "POST"> 
     {% for field in include.fields %}
-        {% include field-holder.html className= field.name field= field %} 
+        {% include field-holder.html 
+            className= field.name 
+            field= field 
+        %} 
     {% endfor %} 
 
-    {% include button.html type= include.button.type text= include.button.text %} 
+    {% include button.html 
+        text= include.button.text 
+    %} 
 </form>

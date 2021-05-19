@@ -1,17 +1,19 @@
-{% assign headingClassName= "footer-section-heading" %}
-{% if include.headingClassName %}
-    {% assign headingClassName= headingClassName | append: " " | append: include.headingClassName %} 
+{% if include.heading %}
+    {% assign headingClassName= "footer-section-heading" %}
+    {% if include.headingClassName %}
+        {% assign headingClassName= headingClassName | append: " " | append: include.headingClassName %} 
+    {% endif %}
+
+    {% include heading.html 
+        className= headingClassName 
+        level= 3 
+        text= include.heading.text 
+    %} 
 {% endif %}
 
-{% include heading.html 
-    className= headingClassName 
-    level= 3 
-    text= include.heading.text 
-%} 
-
-{% for paragraph in include.paragraphs %}
-    {% include paragraph.html 
+{% if include.paragraphs %} 
+    {% include text-entry-list.html 
         className= "footer-section-text-entry" 
-        text= paragraph.text 
+        paragraphs= include.paragraphs 
     %} 
-{% endfor %} 
+{% endif %}
