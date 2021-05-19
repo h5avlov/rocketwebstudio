@@ -1,4 +1,8 @@
-{ 
+{
+    "heading": { 
+        "text": "Reach us" 
+    }, 
+
     "entryList": [
         {
             "type": "phone", 
