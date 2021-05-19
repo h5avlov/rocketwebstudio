@@ -9,7 +9,7 @@
 
 }
 
-.page-head-text-entry { 
+.page-heading { 
     width: var( --page-inner-width ); height: 8rem; line-height: 8rem; 
     margin-left: auto; margin-right: auto; 
     margin-bottom: -4rem;  

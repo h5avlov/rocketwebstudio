@@ -3,9 +3,15 @@
         tagline= site.data.id.tagline 
     %} 
 
-    {% include paragraph.html 
-        className= "page-head-text-entry" 
-        text= include.text 
+    {% if page.subtitle %} 
+        {% include subheading.html 
+            className= "page-subheading" 
+            text= page.subtitle 
+        %} 
+    {% endif %}
+
+    {% include page-heading.html  
+        text= page.title 
     %} 
 
     {% if include.image %}

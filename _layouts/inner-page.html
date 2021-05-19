@@ -7,14 +7,5 @@ layout: default
 %} 
 
 <article class= "page-body"> 
-    {% include subheading.html 
-        className= "page-subheading" 
-        text= page.subtitle 
-    %} 
-    
-    {% include page-heading.html 
-        text= page.title
-    %} 
-
     {{ content }}
 </article>
