@@ -1,10 +1,10 @@
 {% include join-prefix.html 
-    className= "image" 
+    baseClassName= "image" 
     prefixes= include.prefixes 
 %}
 
 <img 
-    class= "{{ outputClassName }}" 
+    class= "{{ prefixClassNames }} {{ include.className }}" 
     src= "{{ include.src }}" 
     alt= "{{ include.alt }}" 
 /> 

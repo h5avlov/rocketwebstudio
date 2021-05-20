@@ -1,14 +1,48 @@
 {% assign articlePage= include.articlePage %} 
 
 
-{% include page-subheading.html text %} 
-{% include heading.html text %} 
-{% include text-entry-list.html paragraphs %} 
+{% include heading.html 
+    level= 1 
+    className= "page-heading" 
+    text= articlePage.heading 
+%} 
+
+{% include text-entry-list.html 
+    className= "page-text-entry" 
+    paragraphs= articlePage.paragraphs  
+%} 
+
+{% if articlePage.image %} 
+    {% include featured-image.html 
+        className= "page-featured-image" 
+        image= articlePage.image 
+    %} 
+{% endif %}
 
 {% for section in articlePage.sections %} 
-    <section class= "section article-page-section"> 
-        {% include section-subheading.html %} 
-        {% include section-heading.html %} 
-        {% include text-entry-list.html %} 
-    </section>
+    <section class= "section article-section {{ section.className | append: '-section' }}"> 
+        {% include heading.html 
+            level= 5 
+            className= "subheading section-subheading" 
+            text= section.subheading 
+        %}
+
+        {% include heading.html 
+            level= 2 
+            className= "section-heading" 
+            text= section.heading 
+        %} 
+
+        {% include text-entry-list.html 
+            className= "section-text-entry" 
+            paragraphs= section.paragraphs  
+        %} 
+
+        {% if section.image %}
+            {% include featured-image.html 
+                className= "section-featured-image" 
+                image= section.image 
+            %} 
+        {% endif %}
+    </section> 
 {% endfor %}

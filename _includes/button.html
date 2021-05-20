@@ -1,10 +1,10 @@
 {% include join-prefix.html 
-    className= "button" 
+    baseClassName= "button" 
     prefixes= include.prefixes 
 %} 
 
 <button 
-    class= "{{ outputClassName }}" 
+    class= "{{ prefixClassNames }} {{ include.className }}" 
     type= "{{ include.type }}"
 >
     {{ include.text }}

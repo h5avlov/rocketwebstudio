@@ -21,7 +21,7 @@
 
 }
 
-.page-heading { 
+.page-head-text-entry { 
     width: var( --page-inner-width ); 
     /* Sets page heading element height and centers its text vertically */ 
     height: var( --page-heading-height ); line-height: var( --page-heading-height ); 

@@ -1,10 +1,10 @@
-.feature-image { 
+.featured-image { 
     background-size: cover; 
     background-position: center; 
 
 } 
 
-.feature-image img { 
+.featured-image img { 
     display: none; 
 
 }

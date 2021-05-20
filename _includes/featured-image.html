@@ -1,10 +1,19 @@
-<figure class= "feature-image{% if include.className %} {{ include.className }}{% endif %}"> 
+{% include join-prefix.html 
+    baseClassName= "featured-image" 
+    prefixes= include.prefixes 
+%}
+
+<figure 
+    class= "{{ prefixClassNames }} {{ include.className }}" 
+> 
     {% include image.html 
         src= include.image.src 
         alt= include.image.alt 
     %} 
 
     {% if include.image.caption %} 
-        <figcaption>{{ include.image.caption }}</figcaption> 
+        <figcaption>
+            {{ include.image.caption }}
+        </figcaption> 
     {% endif %}
 </figure>

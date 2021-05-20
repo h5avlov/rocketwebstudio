@@ -3,10 +3,9 @@ layout: inner-page
 permalink: /about 
 title: About Us
 label: about us 
+type: article-page 
 --- 
 
-{% include block.html 
-    level= 1 
-    block= site.data.articlePage 
-    prefixes= "page about-page" 
+{% include article-page.html 
+    articlePage= site.data.aboutPage 
 %}

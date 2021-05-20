@@ -1,0 +1,27 @@
+.article-page .page-heading { 
+    font-size: var( --article-page-heading-font-size ); 
+
+}
+
+.article-section { 
+    margin-bottom: 0; 
+} 
+
+.article-section + .article-section { 
+    margin-top: var( --article-section-margin-y ); 
+} 
+
+:not( .article-section ) + .article-section { 
+    margin-top: var( --article-sections-margin-y ); 
+
+} 
+
+.article-section + .text-entry { 
+    margin-top: var( --article-sections-margin-y ); 
+} 
+
+.article-section > .section-heading { 
+    font-size: var( --article-section-heading-font-size ); 
+
+}
+

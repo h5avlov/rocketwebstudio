@@ -43,7 +43,7 @@
     margin-bottom: var( --text-margin-bottom ); 
 }  */ 
 
-.page-body .feature-image { 
+.page-body .featured-image { 
     margin-top: 2rem; 
     height: 15rem; 
     background-color: red; 

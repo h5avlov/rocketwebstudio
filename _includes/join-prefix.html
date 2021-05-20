@@ -1,6 +1,9 @@
-{% assign outputClassName= include.className %}  
-{% assign prefixList= include.prefixes | split: " " %}
+{% assign prefixClassNames= include.baseClassName %}  
 
-{% for prefix in prefixList %} 
-    {% assign outputClassName= outputClassName | append: " " | append: prefix | append: "-" | append: include.className %} 
-{% endfor %}  
+{% if include.prefixes %} 
+    {% assign prefixList= include.prefixes | split: " " %}
+
+    {% for prefix in prefixList %} 
+        {% assign prefixClassNames= prefixClassNames | append: " " | append: prefix | append: "-" | append: include.baseClassName %} 
+    {% endfor %}  
+{% endif %}

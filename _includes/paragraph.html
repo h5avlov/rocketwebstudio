@@ -1,10 +1,10 @@
 {% include join-prefix.html 
-    className= "text-entry" 
+    baseClassName= "text-entry" 
     prefixes= include.prefixes 
 %}
 
 <p 
-    class= "{{ outputClassName }}" 
+    class= "{{ prefixClassNames }} {{ include.className }}" 
 >
     {{ include.text }} 
 </p>
