@@ -2,9 +2,9 @@
 {% assign body= include.entry.body %}
 
 
-<section class= "entry-head overview-page-entry-head"> 
+<section class= "entry-head overview-section-entry-head"> 
     {% include heading.html 
-        className= "overview-page-entry-heading" 
+        className= "overview-section-entry-heading" 
         level= 3 
         text= head.heading.text 
     %} 
@@ -13,7 +13,7 @@
     %} 
 </section> 
 
-<section class= "entry-body overview-page-entry-body body-expandable"> 
+<section class= "entry-body overview-section-entry-body body-expandable"> 
     {% if body.heading %}
         {% include heading.html 
             level= 3 

@@ -1,0 +1,16 @@
+.overview-section-entry-list { 
+    --column-count: 1; 
+
+} 
+
+.overview-section-entry-list { 
+    counter-reset: workflow-entry-number; 
+} 
+
+.overview-section-entry { 
+    counter-increment: workflow-entry-number; 
+} 
+
+.overview-section-entry .heading:before { 
+    content: counter( workflow-entry-number ); 
+} 

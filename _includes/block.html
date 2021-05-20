@@ -3,7 +3,7 @@
 
 {% if block.subheading %}
     {% include subheading.html 
-        text= block.subheading 
+        text= block.subheading.text 
         prefixes= include.prefixes 
     %} 
 {% endif %}
@@ -11,7 +11,7 @@
 {% if block.heading %}
     {% include heading.html 
         level= include.level 
-        text= block.heading 
+        text= block.heading.text 
         prefixes= include.prefixes 
     %} 
 {% endif %}

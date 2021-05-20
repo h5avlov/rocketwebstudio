@@ -1,26 +1,26 @@
-@import url( "./overview-page.css" ); 
+@import url( "./overview-section.css" ); 
 
 
-.overview-page-entry { 
+.overview-section-entry { 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
 } 
 
-.overview-page-entry:last-of-type { 
+.overview-section-entry:last-of-type { 
     margin-bottom: 0; 
 }
 
-.overview-page-entry .heading:before { 
+.overview-section-entry .heading:before { 
     display: block;  
 } 
 
-.overview-page-entry-heading { 
+.overview-section-entry-heading { 
     margin-bottom: var( --workflow-entry-heading-margin-bottom ); 
     /* font-family: "var( --heading-font-family )";  */ 
     font-size: var( --workflow-entry-heading-font-size ); 
     text-transform: uppercase; 
 } 
 
-.page-body .overview-page-entry-list { 
+.page-body .overview-section-entry-list { 
     margin-top: 4rem; 
 }
 
