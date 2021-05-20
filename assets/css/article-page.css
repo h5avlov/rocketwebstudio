@@ -1,3 +1,13 @@
+.article-page { 
+    counter-reset: section-number; 
+
+} 
+
+.article-section { 
+    counter-increment: section-number; 
+
+}
+
 .article-page .page-heading { 
     font-size: var( --article-page-heading-font-size ); 
 
@@ -21,7 +31,25 @@
 } 
 
 .article-section > .section-heading { 
+    margin-bottom: 0.5em; 
+    padding-bottom: 1em; 
+    border-bottom: 1px solid; 
     font-size: var( --article-section-heading-font-size ); 
+
+} 
+
+.article-section > .section-heading:before { 
+    display: block; 
+    margin-left: auto; margin-right: auto; 
+    margin-bottom: 0.4em; 
+    width: 1.7em; height: 1.7em; line-height: 1.7em; 
+    border: 1px solid; 
+    border-radius: 50%; 
+    content: counter( section-number ); 
+}
+
+.article-section > .section-subheading { 
+    display: none; 
 
 }
 

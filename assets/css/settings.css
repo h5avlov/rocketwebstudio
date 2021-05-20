@@ -196,7 +196,7 @@
     --article-sections-margin-y: calc( var( --article-sections-to-section-margin-y-ratio ) * var( --article-section-margin-y ) ); 
     --article-section-heading-margin-bottom: 0.75em; 
     --article-page-heading-font-size: var( --page-heading-font-size ); 
-    --article-section-heading-font-size: var( --heading-font-size ); 
+    --article-section-heading-font-size: 1.2rem; 
 
 } 
 

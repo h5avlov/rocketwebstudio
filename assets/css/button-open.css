@@ -4,7 +4,7 @@
     margin-left: auto; margin-right: auto; 
     padding: 0; 
     position: relative; 
-    border-width: var( --button-open-border-width ); 
+    border-width: var( --button-open-border-width ); border: none; 
     color: red; 
     font-size: 1.7rem; 
     text-indent: -10000px; 
