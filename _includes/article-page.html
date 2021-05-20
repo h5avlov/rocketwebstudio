@@ -1,0 +1,14 @@
+{% assign articlePage= include.articlePage %} 
+
+
+{% include page-subheading.html text %} 
+{% include heading.html text %} 
+{% include text-entry-list.html paragraphs %} 
+
+{% for section in articlePage.sections %} 
+    <section class= "section article-page-section"> 
+        {% include section-subheading.html %} 
+        {% include section-heading.html %} 
+        {% include text-entry-list.html %} 
+    </section>
+{% endfor %}

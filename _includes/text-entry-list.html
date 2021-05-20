@@ -1,5 +1,6 @@
 {% for paragraph in include.paragraphs %} 
     {% include paragraph.html 
         text= paragraph.text 
+        prefixes= include.prefixes 
     %} 
 {% endfor %} 

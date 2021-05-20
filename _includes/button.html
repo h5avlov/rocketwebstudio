@@ -1,5 +1,10 @@
+{% include join-prefix.html 
+    className= "button" 
+    prefixes= include.prefixes 
+%} 
+
 <button 
-    class= "button{% if include.className %} {{ include.className }}{% endif %}" 
+    class= "{{ outputClassName }}" 
     type= "{{ include.type }}"
 >
     {{ include.text }}

@@ -1,4 +1,4 @@
-{% assign outputClassName= include.leftClassName %} 
-{% if include.rightClassName %}
-    {% assign outputClassName= outputClassName | append: " " | append: include.rightClassName %} 
+{% assign outputClassName= include.left %} 
+{% if include.right %}
+    {% assign outputClassName= outputClassName | append: " " | append: include.right %} 
 {% endif %} 

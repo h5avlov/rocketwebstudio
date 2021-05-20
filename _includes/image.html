@@ -1,5 +1,10 @@
+{% include join-prefix.html 
+    className= "image" 
+    prefixes= include.prefixes 
+%}
+
 <img 
-    class= "image{% if include.className %} {{ include.className }}{% endif %}" 
+    class= "{{ outputClassName }}" 
     src= "{{ include.src }}" 
     alt= "{{ include.alt }}" 
 /> 

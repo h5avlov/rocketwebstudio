@@ -1,10 +1,10 @@
-{% include concat-class-names.html 
-    leftClassName= "subheading" 
-    rightClassName= include.className 
+{% include join-prefix.html 
+    className= "subheading" 
+    prefixes= include.prefixes 
 %}
 
-{% include heading.html 
-    className= outputClassName 
-    level= 5 
-    text= include.text 
-%} 
+<h5 
+    class= "{{ outputClassName }}" 
+> 
+    {{ include.text }} 
+</h5>

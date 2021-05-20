@@ -1,43 +1,46 @@
-{% assign block = include.block %} 
+{% assign block= include.block %} 
+
 
 {% if block.subheading %}
-    {% include heading.html 
-        level= 5 
-        className= "subheading" 
-        text= block.subheading.text 
+    {% include subheading.html 
+        text= block.subheading 
+        prefixes= include.prefixes 
     %} 
 {% endif %}
 
 {% if block.heading %}
     {% include heading.html 
         level= include.level 
-        text= block.heading.text 
+        text= block.heading 
+        prefixes= include.prefixes 
     %} 
 {% endif %}
 
 {% if block.paragraphs %} 
-    {% for paragraph in block.paragraphs %} 
-        {% include paragraph.html 
-            text= paragraph.text 
-        %} 
-    {% endfor %} 
+    {% include text-entry-list.html 
+        paragraphs= block.paragraphs 
+        prefixes= include.prefixes 
+    %} 
 {% endif %}
 
 {% if block.button %} 
     {% include button.html 
         text= block.button.text 
+        prefixes= include.prefixes 
     %}  
 {% endif %} 
 
 {% if block.image %}
     {% if block.image.type == "featured" %} 
         {% include featured-image.html 
-        image= block.image 
+            image= block.image 
+            prefixes= include.prefixes 
         %}
     {% else %}
         {% include image.html 
             src= block.image.src 
             alt= block.image.alt 
+            prefixes= include.prefixes 
         %}
     {% endif %}
 {% endif %}

@@ -1,5 +1,10 @@
-{% include heading.html 
+{% include join-prefix.html 
     className= "page-heading" 
+    prefix= include.prefix 
+%}
+
+{% include heading.html 
+    className= outputClassName 
     level= 1
     text= include.text 
 %}

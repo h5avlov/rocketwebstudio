@@ -5,7 +5,8 @@ title: About Us
 label: about us 
 --- 
 
-{% include overview-page.html 
-    classNamePrefix= "about-page" 
-    data= site.data.aboutPage 
+{% include block.html 
+    level= 1 
+    block= site.data.articlePage 
+    prefixes= "page about-page" 
 %}

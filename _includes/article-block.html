@@ -1,0 +1,35 @@
+{% for element in include.articleBlock %} 
+    {% assign type= element[ 0 ] %} 
+    {% assign value= element[ 1 ] %} 
+
+    {% case type %} 
+        {% when "heading" %} 
+            {% include heading.html 
+                level= include.level 
+                text= value 
+            %}
+        {% when "subheading" %} 
+            {% include subheading.html 
+                text= value 
+            %}
+        {% when "paragraphs" %} 
+            {% include text-entry-list.html 
+                paragraphs= value 
+            %} 
+        {% when "image" %} 
+            {% include featured-image.html 
+                image= value 
+            %}
+        {% when "sections" %} 
+            {% assign level= include.level | plus: 1 %} 
+
+            {% for section in value %} 
+                <section class= "section page-section"> 
+                    {% include article-block.html  
+                        articleBlock= section 
+                        level= level 
+                    %} 
+                </section> 
+            {% endfor %} 
+    {% endcase %}
+{% endfor %}

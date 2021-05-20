@@ -1,5 +1,10 @@
+{% include join-prefix.html 
+    className= "heading" 
+    prefixes= include.prefixes 
+%} 
+
 <h{{ include.level }} 
-    class= "heading{% if include.className %} {{ include.className }}{% endif %}"   
+    class= "{{ outputClassName }}"  
 >
     {{ include.text }}
 </h{{ include.level }}> 
