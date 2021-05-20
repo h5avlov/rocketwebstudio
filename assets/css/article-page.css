@@ -1,43 +1,65 @@
+/* Resets a counter to number article sections */
 .article-page { 
     counter-reset: section-number; 
-
 } 
 
+/* Each section increments the counter */
 .article-section { 
     counter-increment: section-number; 
+} 
 
+/* Sets current section number */
+.article-section > .section-heading:before { 
+    content: counter( section-number ); 
 }
 
 .article-page .page-heading { 
     font-size: var( --article-page-heading-font-size ); 
-
 }
 
+/* Overrides setting section distance with bottom margin */
 .article-section { 
     margin-bottom: 0; 
 } 
 
+/* Sets sections vertical distance */
 .article-section + .article-section { 
     margin-top: var( --article-section-margin-y ); 
 } 
 
+/* Separates section sequence from elements preceding it, no matter what the element is */ 
 :not( .article-section ) + .article-section { 
     margin-top: var( --article-sections-margin-y ); 
-
 } 
 
+/* Separates section sequence from text entries following it */ 
 .article-section + .text-entry { 
     margin-top: var( --article-sections-margin-y ); 
 } 
 
+/* Specifies the first article section as open by default */
+.article-section:first-of-type .section-body { 
+    width: 100%; height: auto; 
+    padding-top: 1.4em; 
+    position: initial; 
+
+} 
+
+/* Hides the button to open the first article section, because there is no need of it */
+.article-section:first-of-type .button-open { 
+    display: none; 
+
+}
+
 .article-section > .section-heading { 
     margin-bottom: 0.5em; 
-    padding-bottom: 1em; 
+    padding-bottom: 0.7em; 
     border-bottom: 1px solid; 
     font-size: var( --article-section-heading-font-size ); 
 
 } 
 
+/* Styles section number */ 
 .article-section > .section-heading:before { 
     display: block; 
     margin-left: auto; margin-right: auto; 
@@ -45,11 +67,10 @@
     width: 1.7em; height: 1.7em; line-height: 1.7em; 
     border: 1px solid; 
     border-radius: 50%; 
-    content: counter( section-number ); 
 }
 
+/* Hides section sibheading */
 .article-section > .section-subheading { 
     display: none; 
-
 }
 
