@@ -1,31 +1,23 @@
-<section class= "quick-contact"> 
-    {% include footer-section-head.html 
-        heading= site.data.contacts.heading 
-        headingClassName= "quick-contact-heading" 
-        paragraphs= site.data.contacts.paragraphs 
-    %}
+<section class= "entry-set quick-contact-entry-set"> 
+{% for contact in include.contactEntryList %} 
+    <article class= "entry quick-contact-entry contact {{ contact.type }} has-icon"> 
+        {% include heading.html 
+            className= "contact-heading" 
+            level= 3 
+            text= contact.title 
+        %} 
 
-    <section class= "entry-set quick-contact-entry-set"> 
-    {% for contact in include.contacts.entryList %} 
-        <article class= "entry quick-contact-entry contact {{ contact.type }} has-icon"> 
-            {% include heading.html 
-                className= "contact-heading" 
-                level= 3 
-                text= contact.title 
-            %} 
-
-            <ul class= "entry-list contact-entry-list {{ contact.type | append: '-entry-list' }}"> 
-            {% for entry in contact.entryList %} 
-                <li class= "entry contact-entry {{ contact.type | append: '-entry' }}"> 
-                    {% include contact-entry.html 
-                        key= entry.key 
-                        value= entry.value 
-                        text= entry.text 
-                    %}
-                </li>
-            {% endfor %}
-            </ul> 
-        </article>
-    {% endfor %} 
-    </section>
-</section> 
+        <ul class= "entry-list contact-entry-list {{ contact.type | append: '-entry-list' }}"> 
+        {% for entry in contact.entryList %} 
+            <li class= "entry contact-entry {{ contact.type | append: '-entry' }}"> 
+                {% include contact-entry.html 
+                    key= entry.key 
+                    value= entry.value 
+                    text= entry.text 
+                %}
+            </li>
+        {% endfor %}
+        </ul> 
+    </article>
+{% endfor %} 
+</section>

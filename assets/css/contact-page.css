@@ -1,0 +1,32 @@
+.contact-section .quick-contact-entry-set { 
+    --column-count: 1; 
+
+} 
+
+.contact-section .quick-contact-entry-set { 
+    flex-direction: column; 
+
+} 
+
+.contact-section .quick-contact-entry { 
+    padding-top: 1.4rem;  
+    
+} 
+
+.contact-section .quick-contact-entry:not( :last-child ) { 
+    padding-bottom: 1.7rem; 
+}
+
+.contact-section .quick-contact-entry:not( :last-child ):after { 
+    width: 100%; 
+    /* Sets separator height */
+    height: 1px; 
+    /* Positions separator absolutely and centers it vertically */
+    bottom: 0; top: auto; transform: none;  
+  
+}
+
+.contact-page { 
+    text-align: center; 
+
+} 

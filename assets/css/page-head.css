@@ -15,7 +15,7 @@
     background-color: red; 
     color: white;
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
-    font-size: var( --page-heading-font-size ); 
+    font-size: var( --page-head-font-size ); 
     /* Centers page head text horizontally */
     text-align: center; 
 
@@ -31,6 +31,7 @@
     background-color: red; 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     font-size: 1em; 
+    text-transform: uppercase; 
     box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
 
 } 

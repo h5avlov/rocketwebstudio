@@ -13,7 +13,7 @@
 .page-body { 
     width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
-    text-align: center; 
+    /* text-align: center;  */ 
 } 
 
 .page-heading { 
@@ -24,7 +24,7 @@
     font-size: var( --page-subheading-font-size ); 
 } 
 
-.page-body .text-entry { 
+.article-section .text-entry { 
     text-align: left; 
 } 
 

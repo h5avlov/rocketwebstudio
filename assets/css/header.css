@@ -3,6 +3,11 @@
 @import url( "./quick-contact.css" ); 
 
 
+.site-header { 
+    position: relative; 
+
+} 
+
 .site-header .id, 
 .site-header .quick-contact { 
     display: none; 
