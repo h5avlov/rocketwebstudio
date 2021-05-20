@@ -1,0 +1,22 @@
+.button-open { 
+    display: block; 
+    width: 1.4em; height: 1.4em; line-height: 1.4em; 
+    margin-left: auto; margin-right: auto; 
+    padding: 0; 
+    position: relative; 
+    border-width: var( --button-open-border-width ); 
+    color: red; 
+    font-size: 1.7rem; 
+    text-indent: -10000px; 
+    overflow: hidden; 
+} 
+
+.button-open:before { 
+    box-sizing: border-box; 
+    display: block; 
+    width: 100%; height: 100%; 
+    position: absolute; left: 0; top: 0;
+    content: "+"; 
+    text-indent: 0; 
+
+}

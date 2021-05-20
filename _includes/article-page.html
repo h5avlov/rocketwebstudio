@@ -33,16 +33,23 @@
             text= section.heading 
         %} 
 
-        {% include text-entry-list.html 
-            className= "section-text-entry" 
-            paragraphs= section.paragraphs  
+        {% include button.html 
+            className= "button-open button-open-section-body" 
+            text= "Read More" 
         %} 
 
-        {% if section.image %}
-            {% include featured-image.html 
-                className= "section-featured-image" 
-                image= section.image 
+        <section class= "section-body body-expandable"> 
+            {% include text-entry-list.html 
+                className= "section-text-entry" 
+                paragraphs= section.paragraphs  
             %} 
-        {% endif %}
+
+            {% if section.image %}
+                {% include featured-image.html 
+                    className= "section-featured-image" 
+                    image= section.image 
+                %} 
+            {% endif %} 
+        </section>
     </section> 
 {% endfor %}
