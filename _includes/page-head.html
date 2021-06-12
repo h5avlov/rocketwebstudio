@@ -15,9 +15,10 @@
         text= page.title 
     %} 
 
-    {% if include.nav %}
+    {% if page.nav %}
         {% include nav.html 
-            data= include.nav 
+            className= "page-nav" 
+            data= page.nav 
         %} 
     {% endif %}
 
