@@ -15,6 +15,12 @@
         text= page.title 
     %} 
 
+    {% if include.nav %}
+        {% include nav.html 
+            data= include.nav 
+        %} 
+    {% endif %}
+
     {% if include.image %}
         {% include featured-image.html 
             image= include.image 
