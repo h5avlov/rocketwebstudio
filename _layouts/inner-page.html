@@ -2,7 +2,17 @@
 layout: default 
 ---
 
-{% include page-head.html %} 
+{% assign pageData= site.data[ page.dataFileName ] %}
+{% if pageData.pageNav %}
+    {% assign pageNavEntryList= pageData.sections | map: "name" %} 
+{% endif %}
+
+{% include page-head.html 
+    idTagline= site.data.id.tagline 
+    title= page.title 
+    subtitle= page.subtitle 
+    pageNavEntryList= pageNavEntryList 
+%} 
 
 <article class= "page-body"> 
     {{ content }}
