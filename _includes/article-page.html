@@ -20,7 +20,14 @@
 {% endif %}
 
 {% for section in articlePage.sections %} 
-    <section class= "section article-section {{ section.name | append: '-section' }}"> 
+    {% assign sectionName= section.name | append: "-section" %} 
+
+    <section 
+        {% if articlePage.pageNav %}
+            id= "{{ sectionName }}"
+        {% endif %} 
+        class= "section article-section {{ sectionName }}"
+    > 
         {% include heading.html 
             level= 5 
             className= "subheading section-subheading" 
