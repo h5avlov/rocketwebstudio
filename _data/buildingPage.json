@@ -17,9 +17,13 @@
 
     }, 
 
+    "pageNav": true, 
+
     "sections": [
         { 
-            "className": "design", 
+            "name": { 
+                "default": "design" 
+            }, 
             "subheading": "Looking Good", 
             "heading": "Design",  
             "paragraphs": [ 
@@ -35,8 +39,10 @@
 
         }, 
 
-        { 
-            "className": "code", 
+        {  
+            "name": { 
+                "default": "code" 
+            },
             "subheading": "Working Right", 
             "heading": "Code",  
             "paragraphs": [ 
@@ -53,7 +59,9 @@
         }, 
 
         { 
-            "className": "copy", 
+            "name": { 
+                "default": "copy" 
+            },
             "subheading": "Talking to Whom Matters", 
             "heading": "Copy",  
             "paragraphs": [ 
@@ -70,7 +78,9 @@
         }, 
 
         { 
-            "className": "seo", 
+            "name": { 
+                "default": "seo" 
+            },
             "subheading": "Climbing the Rankings", 
             "heading": "SEO",  
             "paragraphs": [ 
