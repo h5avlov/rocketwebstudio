@@ -1,0 +1,10 @@
+<ul> 
+{% for name in include.pageNavEntryList %} 
+    <li> 
+        {% include inner-link.html
+            targetSectionID= name.default 
+            text= name.default 
+        %} 
+    </li>
+{% endfor %} 
+</ul>
