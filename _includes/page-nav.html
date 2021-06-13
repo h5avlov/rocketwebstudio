@@ -1,5 +1,7 @@
 <ul class= "entry-list page-nav"> 
 {% for name in include.pageNavEntryList %} 
+    {% assign targetSectionID= name.default | append: "-section" %} 
+
     {% if name.alias %}
         {% assign text= name.alias %} 
     {% else %} 
@@ -9,7 +11,7 @@
 
     <li class= "entry page-nav-entry"> 
         {% include inner-link.html
-            targetSectionID= name.default 
+            targetSectionID= targetSectionID 
             text= text 
         %} 
     </li>
