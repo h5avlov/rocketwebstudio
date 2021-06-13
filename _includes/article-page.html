@@ -20,7 +20,7 @@
 {% endif %}
 
 {% for section in articlePage.sections %} 
-    {% assign sectionName= section.name | append: "-section" %} 
+    {% assign sectionName= section.name.default | append: "-section" %} 
 
     <section 
         {% if articlePage.pageNav %}
