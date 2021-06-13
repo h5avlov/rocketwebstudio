@@ -1,25 +1,27 @@
 <section class= "page-head"> 
-    {% include id.html 
-        tagline= include.idTagline 
-    %} 
-
-    {% if include.subtitle %} 
-        {% include subheading.html 
-            className= "page-subheading" 
-            text= include.subtitle 
+    <section class= "text-content page-head-text-content"> 
+        {% include id.html 
+            tagline= include.idTagline 
         %} 
-    {% endif %}
 
-    {% include paragraph.html  
-        className= "page-head-text-entry" 
-        text= include.title 
-    %} 
+        {% if include.subtitle %} 
+            {% include subheading.html 
+                className= "page-subheading" 
+                text= include.subtitle 
+            %} 
+        {% endif %}
 
-    {% if include.pageNavEntryList %}
-        {% include page-nav.html 
-            pageNavEntryList= include.pageNavEntryList 
+        {% include paragraph.html  
+            className= "page-head-text-entry" 
+            text= include.title 
         %} 
-    {% endif %}
+
+        {% if include.pageNavEntryList %}
+            {% include page-nav.html 
+                pageNavEntryList= include.pageNavEntryList 
+            %} 
+        {% endif %}
+    </section>
 
     {% if include.image %}
         {% include featured-image.html 
