@@ -5,6 +5,7 @@
     {% else %} 
         {% assign text= name.default %} 
     {% endif %} 
+    {% assign text= text | capitalize %} 
 
     <li class= "entry page-nav-entry"> 
         {% include inner-link.html
