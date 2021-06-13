@@ -1,24 +1,23 @@
 <section class= "page-head"> 
     {% include id.html 
-        tagline= site.data.id.tagline 
+        tagline= include.idTagline 
     %} 
 
-    {% if page.subtitle %} 
+    {% if include.subtitle %} 
         {% include subheading.html 
             className= "page-subheading" 
-            text= page.subtitle 
+            text= include.subtitle 
         %} 
     {% endif %}
 
     {% include paragraph.html  
         className= "page-head-text-entry" 
-        text= page.title 
+        text= include.title 
     %} 
 
-    {% if page.nav %}
-        {% include nav.html 
-            className= "page-nav" 
-            data= page.nav 
+    {% if include.pageNavEntryList %}
+        {% include page-nav.html 
+            pageNavEntryList= include.pageNavEntryList 
         %} 
     {% endif %}
 
