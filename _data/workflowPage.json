@@ -17,9 +17,11 @@
 
     }, 
 
+    "pageNav": true, 
+
     "sections": [
-        { 
-            "className": "analysis", 
+        {  
+            "name": "analysis", 
             "subheading": "Find What is Important", 
             "heading": "Analysis",  
             "paragraphs": [ 
@@ -31,12 +33,12 @@
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
                 } 
 
-            ]
+            ] 
 
         }, 
 
         { 
-            "className": "planning", 
+            "name": "planning", 
             "subheading": "Choosing the Steps", 
             "heading": "Planning",  
             "paragraphs": [ 
@@ -53,7 +55,7 @@
         }, 
 
         { 
-            "className": "building", 
+            "name": "building", 
             "subheading": "Making Something", 
             "heading": "Building",  
             "paragraphs": [ 
@@ -70,7 +72,7 @@
         }, 
 
         { 
-            "className": "deploying", 
+            "name": "deploying", 
             "subheading": "Setting and Starting", 
             "heading": "Deploying",  
             "paragraphs": [ 
@@ -87,7 +89,7 @@
         }, 
 
         { 
-            "className": "improving", 
+            "name": "improving", 
             "subheading": "Starting All Over Again", 
             "heading": "Improving",  
             "paragraphs": [ 
