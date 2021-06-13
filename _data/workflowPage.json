@@ -60,7 +60,8 @@
 
         { 
             "name": { 
-                "default": "building"
+                "default": "building", 
+                "alias": "constructing" 
             }, 
             "subheading": "Making Something", 
             "heading": "Building",  
