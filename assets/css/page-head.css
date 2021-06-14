@@ -1,8 +1,13 @@
-:root { 
+.has-page-nav { 
+    --page-heading-height: 2.5em; 
+
+} 
+
+.page-head { 
     /* Value of page heading negative bottom margin and compensating it page head bottom border width */ 
     --page-heading-height-half: calc( var( --page-heading-height ) / 2 ); 
 
-}
+} 
 
 .page-head { 
     /* Sets vertical distance between page head and the next page section */ 
@@ -28,21 +33,34 @@
     margin-left: auto; margin-right: auto;  
     /* Pulls page head element bottom border up */ 
     margin-bottom: calc( -1 * var( --page-heading-height-half ) );  
-    padding-top: 2.5rem; padding-bottom: 5rem; 
+    padding-top: 2.5rem;   
+
+} 
+
+.has-page-nav .page-head-text-content { 
+    /* Pulls page head element bottom border up */ 
+    margin-bottom: calc( -1 * var( --page-heading-height-half ) ); 
+    padding-bottom: 4rem; 
     background-color: red; 
-    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
 
 }
 
 .page-head-text-entry {  
     /* Sets page heading element height and centers its text vertically */ 
-    /* height: var( --page-heading-height ); line-height: var( --page-heading-height );    */ 
+    height: var( --page-heading-height ); line-height: var( --page-heading-height );    
+    background-color: red; 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     font-size: 1em; 
-    text-transform: uppercase; 
-    /* box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );  */ 
+    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );  
 
 } 
+
+.has-page-nav .page-head-text-entry { 
+    background-color: unset; 
+    box-shadow: none; 
+
+}
 
 .page-nav { 
     --column-width: auto; 
@@ -50,10 +68,9 @@
 
 } 
 
-.page-nav {   
+.page-head .page-nav {   
     justify-content: center; 
-    /* position: absolute; 
-    top: 100%;  */ 
+    margin-top: 3rem; 
     border-style: solid; border-width: 1px 0; border-color: rgba( 255, 255, 255, 0.4 ); 
     font-size: 1rem; 
 
