@@ -20,7 +20,9 @@
 {% endif %}
 
 {% for section in articlePage.sections %} 
-    {% assign sectionName= section.name.default | append: "-section" %} 
+    {% assign sectionKey= section[ 0 ] %}
+    {% assign sectionData= section[ 1 ] %} 
+    {% assign sectionName= sectionKey | append: "-section" %} 
 
     <section 
         {% if articlePage.pageNav %}
@@ -31,13 +33,13 @@
         {% include heading.html 
             level= 5 
             className= "subheading section-subheading" 
-            text= section.subheading 
+            text= sectionData.subheading 
         %}
 
         {% include heading.html 
             level= 2 
             className= "section-heading" 
-            text= section.heading 
+            text= sectionData.heading 
         %} 
 
         {% include button.html 
@@ -48,13 +50,13 @@
         <section class= "section-body body-expandable"> 
             {% include text-entry-list.html 
                 className= "section-text-entry" 
-                paragraphs= section.paragraphs  
+                paragraphs= sectionData.paragraphs  
             %} 
 
             {% if section.image %}
                 {% include featured-image.html 
                     className= "section-featured-image" 
-                    image= section.image 
+                    image= sectionData.image 
                 %} 
             {% endif %} 
         </section>

@@ -2,10 +2,23 @@
 layout: default 
 ---
 
-{% assign pageData= site.data[ page.dataFileName ] %}
+
+{% assign pageData= site %} 
+{% assign pageDataLocation = layout.dataLocation | append: "." | append: page.dataFileName | split: "." %} 
+
+{% for levelDown in pageDataLocation %} 
+    {% assign pageData= pageData[ levelDown ] %} 
+{% endfor %}
+
 {% if pageData.pageNav %}
-    {% assign pageNavEntryList= pageData.sections | map: "name" %} 
-{% endif %}
+    {% assign pageNavEntryString= "" %} 
+    {% for section in pageData.sections %} 
+        {% assign pageNavEntryString= pageNavEntryString | append: section[ 0 ] | append: " " %} 
+    {% endfor %} 
+
+    {% assign pageNavEntryList= pageNavEntryString | split: " " %} 
+{% endif %} 
+
 
 {% include page-head.html 
     idTagline= site.data.id.tagline 

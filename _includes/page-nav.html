@@ -1,13 +1,7 @@
 <ul class= "entry-list page-nav"> 
 {% for name in include.pageNavEntryList %} 
-    {% assign targetSectionID= name.default | append: "-section" %} 
-
-    {% if name.alias %}
-        {% assign text= name.alias %} 
-    {% else %} 
-        {% assign text= name.default %} 
-    {% endif %} 
-    {% assign text= text | capitalize %} 
+    {% assign targetSectionID= name | append: "-section" %} 
+    {% assign text= name | capitalize %} 
 
     <li class= "entry page-nav-entry"> 
         {% include inner-link.html
