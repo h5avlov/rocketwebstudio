@@ -1,14 +1,14 @@
 { 
-    "id": 1, 
+    "id": 3, 
     "clientId": 1, 
     "representativeIdList": [
         1, 4 
     ], 
 
-    "title": "Georgi Stoynov Services", 
+    "title": "Clima Energy", 
 
     "image": { 
-        "src": "", 
+        "src": "/", 
         "alt": "Project Screenshot" 
     }, 
 
