@@ -1,0 +1,18 @@
+{% capture body %} 
+
+    <ul>
+    {% for entry in include.body %} 
+
+        <li>{{ entry.role }}</li> 
+
+    {% endfor %}
+    </ul>
+    
+{% endcapture %} 
+
+{% include project-section.html 
+    name= "roles" 
+    heading= "Roles" 
+    paragraphs= include.paragraphs 
+    body= body 
+%} 

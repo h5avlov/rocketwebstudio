@@ -1,0 +1,21 @@
+{% capture body %} 
+
+    <ul>
+    {% for review in include.reviews %} 
+        {% assign profile= site.data.representatives | where: "id", review.representativeId | first %} 
+        
+        <li>
+            {% include review.html 
+                review= review.body 
+                profile= profile 
+            %} 
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endcapture %}
+
+{% include client-section.html 
+    heading= "Reviews" 
+    body= body 
+%} 

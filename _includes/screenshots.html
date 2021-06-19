@@ -1,0 +1,12 @@
+{% capture body %} 
+
+    {% include nav.html %} 
+    
+{% endcapture %} 
+
+{% include project-section.html 
+    name= "screenshots" 
+    heading= "Screenshots" 
+    paragraphs= include.paragraphs 
+    body= body 
+%} 
