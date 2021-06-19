@@ -1,5 +1,5 @@
 { 
-    "id": 1, 
+    "id": 3, 
     "clientId": 1, 
     "representativeIdList": [
         1, 4 
@@ -8,7 +8,7 @@
     "title": "Elli Bee Therapy Project", 
 
     "image": { 
-        "src": "", 
+        "src": "/", 
         "alt": "Project Screenshot" 
     }, 
 

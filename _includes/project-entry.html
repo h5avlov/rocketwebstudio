@@ -1,27 +1,15 @@
-{% assign projectEntry= include.projectEntry %} 
-
-
-{% include heading.html level= 5 text= "Project" %} 
+{% include heading.html 
+    level= 5 
+    text= "Project" 
+%} 
 
 <section class= "entry-head project-entry-head">  
     <article class= "project-preview"> 
         {% include project-preview.html 
-            projectPreview= projectEntry.head 
+            heading= include.projectEntry.title 
+            description= include.projectEntry.sections.description.paragraphs 
+            image= include.projectEntry.image  
         %} 
     </article> 
 </section>
 
-<section class= "entry-body project-entry-body body-expandable"> 
-    <article class= "project-details"> 
-        {% include project-body.html 
-            clientId= projectEntry.clientId 
-            projectBody= projectEntry.body 
-        %} 
-    </article> 
-
-    {% include button.html 
-        className= "button-close button-close-project-details" 
-        text= "Close" 
-    %} 
-  
-</section>

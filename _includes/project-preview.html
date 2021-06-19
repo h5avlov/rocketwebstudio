@@ -1,14 +1,11 @@
-{% assign head= include.projectPreview %} 
-
-
 <section class= "project-preview-text-content"> 
     {% include heading.html 
         className= "project-preview-heading" 
         level= 3 
-        text= head.heading.text 
+        text= include.heading 
     %} 
 
-    {% for paragraph in head.description %} 
+    {% for paragraph in include.description %} 
         {% include paragraph.html 
             text= paragraph.text 
         %} 
@@ -27,5 +24,5 @@
 </section>
 
 {% include featured-image.html 
-    image= head.image 
+    image= include.image 
 %}
