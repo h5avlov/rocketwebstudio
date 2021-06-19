@@ -5,15 +5,13 @@
         1, 4 
     ], 
 
-    "head": { 
-        "heading": { 
-            "text": "Project Title" 
-        }, 
+    "heading": { 
+        "text": "Project Title" 
+    }, 
 
-        "image": { 
-            "src": "", 
-            "alt": "Project Screenshot" 
-        } 
+    "image": { 
+        "src": "", 
+        "alt": "Project Screenshot" 
     }, 
 
     "pageNav": true, 

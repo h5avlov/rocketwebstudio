@@ -4,7 +4,11 @@ layout: default
 
 
 {% assign pageData= site %} 
-{% assign pageDataLocation = layout.dataLocation | append: "." | append: page.dataFileName | split: "." %} 
+{% if layout.dataLocation %}
+    {% assign pageDataLocation = layout.dataLocation | append: "." | append: page.dataFileName | split: "." %} 
+{% else %} 
+    {% assign pageDataLocation = "data" | append: "." | append: page.dataFileName | split: "." %} 
+{% endif %}
 
 {% for levelDown in pageDataLocation %} 
     {% assign pageData= pageData[ levelDown ] %} 
@@ -22,8 +26,8 @@ layout: default
 
 {% include page-head.html 
     idTagline= site.data.id.tagline 
-    title= page.title 
-    subtitle= page.subtitle 
+    title= pageData.title 
+    subtitle= pageData.subtitle 
     pageNavEntryList= pageNavEntryList 
 %} 
 
