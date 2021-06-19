@@ -1,0 +1,16 @@
+{% assign sectionName= include.name | append: "-section" %}
+
+<section 
+    id= "{{ sectionName }}" 
+    class= "section page-section project-section {{ sectionName }}" 
+> 
+    <h2>{{ include.heading }}</h2> 
+
+    {% include text-entry-list.html 
+        paragraphs= include.paragraphs 
+    %} 
+
+    {% if include.body %} 
+        {{ include.body }} 
+    {% endif %}
+</section> 
