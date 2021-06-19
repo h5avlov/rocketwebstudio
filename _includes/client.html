@@ -1,16 +1,30 @@
-{% assign clientProfile= include.clientProfile %} 
-{% assign occupation= clientProfile.occupation %} 
-  
+{% assign client= site.data.clients | where: id, include.projectId | first %} 
+{% assign representatives= site.data.representatives | where: id, include.projectId %} 
+{% assign reviews= site.data.reviews | where: id, include.projectId %} 
 
-<footer class= "client-details"> 
-    {% include person.html 
-        name= clientProfile.name  
-        picture= clientProfile.picture 
-        role= "client" 
+{% capture body %} 
+
+    {% include client-name.html 
+        name= client.name
     %} 
 
-    {% include occupation.html 
-        job= occupation.job 
-        company= occupation.company 
+    {% include client-description.html 
+        description= client.description 
     %} 
-</footer> 
+
+    {% include representatives.html 
+        representatives= representatives 
+    %} 
+
+    {% include project-reviews.html 
+        reviews= reviews 
+    %}
+     
+{% endcapture %} 
+
+{% include project-section.html 
+    name= "client" 
+    heading= "Client" 
+    paragraphs= include.paragraphs 
+    body= body 
+%} 
