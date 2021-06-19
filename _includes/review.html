@@ -1,10 +1,11 @@
 <article class= "review"> 
     {% include review-body.html 
-        reviewBody= include.client.review 
+        reviewBody= include.review 
     %} 
-    
-    {% include client.html 
-        className= "review-author" 
-        clientProfile= include.client.profile 
-    %} 
+
+    {% include person.html 
+        name= include.profile.name  
+        picture= include.profile.photo 
+        role= "client" 
+    %}
 </article>
