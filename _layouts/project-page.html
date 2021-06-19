@@ -1,0 +1,27 @@
+---
+layout: inner-page 
+dataLocation: data.projects 
+--- 
+
+
+{% assign projectData= site.data.projects[ page.dataFileName ] %} 
+
+
+{% include description.html 
+    paragraphs= projectData.sections.description.paragraphs 
+%} 
+
+{% include roles.html 
+    paragraphs= projectData.sections.roles.paragraphs 
+    body= projectData.sections.roles.body 
+%} 
+
+{% include screenshots.html 
+    paragraphs= projectData.sections.screenshots.paragraphs 
+    body= projectData.sections.screenshots.body 
+%} 
+
+{% include client.html 
+    paragraphs= projectData.sections.client.paragraphs 
+    projectId= projectData.id 
+%} 
