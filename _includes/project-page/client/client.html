@@ -4,25 +4,25 @@
 
 {% capture body %} 
 
-    {% include client-name.html 
+    {% include project-page/client/name/client-name.html 
         name= client.name
     %} 
 
-    {% include client-description.html 
+    {% include project-page/client/description/client-description.html 
         description= client.description 
     %} 
 
-    {% include representatives.html 
+    {% include project-page/client/representatives/representatives.html 
         representatives= representatives 
     %} 
 
-    {% include project-reviews.html 
+    {% include project-page/client/reviews/project-reviews.html 
         reviews= reviews 
     %}
      
 {% endcapture %} 
 
-{% include project-section.html 
+{% include project-page/project-section.html 
     name= "client" 
     heading= "Client" 
     paragraphs= include.paragraphs 
