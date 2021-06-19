@@ -1,0 +1,12 @@
+{% capture body %} 
+
+    {% include paragraph.html 
+        text= include.name 
+    %} 
+
+{% endcapture %}
+
+{% include client-section.html 
+    heading= "Name"
+    body= body 
+%} 

@@ -1,0 +1,18 @@
+{% capture body %} 
+
+    <ul>
+    {% for representative in include.representatives %} 
+        <li>
+            {% include representative.html 
+                representative= representative 
+            %} 
+        </li>
+    {% endfor %} 
+    </ul>
+
+{% endcapture %}
+
+{% include client-section.html 
+    heading= "Representatives" 
+    body= body 
+%} 

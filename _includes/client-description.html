@@ -1,0 +1,12 @@
+{% capture body %} 
+
+    {% include text-entry-list.html 
+        paragraphs= include.description 
+    %}
+
+{% endcapture %}
+
+{% include client-section.html 
+    heading= "Description" 
+    body= body 
+%} 

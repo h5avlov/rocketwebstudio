@@ -1,0 +1,10 @@
+<h3>{{ include.representative.name }}</h3> 
+
+{% include image.html 
+    src= include.representative.photo.src
+    alt= include.representative.photo.alt 
+%} 
+
+{% include text-entry-list.html 
+    paragraphs= include.representative.information 
+%}
