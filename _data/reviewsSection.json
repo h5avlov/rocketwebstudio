@@ -1,19 +1,17 @@
 {
-    "head": {
-        "heading": { 
-            "text": "Reviews" 
-        }, 
+    "heading": { 
+        "text": "Reviews" 
+    }, 
 
-        "subheading": { 
-            "text": "Our Clients" 
+    "subheading": { 
+        "text": "Our Clients" 
 
-        }, 
+    }, 
 
-        "paragraphs": [ 
-            {
-                "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-            }
-        ]
-    } 
+    "paragraphs": [ 
+        {
+            "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+        }
+    ] 
 
 }

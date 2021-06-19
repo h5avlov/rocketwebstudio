@@ -4,14 +4,15 @@
     %} 
 
     <ul class= "entry-list review-entry-list"> 
-    {% for entry in include.clients %} 
-        {% if entry.review %} 
-            <li class= "entry review-entry entry-expandable"> 
-                {% include review-entry.html 
-                    client= entry 
-                %} 
-            </li> 
-        {% endif %}
+    {% for review in include.body %} 
+        {% assign profile= site.data.representatives | where: "id", review.representativeId | first %} 
+
+        <li class= "entry review-entry entry-expandable"> 
+            {% include review.html 
+                review= review.body 
+                profile= profile 
+            %} 
+        </li> 
     {% endfor %}
     </ul>
 </section>
