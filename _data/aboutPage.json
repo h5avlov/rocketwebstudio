@@ -14,11 +14,8 @@
 
     "pageNav": true, 
 
-    "sections": [
-        { 
-            "name": { 
-                "default": "education" 
-            }, 
+    "sections": { 
+        "education": { 
             "subheading": "Our Training", 
             "heading": "Education",  
             "paragraphs": [ 
@@ -30,10 +27,7 @@
 
         }, 
 
-        { 
-            "name": { 
-                "default": "experience" 
-            }, 
+        "experience": { 
             "subheading": "Our Work History", 
             "heading": "Experience",  
             "paragraphs": [ 
@@ -45,10 +39,7 @@
 
         }, 
 
-        { 
-            "name": { 
-                "default": "skills" 
-            }, 
+        "skills": { 
             "subheading": "Our Mastery", 
             "heading": "Skills",  
             "paragraphs": [ 
@@ -64,6 +55,6 @@
 
         } 
 
-    ] 
+    } 
 
 }

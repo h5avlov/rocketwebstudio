@@ -19,11 +19,8 @@
 
     "pageNav": true, 
 
-    "sections": [
-        { 
-            "name": { 
-                "default": "design" 
-            }, 
+    "sections": { 
+        "design": { 
             "subheading": "Looking Good", 
             "heading": "Design",  
             "paragraphs": [ 
@@ -39,10 +36,7 @@
 
         }, 
 
-        {  
-            "name": { 
-                "default": "code" 
-            },
+        "code": {  
             "subheading": "Working Right", 
             "heading": "Code",  
             "paragraphs": [ 
@@ -58,10 +52,7 @@
 
         }, 
 
-        { 
-            "name": { 
-                "default": "copy" 
-            },
+        "copy": { 
             "subheading": "Talking to Whom Matters", 
             "heading": "Copy",  
             "paragraphs": [ 
@@ -77,10 +68,7 @@
 
         }, 
 
-        { 
-            "name": { 
-                "default": "seo" 
-            },
+        "seo": { 
             "subheading": "Climbing the Rankings", 
             "heading": "SEO",  
             "paragraphs": [ 
@@ -96,6 +84,6 @@
 
         } 
 
-    ]
+    }
 
 }
