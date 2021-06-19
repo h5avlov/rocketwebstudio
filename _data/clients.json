@@ -1,122 +1,21 @@
 [ 
     { 
         "id": 1, 
-        "projectId": 1, 
+        "projectIdList": [
+            1 
+        ], 
 
-        "profile": { 
-            "name": "Damon Salvatore",  
-            "picture": { 
-                "src": "", 
-                "alt": "Damon Riding His Chevrolet Torque" 
-            }, 
+        "name": "Vampire Solutions", 
 
-            "occupation": { 
-                "job": "Bloodsucker", 
-                "company": { 
-                    "name": "Vampire Solutions", 
-                    "url": "www.vampiresolutions.com", 
-                    "location": "Canada" 
-                }
+        "description": [ 
+            {
+                "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
             }
-        }, 
+        ], 
 
-        "review": { 
-            "paragraphs": [ 
-                { 
-                    "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
-                }
-            ]
-        }
-    }, 
-
-    { 
-        "id": 2, 
-        "projectId": 2, 
-
-        "profile": { 
-            "name": "Stefan Salvatore",  
-            "picture": { 
-                "src": "", 
-                "alt": "Damon Riding His Chevrolet Torque" 
-            }, 
-
-            "occupation": { 
-                "job": "Bloodsucker", 
-                "company": { 
-                    "name": "Vampire Solutions", 
-                    "url": "www.vampiresolutions.com", 
-                    "location": "Canada" 
-                }
-            }
-        }, 
-
-        "review": { 
-            "paragraphs": [ 
-                { 
-                    "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
-                }
-            ]
-        }
-    }, 
-
-    { 
-        "id": 3, 
-        "projectId": 3, 
-
-        "profile": { 
-            "name": "Elena Guilbert",  
-            "picture": { 
-                "src": "", 
-                "alt": "Damon Riding His Chevrolet Torque" 
-            }, 
-
-            "occupation": { 
-                "job": "Bloodsucker", 
-                "company": { 
-                    "name": "Vampire Solutions", 
-                    "url": "www.vampiresolutions.com", 
-                    "location": "Canada" 
-                }
-            }
-        }, 
-
-        "review": { 
-            "paragraphs": [ 
-                { 
-                    "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
-                }
-            ]
-        }
-    }, 
-
-    { 
-        "id": 4, 
-        "projectId": 4, 
-
-        "profile": { 
-            "name": "Katherine Pierce",  
-            "picture": { 
-                "src": "", 
-                "alt": "Damon Riding His Chevrolet Torque" 
-            }, 
-
-            "occupation": { 
-                "job": "Bloodsucker", 
-                "company": { 
-                    "name": "Vampire Solutions", 
-                    "url": "www.vampiresolutions.com", 
-                    "location": "Canada" 
-                }
-            }
-        }, 
-
-        "review": { 
-            "paragraphs": [ 
-                { 
-                    "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
-                }
-            ]
-        }
-    } 
+        "contacts": { 
+            "website": "www.vampiresolutions.com" 
+        } 
+    }
 
 ]

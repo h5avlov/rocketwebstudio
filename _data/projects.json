@@ -18,8 +18,11 @@
 
     "entryList": [ 
         { 
-            "id": 1, 
+            "id": 3, 
             "clientId": 1, 
+            "representativeIds": [
+                1, 4 
+            ], 
 
             "head": { 
                 "image": { 
