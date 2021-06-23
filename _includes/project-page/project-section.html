@@ -10,6 +10,12 @@
         paragraphs= include.paragraphs 
     %} 
 
+    {% if include.image %} 
+        {% include featured-image.html 
+            image= include.image  
+        %} 
+    {% endif %}
+
     {% if include.body %} 
         {{ include.body }} 
     {% endif %}
