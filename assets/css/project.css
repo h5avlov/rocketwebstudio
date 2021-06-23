@@ -2,3 +2,90 @@
     background-color: brown; 
 
 } */ 
+
+.role-entry-list { 
+    --column-count: 2; 
+
+} 
+
+.role-entry-list .entry:nth-child( 2n ) { 
+    margin-right: 0; 
+} 
+
+.roles-section { 
+    padding-top: 1.8rem; padding-bottom: 2rem; 
+    padding-left: 50%; 
+    position: relative; 
+
+} 
+
+.project-section.roles-section .heading { 
+    text-align: left; 
+
+}
+
+
+.roles-section > * { 
+    padding-left: 1.8rem; 
+
+}
+
+.role-entry-list { 
+    margin-top: 1.8rem; 
+
+} 
+
+.role-entry-list .entry { 
+    box-sizing: border-box; 
+    padding-left: 2rem; 
+    border-left: 4px solid; 
+
+} 
+
+.roles-section .featured-image { 
+    width: 50%; height: 100%; 
+    margin-top: 0; 
+    padding-left: 0; 
+    position: absolute; left: 0; top: 0; 
+
+} 
+
+.screenshot-entry-list { 
+    --column-count: 2; 
+    --column-gutter-x-width: 0.25rem; 
+
+} 
+
+.screenshot-entry-list .entry:nth-child( 2n ) { 
+    margin-right: 0; 
+} 
+
+.screenshots-section { 
+    padding-top: 5rem; padding-bottom: 5rem; 
+    padding-right: 50%; 
+    position: relative; 
+
+} 
+
+.screenshots-section > * { 
+    padding-right: 1.8rem; 
+    text-align: right; 
+
+}
+
+.screenshot-entry-list { 
+    width: 50%; height: 100%; 
+    padding-right: 0;  
+    position: absolute; right: 0; top: 0;  
+
+} 
+
+.screenshots-section .screenshot-entry-list { 
+    margin-top: 0; 
+
+}
+
+.screenshot { 
+    background-color: red; 
+
+} 

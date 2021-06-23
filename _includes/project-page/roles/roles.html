@@ -1,9 +1,11 @@
 {% capture body %} 
 
-    <ul>
+    <ul class= "entry-list role-entry-list">
     {% for entry in include.body %} 
 
-        <li>{{ entry.role }}</li> 
+        <li class= "entry role">
+            {{ entry.role }} 
+        </li> 
 
     {% endfor %}
     </ul>

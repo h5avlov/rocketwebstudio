@@ -1,6 +1,16 @@
 {% capture body %} 
 
-    {% include nav.html %} 
+    <ul class= "entry-list screenshot-entry-list">
+    {% for screenshot in include.body %} 
+
+        <li class= "entry screenshot"> 
+            {% include image.html 
+                src= screenshot.src 
+            %} 
+        </li> 
+        
+    {% endfor %} 
+    </ul>
     
 {% endcapture %} 
 
