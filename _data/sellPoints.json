@@ -17,11 +17,7 @@
                 "type": "featured", 
                 "src": "/", 
                 "alt": "Entry Image" 
-            }, 
-            "button": { 
-                "text": "Read More" 
-
-            }
+            } 
         } 
     ]
 
