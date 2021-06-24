@@ -1,6 +1,6 @@
-{% assign client= site.data.clients | where: id, include.projectId | first %} 
-{% assign representatives= site.data.representatives | where: id, include.projectId %} 
-{% assign reviews= site.data.reviews | where: id, include.projectId %} 
+{% assign client= site.data.clients | where: "projectIdList", include.projectId | first %} 
+{% assign representatives= site.data.representatives | where: "projectIdList", include.projectId %} 
+{% assign reviews= site.data.reviews | where: "projectId", include.projectId %} 
 
 {% capture body %} 
 
@@ -15,6 +15,8 @@
     {% include project-page/client/representatives/representatives.html 
         representatives= representatives 
     %} 
+
+    {% assign representativeCount= representatives | size %} 
 
     {% include project-page/client/reviews/project-reviews.html 
         reviews= reviews 
