@@ -1,23 +1,20 @@
-{% include personClassNames.html 
-    basePrefix= "person" 
-    rolePrefix= include.role 
-%} 
-{% include key-value-pair.html 
-    className= nameClassName 
-    key= "name" 
-    value= include.name 
-%} 
-{% if include.picture %} 
-    {% capture picture %} 
-        {% include image.html 
-            src= include.picture.src 
-            alt=include.picture.alt 
-        %}
-    {% endcapture %}
-    
-    {% include key-value-pair.html 
-        className= pictureClassName 
-        key= "picture" 
-        value= picture 
-    %} 
-{% endif %}
+<article class= "person"> 
+    {% assign name= include.name | split: " " | join: "&nbsp;" %} 
+    <h4 class= "heading person-name">{{ name }}</h4> 
+
+    {% if include.photo %} 
+        {% capture picture %} 
+            {% include image.html 
+                className= "person-photo" 
+                src= include.photo.src 
+                alt= include.photo.alt 
+            %}
+        {% endcapture %}
+
+        {% include key-value-pair.html 
+            className= pictureClassName 
+            key= "picture" 
+            value= picture 
+        %} 
+    {% endif %}
+</article>
