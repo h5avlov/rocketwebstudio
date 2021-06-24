@@ -8,7 +8,7 @@
         "name": "Damon Salvatore",  
 
         "photo": { 
-            "src": "", 
+            "src": "/", 
             "alt": "Damon Riding His Chevrolet Torque" 
         }, 
 
@@ -26,15 +26,15 @@
     }, 
 
     { 
-        "id": 4, 
+        "id": 2, 
         "projectIdList": [
-            1 
+            2 
         ], 
 
         "name": "Stefan Salvatore",  
 
         "photo": { 
-            "src": "", 
+            "src": "/", 
             "alt": "Stefan Don't Giving a Fuck" 
         }, 
 
