@@ -1,10 +1,12 @@
-<h3>{{ include.representative.name }}</h3> 
-
-{% include image.html 
-    src= include.representative.photo.src
-    alt= include.representative.photo.alt 
-%} 
-
-{% include text-entry-list.html 
-    paragraphs= include.representative.information 
+{% include person.html 
+    name= include.representative.name 
+    photo= include.representative.photo 
 %}
+
+<section class= "representative-information"> 
+    <h5 class= "heading representative-information-heading">Information</h5> 
+
+    {% include text-entry-list.html 
+        paragraphs= include.representative.information 
+    %} 
+</section>
