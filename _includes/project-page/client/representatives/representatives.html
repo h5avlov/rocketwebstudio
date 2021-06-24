@@ -1,8 +1,8 @@
 {% capture body %} 
 
-    <ul>
+    <ul class= "entry-list representative-entry-list">
     {% for representative in include.representatives %} 
-        <li>
+        <li class= "entry representative"> 
             {% include representative.html 
                 representative= representative 
             %} 

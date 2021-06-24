@@ -1,13 +1,17 @@
 {% capture body %} 
 
-    <ul>
+    <ul class= "entry-list project-review-entry-list"> 
     {% for review in include.reviews %} 
-        {% assign profile= site.data.representatives | where: "id", review.representativeId | first %} 
+        {% assign representative= site.data.representatives | where: "id", review.representativeId | first %} 
         
-        <li>
-            {% include review.html 
-                review= review.body 
-                profile= profile 
+        <li class= "entry project-review"> 
+            {% include review-body.html 
+                reviewBody= review.body 
+            %} 
+
+            {% include person.html 
+                name= representative.name  
+                photo= representative.photo 
             %} 
         </li>
     {% endfor %}
