@@ -16,7 +16,12 @@
             "image": { 
                 "type": "featured", 
                 "src": "/", 
-                "alt": "Entry Image" 
+                "alt": "Sell Points Entry Image" 
+            }, 
+
+            "navAccessible": { 
+                "title": "Design", 
+                "subtitle": "Eye Catching" 
             } 
         } 
     ]

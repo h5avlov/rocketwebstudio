@@ -1,0 +1,17 @@
+<section class= "section page-preview-section product-features-section"> 
+    <h5 class= "heading subheading section-subheading">{{ include.data.subheading.text }}</h5> 
+    <h2 class= "heading section-heading">{{ include.data.heading.text }}</h2> 
+
+    <ul class= "entry-list product-features-entry-list"> 
+    {% for entry in include.data.body %} 
+        <li class= "entry product-feature"> 
+            <p>{{ entry.subheading.text }}</p> 
+            <h3>{{ entry.heading.text }}</h3> 
+
+            {% include button.html 
+                text= "Find Out More" 
+            %}
+        </li>
+    {% endfor %}
+    </ul> 
+</section>

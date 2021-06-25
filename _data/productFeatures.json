@@ -1,0 +1,68 @@
+{ 
+    "heading": { 
+        "text": "Features" 
+    }, 
+
+    "subheading": { 
+        "text": "Our Pros" 
+
+    }, 
+
+    "paragraphs": [ 
+        {
+            "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+        }
+    ], 
+
+    "body": [ 
+        { 
+            "heading": {
+                "text": "Design"
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "Code"
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "Usability" 
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "Copy"
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "SEO"
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }
+    ] 
+}
