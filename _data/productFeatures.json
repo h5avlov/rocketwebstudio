@@ -1,10 +1,10 @@
 { 
     "heading": { 
-        "text": "Features" 
+        "text": "Product Features" 
     }, 
 
     "subheading": { 
-        "text": "Our Pros" 
+        "text": "Our Amazing" 
 
     }, 
 
@@ -38,6 +38,16 @@
         { 
             "heading": {
                 "text": "Usability" 
+            }, 
+
+            "subheading": { 
+                "text": "Not Your Ordinary" 
+            }
+        }, 
+
+        { 
+            "heading": {
+                "text": "Animations" 
             }, 
 
             "subheading": { 

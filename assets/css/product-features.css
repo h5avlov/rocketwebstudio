@@ -1,0 +1,29 @@
+.product-features-entry-list { 
+    --column-count: 3; 
+
+} 
+
+.product-feature:nth-child( 3n ) { 
+    margin-right: 0; 
+} 
+
+.product-feature { 
+    display: flex; flex-direction: column; justify-content: center; 
+    height: 12rem; 
+    background-color: red; 
+    color: white; 
+
+} 
+
+.product-feature-subheading { 
+    margin-bottom: 0.2em; 
+    font-size: 0.9em; 
+
+}
+
+.product-feature-heading { 
+    margin-bottom: 0; 
+    font-size: 1.4em; 
+    line-height: 1; 
+
+}
