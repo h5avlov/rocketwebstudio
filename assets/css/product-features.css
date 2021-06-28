@@ -1,10 +1,17 @@
 .product-features-entry-list { 
-    --column-count: 3; 
+    --column-count: 2; 
+    --column-gutter-x-width: 0rem;  
 
 } 
 
-.entry:nth-child( -n + 3 ) { 
+.product-feature:nth-child( 2n ) { 
+    margin-right: 0; 
+    border-right: none; 
+} 
+
+.entry:nth-child( -n + 2 ) { 
     margin-top: 0; 
+    border-top: none; 
 } 
 
 .product-features-entry-list {
@@ -13,14 +20,12 @@
     background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
 }
 
-.product-feature:nth-child( 3n ) { 
-    margin-right: 0; 
-} 
-
 .product-feature { 
+    box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center; 
     height: 12rem; 
     background-color: rgba( 255, 255, 255, 0.125 ); 
+    border: 1px solid; border-width: 1px 1px 0 0;  
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
     background-size: cover;  */ 
     color: white; 
