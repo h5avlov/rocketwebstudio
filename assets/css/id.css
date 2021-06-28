@@ -26,5 +26,6 @@
 
 .footer .logo { 
     margin-bottom: var( --footer-logo-margin-bottom ); 
+    /* background-color: var( --text-color );  */ 
     background-image: url( "/assets/images/logo-footer.png" ); 
 } 
