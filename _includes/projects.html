@@ -4,7 +4,7 @@
     %} 
 
     <ul class= "entry-list project-entry-list"> 
-    {% for entry in include.body %} 
+    {% for entry in include.body | limit: 1 %} 
         {% assign projectEntry= entry[ 1 ] %} 
 
         <li class= "entry project-entry"> 
