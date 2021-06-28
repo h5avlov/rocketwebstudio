@@ -4,7 +4,9 @@
 
 
 .site-header { 
-    position: relative; 
+    display: flex; flex-direction: row; justify-content: center;
+    width: 100%; 
+    position: absolute; 
 
 } 
 
