@@ -7,20 +7,31 @@
 
 .building-block-entry:nth-child( 4n ) { 
     margin-right: 0; 
+} 
+
+.entry:nth-child( -n + 4 ) { 
+    margin-top: 0; 
 }
 
-.building-block-entry .head { 
+.building-block-entry .entry-head { 
     padding-top: var( --building-block-head-padding-y ); padding-bottom: var( --building-block-head-padding-y ); 
     text-align: center; 
 } 
 
 /* Styles block checkbox */
 .building-block-entry .add-block { 
-    display: inline-block; 
+    display: inline-block; display: none; 
     margin-bottom: var( --building-block-add-block-margin-bottom ); 
     width: var( --building-block-add-block-side ); height: var( --building-block-add-block-side ); 
 
 } 
+
+.building-block-price .price-block-heading { 
+    padding: 0.4em; 
+    background-color: var( --text-color ); 
+    color: white; 
+
+}
 
 /* Hides block body until button click */
 .building-block-entry .body { 
