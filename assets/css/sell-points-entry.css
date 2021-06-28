@@ -1,15 +1,53 @@
 .sell-points-entry { 
-    padding-top: var( --sell-points-entry-padding-top ); padding-bottom: var( --sell-points-entry-padding-bottom ); 
-    padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
-    position: relative; 
+    padding-top: var( --sell-points-padding-y );    
+    padding-bottom: var( --sell-points-padding-y ); 
+    /* padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x );    */ 
+    position: relative;  
     text-align: center; 
 
 } 
 
-.sell-points-entry > * { 
+.sell-points-entry .text-content { 
+    box-sizing: border-box; 
+    width: var( --page-inner-width ); 
+    padding-top: var( --sell-points-entry-padding-top ); 
+    padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
+    /* padding-left: calc( ( 100% - var( --page-inner-width ) ) / 2 ); padding-right: calc( ( 100% - var( --page-inner-width ) ) / 2 );  */
+    padding-bottom: var( --sell-points-entry-padding-bottom ); 
+    /* width: var( --page-inner-width );  */
+    margin-left: auto; margin-right: auto; 
+    /* margin-bottom: calc( -1 * var( --sell-points-padding-y ) );    */
+    position: relative; 
+    /* top: var( --sell-points-padding-y );  */ 
+    z-index: 2; 
+    /* background-color: red;  */
+    /* overflow: hidden;  */ 
+    border: 1px solid rgba( 255, 255, 255, 0.075 ); 
+    box-shadow: 0 0 15px 2px rgba( 0, 0, 0, 0.4 );  
+
+} 
+
+/* .sell-points-entry .text-content .featured-image { 
+    z-index: -1; 
+    background-clip: content-box; 
+
+}  */
+
+/* .sell-points-entry .text-content:after { 
+    display: block; 
+    position: absolute; top: 0; bottom: 0; 
+    left: calc( ( 100% - var( --page-inner-width ) ) / 2 ); right: calc( ( 100% - var( --page-inner-width ) ) / 2 );
+    z-index: 2; 
+    background-color: rgba( 255, 0, 0, 0.4 ); 
+    content: ""; 
+    box-shadow: 0 0 5px 5px rgba( 0, 0, 0, 0.2 );  
+
+} */
+
+/* .sell-points-entry > * { 
     position: relative; z-index: 2; 
 
-}
+} */
 
 .sell-points-entry .heading { 
     margin-bottom: var( --sell-points-entry-heading-margin-bottom ); 
@@ -28,8 +66,10 @@
 
 }  */
 
-.sell-points-entry .feature-image { 
-    width: 100%; height: 100%; 
-    position: absolute; left: 0; top: 0; z-index: 1; 
+.sell-points-entry > .featured-image {  
+    position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; 
+    background-size: cover; 
+    /* background-position: center top;  */ 
+    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
 
-}
+} 

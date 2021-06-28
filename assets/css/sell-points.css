@@ -1,12 +1,12 @@
 @import url( "./sell-points-entry.css" ); 
 
 .sell-points { 
-    padding-top: var( --sell-points-padding-y ); 
-    border-bottom-width: var( --sell-points-padding-y ); border-bottom-style: solid; border-bottom-color: transparent; 
+    /* padding-top: var( --sell-points-padding-y );  */ 
+    padding-bottom: var( --sell-points-padding-y ); 
     margin-bottom: var( --section-margin-bottom ); 
     
-    background-clip: padding-box; 
-    background-color: red; 
+    /* background-clip: padding-box;  */
+    /* background-color: red;  */ 
     color: white; 
 
 } 
@@ -17,12 +17,12 @@
 }
 
 .sell-points-entry-list { 
-    width: var( --page-inner-width ); 
-    margin-left: auto; margin-right: auto; 
-    margin-bottom: calc( -1 * var( --sell-points-padding-y ) ); 
+    /* width: var( --page-inner-width );  */ 
+    /* margin-left: auto; margin-right: auto;  */ 
+    /* margin-bottom: calc( -1 * var( --sell-points-padding-y ) );  */ 
 
-    background-color: red; 
+    /* background-color: red;  */ 
 
-    box-shadow: 0 0 5px 5px rgba( 0, 0, 0, 0.2 ); 
+    /* box-shadow: 0 0 5px 5px rgba( 0, 0, 0, 0.2 );  */
 
 } 

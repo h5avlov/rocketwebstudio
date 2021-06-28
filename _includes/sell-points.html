@@ -6,18 +6,29 @@
     <ul class= "entry-list sell-points-entry-list"> 
     {% for entry in include.data.entryList %} 
         <li class= "entry sell-points-entry"> 
-            {% include id.html 
-                tagline= site.data.id.tagline 
-            %} 
-            
-            {% include block.html 
-                level= 3 
-                block= entry 
-            %} 
+            <section class= "text-content"> 
+                {% include id.html 
+                    tagline= site.data.id.tagline 
+                %} 
+                
+                <h3 class= "heading">{{ entry.heading.text }}</h3> 
 
-            {% include button.html 
-                text= "Read More" 
-            %} 
+                {% include text-entry-list.html 
+                    paragraphs= entry.paragraphs 
+                %} 
+
+                {% include button.html 
+                    text= "Read More" 
+                %} 
+
+                {% include featured-image.html 
+                    image= entry.image 
+                %} 
+            </section> 
+
+            {% include featured-image.html 
+                image= entry.image 
+            %}
         </li> 
     {% endfor %}
     </ul> 

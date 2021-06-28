@@ -37,7 +37,7 @@
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
     font-family: var( --main-nav-font-family ); 
     font-size: var( --main-nav-font-size ); 
-    font-weight: 700; 
+    /* font-weight: 700;  */ 
     text-transform: uppercase; 
 
 }
