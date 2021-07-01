@@ -1,6 +1,13 @@
+.sell-points-entry, 
+.sell-points-entry .text-content { 
+    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
+    background-size: cover; background-position: center top; 
+
+}
+
 .sell-points-entry { 
-    padding-top: var( --sell-points-padding-y );    
-    padding-bottom: var( --sell-points-padding-y ); 
+    /* padding-top: var( --sell-points-padding-y );     */ 
+    /* padding-bottom: var( --sell-points-padding-y );  */ 
     /* padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x );    */ 
     position: relative;  
     text-align: center; 
@@ -18,7 +25,7 @@
     margin-left: auto; margin-right: auto; 
     /* margin-bottom: calc( -1 * var( --sell-points-padding-y ) );    */
     position: relative; 
-    /* top: var( --sell-points-padding-y );  */ 
+    top: var( --sell-points-padding-y );  
     z-index: 2; 
     /* background-color: red;  */
     /* overflow: hidden;  */ 
@@ -27,11 +34,11 @@
 
 } 
 
-/* .sell-points-entry .text-content .featured-image { 
+.sell-points-entry .text-content .featured-image { 
     z-index: -1; 
-    background-clip: content-box; 
+    /* background-clip: content-box;  */ 
 
-}  */
+} 
 
 /* .sell-points-entry .text-content:after { 
     display: block; 
@@ -66,10 +73,10 @@
 
 }  */
 
-.sell-points-entry > .featured-image {  
+.sell-points-entry .featured-image {  
     position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; 
-    background-size: cover; 
+    /* background-size: cover; background-clip: border-box;  */ 
     /* background-position: center top;  */ 
-    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
+    /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
 
 } 

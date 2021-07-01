@@ -9,16 +9,24 @@
 
 } 
 
+.page-head, 
+.has-page-nav .page-head-text-content, 
+:not( .has-page-nav ) > .page-head-text-content .page-head-text-entry  { 
+    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
+    background-size: cover; 
+
+}
+
 .page-head { 
     /* Sets vertical distance between page head and the next page section */ 
     margin-bottom: var( --page-head-margin-bottom ); 
-    padding-top: var( --sell-points-padding-y ); 
+    /* padding-top: var( --sell-points-padding-y );  */ 
     /* Fills space, cut under page head after pulling page head bottom border up */
-    border-bottom-width: var( --page-heading-height-half ); border-style: solid; border-color: transparent; 
+    border-style: solid; border-color: transparent; border-bottom-width: var( --page-heading-height-half ); 
     /* position: relative;  */ 
     /* Prevents page head background color from colorizing page head bottom border */
     background-clip: padding-box; 
-    background-color: red; 
+    background-color: var( --text-color );  
     color: white;
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
     font-size: var( --page-head-font-size ); 
@@ -32,35 +40,49 @@
     /* Centers its text vertically */ 
     margin-left: auto; margin-right: auto;  
     /* Pulls page head element bottom border up */ 
-    margin-bottom: calc( -1 * var( --page-heading-height-half ) );  
+    /* margin-bottom: calc( -1 * var( --page-heading-height-half ) );   */ 
     padding-top: 2.5rem;   
+    position: relative; top: var( --page-heading-height-half ); 
+    /* border: 1px solid rgba( 255, 255, 255, 0.125 ); 
+    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );  */ 
 
 } 
 
 .has-page-nav .page-head-text-content { 
     /* Pulls page head element bottom border up */ 
-    margin-bottom: calc( -1 * var( --page-heading-height-half ) ); 
+    /* margin-bottom: calc( -1 * var( --sell-points-padding-y ) );  */ 
     padding-bottom: 4rem; 
-    background-color: red; 
-    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
+    top: var( --sell-points-padding-y ); 
+    background-color: var( --text-color );  
+
+} 
+
+.page-head.has-page-nav { 
+    border-bottom-width: var( --sell-points-padding-y ); 
 
 }
 
 .page-head-text-entry {  
     /* Sets page heading element height and centers its text vertically */ 
     height: var( --page-heading-height ); line-height: var( --page-heading-height );    
-    background-color: red; 
+    /* background-color: red;  */ 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     font-size: 1em; 
-    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );  
 
 } 
 
-.has-page-nav .page-head-text-entry { 
+.has-page-nav .page-head-text-content, 
+:not( .has-page-nav ) > .page-head-text-content .page-head-text-entry { 
+    border: 1px solid rgba( 255, 255, 255, 0.125 ); 
+    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
+
+}
+
+/* .has-page-nav .page-head-text-entry { 
     background-color: unset; 
     box-shadow: none; 
 
-}
+} */
 
 .page-nav { 
     --column-width: auto; 

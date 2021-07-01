@@ -2,7 +2,7 @@
 
 .sell-points { 
     /* padding-top: var( --sell-points-padding-y );  */ 
-    /* padding-bottom: var( --sell-points-padding-y );  */ 
+    padding-bottom: var( --sell-points-padding-y );  
     margin-bottom: var( --section-margin-bottom ); 
     
     /* background-clip: padding-box;  */
