@@ -1,7 +1,7 @@
 /* Sets number of columns and column gutters */
 .building-block-entry-list { 
     --column-count: 4; 
-    --column-gutter-x-width: 0.2rem; 
+    --column-gutter-x-width: 0.8rem; 
 
 } 
 
@@ -9,8 +9,16 @@
     margin-right: 0; 
 } 
 
-.entry:nth-child( -n + 4 ) { 
+.building-block-entry:nth-child( -n + 4 ) { 
     margin-top: 0; 
+} 
+
+/* Icon inserted in building block element */ 
+.building-block-entry:before { 
+    display: block; 
+    content: "\f383"; 
+    font-family: var( --icon-font-family ); font-size: 1.8em; 
+
 }
 
 .building-block-entry .entry-head { 
@@ -30,6 +38,12 @@
     padding: 0.4em; 
     background-color: var( --text-color ); 
     color: white; 
+
+} 
+
+.building-block-button-open { 
+    /* border: none;  */ 
+    /* border-radius: 0;  */ 
 
 }
 

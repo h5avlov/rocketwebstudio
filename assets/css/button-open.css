@@ -1,18 +1,17 @@
 .button-open { 
-    /* display: block;  */ 
-    /* width: 1.4em; height: 1.4em; line-height: 1.4em;  */ 
-    /* margin-left: auto; margin-right: auto;  */ 
-    /* padding: 0;  */
-    /* position: relative;  */ 
+    display: block;
+    width: 1.4em; height: 1.4em; line-height: 1.4em;  
+    margin-left: auto; margin-right: auto;  
+    padding: 0; 
+    position: relative;  
     border-width: var( --button-open-border-width ); 
-    /* border: none;  */
     /* color: red;  */
-    /* font-size: 1.7rem;  */
-    /* text-indent: -10000px;  */
-    /* overflow: hidden;  */ 
+    font-size: 1.7rem; 
+    text-indent: -10000px; 
+    overflow: hidden;  
 } 
 
-/* .button-open:before { 
+.button-open:before { 
     box-sizing: border-box; 
     display: block; 
     width: 100%; height: 100%; 
@@ -20,4 +19,4 @@
     content: "+"; 
     text-indent: 0; 
 
-} */ 
+} 
