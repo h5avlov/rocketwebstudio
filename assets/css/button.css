@@ -8,7 +8,7 @@
     padding-left: var( --button-padding-x ); padding-right: var( --button-padding-x ); 
 
     /* Sets button border */
-    border-width: var( --button-border-width ); border-style: solid; border-color: inherit; 
+    border-width: var( --button-border-width ); border-style: solid; border-color: unset; 
     border-radius: var( --button-border-radius ); 
 
     /* Sets button color */
