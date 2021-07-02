@@ -3,8 +3,10 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --page-max-width: ""; 
+    --page-max-width: 1920px; 
     --page-inner-width: 960px; 
+    --page-inner-padding-x: 1.2rem; 
+    --page-inner-padding-x-correction: calc( -1 * var( --page-inner-padding-x ) ); 
 
     --header-margin-bottom: 0; 
     --header-padding-top: 1.5rem; 

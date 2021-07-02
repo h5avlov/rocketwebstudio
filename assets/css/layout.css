@@ -1,4 +1,9 @@
 .accessibility-heading { 
     display: none; 
 
+} 
+
+.page { 
+    padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+
 }
