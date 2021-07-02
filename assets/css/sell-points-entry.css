@@ -16,7 +16,7 @@
 
 .sell-points-entry .text-content { 
     box-sizing: border-box; 
-    width: var( --page-inner-width ); 
+    max-width: var( --page-inner-width ); 
     padding-top: var( --sell-points-entry-padding-top ); 
     padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
     /* padding-left: calc( ( 100% - var( --page-inner-width ) ) / 2 ); padding-right: calc( ( 100% - var( --page-inner-width ) ) / 2 );  */
