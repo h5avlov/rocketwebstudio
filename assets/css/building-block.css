@@ -51,4 +51,50 @@
 .building-block-entry .body { 
     height: 0; overflow: hidden; 
 
+} 
+
+
+@media screen and ( max-width: 840px ) and ( min-width: 641px ) { 
+    .building-block-entry-list { 
+        --column-count: 3; 
+    } 
+    
+    .building-block-entry:nth-child( 3n ) { 
+        margin-right: 0; 
+    } 
+    
+    .building-block-entry:nth-child( -n + 3 ) { 
+        margin-top: 0; 
+    } 
+    
+} 
+
+@media screen and ( max-width: 640px ) and ( min-width: 461px )  { 
+    .building-block-entry-list { 
+        --column-count: 2; 
+    } 
+    
+    .building-block-entry:nth-child( 2n ) { 
+        margin-right: 0; 
+    } 
+    
+    .building-block-entry:nth-child( -n + 2 ) { 
+        margin-top: 0; 
+    } 
+    
+} 
+
+@media screen and ( max-width: 460px ) { 
+    .building-block-entry-list { 
+        --column-count: 1; 
+    } 
+    
+    .building-block-entry:nth-child( n ) { 
+        margin-right: 0; 
+    } 
+    
+    .building-block-entry:nth-child( -n + 1 ) { 
+        margin-top: 0; 
+    } 
+    
 }
