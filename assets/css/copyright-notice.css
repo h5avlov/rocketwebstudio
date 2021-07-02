@@ -1,7 +1,7 @@
 .copyright-notice { 
     /* Places elements on a row and centers them */ 
     display: flex; flex-direction: row; justify-content: center; 
-    margin-left: var( --page-inner-padding-x-correction ); margin-right: var( --page-inner-padding-x-correction ); 
+    /* margin-left: var( --page-inner-padding-x-correction ); margin-right: var( --page-inner-padding-x-correction );  */
     padding-top: var( --copyright-notice-padding-y ); padding-bottom: var( --copyright-notice-padding-y ); 
 
     /* Sets copyright notice color */

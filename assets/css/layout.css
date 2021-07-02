@@ -3,7 +3,12 @@
 
 } 
 
-.page { 
+/* .page { 
+    padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+
+} */ 
+
+.main > * > .text-entry { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 
 }
