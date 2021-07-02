@@ -16,14 +16,15 @@
     --main-nav-padding-top: 1.7rem; 
     --main-nav-padding-bottom: 1.4rem; 
     --main-nav-margin-bottom: 0; 
+    --main-nav-font-family: MS-Sans; 
+    --main-nav-font-size: 0.75rem; 
+    --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
+    --main-nav-text-smooth-color: rgb( 128, 128, 128 );      
+    --main-nav-background-color: transparent; 
     --main-nav-link-padding-x: 1.7em; 
     --main-nav-link-padding-y: ""; 
     --main-nav-link-current-mark-height: 2px; 
-    --main-nav-link-current-mark-color: white; 
-    --main-nav-font-family: Arial; 
-    --main-nav-font-size: 0.75rem; 
-    --main-nav-text-color: white; 
-    --main-nav-background-color: transparent; 
+    --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
 
     --header-id-margin-bottom: "";  
 

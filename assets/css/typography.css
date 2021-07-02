@@ -22,6 +22,11 @@
     src: url( "/assets/fonts/A1SerifBold.ttf" ); 
 } 
 
+@font-face {
+    font-family: "var( --main-nav-font-family )"; 
+    src: url( "/assets/fonts/micross.ttf" ); 
+}
+
 
 /* Registers price font */ 
 /* @font-face {
