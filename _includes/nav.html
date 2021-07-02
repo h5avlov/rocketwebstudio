@@ -1,4 +1,4 @@
-<ul class= "entry-list{% if include.className %} {{ include.className }}{% endif %}"> 
+<ul class= "entry-list nav-entry-list{% if include.className %} {{ include.className }}{% endif %}"> 
 {% for entry in include.data %} 
     <li class= "nav-entry {{ entry.className | prepend: 'nav-entry-' }}{% if entry.target == include.current %} nav-entry-current{% endif %}"> 
         {% include link.html 
