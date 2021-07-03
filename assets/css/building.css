@@ -4,6 +4,6 @@
 @import url( "./building-block.css" ); 
 
 
-/* .building-section > .section-head-text-entry:last-of-type { 
+.building-section > .section-head-text-entry:last-of-type { 
     margin-bottom: var( --building-section-text-margin-bottom ); 
-} */ 
+} 
