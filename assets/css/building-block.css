@@ -5,14 +5,6 @@
 
 } 
 
-.building-block-entry:nth-child( 4n ) { 
-    margin-right: 0; 
-} 
-
-.building-block-entry:nth-child( -n + 4 ) { 
-    margin-top: 0; 
-} 
-
 /* Icon inserted in building block element */ 
 .building-block-entry:before { 
     display: block; 
@@ -22,7 +14,8 @@
 }
 
 .building-block-entry .entry-head { 
-    padding-top: var( --building-block-head-padding-y ); padding-bottom: var( --building-block-head-padding-y ); 
+    padding-top: var( --building-block-head-padding-y ); 
+    /* padding-bottom: var( --building-block-head-padding-y );  */ 
     text-align: center; 
 } 
 
@@ -53,6 +46,17 @@
 
 } 
 
+
+@media screen and ( min-width: 841px ) { 
+    .building-block-entry:nth-child( 4n ) { 
+        margin-right: 0; 
+    } 
+    
+    .building-block-entry:nth-child( -n + 4 ) { 
+        margin-top: 0; 
+    } 
+  
+} 
 
 @media screen and ( max-width: 840px ) and ( min-width: 641px ) { 
     .building-block-entry-list { 
