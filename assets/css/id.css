@@ -29,3 +29,11 @@
     /* background-color: var( --text-color );  */ 
     background-image: url( "/assets/images/logo-footer.png" ); 
 } 
+
+
+@media screen and ( max-width: 841px ) { 
+    .id .description { 
+        padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+    } 
+  
+} 
