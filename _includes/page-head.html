@@ -20,6 +20,12 @@
             {% include page-nav.html 
                 pageNavEntryList= include.pageNavEntryList 
             %} 
+        {% endif %} 
+
+        {% if include.image %}
+            {% include featured-image.html 
+                image= include.image 
+            %} 
         {% endif %}
     </section>
 
