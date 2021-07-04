@@ -1,11 +1,11 @@
-<section class= "sell-points"> 
+<section class= "page-head multiple-entry-page-head sell-points"> 
     {% include accessibility-heading.html 
         text= include.data.heading.text 
     %} 
 
-    <ul class= "entry-list sell-points-entry-list"> 
+    <ul class= "entry-list page-head-entry-list sell-points-entry-list"> 
     {% for entry in include.data.entryList %} 
-        <li class= "entry sell-points-entry"> 
+        <li class= "entry page-head-entry sell-points-entry"> 
             <section class= "text-content"> 
                 {% include id.html 
                     tagline= site.data.id.tagline 

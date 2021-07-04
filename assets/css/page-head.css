@@ -9,13 +9,13 @@
 
 } 
 
-.page-head, 
+/* .page-head, 
 .has-page-nav .page-head-text-content, 
 :not( .has-page-nav ) > .page-head-text-content .page-head-text-entry  { 
-    /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
+    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  
     background-size: cover; 
 
-}
+} */
 
 .page-head { 
     /* Sets vertical distance between page head and the next page section */ 

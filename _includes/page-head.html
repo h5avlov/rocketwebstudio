@@ -1,37 +1,39 @@
-<section class= "page-head{% if include.pageNavEntryList %} has-page-nav{% endif %}"> 
-    <section class= "text-content page-head-text-content"> 
-        {% include id.html 
-            tagline= include.idTagline 
-        %} 
-
-        {% if include.subtitle %} 
-            {% include subheading.html 
-                className= "page-subheading" 
-                text= include.subtitle 
+<section class= "page-head single-entry-page-head{% if include.pageNavEntryList %} has-page-nav{% endif %}"> 
+    <article class= "page-head-entry"> 
+        <section class= "text-content page-head-text-content"> 
+            {% include id.html 
+                tagline= include.idTagline 
             %} 
-        {% endif %}
 
-        {% include paragraph.html  
-            className= "page-head-text-entry" 
-            text= include.title 
-        %} 
+            {% if include.subtitle %} 
+                {% include subheading.html 
+                    className= "page-subheading" 
+                    text= include.subtitle 
+                %} 
+            {% endif %}
 
-        {% if include.pageNavEntryList %}
-            {% include page-nav.html 
-                pageNavEntryList= include.pageNavEntryList 
+            {% include paragraph.html  
+                className= "page-head-text-entry" 
+                text= include.title 
             %} 
-        {% endif %} 
+
+            {% if include.pageNavEntryList %}
+                {% include page-nav.html 
+                    pageNavEntryList= include.pageNavEntryList 
+                %} 
+            {% endif %} 
+
+            {% if include.image %}
+                {% include featured-image.html 
+                    image= include.image 
+                %} 
+            {% endif %}
+        </section>
 
         {% if include.image %}
             {% include featured-image.html 
                 image= include.image 
             %} 
-        {% endif %}
-    </section>
-
-    {% if include.image %}
-        {% include featured-image.html 
-            image= include.image 
-        %} 
-    {% endif %}
+        {% endif %} 
+     </article>
 </section>
