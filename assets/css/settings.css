@@ -28,7 +28,8 @@
     --main-nav-link-current-mark-height: 2px; 
     --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
 
-    --header-id-margin-bottom: 2em;  
+    --id-margin-bottom-front-page: 4em;  
+    --id-margin-bottom-inner-page: 0em; 
 
     --section-margin-bottom: 7rem; 
     --heading-margin-bottom: ""; 
@@ -242,8 +243,8 @@
     --sell-points-entry-padding-top: 7rem; 
     --sell-points-entry-padding-bottom: var( --sell-points-entry-padding-top ); 
 
-    --sell-points-entry-heading-margin-bottom: 1.2em; 
-    --sell-points-entry-text-entry-margin-bottom: 1.2em; 
+    --sell-points-entry-heading-margin-bottom: 1em; 
+    --sell-points-entry-text-entry-margin-bottom: 2.5em; 
     --sell-points-entry-text-margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
 
     --sell-points-entry-heading-font-family: "A1SerifBold"; 

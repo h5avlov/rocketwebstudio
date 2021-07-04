@@ -5,3 +5,8 @@
     padding-bottom: 4rem; 
 
 } 
+
+.has-page-nav .page-nav { 
+    margin-top: 0.8em; 
+
+}

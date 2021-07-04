@@ -34,10 +34,10 @@
 } 
 
 /* Sets last paragraph from a sequence of paragraphs to any element following vertical distance */ 
-.text-entry + :not( .text-entry ) { 
+/* .text-entry + :not( .text-entry ) { 
     margin-top: 2rem; 
 
-} 
+}  */ 
 
 /* .text-entry:last-of-type { 
     margin-bottom: var( --text-margin-bottom ); 

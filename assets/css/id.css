@@ -1,6 +1,5 @@
 .logo { 
     display: inline-block; 
-    margin-bottom: 1.2rem; 
     width: var( --logo-width ); height: var( --logo-height ); 
     background-image: url( "/assets/images/logo.png" ); 
     background-size: contain; background-repeat: no-repeat; background-position: center; 
