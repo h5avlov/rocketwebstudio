@@ -68,7 +68,7 @@
 
     --page-head-margin-bottom: 5rem; 
     --page-head-font-size: 2rem; 
-    --page-heading-height: 4em; 
+    --page-heading-height: 5em; 
     --page-heading-font-size: 2rem;  
     --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) ); 
 }

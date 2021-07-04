@@ -1,12 +1,17 @@
-@import url( "./page-nav.css" ); 
+@import url( "./page-head-nav.css" ); 
+@import url( "./page-head-no-nav.css" );  
 
 
 .page-head { 
+    /* Sets a bottom border on page head to compensate for text content moving down and thus prevent it from sticking out of page head */
     border-style: solid; border-color: transparent; border-bottom-width: var( --sell-points-padding-y ); 
+
+    /* Sets distance to next content section */
     margin-bottom: var( --section-margin-bottom ); 
 
-    background-clip: padding-box; 
-    background-color: var( --text-color ); 
+    /* Sets default background color and restricts it from spreading over border */
+    background-color: var( --text-color ); background-clip: padding-box; 
+
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
     font-size: var( --page-head-font-size ); 
     /* Centers page head text horizontally */
@@ -15,20 +20,26 @@
 }
 
 .page-head-text-content { 
+    /* Ensures side padding would not increase text content width over defined inner page width */
     box-sizing: border-box; 
-    /**/
+
+    /* Sets text content width and width limit at inner page width */
     max-width: var( --page-inner-width ); 
-    /* Centers its text vertically */ 
+
+    /* Centers text vertically */ 
     margin-left: auto; margin-right: auto; 
 
+    /* Sets default top and bottom padding */
     padding-top: 4rem; padding-bottom: 4rem; 
 
+    /* Moves page head text content visually out of page head in vertical direction */
     position: relative; top: var( --sell-points-padding-y ); 
 
-    /**/
+    /* Sets default text content background and text colors */ 
     background-color: var( --text-color ); 
     color: var( --text-color-inverted ); 
 
+    /* Applies a border and a drop shadow on page head text content */
     border: 1px solid rgba( 255, 255, 255, 0.4 ); 
     box-shadow: 0 0 15px 5px rgba( 0, 0, 0, 0.4 ); 
    
