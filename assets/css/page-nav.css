@@ -1,21 +1,33 @@
 .page-nav { 
+    /* Removes entry list calculated width */
     --column-width: auto; 
-    --column-gutter-x-width: 0.7em; 
+    /* Removes entry list default column gutter width */
+    --column-gutter-x-width: 0; 
 
 } 
 
-.page-nav {   
-    justify-content: center; 
-    border-style: solid; border-width: 1px 0; border-color: rgba( 255, 255, 255, 0.4 ); 
-    font-size: 1rem; 
-
-} 
-
+/* Removes entry list default entry margin top */
 .page-nav .entry:nth-child( n ) {
     margin-top: 0; 
 } 
 
-.page-nav .entry { 
-    height: 4em; line-height: 4em; 
+.page-nav {   
+    /* Centers navigation entries */
+    justify-content: center; 
+    /* Applies top and bottom border */
+    border-style: solid; 
+    border-top-width: var( --page-nav-border-width ); border-bottom-width: var( --page-nav-border-width ); 
+    border-color: var( --page-nav-border-color ); 
+    /* Sets page navigation font size */ 
+    font-size: var( --page-nav-font-size ); 
 
 } 
+
+.page-nav .inner-link { 
+    display: block; 
+    /* Sets page navigation link vertical size and centers link text vertically */ 
+    height: var( --page-nav-entry-height ); line-height: var( --page-nav-entry-height ); 
+    /* Sets navigation link horizontal size and distance between links */ 
+    padding-left: var( --page-nav-entry-padding-x ); padding-right: var( --page-nav-entry-padding-x ); 
+
+}
