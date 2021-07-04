@@ -1,0 +1,12 @@
+.has-page-nav .page-head-text-content { 
+    padding-bottom: 4rem; 
+
+} 
+
+.page-head-text-entry {  
+    /* Sets page heading element height and centers its text vertically */ 
+    height: var( --page-heading-height ); line-height: var( --page-heading-height );    
+    font-family: "var( --sell-points-entry-heading-font-family )"; 
+    font-size: 1em; 
+
+} 

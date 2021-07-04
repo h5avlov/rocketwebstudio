@@ -1,127 +1,35 @@
-.has-page-nav { 
-    --page-heading-height: 2.5em; 
+@import url( "./page-nav.css" ); 
 
-} 
 
 .page-head { 
-    /* Value of page heading negative bottom margin and compensating it page head bottom border width */ 
-    --page-heading-height-half: calc( var( --page-heading-height ) / 2 ); 
+    border-style: solid; border-color: transparent; border-bottom-width: var( --sell-points-padding-y ); 
+    margin-bottom: var( --section-margin-bottom ); 
 
-} 
-
-/* .page-head, 
-.has-page-nav .page-head-text-content, 
-:not( .has-page-nav ) > .page-head-text-content .page-head-text-entry  { 
-    background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  
-    background-size: cover; 
-
-} */
-
-.page-head { 
-    /* Sets vertical distance between page head and the next page section */ 
-    margin-bottom: var( --page-head-margin-bottom ); 
-    /* padding-top: var( --sell-points-padding-y );  */ 
-    /* Fills space, cut under page head after pulling page head bottom border up */
-    border-style: solid; border-color: transparent; border-bottom-width: var( --page-heading-height-half ); 
-    position: relative;  
-    /* Prevents page head background color from colorizing page head bottom border */
     background-clip: padding-box; 
-    background-color: var( --text-color );  
-    color: white;
+    background-color: var( --text-color ); 
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
     font-size: var( --page-head-font-size ); 
     /* Centers page head text horizontally */
     text-align: center; 
 
-} 
+}
 
 .page-head-text-content { 
-    width: var( --page-inner-width ); 
+    box-sizing: border-box; 
+    /**/
+    max-width: var( --page-inner-width ); 
     /* Centers its text vertically */ 
-    margin-left: auto; margin-right: auto;  
-    /* Pulls page head element bottom border up */ 
-    /* margin-bottom: calc( -1 * var( --page-heading-height-half ) );   */ 
-    padding-top: 2.5rem;   
-    position: relative; top: var( --page-heading-height-half ); 
-    /* border: 1px solid rgba( 255, 255, 255, 0.125 ); 
-    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 );  */ 
+    margin-left: auto; margin-right: auto; 
 
-} 
+    padding-top: 4rem; padding-bottom: 4rem; 
 
-.has-page-nav .page-head-text-content { 
-    /* Pulls page head element bottom border up */ 
-    /* margin-bottom: calc( -1 * var( --sell-points-padding-y ) );  */ 
-    padding-bottom: 4rem; 
-    top: var( --sell-points-padding-y ); 
-    /* background-color: var( --text-color );   */ 
+    position: relative; top: var( --sell-points-padding-y ); 
 
-} 
+    /**/
+    background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); 
 
-.page-head.has-page-nav { 
-    border-bottom-width: var( --sell-points-padding-y ); 
-
-}
-
-.page-head-text-entry {  
-    /* Sets page heading element height and centers its text vertically */ 
-    height: var( --page-heading-height ); line-height: var( --page-heading-height );    
-    /* background-color: red;  */ 
-    font-family: "var( --sell-points-entry-heading-font-family )"; 
-    font-size: 1em; 
-
-} 
-
-.has-page-nav .page-head-text-content, 
-:not( .has-page-nav ) > .page-head-text-content .page-head-text-entry { 
     border: 1px solid rgba( 255, 255, 255, 0.4 ); 
-    box-shadow: 0 0 20px 10px rgba( 0, 0, 0, 0.2 ); 
-
-}
-
-/* .has-page-nav .page-head-text-entry { 
-    background-color: unset; 
-    box-shadow: none; 
-
-} */
-
-.page-nav { 
-    --column-width: auto; 
-    --column-gutter-x-width: 0.7em; 
-
+    box-shadow: 0 0 15px 5px rgba( 0, 0, 0, 0.4 ); 
+   
 } 
-
-.page-head .page-nav {   
-    justify-content: center; 
-    margin-top: 3rem; 
-    border-style: solid; border-width: 1px 0; border-color: rgba( 255, 255, 255, 0.4 ); 
-    font-size: 1rem; 
-
-} 
-
-.page-nav .entry:nth-child( n ) {
-    margin-top: 0; 
-} 
-
-.page-nav .entry { 
-    height: 3.25em; line-height: 3.25em; 
-
-} 
-
-.page-head .featured-image { 
-    width: 100%; height: 100%; 
-    position: absolute; left: 0; top: 0; 
-    z-index: 1; 
-    background-position: center top; 
-    /* filter: grayscale( 100 );  */ 
-    /* opacity: 0.2;  */ 
-
-} 
-
-.page-head-text-content { 
-    z-index: 2; 
-
-} 
-
-.page-head-text-content .featured-image { 
-    z-index: -1; 
-}

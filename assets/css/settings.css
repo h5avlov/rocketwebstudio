@@ -79,6 +79,7 @@
 
 :root { 
     --text-color: rgb( 0, 67, 78 );  
+    --text-color-inverted: rgba( 255, 255, 255, 0.9 ); 
     --background-color: ""; 
     --highlight-color: ""; 
     --overlay-color: ""; 

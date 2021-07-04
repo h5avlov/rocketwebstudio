@@ -1,0 +1,22 @@
+.page-nav { 
+    --column-width: auto; 
+    --column-gutter-x-width: 0.7em; 
+
+} 
+
+.page-head .page-nav {   
+    justify-content: center; 
+    /* margin-top: 3rem;  */ 
+    border-style: solid; border-width: 1px 0; border-color: rgba( 255, 255, 255, 0.4 ); 
+    font-size: 1rem; 
+
+} 
+
+.page-nav .entry:nth-child( n ) {
+    margin-top: 0; 
+} 
+
+.page-nav .entry { 
+    height: 4em; line-height: 4em; 
+
+} 
