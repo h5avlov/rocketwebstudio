@@ -237,7 +237,12 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-   --page-head-text-content-border-color: rgba( 255, 255, 255, 0.4 ); 
+    --page-head-text-content-default-padding-y: 4rem; 
+    --page-head-text-content-border-width: 1px; 
+    --page-head-text-content-border-color: rgba( 255, 255, 255, 0.4 ); 
+    --page-head-text-content-box-shadow-spread: 5px;
+    --page-head-text-content-box-shadow-blur: 15px; 
+    --page-head-text-content-box-shadow-color: rgba( 0, 0, 0, 0.4 ); 
 }
 
 
@@ -249,7 +254,7 @@
     --page-nav-entry-height: 3.5em; 
     --page-nav-entry-padding-x: 0.5em; 
     --page-nav-font-size: 1rem; 
-    --page-nav-border-width: 1px; 
+    --page-nav-border-width: var( --page-head-text-content-border-width ); 
     --page-nav-border-color: var( --page-head-text-content-border-color ); 
 }
 

@@ -9,6 +9,7 @@
     /* Sets distance to next content section */
     margin-bottom: var( --section-margin-bottom ); 
 
+    /* Defines positioning context for directly holded cover image */
     position: relative; 
 
     /* Sets default background color and restricts it from spreading over border */
@@ -36,18 +37,19 @@
     margin-left: auto; margin-right: auto; 
 
     /* Sets default top and bottom padding */
-    padding-top: 4rem; padding-bottom: 4rem; 
+    padding-top: var( --page-head-text-content-default-padding-y ); padding-bottom: var( --page-head-text-content-default-padding-y ); 
 
     /* Moves page head text content visually out of page head in vertical direction */
     position: relative; top: var( --sell-points-padding-y ); 
+    z-index: 2; 
 
     /* Sets default text content background and text colors */ 
     background-color: var( --text-color ); background-clip: padding-box; 
     color: var( --text-color-inverted ); 
 
     /* Applies a border and a drop shadow on page head text content */
-    border: 1px solid rgba( 255, 255, 255, 0.4 ); 
-    box-shadow: 0 0 15px 5px rgba( 0, 0, 0, 0.4 ); 
+    border-style: solid; border-width: var( --page-head-text-content-border-width ); border-color: var( --page-head-text-content-border-color ); 
+    box-shadow: 0 0 var( --page-head-text-content-box-shadow-blur ) var( --page-head-text-content-box-shadow-spread ) var( --page-head-text-content-box-shadow-color ); 
    
 } 
 
@@ -58,11 +60,6 @@
     z-index: 1; 
     background-position: center top; 
    
-} 
-
-.page-head-text-content { 
-    z-index: 2; 
-
 } 
 
 .page-head-text-content .featured-image { 
