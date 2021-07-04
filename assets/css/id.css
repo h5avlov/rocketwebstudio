@@ -2,7 +2,7 @@
     display: inline-block; 
     width: var( --logo-width ); height: var( --logo-height ); 
     background-image: url( "/assets/images/logo.png" ); 
-    background-size: contain; background-repeat: no-repeat; background-position: center; 
+    background-size: contain; background-repeat: no-repeat; background-position: center bottom; 
     text-indent: -10000px; 
 }
 
