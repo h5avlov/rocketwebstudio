@@ -2,7 +2,7 @@
 .entry-list, 
 .entry-set { 
     --column-count: 1; 
-    --column-gutter-x-width: 0.2rem; 
+    --column-gutter-x-width: 0rem; 
     --column-gutter-y-width: var( --column-gutter-x-width ); 
     --column-width: calc( ( 100% - ( var( --column-gutter-x-width ) * ( var( --column-count ) - 1 ) ) ) / var( --column-count ) ); 
 
