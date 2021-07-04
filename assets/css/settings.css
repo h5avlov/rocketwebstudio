@@ -62,7 +62,7 @@
     --subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --heading-font-size ) ); 
 
     --text-entry-margin-bottom: 0.5em; 
-    --text-margin-bottom: 1em; 
+    --text-margin-bottom: 1.8em; 
     --text-font-family: Arial; 
     --text-font-size: 14px; 
     --text-line-height: 1.4; 
@@ -244,7 +244,7 @@
     --sell-points-entry-padding-bottom: var( --sell-points-entry-padding-top ); 
 
     --sell-points-entry-heading-margin-bottom: 1em; 
-    --sell-points-entry-text-entry-margin-bottom: 2.5em; 
+    --sell-points-entry-text-entry-margin-bottom: 1.2em; 
     --sell-points-entry-text-margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
 
     --sell-points-entry-heading-font-family: "A1SerifBold"; 
