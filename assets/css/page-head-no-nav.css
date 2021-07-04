@@ -1,6 +1,6 @@
 /* Adds space below text entry text to compensate visually for the absence of page navigation */
 .page-head:not( .has-page-nav ):not( .sell-points ) .page-head-text-content { 
-    padding-bottom: 7rem;  
+    padding-bottom: var( --page-head-no-nav-text-content-padding-bottom );  
 
 } 
 
@@ -8,9 +8,9 @@
     /* Restricts text entry width to its containing text width */
     display: inline-block; 
     /* Sets larger height on text entry, compared to page head with navigation */
-    height: 5.5em; line-height: 5.5em; 
+    height: var( --page-head-no-nav-text-entry-height ); line-height: var( --page-head-no-nav-text-entry-height ); 
     /* Pulls text entry up to place it closer to id */
-    margin-top: -0.5em; 
+    margin-top: calc( -1 * var( --page-head-no-nav-text-entry-margin-up ) ); 
 
 }
 
@@ -19,10 +19,10 @@
     /* Enables line width control through the use of margin or padding */
     box-sizing: border-box; 
     display: block; 
-    height: 1px; 
+    height: var( --page-head-no-nav-line-height ); 
     /* Defines line width in relation to text width */ 
-    margin-left: -40%; margin-right: -40%; 
-    background-color: rgba( 255, 255, 255, 0.4 ); background-clip: content-box; 
+    margin-left: var( --page-head-no-nav-line-pull-x ); margin-right: var( --page-head-no-nav-line-pull-x ); 
+    background-color: var( --page-head-no-nav-line-color ); background-clip: content-box; 
     content: ""; 
 
 }

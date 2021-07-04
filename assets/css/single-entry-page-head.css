@@ -1,6 +1,6 @@
 .single-entry-page-head .page-head-text-entry {  
     /* Sets page heading element height and centers its text vertically */ 
-    height: var( --page-heading-height ); line-height: var( --page-heading-height );    
+    height: var( --page-head-nav-text-entry-height ); line-height: var( --page-head-nav-text-entry-height );    
     margin-bottom: 0; 
     font-family: "var( --sell-points-entry-heading-font-family )"; 
     font-size: 1em; 

@@ -2,11 +2,17 @@
 
 
 .has-page-nav .page-head-text-content { 
-    padding-bottom: 4rem; 
+    padding-bottom: var( --page-head-nav-text-content-padding-bottom ); 
+
+} 
+
+.has-page-nav .page-head-text-entry {  
+    /* Sets page heading element height and centers its text vertically */ 
+    height: var( --page-head-nav-text-entry-height ); line-height: var( --page-head-nav-text-entry-height );    
 
 } 
 
 .has-page-nav .page-nav { 
-    margin-top: 0.8em; 
+    margin-top: var( --page-nav-margin-top ); 
 
 }
