@@ -1,6 +1,5 @@
-/* Sets number of columns and column gutters */
+/* Sets column gutters */
 .building-block-entry-list { 
-    --column-count: 4; 
     --column-gutter-x-width: 0.8rem; 
 
 } 
@@ -15,7 +14,6 @@
 
 .building-block-entry .entry-head { 
     padding-top: var( --building-block-head-padding-y ); 
-    /* padding-bottom: var( --building-block-head-padding-y );  */ 
     text-align: center; 
 } 
 
@@ -47,7 +45,13 @@
 } 
 
 
+/* Defines 4 columns for screens that comfortably display 4 columns */
 @media screen and ( min-width: 841px ) { 
+    .building-block-entry-list { 
+        --column-count: 4; 
+
+    } 
+
     .building-block-entry:nth-child( 4n ) { 
         margin-right: 0; 
     } 
@@ -58,22 +62,8 @@
   
 } 
 
+/* Defines 2 columns for screens, that could not comfortably display 4 columns */
 @media screen and ( max-width: 840px ) and ( min-width: 641px ) { 
-    .building-block-entry-list { 
-        --column-count: 3; 
-    } 
-    
-    .building-block-entry:nth-child( 3n ) { 
-        margin-right: 0; 
-    } 
-    
-    .building-block-entry:nth-child( -n + 3 ) { 
-        margin-top: 0; 
-    } 
-    
-} 
-
-@media screen and ( max-width: 640px ) and ( min-width: 461px )  { 
     .building-block-entry-list { 
         --column-count: 2; 
     } 
@@ -88,6 +78,7 @@
     
 } 
 
+/* Defines 1 column on screens, that could not comfortably display 2 columns */
 @media screen and ( max-width: 460px ) { 
     .building-block-entry-list { 
         --column-count: 1; 
