@@ -1,6 +1,11 @@
+.sell-points .id { 
+    margin-bottom: var( --header-id-margin-bottom ); 
+
+}
+
 .sell-points .page-head-text-content { 
     padding-left: var( --sell-points-entry-padding-x ); padding-right: var( --sell-points-entry-padding-x ); 
-    padding-bottom: var( --sell-points-entry-padding-bottom ); 
+    padding-top: var( --sell-points-entry-padding-top ); padding-bottom: var( --sell-points-entry-padding-bottom ); 
     font-size: var( --text-font-size ); 
 
 } 
@@ -11,6 +16,16 @@
     text-transform: uppercase; 
 
 } 
+
+.sell-points-entry .text-entry { 
+    margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
+
+} 
+
+.sell-points-entry .text-entry:last-of-type { 
+    margin-bottom: var( --sell-points-entry-text-margin-bottom ); 
+
+}
 
 
 

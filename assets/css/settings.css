@@ -28,7 +28,7 @@
     --main-nav-link-current-mark-height: 2px; 
     --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
 
-    --header-id-margin-bottom: "";  
+    --header-id-margin-bottom: 2em;  
 
     --section-margin-bottom: 7rem; 
     --heading-margin-bottom: ""; 
@@ -239,11 +239,12 @@
 :root {  
     --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
     --sell-points-entry-padding-x: 5rem; 
-    --sell-points-entry-padding-top: 5.5rem; 
-    --sell-points-entry-padding-bottom: 7rem; 
-    --sell-points-entry-heading-margin-bottom: 1.4rem; 
-    --sell-points-entry-text-entry-margin-bottom: 1.8rem; 
-    --sell-points-entry-text-margin-bottom: 1.8rem; 
+    --sell-points-entry-padding-top: 7rem; 
+    --sell-points-entry-padding-bottom: var( --sell-points-entry-padding-top ); 
+
+    --sell-points-entry-heading-margin-bottom: 1.2em; 
+    --sell-points-entry-text-entry-margin-bottom: 1.2em; 
+    --sell-points-entry-text-margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
 
     --sell-points-entry-heading-font-family: "A1SerifBold"; 
     --sell-points-entry-heading-font-size: 1.8rem; 

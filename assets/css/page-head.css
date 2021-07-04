@@ -17,7 +17,7 @@
     /* Centers page head text horizontally */
     text-align: center; 
 
-}
+} 
 
 .page-head-text-content { 
     /* Ensures side padding would not increase text content width over defined inner page width */
