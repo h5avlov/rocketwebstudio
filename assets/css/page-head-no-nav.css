@@ -1,5 +1,5 @@
 /* Adds space below text entry text to compensate visually for the absence of page navigation */
-.page-head:not( .has-page-nav ) .page-head-text-content { 
+.page-head:not( .has-page-nav ):not( .sell-points ) .page-head-text-content { 
     padding-bottom: 7rem;  
 
 } 
