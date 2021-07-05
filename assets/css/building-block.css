@@ -79,7 +79,7 @@
 } 
 
 /* Defines 1 column on screens, that could not comfortably display 2 columns */
-@media screen and ( max-width: 460px ) { 
+@media screen and ( max-width: 640px ) { 
     .building-block-entry-list { 
         --column-count: 1; 
     } 
