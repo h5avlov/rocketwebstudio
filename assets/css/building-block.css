@@ -14,9 +14,9 @@
 }
 
 .building-block-price .price-block-heading { 
-    padding: 0.4em; 
+    padding: var( --building-block-price-block-heading-padding ); 
     background-color: var( --text-color ); 
-    color: white; 
+    color: var( --building-block-price-block-heading-color ); 
 
 } 
 

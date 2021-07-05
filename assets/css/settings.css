@@ -188,6 +188,9 @@
     --building-block-add-block-side: 1.5rem; 
     --building-block-add-block-margin-bottom: 0.8rem; 
 
+    --building-block-price-block-heading-padding: 0.4em; 
+    --building-block-price-block-heading-color: var( --text-color-inverted ); 
+
 } 
 
 /*-----------------------------------------------------------
