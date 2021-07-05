@@ -42,8 +42,8 @@
     position: absolute; right: 0; 
     top: 0; 
     /* background-color: var( --text-color-inverted );   */ 
-    font-family: var( --icon-font-family ); font-size: 0.4rem; 
+    font-family: var( --icon-font-family ); font-size: var( --copyright-notice-separator-font-size ); 
     text-align: center; 
-    content: "\f21b"; 
+    content: var( --copyright-notice-separator-icon-code ); 
 
 }

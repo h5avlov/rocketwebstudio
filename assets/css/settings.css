@@ -223,8 +223,10 @@
     --copyright-notice-background-color: var( --text-color ); 
     --copyright-notice-text-color: white; 
 
+    --copyright-notice-separator-icon-code: "\f21b"; 
     --copyright-notice-separator-width: 1.5rem; 
     --copyright-notice-separator-height: 1.2rem; 
+    --copyright-notice-separator-font-size: 0.5em; 
 
 } 
 
