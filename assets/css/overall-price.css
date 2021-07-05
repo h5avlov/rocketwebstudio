@@ -2,5 +2,12 @@
     display: inline-block; 
     margin-bottom: var( --overall-price-margin-bottom ); 
     padding: var( --overall-price-padding ); 
-    border: var( --overall-price-border-width ) solid; 
+    border-width: var( --overall-price-border-width ); border-style: solid; 
+} 
+
+.overall-price .price-value { 
+    margin: 0 calc( -1 * var( --overall-price-padding ) ); 
+    background-color: var( --text-color ); 
+    color: white; 
+
 }

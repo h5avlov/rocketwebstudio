@@ -167,7 +167,7 @@
 :root { 
     --building-section-text-margin-bottom: 4rem; 
 
-    --overall-price-padding: 2.5rem; 
+    --overall-price-padding: 4.5rem; 
     --overall-price-margin-bottom: 4rem; 
     --overall-price-border-width: 1px; 
 
@@ -180,7 +180,7 @@
 
 :root { 
     --building-block-entry-list-column-gutter-x-width: 0.8em; 
-    
+
     --building-block-icon-margin-bottom: 1.2em;   
     --building-block-icon-font-size: 1.8em; 
     --building-block-icon-code: "\f383"; 
