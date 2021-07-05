@@ -11,14 +11,39 @@
     /* Sets copyright notice font */ 
     font-family: var( --copyright-notice-font-family ); 
     font-size: var( --copyright-notice-font-size ); 
+
+    /* text-align: center;  */ 
 } 
 
 /* Sets horizontal distance between elements */ 
-.copyright-notice > *:not( :last-child ) { 
+/* .copyright-notice > *:not( :last-child ) { 
     margin-right: var( --copyright-notice-element-margin-x ); 
-}
+} */ 
 
 .copyright-notice .key { 
     display: none; 
 
 } 
+
+.copyright-notice > *:not( :last-child ) { 
+    padding-right: var( --copyright-notice-separator-width ); 
+    position: relative; 
+}
+
+/* .copyright-notice > *, 
+.copyright-notice .value { 
+    display: inline-block; 
+
+} */
+
+.copyright-notice > *:not( :last-child ):after { 
+    display: block; 
+    width: var( --copyright-notice-separator-width ); height: var( --copyright-notice-separator-height ); line-height: var( --copyright-notice-separator-height ); 
+    position: absolute; right: 0; 
+    top: 0; 
+    /* background-color: var( --text-color-inverted );   */ 
+    font-family: var( --icon-font-family ); font-size: 0.4rem; 
+    text-align: center; 
+    content: "\f21b"; 
+
+}
