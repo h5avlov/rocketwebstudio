@@ -17,30 +17,10 @@
     text-align: center; 
 } 
 
-/* Styles block checkbox */
-.building-block-entry .add-block { 
-    display: inline-block; display: none; 
-    margin-bottom: var( --building-block-add-block-margin-bottom ); 
-    width: var( --building-block-add-block-side ); height: var( --building-block-add-block-side ); 
-
-} 
-
 .building-block-price .price-block-heading { 
     padding: 0.4em; 
     background-color: var( --text-color ); 
     color: white; 
-
-} 
-
-.building-block-button-open { 
-    /* border: none;  */ 
-    /* border-radius: 0;  */ 
-
-}
-
-/* Hides block body until button click */
-.building-block-entry .body { 
-    height: 0; overflow: hidden; 
 
 } 
 
