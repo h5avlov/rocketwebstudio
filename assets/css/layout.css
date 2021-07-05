@@ -8,7 +8,34 @@
 
 } */ 
 
-.main > * > .text-entry { 
+/* .main > * > .text-entry { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 
+} */  
+
+/* Sets width restriction value on section direct descendants and centers them on large screens */
+.section > * { 
+    max-width: var( --page-inner-width ); 
+    margin-left: auto; margin-right: auto; 
+
 }
+
+/* Sets side padding on section head text to provide default distance between text and screen edges on smaller screens */
+.section > .text-entry { 
+    padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+
+} 
+
+/* .section { 
+    max-width: var( --page-inner-width ); 
+    margin-left: auto; margin-right: auto; 
+    padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+
+} */
+
+/* .product-features-entry-list, 
+.building-block-entry-list, 
+.project-entry-list { 
+    margin-left: calc( -1 * var( --page-inner-padding-x ) ); margin-right: calc( -1 * var( --page-inner-padding-x ) ); 
+
+} */ 
