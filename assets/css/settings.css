@@ -179,6 +179,8 @@
 ------------------------------------------------------------*/ 
 
 :root { 
+    --building-block-entry-list-column-gutter-x-width: 0.8em; 
+    
     --building-block-icon-margin-bottom: 1.2em;   
     --building-block-icon-font-size: 1.8em; 
     --building-block-icon-code: "\f383"; 

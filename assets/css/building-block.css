@@ -1,6 +1,6 @@
 /* Sets column gutters */
 .building-block-entry-list { 
-    --column-gutter-x-width: 0.8rem; 
+    --column-gutter-x-width: var( --building-block-entry-list-column-gutter-x-width ); 
 
 } 
 
