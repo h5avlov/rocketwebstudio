@@ -167,8 +167,8 @@
 :root { 
     --building-section-text-margin-bottom: 4rem; 
 
-    --overall-price-padding: 4.5rem; 
-    --overall-price-margin-bottom: 4rem; 
+    --overall-price-padding: 4rem; 
+    --overall-price-margin-bottom: 5rem; 
     --overall-price-border-width: 1px; 
 
 
