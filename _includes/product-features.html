@@ -1,6 +1,9 @@
 <section class= "section page-preview-section product-features-section"> 
     <h5 class= "heading subheading section-subheading">{{ include.data.subheading.text }}</h5> 
     <h2 class= "heading section-heading">{{ include.data.heading.text }}</h2> 
+    {% include text-entry-list.html 
+        paragraphs= include.data.paragraphs 
+    %}
 
     <ul class= "entry-list product-features-entry-list"> 
     {% for entry in include.data.body %} 
