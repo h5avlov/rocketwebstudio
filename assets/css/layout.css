@@ -13,15 +13,18 @@
 
 } */  
 
-/* Sets width restriction value on section direct descendants and centers them on large screens */
-.section > * { 
+/* Sets width restriction value on all text entries, section direct descendants, article page body direct descendants, and centers them on large screens */ 
+.text-entry, 
+.section > *, 
+.article-page .page-body > * { 
     max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
 
 }
 
-/* Sets side padding on section head text to provide default distance between text and screen edges on smaller screens */
-.section > .text-entry { 
+/* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */
+.section > .text-entry, 
+.article-page .text-entry { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 
 } 
