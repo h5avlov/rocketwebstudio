@@ -179,6 +179,10 @@
 ------------------------------------------------------------*/ 
 
 :root { 
+    --building-block-icon-margin-bottom: 1.2em;   
+    --building-block-icon-font-size: 1.8em; 
+    --building-block-icon-code: "\f383"; 
+
     --building-block-head-padding-y: 2rem; 
 
     --building-block-add-block-side: 1.5rem; 

@@ -7,9 +7,9 @@
 /* Inserts an icon in building block element */ 
 .building-block-entry:before { 
     display: block; 
-    margin-bottom: 1.2em; 
-    content: "\f383"; 
-    font-family: var( --icon-font-family ); font-size: 1.8em; 
+    margin-bottom: var( --building-block-icon-margin-bottom ); 
+    content: var( --building-block-icon-code ); 
+    font-family: var( --icon-font-family ); font-size: var( --building-block-icon-font-size ); 
 
 }
 
