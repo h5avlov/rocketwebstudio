@@ -4,10 +4,3 @@
     padding: var( --overall-price-padding ); 
     border-width: var( --overall-price-border-width ); border-style: solid; 
 } 
-
-.overall-price .price-value { 
-    margin: 0 calc( -1 * var( --overall-price-padding ) ); 
-    background-color: var( --text-color ); 
-    color: white; 
-
-}
