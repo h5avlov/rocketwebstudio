@@ -14,9 +14,9 @@
 .send-message-form { 
     /* Ensures submit button centering */ 
     justify-content: center; 
-    width: var( --send-message-form-width ); 
+    max-width: var( --send-message-form-width ); 
     /* Centers form */ 
-    margin-left: auto; margin-right: auto; 
+    /* margin-left: auto; margin-right: auto;  */ 
 
 } 
 
@@ -67,4 +67,17 @@
     font-family: var( --icon-font-family ); 
     font-size: 1.4em; 
     content: "\f2c3"; 
+} 
+
+
+@media screen and ( max-width: 740px ) { 
+    .send-message-form { 
+        --form-column-count: 1; 
+    
+    } 
+
+    .send-message-form .field-holder:nth-child( n ) { 
+        margin-right: 0; 
+    } 
+    
 }
