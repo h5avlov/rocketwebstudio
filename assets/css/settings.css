@@ -88,7 +88,7 @@
 
 :root { 
     --icon-side: 2.5rem; 
-    --icon-font-family: Ionicons; 
+    --icon-font-family: "Ionicons"; 
 
     --contact-icon-font-size: 1.4rem; 
     --contact-phone-icon: "\f4b8"; 
