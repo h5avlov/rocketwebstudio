@@ -4,18 +4,14 @@
 
 } 
 
-/* Icon inserted in building block element */ 
+/* Inserts an icon in building block element */ 
 .building-block-entry:before { 
     display: block; 
+    margin-bottom: 1.2em; 
     content: "\f383"; 
     font-family: var( --icon-font-family ); font-size: 1.8em; 
 
 }
-
-.building-block-entry .entry-head { 
-    padding-top: var( --building-block-head-padding-y ); 
-    text-align: center; 
-} 
 
 .building-block-price .price-block-heading { 
     padding: 0.4em; 
