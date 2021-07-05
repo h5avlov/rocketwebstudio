@@ -14,6 +14,7 @@
 .page-nav {   
     /* Centers navigation entries */
     justify-content: center; 
+    padding-left: 2rem; padding-right: 2rem; 
     /* Applies top and bottom border */
     border-style: solid; 
     border-top-width: var( --page-nav-border-width ); border-bottom-width: var( --page-nav-border-width ); 
@@ -30,4 +31,4 @@
     /* Sets navigation link horizontal size and distance between links */ 
     padding-left: var( --page-nav-entry-padding-x ); padding-right: var( --page-nav-entry-padding-x ); 
 
-}
+} 

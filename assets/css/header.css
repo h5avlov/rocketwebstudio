@@ -5,11 +5,11 @@
 
 .site-header { 
     /* Used for centering header direct descendant elements, main navigation by the time */
-    display: flex; flex-direction: row; justify-content: center; 
+    display: flex; flex-direction: row; justify-content: center; align-items: center; 
     /* Replaced 'width= 100%' to avoid overflow, caused by page content padding, set on 'body' element */ 
     left: 0; right: 0; 
     /* Removes header from content flow to place it in front of sell points section */
-    position: absolute; z-index: 2; 
+    position: fixed; z-index: 3; 
 
 } 
 
@@ -17,4 +17,45 @@
 .site-header .quick-contact { 
     display: none; 
 
+} 
+
+@media screen and ( max-width: 840px ) { 
+    .site-header { 
+        height: 0; overflow: hidden; 
+        background-color: var( --text-color ); 
+
+    } 
+
+    .page-head { 
+        --sell-points-padding-y: 2rem; 
+    } 
+
+    .main-nav { 
+        width: 100%;  
+        text-align: center;  
+
+    } 
+
+    .main-nav .entry-list { 
+        flex-direction: column;  
+
+    } 
+
+    .main-nav .nav-entry:after { 
+        content: none; 
+
+    } 
+
+    .main-nav .entry-list:hover .nav-entry { 
+        background-color: transparent; 
+        color: var( --text-color-inverted ); 
+    }
+
+    .main-nav .entry-list:hover .nav-entry:hover, 
+    .nav-entry-current { 
+        background-color: var( --text-color-inverted ); 
+        color: var( --text-color ); 
+
+    }
+    
 }
