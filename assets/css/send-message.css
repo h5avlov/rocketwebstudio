@@ -64,7 +64,7 @@
 .send-message-form .button:before { 
     display: block; 
     margin-left: 0.4em; 
-    font-family: var( --icon-font-family ); 
+    font-family: "var( --icon-font-family )"; 
     font-size: 1.4em; 
     content: "\f2c3"; 
 } 
