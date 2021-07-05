@@ -20,7 +20,14 @@
     max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
 
-}
+} 
+
+/* Removes general width restrictions */ 
+.article-page .article-section, 
+.article-page .section-body { 
+    max-width: none; 
+
+} 
 
 /* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */
 .section > .text-entry, 
@@ -28,6 +35,13 @@
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 
 } 
+
+/* Clears copyright notice text entry margin to keep flexbox as positioning means and text entry padding to keep its text position in place */
+.copyright-notice .text-entry { 
+    margin-left: 0; margin-right: 0; 
+    padding-left: 0; padding-right: 0; 
+
+}
 
 /* .section { 
     max-width: var( --page-inner-width ); 

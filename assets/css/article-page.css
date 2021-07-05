@@ -79,13 +79,6 @@
     display: none; 
 }  
 
-/* Removes general width restrictions */ 
-.article-page .article-section, 
-.article-page .section-body { 
-    max-width: none; 
-
-} 
-
 /* .article-page .text-entry { 
     max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
