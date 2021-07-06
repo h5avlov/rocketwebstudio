@@ -5,11 +5,11 @@
 
 .site-header { 
     /* Used for centering header direct descendant elements, main navigation by the time */
-    display: flex; flex-direction: row; justify-content: center; align-items: center; 
+    /* display: flex; flex-direction: row; justify-content: center; align-items: center;  */ 
     /* Replaced 'width= 100%' to avoid overflow, caused by page content padding, set on 'body' element */ 
-    left: 0; right: 0; 
+    /* left: 0; right: 0;  */ 
     /* Removes header from content flow to place it in front of sell points section */
-    position: absolute; z-index: 3;  
+    /* position: relative; z-index: 3;   */ 
 
 } 
 

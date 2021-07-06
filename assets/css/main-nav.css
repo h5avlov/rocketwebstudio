@@ -1,9 +1,15 @@
 .main-nav { 
-    /* display: flex; flex-direction: row; justify-content: center;  */
-    /* width: 100%;  */
-    /* padding-top: var( --main-nav-padding-top ); padding-bottom: var( --main-nav-padding-bottom );   */ 
-    /* position: absolute;  */ 
+    display: flex; flex-direction: row; justify-content: center; 
+    width: 100%;   
+    padding-top: var( --main-nav-padding-top ); padding-bottom: var( --main-nav-padding-bottom );   
+    position: absolute; z-index: 3;  
     background-color: var( --main-nav-background-color ); 
+    text-align: center; 
+
+} 
+
+.main-nav .entry-list { 
+    justify-content: center; 
 
 } 
 
@@ -12,13 +18,13 @@
     color: var( --main-nav-text-color ); 
 } 
 
-/* .nav-entry:after { 
+.nav-entry:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
     background-color: var( --main-nav-link-current-mark-color ); 
     content: "";  
-}  */ 
+}  
 
 .nav-entry:after, 
 .main-nav .entry-list:hover .nav-entry:after { 
@@ -43,6 +49,11 @@
 
     text-shadow: 0 0 0.4px var( --main-nav-text-smooth-color ); 
 } 
+
+.main-nav-button { 
+    display: none; 
+
+}
 
 .main-nav-button-close { 
     position: absolute; right: 0; top: 0; 
@@ -71,25 +82,34 @@
     display: inline-block; 
     height: inherit; 
     
-
 } 
 
 @media screen and ( max-width: 840px ) { 
 
     :root { 
         --sell-points-padding-y: 4.5rem; 
+        --main-nav-padding-top: 0rem; 
+        --main-nav-padding-bottom: 0rem; 
+
     } 
+
+    /* .main-nav { 
+        background-color: var( --text-color ); 
+
+    }  */
 
     .main-nav .nav { 
         display: flex; flex-direction: column; justify-content: center; align-items: center; 
+        width: 100%; 
         height: 0; overflow: hidden; 
         position: fixed; left: 0; top: 0; 
+        /* height: 100%;  */ 
         background-color: var( --text-color ); 
 
     } 
 
     .main-nav:target .nav { 
-        width: 100%; height: 100%; 
+        height: 100%; 
 
     } 
 
@@ -116,7 +136,8 @@
 
     } 
 
-    .main-nav-button {  
+    .main-nav-button {    
+        display: inline-block; 
         height: var( --sell-points-padding-y ); line-height: var( --sell-points-padding-y ); 
         border: none;  
         color: var( --text-color-inverted ); 
