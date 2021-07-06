@@ -20,12 +20,6 @@
         }, 
 
         { 
-            "target": "/reviews", 
-            "text": "Reviews", 
-            "className": "reviews"
-        }, 
-
-        { 
             "target": "/about", 
             "text": "About", 
             "className": "about" 
