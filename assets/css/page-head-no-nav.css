@@ -23,6 +23,6 @@
     /* Defines line width in relation to text width */ 
     margin-left: var( --page-head-no-nav-line-pull-x ); margin-right: var( --page-head-no-nav-line-pull-x ); 
     background-color: var( --page-head-no-nav-line-color ); background-clip: content-box; 
-    content: ""; 
+    /* content: "";  */ 
 
-}
+} 

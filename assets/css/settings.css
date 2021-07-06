@@ -254,9 +254,9 @@
 
     --page-head-no-nav-text-content-padding-bottom: 7rem;    
     --page-head-no-nav-text-entry-height: 5.5em; 
-    --page-head-no-nav-line-height: 1px; 
+    --page-head-no-nav-line-height: 2px; 
     --page-head-no-nav-line-color: var( --page-head-text-content-border-color ); 
-    --page-head-no-nav-line-pull-x: -40%; 
+    --page-head-no-nav-line-pull-x: 25%; 
     --page-head-no-nav-text-entry-margin-up: 0.5em; 
 
     --page-head-text-content-default-padding-y: 4rem; 
@@ -281,6 +281,8 @@
     --page-nav-font-size: 1rem; 
     --page-nav-border-width: var( --page-head-text-content-border-width ); 
     --page-nav-border-color: var( --page-head-text-content-border-color ); 
+
+    --page-nav-icon-size: 2.5rem; 
 }
 
 

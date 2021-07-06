@@ -17,23 +17,21 @@
                 text= include.title 
             %} 
 
-            {% if include.pageNavEntryList %}
-                {% include page-nav.html 
-                    pageNavEntryList= include.pageNavEntryList 
-                %} 
-            {% endif %} 
+            {% include page-nav.html 
+                pageNavEntryList= include.pageNavEntryList 
+            %} 
 
-            <!-- {% if include.image %}
+            {% if include.image %}
                 {% include featured-image.html 
                     image= include.image 
                 %} 
-            {% endif %} -->
+            {% endif %}
         </section>
 
-        <!-- {% if include.image %}
+        {% if include.image %}
             {% include featured-image.html 
                 image= include.image 
             %} 
-        {% endif %}  -->    
+        {% endif %}     
      </article>
 </section>

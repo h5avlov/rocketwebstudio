@@ -1,0 +1,9 @@
+.inner-link { 
+    display: inline-block; 
+    /* Sets page navigation link vertical size and centers link text vertically */ 
+    height: var( --page-nav-entry-height ); line-height: var( --page-nav-entry-height ); 
+    /* Sets navigation link horizontal size and distance between links */ 
+    padding-left: var( --page-nav-entry-padding-x ); padding-right: var( --page-nav-entry-padding-x ); 
+    font-size: var( --page-nav-font-size ); 
+
+} 

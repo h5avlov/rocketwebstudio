@@ -1,4 +1,4 @@
-.page-nav { 
+.page-nav-entry-list { 
     /* Removes entry list calculated width */
     --column-width: auto; 
     /* Removes entry list default column gutter width */
@@ -7,14 +7,13 @@
 } 
 
 /* Removes entry list default entry margin top */
-.page-nav .entry:nth-child( n ) {
+.page-nav-entry:nth-child( n ) { 
     margin-top: 0; 
 } 
 
 .page-nav {   
-    /* Centers navigation entries */
-    justify-content: center; 
     padding-left: 2rem; padding-right: 2rem; 
+    position: relative; 
     /* Applies top and bottom border */
     border-style: solid; 
     border-top-width: var( --page-nav-border-width ); border-bottom-width: var( --page-nav-border-width ); 
@@ -24,11 +23,22 @@
 
 } 
 
-.page-nav .inner-link { 
-    display: block; 
-    /* Sets page navigation link vertical size and centers link text vertically */ 
-    height: var( --page-nav-entry-height ); line-height: var( --page-nav-entry-height ); 
-    /* Sets navigation link horizontal size and distance between links */ 
-    padding-left: var( --page-nav-entry-padding-x ); padding-right: var( --page-nav-entry-padding-x ); 
-
+.page-nav-entry-list {   
+    /* Centers navigation entries */
+    justify-content: center; 
 } 
+
+.page-nav .skip-to-content-link { 
+    height: var( --page-nav-entry-height ); line-height: var( --page-nav-entry-height ); 
+    padding-left: 0; padding-right: 0;  
+
+}
+
+.page-nav:before { 
+    display: block; 
+    width: var( --page-nav-icon-size ); height: var( --page-nav-icon-size ); line-height: var( --page-nav-icon-size );  
+    position: absolute; top: 100%; left: 50%; margin-left: calc( -1 * var( --page-nav-icon-size ) / 2 ); 
+    font-size: 1.8em; 
+    content: "\f3d4"; 
+
+}

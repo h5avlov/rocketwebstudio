@@ -1,13 +1,25 @@
-<ul class= "entry-list page-nav"> 
-{% for name in include.pageNavEntryList %} 
-    {% assign targetSectionID= name | append: "-section" %} 
-    {% assign text= name | capitalize %} 
+<section class= "page-nav has-icon"> 
+    {% include accessibility-heading.html %} 
 
-    <li class= "entry page-nav-entry"> 
-        {% include inner-link.html
-            targetSectionID= targetSectionID 
-            text= text 
-        %} 
-    </li>
-{% endfor %} 
-</ul>
+    {% if include.pageNavEntryList %} 
+        <ul class= "entry-list page-nav-entry-list"> 
+        {% for name in include.pageNavEntryList %} 
+            {% assign targetSectionID= name | append: "-section" %} 
+            {% assign text= name | capitalize %} 
+
+            <li class= "entry page-nav-entry"> 
+                {% include inner-link.html
+                    targetSectionID= targetSectionID 
+                    text= text 
+                %} 
+            </li>
+        {% endfor %} 
+        </ul> 
+    {% else %} 
+        {% include inner-link.html 
+            className= "skip-to-content-link" 
+            targetSectionID= "page-body" 
+            text= "Skip To Content" 
+        %}
+    {% endif %}
+</section>

@@ -1,5 +1,6 @@
-@import url( "./page-head-nav.css" ); 
-@import url( "./page-head-no-nav.css" );  
+/* @import url( "./page-head-nav.css" );  */ 
+/* @import url( "./page-head-no-nav.css" );   */ 
+@import url( "./page-nav.css" ); 
 
 
 .page-head { 
@@ -58,7 +59,9 @@
     margin-top: 0; 
     position: absolute; left: 0; top: 0; 
     z-index: 1; 
-    background-position: center top; 
+    background-position: center top; background-size: cover; 
+    /* filter: grayscale( 100 ); 
+    opacity: 0.2;  */ 
    
 } 
 
