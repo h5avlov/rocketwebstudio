@@ -3,18 +3,21 @@
         text= include.data.title 
     %} 
 
-    <a 
-        class= "button main-nav-button-open has-icon" 
-        href= "#main-nav"
-    >
-        <label class= "button-label main-nav-button-open-label">
-            Site Navigation 
-        </label>
-    </a> 
+    {% include main-nav-control-button.html 
+        type= "open" 
+        text= "Site Navigation" 
+    %} 
     
-    {% include nav.html 
-        className= "main-nav-entry-list" 
-        data= include.data.entryList 
-        current= page.url 
-    %}   
+    <section class= "">
+        {% include nav.html 
+            className= "main-nav-entry-list" 
+            data= include.data.entryList 
+            current= page.url 
+        %}   
+
+        {% include main-nav-control-button.html 
+            type= "close" 
+            text= "Close Navigation" 
+        %}
+    </section>
 </nav>
