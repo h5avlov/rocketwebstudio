@@ -1,11 +1,20 @@
-<nav class= "main-nav"> 
+<nav id= "main-nav" class= "main-nav"> 
     {% include accessibility-heading.html 
         text= include.data.title 
     %} 
+
+    <a 
+        class= "button main-nav-button-open has-icon" 
+        href= "#main-nav"
+    >
+        <label class= "button-label main-nav-button-open-label">
+            Site Navigation 
+        </label>
+    </a> 
     
     {% include nav.html 
         className= "main-nav-entry-list" 
         data= include.data.entryList 
         current= page.url 
-    %}  
+    %}   
 </nav>
