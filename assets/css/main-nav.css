@@ -31,46 +31,96 @@
 
 }
 
-/* .nav-link { 
+.nav-link { 
     display: block; 
     height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
     font-family: "var( --main-nav-font-family )"; 
     font-size: var( --main-nav-font-size ); 
     font-weight: bold; 
+    text-align: center; 
     text-transform: uppercase; 
 
     text-shadow: 0 0 0.4px var( --main-nav-text-smooth-color ); 
-}  */
+} 
 
-.main-nav-button-open {  
-    height: 3.5rem; line-height: 3.5rem; 
-    border: none;  
-    color: var( --text-color-inverted ); 
+.main-nav-button-close { 
+    position: absolute; right: 0; top: 0; 
+
+}
+
+.main-nav-button.has-icon:before {  
+    float: left; 
+    height: inherit; line-height: inherit;  
 
 } 
 
 .main-nav-button-open.has-icon:before {  
-    float: left; 
-    height: inherit; line-height: inherit; 
-    margin: 0; padding: 0; 
-    font-size: 2.5em; 
     content: "\f397"; 
+    font-size: 2.5em; 
 
 } 
 
-.main-nav-button-open label { 
+.main-nav-button-close.has-icon:before {  
+    content: "\f12a"; 
+    font-size: 1.4em; 
+
+}
+
+.main-nav-button label { 
     display: inline-block; 
     height: inherit; 
-    margin: 0; padding: 0; 
     
 
 } 
 
-/* .main-nav-button-open:after { 
-    display: block; 
-    width: 0px; height: 0px; overflow: hidden; 
-    clear: both; 
-    content: ""; 
+@media screen and ( max-width: 840px ) { 
 
-} */ 
+    :root { 
+        --sell-points-padding-y: 4.5rem; 
+    } 
+
+    .main-nav .nav { 
+        display: flex; flex-direction: column; justify-content: center; align-items: center; 
+        height: 0; overflow: hidden; 
+        position: fixed; left: 0; top: 0; 
+        background-color: var( --text-color ); 
+
+    } 
+
+    .main-nav:target .nav { 
+        width: 100%; height: 100%; 
+
+    } 
+
+    .main-nav .entry-list { 
+        flex-direction: column; 
+        width: 100%; 
+
+    } 
+
+    .main-nav .nav-entry:after { 
+        content: none; 
+
+    } 
+
+    .main-nav .entry-list:hover .nav-entry { 
+        background-color: transparent; 
+        color: var( --text-color-inverted ); 
+    }
+
+    .main-nav .entry-list:hover .nav-entry:hover, 
+    .nav-entry-current { 
+        background-color: var( --text-color-inverted ); 
+        color: var( --text-color ); 
+
+    } 
+
+    .main-nav-button {  
+        height: var( --sell-points-padding-y ); line-height: var( --sell-points-padding-y ); 
+        border: none;  
+        color: var( --text-color-inverted ); 
+    
+    } 
+    
+}
