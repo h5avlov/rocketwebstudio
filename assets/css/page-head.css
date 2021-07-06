@@ -10,6 +10,8 @@
     /* Sets distance to next content section */
     margin-bottom: var( --section-margin-bottom ); 
 
+    padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
+
     /* Defines positioning context for directly holded cover image */
     position: relative; 
 
@@ -67,4 +69,18 @@
 
 .page-head-text-content .featured-image { 
     z-index: -1; 
+} 
+
+
+@media screen and ( max-width: 580px ) { 
+    .page-head { 
+        padding-left: 0; padding-right: 0; 
+
+    } 
+
+    .page-head-text-content { 
+        border-left-width: 0; border-right-width: 0; 
+       
+    }
+    
 }

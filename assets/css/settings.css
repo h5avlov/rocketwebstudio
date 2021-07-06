@@ -292,7 +292,7 @@
 
 :root {  
     --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
-    --sell-points-entry-padding-x: 5rem; 
+    --sell-points-entry-padding-x: 8%; 
     --sell-points-entry-padding-top: 4rem; 
     --sell-points-entry-padding-bottom: calc( 1.4 * var( --sell-points-entry-padding-top ) ); 
 

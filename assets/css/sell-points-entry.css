@@ -17,18 +17,17 @@
 
 } 
 
-/* .sell-points-entry .text-entry { 
-    margin-bottom: var( --sell-points-entry-text-entry-margin-bottom ); 
-
-} 
-
-.sell-points-entry .text-entry:last-of-type { 
-    margin-bottom: var( --sell-points-entry-text-margin-bottom ); 
-
-} */
-
 .sell-points-entry .text-entry:last-of-type + :not( .text-entry ) {
     margin-top: var( --sell-points-entry-text-margin-bottom ); 
+} 
+
+
+@media screen and ( max-width: 580px ) { 
+    .page-head-text-content { 
+       --sell-points-entry-padding-x: 1.25rem; 
+
+    } 
+    
 }
 
 
