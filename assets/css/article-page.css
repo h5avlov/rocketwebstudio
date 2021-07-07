@@ -38,20 +38,34 @@
 } 
 
 /* Specifies the first article section as open by default */
-.article-section:first-of-type .section-body { 
+/* .article-section:first-of-type .section-body { 
+    width: 100%; height: auto; 
+    padding-top: 1.4em; 
+    position: initial; 
+
+}  */
+
+.article-section .button-open { 
+    border: none; 
+
+} 
+
+/* Hides the button to open the first article section, because there is no need of it */
+/* .article-section:first-of-type .button-open { 
+    display: none; 
+
+} */ 
+
+/* Specifies the first article section as open by default */
+.article-section:target .section-body { 
     width: 100%; height: auto; 
     padding-top: 1.4em; 
     position: initial; 
 
 } 
 
-.article-section .button-open { 
-    border: none; 
-
-}
-
 /* Hides the button to open the first article section, because there is no need of it */
-.article-section:first-of-type .button-open { 
+.article-section:target .button-open { 
     display: none; 
 
 }
