@@ -42,10 +42,16 @@
             text= sectionData.heading 
         %} 
 
-        {% include button.html 
-            className= "button-open button-open-section-body" 
+        <!-- {% include button.html 
+            className= "button button-open button-open-section-body" 
             text= "Read More" 
-        %} 
+        %}  --> 
+
+        {% include inner-link.html 
+            className= "button button-open button-open-section-body" 
+            targetSectionID= sectionName 
+            text= "Read More" 
+        %}
 
         <section class= "section-body body-expandable"> 
             {% include text-entry-list.html 
