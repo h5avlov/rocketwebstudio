@@ -20,13 +20,13 @@
 
 } 
 
-.project-section.roles-section .heading { 
+/* .roles-section .heading { 
     text-align: left; 
 
-}
+} */
 
 
-.roles-section > * { 
+.roles-section > *:nth-child( n ) { 
     padding-left: 1.8rem; 
 
 }
@@ -45,44 +45,32 @@
 
 .roles-section .featured-image { 
     width: 50%; height: 100%; 
-    margin-top: 0; 
-    padding-left: 0; 
+    margin-top: 0;
     position: absolute; left: 0; top: 0; 
 
-} 
-
-.screenshot-entry-list { 
-    --column-count: 2; 
-    --column-gutter-x-width: 0.25rem; 
-
-} 
-
-.screenshot-entry-list .entry:nth-child( 2n ) { 
-    margin-right: 0; 
 } 
 
 .screenshots-section { 
     padding-top: 5rem; padding-bottom: 5rem; 
     padding-right: 50%; 
-    position: relative; 
+    position: relative;  
 
 } 
 
-.screenshots-section > * { 
-    padding-right: 1.8rem; 
-    text-align: right; 
+.screenshots-section > :nth-child( n ) { 
+    padding-right: 1.8rem;  
 
 }
 
 .screenshot-entry-list { 
     width: 50%; height: 100%; 
-    padding-right: 0;  
     position: absolute; right: 0; top: 0;  
 
 } 
 
 .screenshots-section .screenshot-entry-list { 
     margin-top: 0; 
+    padding-right: 0; 
 
 }
 
@@ -94,18 +82,19 @@
 .client-section-entry { 
     display: flex; flex-direction: row; 
     margin-top: 2.5rem; 
+    padding-left: 1.2rem; padding-right: 1.2rem; 
 
 } 
 
 .client-section-entry > * { 
-    padding-top: 0.8rem; 
+    padding-top: 0.8rem;  
     width: 50%; 
 
 }
 
 .client-section-entry-heading { 
     margin-right: 1.25rem; 
-    border-top: 1px solid; 
+    border-top: 1px solid;  
     font-family: var( --text-font-family ); font-size: 0.8rem; 
     text-align: right; 
 
@@ -171,6 +160,102 @@
     font-family: var( --text-font-family ); font-size: 0.85em; 
     text-align: left; 
 
+} 
+
+.screenshot-entry-list { 
+    --column-count: 2; 
+    --column-gutter-x-width: 0.25rem; 
+
+} 
+
+.screenshot-entry-list .entry:nth-child( 2n ) { 
+    margin-right: 0; 
+} 
+
+.screenshot-entry-list .entry:nth-child( -n + 2 ) { 
+    margin-top: 0; 
+} 
+
+
+@media screen and ( min-width: 881px ) { 
+    .roles-section, 
+    .roles-section > .heading { 
+        text-align: left; 
+
+    } 
+
+    .screenshots-section, 
+    .screenshots-section > .heading { 
+        text-align: right; 
+
+    } 
+
+    .roles-section .featured-image, 
+    .screenshot-entry-list { 
+        padding: 0; 
+
+    }
+
 }
 
+@media screen and ( max-width: 880px ) { 
+    .project-page .section {  
+        padding-bottom: 0; 
 
+    } 
+
+    .roles-section, 
+    .screenshots-section { 
+        padding-top: 20rem; padding-left: 0; padding-right: 0; 
+        text-align: left; 
+
+    } 
+
+    .roles-section > :nth-child( n ), 
+    .screenshots-section > :nth-child( n ) { 
+        padding-left: 1.2rem; 
+    
+    } 
+    
+    .roles-section .featured-image, 
+    .screenshots-section .screenshot-entry-list { 
+        width: auto; height: 20rem; 
+        padding-left: 0; 
+        left: 0; right: 0; 
+    
+    } 
+
+    .project-section > * { 
+        margin-top: 1.8em; 
+
+    } 
+    
+} 
+
+@media screen and ( max-width: 780px ) { 
+    .client-section-entry { 
+        flex-direction: column; 
+        margin-top: 2.5rem; 
+    
+    } 
+    
+    .client-section-entry > * { 
+        box-sizing: border-box; 
+        width: 100%; 
+    
+    } 
+
+    .client-section-entry-heading { 
+        padding-bottom: 0.8em; 
+        border-top: none; 
+        border-bottom: 1px solid; 
+        text-align: left; 
+    
+    } 
+
+    .client-section-entry .person-name { 
+        right: auto; left: 2rem; 
+    
+    }
+
+}
