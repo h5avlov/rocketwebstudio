@@ -17,10 +17,11 @@
                     paragraphs= entry.paragraphs 
                 %} 
 
-                {% include button.html 
-                    className= "read-more-button" 
+                {% include inner-link.html 
+                    className= "button read-more-button has-icon" 
+                    targetSectionID= "product-features" 
                     text= "Read More" 
-                %} 
+                %}
 
                 {% include featured-image.html 
                     image= entry.image 

@@ -1,11 +1,11 @@
 .has-icon:before { 
     display: block; 
     /* Sets icon size */ 
-    width: var( --icon-side ); height: var( --icon-side ); 
+    width: var( --icon-side ); height: inherit; line-height: inherit; 
     /* Centers icon element in horizontal direction */
     margin-left: auto; margin-right: auto;  
     /* Centers icon character in horizontal and vertical direction */ 
-    text-align: center; line-height: var( --icon-side ); 
+    text-align: center; 
 
     /* Sets icon font */
     font-family: var( --icon-font-family ); 

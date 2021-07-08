@@ -2,9 +2,11 @@
     {% include section-head.html 
         head= include.data.head 
     %} 
-    {% include button.html 
+    {% include link.html 
+        className= "button read-more-button has-icon" 
+        target= "/about" 
         text= "Read More" 
-    %} 
+    %}
 
     <section class= "section-body body-expandable"> 
         {% include block.html 

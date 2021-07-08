@@ -1,4 +1,4 @@
-.inner-link { 
+.page-nav .inner-link { 
     display: inline-block; 
     /* Sets page navigation link vertical size and centers link text vertically */ 
     height: var( --page-nav-entry-height ); line-height: var( --page-nav-entry-height ); 

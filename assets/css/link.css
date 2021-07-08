@@ -1,0 +1,12 @@
+.link.has-icon:before { 
+    float: right; 
+    font-size: 1.8em; 
+    content: "\f3d6"; 
+
+} 
+
+.sell-points .link.has-icon:before { 
+    content: "\f3d4"; 
+
+} 
+
