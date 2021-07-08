@@ -1,0 +1,96 @@
+{ 
+    "id": 5, 
+
+    "title": "Doshky", 
+
+    "image": { 
+        "src": "pexels-aksonsat-uanthoeng-1078850.jpg", 
+        "alt": "Project Screenshot" 
+    }, 
+
+    "pageNav": true, 
+
+    "sections": { 
+        "description": {
+            "name": {
+                "default": "description" 
+            },  
+            "paragraphs": [
+                {
+                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                }
+            ] 
+        }, 
+
+        "roles": {
+            "name": {
+                "default": "roles" 
+            }, 
+            "paragraphs": [
+                {
+                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                }
+            ], 
+            "image": { 
+                "src": "", 
+                "alt": "Roles Picture" 
+            }, 
+            "body": [ 
+                {
+                    "role": "Design", 
+                    "description": "" 
+                }, 
+
+                {
+                    "role": "Code", 
+                    "description": "" 
+                }, 
+
+                {
+                    "role": "Copy", 
+                    "description": "" 
+                } 
+            ] 
+        }, 
+
+        "screenshots": { 
+            "name": {
+                "default": "screenshots" 
+            },
+            "paragraphs": [
+                {
+                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                }
+            ], 
+            "body": [
+                {
+                    "src": "" 
+                }, 
+
+                {
+                    "src": "" 
+                }, 
+
+                {
+                    "src": "" 
+                }, 
+
+                {
+                    "src": "" 
+                }
+            ] 
+        }, 
+
+        "client": { 
+            "name": {
+                "default": "client" 
+            }, 
+            "paragraphs": [
+                {
+                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                }
+            ] 
+        }
+    }
+
+}
