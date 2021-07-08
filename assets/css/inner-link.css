@@ -7,3 +7,9 @@
     font-size: var( --page-nav-font-size ); 
 
 } 
+
+.article-page .inner-link.has-icon:before { 
+    font-size: inherit; 
+    content: "\f489"; 
+
+}
