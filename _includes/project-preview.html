@@ -17,10 +17,17 @@
     {% endfor %} 
 
     <section class= "button-set project-details-button-set"> 
-        {% include button.html 
-            className= "read-more-button project-details-read-more-button" 
+
+        {% include link.html 
+            className= "button read-more-button project-details-read-more-button" 
+            target= include.url 
             text= "Project Details" 
-        %} 
+        %}
+
+        <!-- {% include button.html 
+            className= "button read-more-button project-details-read-more-button" 
+            text= "Project Details" 
+        %}  -->
         <!-- {% include button.html 
             className= "button-open button-open-project-review" 
             text= "Project Review" 

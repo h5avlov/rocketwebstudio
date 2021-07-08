@@ -4,7 +4,8 @@
     %} 
 
     <ul class= "entry-list project-entry-list"> 
-    {% for entry in include.body | limit: 1 %} 
+    {% for entry in include.body %} 
+        {% assign projectUrl= "/projects/" | append: entry[ 0 ] %} 
         {% assign projectEntry= entry[ 1 ] %} 
 
         <li class= "entry project-entry"> 
@@ -12,6 +13,7 @@
                 heading= projectEntry.title 
                 description= projectEntry.sections.description.paragraphs 
                 image= projectEntry.image 
+                url= projectUrl 
             %} 
         </li> 
     {% endfor %}
