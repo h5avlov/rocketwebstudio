@@ -5,6 +5,7 @@
 
 .role-entry-list { 
     --column-count: 2; 
+    --column-gutter-y-width: 0.4rem; 
 
 } 
 
@@ -86,7 +87,7 @@
 }
 
 .screenshot { 
-    background-color: red; 
+    background-color: var( --text-color ); 
 
 } 
 
@@ -129,7 +130,7 @@
 .client-section-entry .person-photo { 
     display: block; 
     width: 8em; height: 10em; 
-    background-color: red; 
+    background-color: var( --text-color ); 
 
 } 
 

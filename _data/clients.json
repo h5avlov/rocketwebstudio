@@ -2,7 +2,26 @@
     { 
         "id": 1, 
         "projectIdList": [
-            1, 4 
+            1 
+        ], 
+
+        "name": "Georgy Stoynov Services", 
+
+        "description": [ 
+            {
+                "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+            }
+        ], 
+
+        "contacts": { 
+            "website": "georgistoynov.com" 
+        } 
+    }, 
+
+    { 
+        "id": 2, 
+        "projectIdList": [
+            2 
         ], 
 
         "name": "Vampire Solutions", 
@@ -14,7 +33,45 @@
         ], 
 
         "contacts": { 
-            "website": "www.vampiresolutions.com" 
+            "website": "" 
+        } 
+    }, 
+
+    { 
+        "id": 3, 
+        "projectIdList": [
+            3 
+        ], 
+
+        "name": "Elli Bee Therapy", 
+
+        "description": [ 
+            {
+                "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+            }
+        ], 
+
+        "contacts": { 
+            "website": "ellibeetherapy.com" 
+        } 
+    }, 
+
+    { 
+        "id": 4, 
+        "projectIdList": [
+            4 
+        ], 
+
+        "name": "Clima Energy", 
+
+        "description": [ 
+            {
+                "text": "Vivamus fermentum risus tincidunt accumsan viverra. Cras commodo, mauris tempus rutrum tempor, lacus nibh tempor lectus, vel interdum lorem massa a elit. Nunc ac massa dui. Ut posuere eros vulputate ligula porttitor, et blandit odio pulvinar. Cras a erat nec urna sollicitudin tempor. Cras tincidunt vestibulum egestas. Morbi mollis velit est, quis volutpat eros volutpat sit amet. Phasellus commodo dictum est, fringilla dapibus mi placerat a. In sodales eros massa, eu vulputate ante efficitur eget." 
+            }
+        ], 
+
+        "contacts": { 
+            "website": "climaenergy.com" 
         } 
     }
 
