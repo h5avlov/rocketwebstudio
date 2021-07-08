@@ -1,9 +1,26 @@
 <section class= "section page-preview-section workflow-section"> 
     {% include section-head.html 
-        head= include.data.head 
+        head= include.head 
     %} 
 
-    {% include overview-entry-list.html 
-        entryList= include.data.entryList 
-    %} 
+    <ul class= "entry-list overview-section-entry-list workflow-section-entry-list"> 
+    {% for entry in include.body %} 
+        {% assign sectionName= entry[ 0 ] %} 
+
+        <li class= "entry overview-section-entry workflow-section-entry"> 
+            {% include heading.html 
+                className= "overview-section-entry-heading" 
+                level= 3 
+                text= sectionName 
+            %} 
+            
+            {% assign linkTarget= "/workflow" | append: "#" | append: sectionName | append: "-section" %} 
+            {% include link.html 
+                className= "button read-more-button" 
+                target= linkTarget
+                text= "Read More" 
+            %} 
+        </li>
+    {% endfor %} 
+    </ul> 
 </section>

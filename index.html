@@ -21,7 +21,8 @@ label: home
 %} 
 
 {% include workflow.html 
-    data= site.data.workflow 
+    head= site.data.workflow.head
+    body= site.data.workflowPage.sections 
 %} 
 
 {% include building.html 

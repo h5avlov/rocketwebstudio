@@ -64,6 +64,7 @@
 
 } 
 
+
 /* Hides the button to open the first article section, because there is no need of it */
 .article-section:target .button-open { 
     display: none; 
