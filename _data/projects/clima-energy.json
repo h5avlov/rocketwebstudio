@@ -1,9 +1,7 @@
 { 
     "id": 4, 
-    "clientId": 1, 
-    "representativeIdList": [
-        4 
-    ], 
+
+    "order": 2, 
 
     "title": "Clima Energy", 
 

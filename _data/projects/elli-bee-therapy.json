@@ -1,9 +1,7 @@
 { 
     "id": 3, 
-    "clientId": 1, 
-    "representativeIdList": [
-        1, 4 
-    ], 
+
+    "order": 4, 
 
     "title": "Elli Bee Therapy", 
 
