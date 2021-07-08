@@ -9,6 +9,11 @@
 
 } 
 
+.project-entry + .project-entry { 
+    margin-top: 0.4rem; 
+
+}
+
 /* .project-entry-head { 
     color: white;  
 }  */

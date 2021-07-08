@@ -111,6 +111,16 @@
 
 } 
 
+/* .client-section .representative-entry-list { 
+    --column-gutter-y-width: 2.5rem; 
+
+} 
+
+.client-section .representative:nth-child( 1 ) { 
+    margin-top: 0; 
+
+} */ 
+
 .client-section-entry .person { 
     display: inline-block; 
     position: relative; 
@@ -146,6 +156,11 @@
     border: none; 
 
 } 
+
+.client-section-entry .entry:not( :first-child ) { 
+    margin-top: 2.8rem; 
+
+}
 
 .client-section-entry .entry > *:not( :first-child ) { 
     margin-top: 2rem; 

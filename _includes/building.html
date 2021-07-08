@@ -1,5 +1,5 @@
-{% assign head= include.data.head %}
-{% assign body= include.data.body %} 
+{% assign head= include.head %}
+{% assign body= include.body %} 
 
 <section class= "section page-preview-section building-section"> 
     {% include section-head.html 
@@ -9,14 +9,28 @@
     <article> 
         {% include price-block.html 
             className= "overall-price"
-            text= body.overallPrice.text 
-            price= body.overallPrice.price 
+            text= include.overallPrice.text 
+            price= include.overallPrice.price 
         %} 
 
         <ul class= "entry-list building-block-entry-list"> 
-        {% for buildingBlock in body.entryList %} 
+        {% for entry in include.body %} 
+            {% assign sectionName= entry[ 0 ] %}
+            {% assign buildingBlock= entry[ 1 ] %} 
+
             <li class= "entry building-block-entry entry-expandable"> 
-                {% include building-block.html buildingBlock= buildingBlock %} 
+                {% include price-block.html 
+                    className= "building-block-price" 
+                    text= buildingBlock.heading 
+                    price= buildingBlock.price 
+                %} 
+            
+                {% assign linkTarget= "/building" | append: "#" | append: sectionName | append: "-section" %} 
+                {% include link.html 
+                    className= "button read-more-button" 
+                    target= linkTarget
+                    text= "Read More" 
+                %} 
             </li>
         {% endfor %} 
         </ul> 

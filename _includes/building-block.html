@@ -14,6 +14,13 @@
         price= head.price 
     %} 
 
+    {% assign linkTarget= "/building" | append: "#" | append: sectionName | append: "-section" %} 
+    {% include link.html 
+        className= "button read-more-button" 
+        target= linkTarget
+        text= "Read More" 
+    %} 
+
     <!-- {% include button.html 
         className= "button-open building-block-button-open" 
         text= "Read More"

@@ -26,7 +26,9 @@ label: home
 %} 
 
 {% include building.html 
-    data= site.data.building 
+    head= site.data.building.head 
+    body= site.data.buildingPage.sections 
+    overallPrice= site.data.buildingPage.overallPrice 
 %} 
 
 {% include projects.html 
