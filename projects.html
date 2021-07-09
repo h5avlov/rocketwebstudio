@@ -5,7 +5,8 @@ dataFileName: projectsPage
 label: projects 
 --- 
 
+{% assign ordered= site.projects | sort: "order" %} 
 {% include projects.html 
     head= site.data.projectsSection 
-    body= site.data.projects 
+    body= ordered 
 %} 
