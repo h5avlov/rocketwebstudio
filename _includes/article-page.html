@@ -1,24 +1,6 @@
 {% assign articlePage= include.articlePage %} 
 
 
-{% include heading.html 
-    level= 1 
-    className= "page-heading" 
-    text= articlePage.heading 
-%} 
-
-{% include text-entry-list.html 
-    className= "page-text-entry" 
-    paragraphs= articlePage.paragraphs  
-%} 
-
-{% if articlePage.image %} 
-    {% include featured-image.html 
-        className= "page-featured-image" 
-        image= articlePage.image 
-    %} 
-{% endif %}
-
 {% for section in articlePage.sections %} 
     {% assign sectionKey= section[ 0 ] %}
     {% assign sectionData= section[ 1 ] %} 

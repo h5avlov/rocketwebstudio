@@ -33,5 +33,23 @@ layout: default
 %} 
 
 <article id= "page-body" class= "page-body"> 
+    {% include heading.html 
+        level= 1 
+        className= "page-heading" 
+        text= pageData.heading 
+    %} 
+    
+    {% include text-entry-list.html 
+        className= "page-text-entry" 
+        paragraphs= pageData.paragraphs  
+    %} 
+    
+    {% if articlePage.image %} 
+        {% include featured-image.html 
+            className= "page-featured-image" 
+            image= pageData.image 
+        %} 
+    {% endif %} 
+    
     {{ content }}
 </article>
