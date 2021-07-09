@@ -7,27 +7,24 @@
         
         <ul class= "entry-list project-entry-list"> 
         {% assign size= include.body | size %}
-        {% for order in ( 1..1 ) %}  
+        {% for order in ( 1..size ) %}  
 
             {% for entry in include.body %}  
                 {% assign projectEntry= entry[ 1 ] %} 
-                {% if projectEntry.order != order %} 
-                    {% continue %} 
-                {% endif %} 
-
-                {% assign projectUrl= "/projects/" | append: entry[ 0 ] %}
-
-                <li class= "entry project-entry"> 
-                    {% include project-preview.html 
-                        heading= projectEntry.title 
-                        description= projectEntry.sections.description.paragraphs 
-                        image= projectEntry.image 
-                        url= projectUrl 
-                    %} 
-                </li> 
-
-                {% break %} 
+                {% if projectEntry.order == order %} 
+                    {% assign projectUrl= "/projects/" | append: entry[ 0 ] %} 
+                    {% break %}
+                {% endif %}  
             {% endfor %} 
+
+            <li class= "entry project-entry"> 
+                {% include project-preview.html 
+                    heading= projectEntry.title 
+                    description= projectEntry.sections.description.paragraphs 
+                    image= projectEntry.image 
+                    url= projectUrl 
+                %} 
+            </li> 
         {% endfor %}
         </ul> 
 
