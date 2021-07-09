@@ -1,0 +1,16 @@
+---
+layout: inner-page 
+permalink: /projects  
+dataFileName: projectsPage 
+label: workflow 
+--- 
+
+<ul class= "entry-list project-preview-entry-list"> 
+{% for entry in site.projects %} 
+    {% assign project= site.data.projects[ entry.dataFileName ] %} 
+
+    <li class= "entry project-preview"> 
+        
+    </li> 
+{% endfor %}
+</ul>

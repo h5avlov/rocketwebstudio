@@ -20,6 +20,12 @@
         }, 
 
         { 
+            "target": "/projects", 
+            "text": "Projects", 
+            "className": "projects" 
+        },
+
+        { 
             "target": "/about", 
             "text": "About", 
             "className": "about" 
