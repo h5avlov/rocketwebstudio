@@ -13,7 +13,46 @@
     margin-right: 0; 
 } 
 
-/* .home-page .project-entry-list { 
+.home-page .project-preview-section-body { 
     max-width: none; 
 
-} */
+} 
+
+.home-page .projects-section .random-access-entry-list { 
+    --column-count: 2; 
+    --column-gutter-x-width: 0.4rem; 
+
+} 
+
+/* Removes unneccessary margin top from entries, located on the first row */
+.home-page .projects-section .random-access-entry:nth-child( -n + 2 ) { 
+    margin-top: 0; 
+} 
+
+/* Removes unneccessary margin right from entries, located on the last column */
+.home-page .projects-section .random-access-entry:nth-child( 2n ) { 
+    margin-right: 0; 
+} 
+
+.home-page .project-preview-section-body { 
+    display: flex; flex-direction: row; 
+
+} 
+
+.home-page .project-entry-list { 
+    max-width: none; width: 50%; 
+    margin-left: 0; 
+
+} 
+
+.home-page .projects-section .random-access-entry-list {  
+    width: 50%; 
+    margin-left: var( --column-gutter-x-width ); 
+
+}
+
+.home-page .projects-section .random-access-entry { 
+    height: calc( ( 100% - var( --column-gutter-x-width ) ) / 2 );  
+    background-color: var( --text-color ); 
+
+} 

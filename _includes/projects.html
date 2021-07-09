@@ -3,29 +3,39 @@
         head= include.head 
     %} 
 
-    <ul class= "entry-list project-entry-list"> 
-    {% assign size= include.body | size %}
-    {% for order in ( 1..size ) %}  
+    <section class= "project-preview-section-body"> 
+        
+        <ul class= "entry-list project-entry-list"> 
+        {% assign size= include.body | size %}
+        {% for order in ( 1..1 ) %}  
 
-        {% for entry in include.body %}  
-            {% assign projectEntry= entry[ 1 ] %} 
-            {% if projectEntry.order != order %} 
-                {% continue %} 
-            {% endif %} 
+            {% for entry in include.body %}  
+                {% assign projectEntry= entry[ 1 ] %} 
+                {% if projectEntry.order != order %} 
+                    {% continue %} 
+                {% endif %} 
 
-            {% assign projectUrl= "/projects/" | append: entry[ 0 ] %}
+                {% assign projectUrl= "/projects/" | append: entry[ 0 ] %}
 
-            <li class= "entry project-entry"> 
-                {% include project-preview.html 
-                    heading= projectEntry.title 
-                    description= projectEntry.sections.description.paragraphs 
-                    image= projectEntry.image 
-                    url= projectUrl 
-                %} 
-            </li> 
+                <li class= "entry project-entry"> 
+                    {% include project-preview.html 
+                        heading= projectEntry.title 
+                        description= projectEntry.sections.description.paragraphs 
+                        image= projectEntry.image 
+                        url= projectUrl 
+                    %} 
+                </li> 
 
-            {% break %} 
-        {% endfor %} 
-    {% endfor %}
-    </ul> 
+                {% break %} 
+            {% endfor %} 
+        {% endfor %}
+        </ul> 
+
+        <ol class= "entry-list random-access-entry-list project-preview-random-access-entry-list"> 
+        {% for order in ( 1..size ) %} 
+            <li class= "entry random-access-entry"></li> 
+        {% endfor %}
+        </ol> 
+
+    </section>
 </section>
