@@ -31,9 +31,10 @@ label: home
     overallPrice= site.data.buildingPage.overallPrice 
 %} 
 
+{% assign ordered= site.projects | sort: "order" %}
 {% include projects.html 
     head= site.data.projectsSection 
-    body= site.data.projects 
+    body= ordered 
 %} 
 
 <!-- {% include reviews.html 

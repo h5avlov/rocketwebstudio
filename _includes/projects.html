@@ -6,31 +6,29 @@
     <section class= "project-preview-section-body"> 
         
         <ul class= "entry-list project-entry-list"> 
-        {% assign size= include.body | size %}
-        {% for order in ( 1..size ) %}  
+        {% for entry in include.body %}  
+            {% assign projectEntry= site.data.projects[ entry.dataFileName ] %} 
 
-            {% for entry in include.body %}  
-                {% assign projectEntry= entry[ 1 ] %} 
-                {% if projectEntry.order == order %} 
-                    {% assign projectUrl= "/projects/" | append: entry[ 0 ] %} 
-                    {% break %}
-                {% endif %}  
-            {% endfor %} 
-
-            <li class= "entry project-entry"> 
+            <li id= "{{ entry.label }}-project-entry" class= "entry project-entry {{ entry.label }}-project-entry"> 
                 {% include project-preview.html 
                     heading= projectEntry.title 
                     description= projectEntry.sections.description.paragraphs 
                     image= projectEntry.image 
-                    url= projectUrl 
+                    url= entry.url 
                 %} 
             </li> 
-        {% endfor %}
+            
+        {% endfor %} 
         </ul> 
 
         <ol class= "entry-list random-access-entry-list project-preview-random-access-entry-list"> 
-        {% for order in ( 1..size ) %} 
-            <li class= "entry random-access-entry"></li> 
+        {% for entry in include.body %} 
+            <li class= "entry random-access-entry"> 
+                {% assign targetSectionID= entry.label | append: "-project-entry" %} 
+                {% include inner-link.html 
+                    targetSectionID= targetSectionID 
+                %} 
+            </li> 
         {% endfor %}
         </ol> 
 
