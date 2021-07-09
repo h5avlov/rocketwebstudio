@@ -4,11 +4,8 @@
     %} 
 
     <ul class= "entry-list project-entry-list"> 
-    {% assign size= include.body | size %}  
-    {% assign order= 0 %} 
-
-    {% for entry in include.body %}  
-        {% assign order= order | plus: 1 %} 
+    {% assign size= include.body | size %}
+    {% for order in ( 1..size ) %}  
 
         {% for entry in include.body %}  
             {% assign projectEntry= entry[ 1 ] %} 
