@@ -28,9 +28,9 @@
 } 
 
 /* Separates section sequence from elements preceding it, no matter what the element is */ 
-:not( .article-section ) + .article-section { 
+/* :not( .article-section ) + .article-section { 
     margin-top: var( --article-sections-margin-y ); 
-} 
+}  */
 
 /* Separates section sequence from text entries following it */ 
 .article-section + .text-entry { 

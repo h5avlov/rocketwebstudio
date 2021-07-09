@@ -40,7 +40,18 @@
 }   */
 
 .page-body .featured-image { 
-    margin-top: 2rem; 
-    height: 20rem; 
+    /* margin-top: 2rem;  */ 
+    height: 20rem; max-width: var( --page-inner-width ); 
+    margin-left: auto; margin-right: auto; 
     /* background-color: red;  */ 
 } 
+
+.page-featured-image + * { 
+    margin-top: 5rem; 
+
+} 
+
+.page-text-entry:last-of-type + :not( .page-featured-image ) { 
+    margin-top: 4rem; 
+
+}

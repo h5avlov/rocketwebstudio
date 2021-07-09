@@ -44,12 +44,12 @@ layout: default
         paragraphs= pageData.paragraphs  
     %} 
     
-    {% if articlePage.image %} 
+    {% if pageData.image %} 
         {% include featured-image.html 
             className= "page-featured-image" 
             image= pageData.image 
         %} 
     {% endif %} 
-    
+
     {{ content }}
 </article>

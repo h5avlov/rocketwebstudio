@@ -5,12 +5,7 @@ dataFileName: projectsPage
 label: projects 
 --- 
 
-<ul class= "entry-list project-preview-entry-list"> 
-{% for entry in site.projects %} 
-    {% assign project= site.data.projects[ entry.dataFileName ] %} 
-
-    <li class= "entry project-preview"> 
-        
-    </li> 
-{% endfor %}
-</ul>
+{% include projects.html 
+    head= site.data.projectsSection 
+    body= site.data.projects 
+%} 
