@@ -26,7 +26,16 @@
   
 }
 
-.contact-page { 
+.contact-page .text-entry { 
     text-align: center; 
 
-} 
+}  
+
+@media screen and ( max-width: 880px ) { 
+    .contact-page .page-text-entry, 
+    .contact-page .section > .text-entry {  
+        text-align: left; 
+    } 
+
+}
+

@@ -23,16 +23,18 @@
 } 
 
 /* Removes general width restrictions */ 
-.article-page .article-section, 
 .article-page .section-body { 
     max-width: none; 
 
 } 
 
 /* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */
+.page-heading, 
+.page-text-entry, 
 .section > .text-entry, 
-.article-page .text-entry, 
+.article-page .article-section, 
 .building-block-entry-list, 
+.quick-contact-entry-set, 
 .send-message-form { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 

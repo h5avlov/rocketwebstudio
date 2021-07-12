@@ -35,6 +35,11 @@
 
 }   
 
+.page-text-entry { 
+    text-align: left; 
+
+}
+
 /* .text-entry:not( :last-child ) { 
     margin-bottom: var( --text-margin-bottom ); 
 }   */

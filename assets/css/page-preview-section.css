@@ -3,7 +3,7 @@
 } 
 
 @media screen and ( max-width: 880px ) { 
-    .page-preview-section .text-entry {  
+    .section > .text-entry {  
         text-align: left; 
     } 
 
