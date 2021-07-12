@@ -32,6 +32,7 @@
 /* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */
 .section > .text-entry, 
 .article-page .text-entry, 
+.building-block-entry-list, 
 .send-message-form { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
 

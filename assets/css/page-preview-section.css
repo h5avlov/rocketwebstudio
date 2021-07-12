@@ -1,3 +1,10 @@
 .page-preview-section {  
     text-align: center; 
 } 
+
+@media screen and ( max-width: 880px ) { 
+    .page-preview-section .text-entry {  
+        text-align: left; 
+    } 
+
+}

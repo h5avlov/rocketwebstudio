@@ -22,7 +22,7 @@
 
 
 /* Defines 4 columns for screens that comfortably display 4 columns */
-@media screen and ( min-width: 841px ) { 
+@media screen and ( min-width: 881px ) { 
     .building-block-entry-list { 
         --column-count: 4; 
 
@@ -38,10 +38,18 @@
   
 } 
 
+@media screen and ( max-width: 880px ) { 
+    .building-block-entry-list { 
+        --column-gutter-y-width: 3.5rem; 
+    } 
+
+}
+
 /* Defines 2 columns for screens, that could not comfortably display 4 columns */
-@media screen and ( max-width: 840px ) and ( min-width: 641px ) { 
+@media screen and ( max-width: 880px ) and ( min-width: 641px ) { 
     .building-block-entry-list { 
         --column-count: 2; 
+
     } 
     
     .building-block-entry:nth-child( 2n ) { 
