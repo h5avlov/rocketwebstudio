@@ -60,15 +60,24 @@
 .screenshots-section > :nth-child( n ) { 
     padding-right: 1.8rem;  
 
+} 
+
+.screenshots-section > .screenshot-entry-list-window { 
+    height: 100%; 
+    padding: 0; 
+    position: absolute; left: 50%; right: 0; top: 0; bottom: 0; 
+    overflow-x: scroll; 
+
 }
 
-.screenshot-entry-list { 
+/* .screenshot-entry-list { 
     width: 50%; height: 100%; 
     position: absolute; right: 0; top: 0;  
 
-} 
+}  */
 
 .screenshots-section .screenshot-entry-list { 
+    height: 100%; 
     margin-top: 0; 
     padding-right: 0; 
 
@@ -163,16 +172,23 @@
 } 
 
 .screenshot-entry-list { 
-    --column-count: 2; 
+    --column-count-all: 4; 
+    --column-count: 3; 
     --column-gutter-x-width: 0.25rem; 
 
 } 
 
-.screenshot-entry-list .entry:nth-child( 2n ) { 
+.screenshot-entry-list { 
+    flex-wrap: nowrap; 
+    width: calc( 100% + ( var( --column-count-all ) - var( --column-count ) ) * var( --column-width ) + ( var( --column-count-all ) - var( --column-count) ) * var( --column-gutter-x-width ) ); 
+
+}
+
+.screenshot-entry-list .entry:nth-child( 4n ) { 
     margin-right: 0; 
 } 
 
-.screenshot-entry-list .entry:nth-child( -n + 2 ) { 
+.screenshot-entry-list .entry:nth-child( -n + 4 ) { 
     margin-top: 0; 
 } 
 
@@ -218,7 +234,7 @@
     } 
     
     .roles-section .featured-image, 
-    .screenshots-section .screenshot-entry-list { 
+    .screenshots-section > .screenshot-entry-list-window { 
         width: auto; height: 20rem; 
         padding-left: 0; 
         left: 0; right: 0; 
@@ -257,5 +273,13 @@
         right: auto; left: 2rem; 
     
     }
+
+} 
+
+@media screen and ( max-width: 580px ) { 
+    .screenshot-entry-list { 
+        --column-count: 2; 
+    
+    } 
 
 }
