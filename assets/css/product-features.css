@@ -9,11 +9,17 @@
 
 } */ 
 
-.product-features-entry-list {
+.product-features-entry-list { 
     background-size: cover; 
     /* background-position: center top;  */ 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
-    background-color: var( --text-color ); 
+    /* background-color: var( --text-color );  */ 
+    /* border: 1px solid;  */ 
+} 
+
+.text-entry + .product-features-entry-list {
+    margin-top: calc( var( --text-margin-bottom  ) + 1.5rem ); 
+
 }
 
 .product-feature { 
@@ -24,7 +30,7 @@
     border: 1px solid; border-width: 1px 1px 0 0;  
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
     background-size: cover;  */ 
-    color: white; 
+    /* color: white;  */ 
 
 } 
 
@@ -49,7 +55,7 @@
         border-right: none; 
     } 
     
-    .product-features-entry:nth-child( -n + 3 ) { 
+    .product-feature:nth-child( -n + 3 ) { 
         margin-top: 0; 
         border-top: none; 
     } 
