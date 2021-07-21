@@ -1,0 +1,23 @@
+{ 
+    "id": "Rocket Web Studio", 
+    "localization": { 
+        "language": "Bulgarian", 
+        "currency": "лв" 
+    }, 
+    "buttons": { 
+        "displayMore": { 
+            "text": "Show More" 
+
+        }, 
+        "outerPageLink": { 
+            "text": "Read More"
+
+        },  
+        "innerPageLink": { 
+            "text": "Read More" 
+
+        } 
+
+    }
+
+}

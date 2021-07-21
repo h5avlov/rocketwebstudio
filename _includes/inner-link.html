@@ -2,5 +2,8 @@
     class= "link inner-link{% if include.className %} {{ include.className }}{% endif %}" 
     href= "#{{ include.targetSectionID }}" 
 >
-    {{ include.text }} 
+    {% if include.text %} 
+        {{ include.text }} 
+    {% else %} 
+        {{ site.data.settings.buttons.innerPageLink.text }} 
 </a>
