@@ -10,8 +10,10 @@
                 {% include id.html 
                     tagline= site.data.id.tagline 
                 %} 
+
+                <h5 class= "heading subheading sell-points-entry-subheading">{{ entry.subheading.text  }}</h5> 
                 
-                <h3 class= "heading">{{ entry.heading.text }}</h3> 
+                <h3 class= "heading sell-points-entry-heading">{{ entry.heading.text }}</h3> 
 
                 {% include text-entry-list.html 
                     paragraphs= entry.paragraphs 
@@ -20,6 +22,7 @@
                 {% include inner-link.html 
                     className= "button read-more-button has-icon" 
                     targetSectionID= "product-features-section" 
+                    text= entry.button.text 
                 %}
 
                 {% include featured-image.html 

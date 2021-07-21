@@ -5,24 +5,26 @@
 
     "entryList": [ 
         { 
+            "subheading": {
+                "text": "Сайт от Rocket Web Studio" 
+            },
             "heading": {
-                "text": "What is Our Deal?" 
+                "text": "Ще увеличи Вашите продажби" 
             }, 
             "paragraphs": [ 
                 { 
-                    "text": "Nunc bibendum augue vitae enim sagittis, et lacinia lorem iaculis. Mauris at accumsan arcu, vel ultrices mauris. Aenean quis dictum massa. Mauris molestie risus massa, vitae placerat arcu pulvinar sed, consectetur adipiscing elit." 
+                    "text": "и с неговата 'аеродинамичност', модерни уеб технологии, мощност и бързина, гарантиращи висок conversion rate ще изтегли Вашия бизнес на нова орбита." 
                 }
             ], 
             "image": { 
                 "type": "featured", 
                 "src": "pexels-aksonsat-uanthoeng-1078850.jpg", 
-                "alt": "Sell Points Entry Image" 
+                "alt": "" 
             }, 
+            "button": { 
+                "text": "Научете как" 
 
-            "navAccessible": { 
-                "title": "Design", 
-                "subtitle": "Eye Catching" 
-            } 
+            }
         } 
     ]
 

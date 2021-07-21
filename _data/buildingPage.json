@@ -25,7 +25,7 @@
         "text": "You Pay",  
         "price": { 
             "value": { 
-                "int": "700", 
+                "int": "950", 
                 "fr": "00"
             }, 
             "currency": "USD" 

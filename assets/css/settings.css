@@ -293,10 +293,10 @@
 :root {  
     --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
     --sell-points-entry-padding-x: 5%; 
-    --sell-points-entry-padding-top: 4rem; 
+    --sell-points-entry-padding-top: 5rem; 
     --sell-points-entry-padding-bottom: calc( 1.4 * var( --sell-points-entry-padding-top ) ); 
 
-    --id-margin-bottom-front-page: 2.5em; 
+    --id-margin-bottom-front-page: 3.5em; 
     --sell-points-entry-heading-margin-bottom: 0.8em; 
     --sell-points-entry-text-entry-margin-bottom: 1em; 
     --sell-points-entry-text-margin-bottom: 2.5em; 

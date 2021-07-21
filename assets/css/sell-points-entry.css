@@ -10,7 +10,7 @@
 
 } 
 
-.sell-points-entry .heading { 
+.sell-points-entry-heading { 
     margin-bottom: var( --sell-points-entry-heading-margin-bottom ); 
     font-size: var( --sell-points-entry-heading-font-size ); 
     text-transform: uppercase; 
