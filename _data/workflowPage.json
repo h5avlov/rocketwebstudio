@@ -1,7 +1,7 @@
 { 
-    "title": "Workflow", 
+    "title": "Работен процес", 
 
-    "heading": "Our Award Winning Workflow", 
+    "heading": "Ефективна работна последователност", 
 
     "paragraphs": [ 
         {
@@ -24,7 +24,7 @@
     "sections": { 
         "analysis": {  
             "subheading": "Find What is Important", 
-            "heading": "Analysis",  
+            "heading": "Анализ",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -40,7 +40,7 @@
 
         "planning": { 
             "subheading": "Choosing the Steps", 
-            "heading": "Planning",  
+            "heading": "Планиране",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -56,7 +56,7 @@
 
         "building": { 
             "subheading": "Making Something", 
-            "heading": "Building",  
+            "heading": "Изграждане",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -72,7 +72,7 @@
 
         "deploying": { 
             "subheading": "Setting and Starting", 
-            "heading": "Deploying",  
+            "heading": "Пускане",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -88,7 +88,7 @@
 
         "improving": { 
             "subheading": "Starting All Over Again", 
-            "heading": "Improving",  
+            "heading": "Подобряване",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 

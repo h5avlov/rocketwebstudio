@@ -6,15 +6,15 @@
     }, 
     "buttons": { 
         "displayMore": { 
-            "text": "Show More" 
+            "text": "Вижте повече" 
 
         }, 
         "outerPageLink": { 
-            "text": "Read More"
+            "text": "Прочетете повече"
 
         },  
         "innerPageLink": { 
-            "text": "Read More" 
+            "text": "Прочетете повече" 
 
         } 
 

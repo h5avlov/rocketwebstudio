@@ -6,12 +6,13 @@
     <ul class= "entry-list overview-section-entry-list workflow-section-entry-list"> 
     {% for entry in include.body %} 
         {% assign sectionName= entry[ 0 ] %} 
+        {% assign sectionData= entry[ 1 ] %}
 
         <li class= "entry overview-section-entry workflow-section-entry"> 
             {% include heading.html 
                 className= "overview-section-entry-heading" 
                 level= 3 
-                text= sectionName 
+                text= sectionData.heading 
             %} 
             
             {% assign linkTarget= "/workflow" | append: "#" | append: sectionName | append: "-section" %} 
