@@ -259,7 +259,7 @@
     --page-head-no-nav-line-pull-x: 25%; 
     --page-head-no-nav-text-entry-margin-up: 0.5em; 
 
-    --page-head-text-content-default-padding-y: 4rem; 
+    --page-head-text-content-default-padding-y: 5rem; 
     --page-head-text-content-border-width: 1px; 
     --page-head-text-content-border-color: rgba( 255, 255, 255, 0.4 ); 
     --page-head-text-content-box-shadow-spread: 5px;
@@ -293,7 +293,7 @@
 :root {  
     --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
     --sell-points-entry-padding-x: 5%; 
-    --sell-points-entry-padding-top: 5rem; 
+    --sell-points-entry-padding-top: var( --page-head-text-content-default-padding-y ); 
     --sell-points-entry-padding-bottom: calc( 1.4 * var( --sell-points-entry-padding-top ) ); 
 
     --id-margin-bottom-front-page: 3.5em; 

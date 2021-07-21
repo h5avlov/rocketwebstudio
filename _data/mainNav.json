@@ -1,39 +1,40 @@
 { 
-    "title": "Choose where to go", 
+    "title": "Изберете къде да отидете:", 
+    "labelOnMobile": "Навигация", 
     "entryList": [ 
         { 
             "target": "/", 
-            "text": "Home", 
+            "text": "Начало", 
             "className": "home"
         }, 
 
         { 
             "target": "/workflow", 
-            "text": "Workflow", 
+            "text": "Работен процес", 
             "className": "workflow" 
         }, 
 
         { 
             "target": "/building", 
-            "text": "Building", 
+            "text": "Изграждане на сайта", 
             "className": "building" 
         }, 
 
         { 
             "target": "/projects", 
-            "text": "Projects", 
+            "text": "Проекти", 
             "className": "projects" 
         },
 
         { 
             "target": "/about", 
-            "text": "About", 
+            "text": "За мен", 
             "className": "about" 
         }, 
 
         { 
             "target": "/contact", 
-            "text": "Contact", 
+            "text": "Контакти", 
             "className": "contact" 
         } 
 
