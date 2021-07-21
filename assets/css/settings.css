@@ -63,7 +63,7 @@
     --subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --heading-font-size ) ); 
 
     --text-entry-margin-bottom: 0.5em; 
-    --text-margin-bottom: 1.8em; 
+    --text-margin-bottom: 3rem; 
     --text-font-family: Arial; 
     --text-font-size: 14px; 
     --text-line-height: 1.4;  
@@ -168,7 +168,7 @@
     --building-section-text-margin-bottom: 4rem; 
 
     --overall-price-padding: 3.5rem; 
-    --overall-price-margin-bottom: 5rem; 
+    --overall-price-margin-bottom: 4rem; 
     --overall-price-border-width: 1px; 
 
 

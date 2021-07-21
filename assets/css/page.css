@@ -29,11 +29,27 @@
     margin-top: var( --text-entry-margin-bottom ); 
 } 
 
-/* Sets last paragraph from a sequence of paragraphs to any element following vertical distance */ 
+/* Sets last paragraph from a sequence of paragraphs vertical distance to any element, that follows */ 
 .text-entry + :not( .text-entry ) { 
     margin-top: var( --text-margin-bottom ); 
 
-}   
+}  
+
+/* .text-entry + .entry-list { 
+    margin-top: 3rem; 
+
+} 
+
+.text-entry + .button { 
+    margin-top: 2rem; 
+
+} */ 
+
+/* Overrides default top margin */ 
+.text-entry + .button { 
+    margin-top: 2.5rem; 
+
+}
 
 .page-text-entry { 
     text-align: left; 

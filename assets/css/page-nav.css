@@ -23,6 +23,12 @@
 
 } 
 
+/* Overrides default top margin, set on elements, following a paragraph */
+.text-entry + .page-nav { 
+    margin-top: 1.5rem; 
+
+}
+
 .page-nav-entry-list {   
     /* Centers navigation entries */
     justify-content: center; 
