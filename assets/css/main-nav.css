@@ -22,7 +22,7 @@
     color: var( --main-nav-text-color ); 
 } 
 
-.nav-entry:after { 
+.nav-link:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
@@ -30,16 +30,17 @@
     content: "";  
 }  
 
-.nav-entry:after, 
-.main-nav .entry-list:hover .nav-entry:after { 
+.nav-link:after, 
+.main-nav .entry-list:hover .nav-link:after { 
     opacity: 0; 
 }
 
-.main-nav .entry-list:hover .nav-entry:hover:after, 
-.nav-entry-current:after { 
+.main-nav .entry-list:hover .nav-link:hover:after, 
+.nav-entry-current .nav-link:after, 
+.nav-entry .nav-link:focus:after { 
     opacity: 1; 
 
-}
+} 
 
 .nav-link { 
     display: block; 
