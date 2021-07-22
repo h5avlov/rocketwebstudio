@@ -5,11 +5,11 @@
 
     "paragraphs": [ 
         {
-            "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            "text": "Здравейте, казвам се Христо. Надявам се тук да намерите това, което Ви трябва и да започнете едно ползотворно партньорство с моето студио за дизайн, редизайн и разпространение на уебсайтове Rocket." 
         }, 
 
         {
-            "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            "text": "Иначе съм завършил ТУ-София преди доста години, чета научна фантастика, изпитвам уважение към философията и съм почитател на колоезденето и бойните спортове." 
         }
 
     ], 
@@ -27,7 +27,7 @@
             "heading": "Образование",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+                    "text": "Имам бакалавърска степен от ТУ-София по специалност Машиностроене, и семестриално завършена магистратура по специалност Информационни технологии. Но това няма никакво значение - не само заради качеството на образованието в България, а и защото да знаеш в никакъв случай не означава да можеш." 
                 }
 
             ]
@@ -39,7 +39,7 @@
             "heading": "Опит",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+                    "text": "Уеб-дизайнът е повече от професия, не само защото бих се занимавал с това и без пари, а и защото обединява няколко много различни области - дизайн, програмиране, копирайтинг, SEO. Основателен е въпросът как един човек може да върши толкова различни неща, и то добре. Бих казал, че това се дължи на най-силните ми качества - старание, когато си заслужава и критичност към собствената ми работа. " 
                 } 
 
             ]
@@ -51,12 +51,8 @@
             "heading": "Умения",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                }, 
-
-                {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                } 
+                    "text": "За да може да направи добър сайт, един уеб-дизайнер трябва да има и око за дизайна и цветовете (дизайн), и способност да пише код (HTML/CSS), и да може да програмира леко (JavaScript). Отделно има фреймуоркове (React, Angular), библиотеки (jQuery) и инструменти (Node, Git), които автоматизират, структурират, модернизират работата. Не изключителните способности в една от тези области е ключова за успеха, а много доброто владеене на всички тях." 
+                }
 
             ]
 
