@@ -6,7 +6,19 @@ label: projects
 --- 
 
 {% assign ordered= site.projects | sort: "order" %} 
-{% include projects.html 
-    head= site.data.projectsSection 
-    body= ordered 
-%} 
+
+<ul class= "entry-list project-entry-list"> 
+{% for entry in ordered %}  
+    {% assign projectEntry= site.data.projects[ entry.dataFileName ] %} 
+
+    <li id= "{{ entry.label }}-project-entry" class= "entry project-entry {{ entry.label }}-project-entry"> 
+        {% include project-preview.html 
+            heading= projectEntry.title 
+            description= projectEntry.sections.description.paragraphs 
+            image= projectEntry.image 
+            url= entry.url 
+        %} 
+    </li> 
+    
+{% endfor %} 
+</ul> 

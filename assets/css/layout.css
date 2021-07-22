@@ -16,6 +16,7 @@
 /* Sets width restriction value on all text entries, section direct descendants, article page body direct descendants, and centers them on large screens */ 
 .text-entry, 
 .section > *, 
+.projects-page .project-entry-list, 
 .article-page .page-body > * { 
     max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
