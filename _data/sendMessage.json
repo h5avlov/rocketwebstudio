@@ -1,16 +1,16 @@
 { 
     "head": { 
         "heading": { 
-            "text": "Send us a Message" 
+            "text": "Изпратете ми съобщение" 
         }, 
 
         "subheading": { 
-            "text": "Dont Hesitate to" 
+            "text": "За въпроси, мнения, препоръки" 
         }, 
 
         "paragraphs": [ 
             { 
-                "text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+                "text": "" 
             }
         ] 
     }, 
@@ -21,21 +21,21 @@
             { 
                 "type": "text", 
                 "name": "name", 
-                "placeholder": "Your Name", 
+                "placeholder": "Вашето име", 
                 "required": true 
             }, 
 
             { 
                 "type": "email", 
                 "name": "email", 
-                "placeholder": "Your Email", 
+                "placeholder": "Вашият имейл", 
                 "required": true 
             }, 
 
             { 
                 "type": "message", 
                 "name": "message", 
-                "placeholder": "Your Message", 
+                "placeholder": "Вашето съобщение", 
                 "required": true 
             } 
 
@@ -43,7 +43,7 @@
         ], 
 
         "button": { 
-            "text": "Drop me a Line at Any Time" 
+            "text": "Изпратете съобщението" 
         } 
 
     }
