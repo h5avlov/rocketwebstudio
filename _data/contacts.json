@@ -19,24 +19,24 @@
     "entryList": [
         {
             "type": "phone", 
-            "title": "Our Phones", 
+            "title": "Телефони", 
             "entryList": [
                 { 
-                    "key": "mobile", 
+                    "key": "Мобилен", 
                     "value": "+35987712356", 
-                    "text": "Call me" 
+                    "text": "Обадете се" 
                 } 
             ]
         }, 
 
         {
             "type": "working-hours", 
-            "title": "Our Working Time", 
+            "title": "Работно време", 
             "entryList": [
                 { 
-                    "key": "Mon, Tue, Wed, Thu, Fr, Sat", 
-                    "value": "10:00-17:00", 
-                    "text": "Every Day" 
+                    "key": "Пон, Вт, Ср, Чт, Пт", 
+                    "value": "16:00-18:00", 
+                    "text": "В работни дни" 
                 }
             ] 
         }
