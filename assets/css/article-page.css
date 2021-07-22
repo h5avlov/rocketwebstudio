@@ -56,6 +56,11 @@
 
 } */ 
 
+/* .article-section .section-body { 
+    width: 0; height: 0; overflow: hidden; 
+    position: absolute; left: -10000px; 
+} */
+
 /* Specifies the first article section as open by default */
 .article-section:target .section-body { 
     width: 100%; height: auto; 
@@ -66,7 +71,7 @@
 
 
 /* Hides the button to open the first article section, because there is no need of it */
-.article-section:target .button-open { 
+.article-section .button-open { 
     display: none; 
 
 }
