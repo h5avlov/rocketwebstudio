@@ -35,12 +35,8 @@
             "heading": "Дизайн",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                }, 
-
-                {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                } 
+                    "text": "Дизайнът е първото, което прави впечатление на потребителите и създавайки добро настроение, ги предразполага. Според някои изследвания на подсъзнателната роля на визуалното изпълнение на сайта още в първите части от секундата, потребителите вече 'знаят' дали ще купят продукт, представен на сайта или не." 
+                }
 
             ], 
             "price": { 
@@ -58,12 +54,8 @@
             "heading": "Код",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                }, 
-
-                {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                } 
+                    "text": "Ще кажете, че кодът е за програмистите, но има един негов аспект, който всеки усеща - бързината. Ако сайтът е бавен, при наличието на толкова други сайтове само на същата страница в Google, потребителите е малко вероятно да чакат." 
+                }
 
             ], 
             "price": { 
@@ -81,12 +73,8 @@
             "heading": "Текст",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                }, 
-
-                {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                } 
+                    "text": "Очевидно е, че начинът по който говорите с Вашите клиенти, има значение за тях и това как Ви възприемат. Яснотата, конкретността, увлекателността и полезността са задължителни, но и тонът, с който поднасяте информацията, стилът Ви и отношението към евентуалните клиенти имат голямо значение." 
+                }
 
             ], 
             "price": { 
@@ -104,12 +92,8 @@
             "heading": "SEO",  
             "paragraphs": [ 
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                }, 
-
-                {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-                } 
+                    "text": "Техническа работа, която помага на Google да разбере доколко полезен е сайтът Ви за потребителите и по този начин - къде да го показва при търсене. Много е просто как Google оценява полезността на сайта Ви - брои посещенията (общите и на всеки отделен посетител) и отчита времето, което посетителите остават на сайта." 
+                }
 
             ], 
             "price": { 
