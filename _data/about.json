@@ -1,17 +1,17 @@
 {
     "head": {
         "heading": { 
-            "text": "About" 
+            "text": "За мен" 
         }, 
 
         "subheading": { 
-            "text": "Our Goals" 
+            "text": "Накрая, нещо и" 
 
         }, 
 
         "paragraphs": [ 
             {
-                "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+                "text": "Здравейте, казвам се Христо. Надявам се тук да намерите това, което Ви трябва и да започнете едно ползотворно партньорство с моето студио за дизайн, редизайн и разпространение на уебсайтове Rocket." 
             }
         ] 
     }, 

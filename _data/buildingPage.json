@@ -1,5 +1,5 @@
 { 
-    "title": "Building", 
+    "title": "Изграждане", 
     
     "heading": "Mastery and Craft to Talk About", 
 
@@ -22,7 +22,7 @@
     "pageNav": true, 
 
     "overallPrice": { 
-        "text": "You Pay",  
+        "text": "Плащате",  
         "price": { 
             "value": { 
                 "int": "950", 
@@ -36,7 +36,7 @@
     "sections": { 
         "design": { 
             "subheading": "Looking Good", 
-            "heading": "Design",  
+            "heading": "Дизайн",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -59,7 +59,7 @@
 
         "code": {  
             "subheading": "Working Right", 
-            "heading": "Code",  
+            "heading": "Код",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -82,7 +82,7 @@
 
         "copy": { 
             "subheading": "Talking to Whom Matters", 
-            "heading": "Copy",  
+            "heading": "Текст",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 

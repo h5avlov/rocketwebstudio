@@ -1,147 +1,19 @@
 { 
     "head": { 
         "heading": { 
-            "text": "Building" 
+            "text": "Изграждане" 
         }, 
 
         "subheading": { 
-            "text": "Our Expertise" 
+            "text": "Отделни, избирани от Вас етапи на" 
 
         }, 
 
         "paragraphs": [ 
             {
-                "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+                "text": "Процесът на изграждане на сайта е разделен на етапи, някои от които, поради относителната им независимост един от друг, могат да бъдат изпълнявани в друг ред. Можете да възложите на Rocket за изпълнение всички етапи, някаква комбинация от тях или само един." 
             }
         ]
-    }, 
-
-    "body": { 
-        "overallPrice": { 
-            "text": "You Pay",  
-            "price": { 
-                "value": { 
-                    "int": "700", 
-                    "fr": "00"
-                }, 
-                "currency": "USD" 
-            }
-
-        }, 
-        "entryList": [
-            { 
-                "head": {
-                    "heading": { 
-                        "text": "Design" 
-                    }, 
-                    "price": { 
-                        "value": { 
-                            "int": "250", 
-                            "fr": "00"
-                        }, 
-                        "currency": "USD" 
-                    }
-                }, 
-
-                "body": { 
-                    "heading": { 
-                        "text": "Design" 
-                    }, 
-
-                    "paragraphs": [ 
-                        { 
-                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
-                        } 
-                    ]
-
-                }
-            }, 
-
-            { 
-                "head": {
-                    "heading": { 
-                        "text": "Code" 
-                    }, 
-                    "price": { 
-                        "value": { 
-                            "int": "450", 
-                            "fr": "00"
-                        }, 
-                        "currency": "USD" 
-                    }
-                }, 
-
-                "body": { 
-                    "heading": { 
-                        "text": "Design" 
-                    }, 
-
-                    "paragraphs": [ 
-                        { 
-                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
-                        } 
-                    ]
-
-                }
-            }, 
-
-            { 
-                "head": {
-                    "heading": { 
-                        "text": "Copy" 
-                    }, 
-                    "price": { 
-                        "value": { 
-                            "int": "250", 
-                            "fr": "00"
-                        }, 
-                        "currency": "USD" 
-                    }
-                }, 
-
-                "body": { 
-                    "heading": { 
-                        "text": "Design" 
-                    }, 
-
-                    "paragraphs": [ 
-                        { 
-                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
-                        } 
-                    ]
-
-                }
-            }, 
-
-            { 
-                "head": {
-                    "heading": { 
-                        "text": "SEO" 
-                    }, 
-                    "price": { 
-                        "value": { 
-                            "int": "150", 
-                            "fr": "00"
-                        }, 
-                        "currency": "USD" 
-                    }
-                }, 
-
-                "body": { 
-                    "heading": { 
-                        "text": "Design" 
-                    }, 
-
-                    "paragraphs": [ 
-                        { 
-                            "text": "In hac habitasse platea dictumst. Nulla laoreet mi sit amet ante sodales convallis. Etiam quis rhoncus nisi, nec tristique erat. Vestibulum pretium urna vitae arcu feugiat, id porttitor erat egestas. Aliquam eget metus blandit, blandit lorem vitae, venenatis orci. Donec accumsan accumsan fermentum. Nam faucibus semper auctor. Etiam quis libero nec tellus maximus ultrices sagittis eu risus. Etiam ac arcu eget velit finibus ultrices sed et odio. Suspendisse potenti. Nam sodales ex at lectus tempus iaculis. Phasellus turpis ipsum, commodo sed dignissim ut, ornare quis neque. Integer cursus libero ut purus efficitur, sed rutrum odio finibus." 
-                        } 
-                    ]
-
-                }
-            } 
-        ]
-
-    }
+    } 
 
 }

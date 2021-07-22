@@ -1,77 +1,77 @@
 { 
     "heading": { 
-        "text": "Product Features" 
+        "text": "Има следните качества" 
     }, 
 
     "subheading": { 
-        "text": "Our Amazing" 
+        "text": "Всеки Rocket сайт" 
 
     }, 
 
     "paragraphs": [ 
         {
-            "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
+            "text": "Всеки добър сайт трябва да притежава няколко качества. Не едно, две или повечето от тях, а всички. Забележете колко от тези качества са насочени към времето, прекарано на сайта от потребителите." 
         }
     ], 
 
     "body": [ 
         { 
             "heading": {
-                "text": "Design"
+                "text": "Дизайн" 
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Модерен и атрактивен" 
             }
         }, 
 
         { 
             "heading": {
-                "text": "Code"
+                "text": "Използваемост"
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Висока" 
             }
         }, 
 
         { 
             "heading": {
-                "text": "Usability" 
+                "text": "Бързина" 
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Голяма" 
             }
         }, 
 
         { 
             "heading": {
-                "text": "Animations" 
+                "text": "Кодова база" 
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Качествена" 
             }
         }, 
 
         { 
             "heading": {
-                "text": "Copy"
+                "text": "Съдържание"
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Увлекателно" 
             }
         }, 
 
         { 
             "heading": {
-                "text": "SEO"
+                "text": "SEO" 
             }, 
 
             "subheading": { 
-                "text": "Not Your Ordinary" 
+                "text": "Оптимизация за търсачки" 
             }
         }
     ] 
