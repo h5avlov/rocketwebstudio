@@ -1,7 +1,7 @@
 { 
-    "title": "About", 
+    "title": "За мен", 
 
-    "heading": "Who We Are and Why We Care", 
+    "heading": "Малко повече за мен", 
 
     "paragraphs": [ 
         {
@@ -24,7 +24,7 @@
     "sections": { 
         "education": { 
             "subheading": "Our Training", 
-            "heading": "Education",  
+            "heading": "Образование",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -36,7 +36,7 @@
 
         "experience": { 
             "subheading": "Our Work History", 
-            "heading": "Experience",  
+            "heading": "Опит",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
@@ -48,7 +48,7 @@
 
         "skills": { 
             "subheading": "Our Mastery", 
-            "heading": "Skills",  
+            "heading": "Умения",  
             "paragraphs": [ 
                 {
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 

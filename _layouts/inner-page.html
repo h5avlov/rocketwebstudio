@@ -17,7 +17,7 @@ layout: default
 {% if pageData.pageNav %}
     {% assign pageNavEntryString= "" %} 
     {% for section in pageData.sections %} 
-        {% assign pageNavEntryString= pageNavEntryString | append: section[ 0 ] | append: " " %} 
+        {% assign pageNavEntryString= pageNavEntryString | append: section[ 0 ] | append: "," | append: section[ 1 ].heading | append: " " %} 
     {% endfor %} 
 
     {% assign pageNavEntryList= pageNavEntryString | split: " " %} 

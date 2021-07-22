@@ -3,9 +3,10 @@
 
     {% if include.pageNavEntryList %} 
         <ul class= "entry-list page-nav-entry-list"> 
-        {% for name in include.pageNavEntryList %} 
-            {% assign targetSectionID= name | append: "-section" %} 
-            {% assign text= name | capitalize %} 
+        {% for namePairString in include.pageNavEntryList %} 
+            {% assign namePair= namePairString | split: "," %}
+            {% assign targetSectionID= namePair[ 0 ] | append: "-section" %} 
+            {% assign text= namePair[ 1 ] | capitalize %} 
 
             <li class= "entry page-nav-entry"> 
                 {% include inner-link.html
