@@ -108,3 +108,8 @@
 .article-section .text-entry { 
     text-align: left; 
 } 
+
+.article-section .discussion-point { 
+    font-weight: bold; 
+
+}
