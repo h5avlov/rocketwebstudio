@@ -9,9 +9,30 @@
         }, 
 
         { 
-            "target": "/features", 
-            "text": "Качества", 
-            "className": "features" 
+            "target": "/rocket-website", 
+            "text": "Rocket уебсайтът", 
+            "className": "", 
+
+            "nav": [ 
+                { 
+                    "target": "/structure", 
+                    "text": "Структура", 
+                    "className": "structure" 
+                }, 
+
+                { 
+                    "target": "/features", 
+                    "text": "Качества", 
+                    "className": "features" 
+                }, 
+
+                { 
+                    "target": "/support", 
+                    "text": "Поддръжка", 
+                    "className": "support" 
+                } 
+
+            ]
         },
 
         { 
@@ -21,15 +42,36 @@
         }, 
 
         { 
-            "target": "/projects", 
-            "text": "Проекти", 
-            "className": "projects" 
-        },
+            "target": "/pricing", 
+            "text": "Цени", 
+            "className": "pricing" 
+        }, 
 
         { 
             "target": "/about", 
-            "text": "За Rocket", 
-            "className": "about" 
+            "text": "Rocket?", 
+            "className": "about", 
+
+            "nav": [ 
+                { 
+                    "target": "/about", 
+                    "text": "За мен", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/projects", 
+                    "text": "Проекти", 
+                    "className": "projects" 
+                }, 
+
+                { 
+                    "target": "", 
+                    "text": "Ревюта", 
+                    "className": "" 
+                }, 
+
+            ]
         }, 
 
         { 

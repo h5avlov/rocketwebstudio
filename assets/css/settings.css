@@ -13,20 +13,6 @@
     --header-padding-bottom: 0; 
     --logo-width: 8rem; 
     --logo-height: 8rem; 
-
-    --main-nav-height: 3.5rem; 
-    --main-nav-padding-top: 2.5rem; 
-    --main-nav-padding-bottom: 0.8rem; 
-    --main-nav-margin-bottom: 0; 
-    --main-nav-font-family: MS-Sans; 
-    --main-nav-font-size: 0.75em; 
-    --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
-    --main-nav-text-smooth-color: rgb( 128, 128, 128 ); 
-    --main-nav-background-color: transparent; 
-    --main-nav-link-padding-x: 2em; 
-    --main-nav-link-padding-y: ""; 
-    --main-nav-link-current-mark-height: 2px; 
-    --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
   
     --id-margin-bottom-inner-page: 0em; 
 
@@ -122,6 +108,28 @@
     --contact-email-icon: "\f422"; 
     
 } 
+
+/*-----------------------------------------------------------
+    Forms
+------------------------------------------------------------*/
+
+:root { 
+    --main-nav-height: 3.5rem; 
+    --main-nav-padding-top: 2.5rem; 
+    --main-nav-padding-bottom: 0.8rem; 
+    --main-nav-margin-bottom: 0; 
+    --main-nav-font-family: MS-Sans; 
+    --main-nav-font-size: 0.75em; 
+    --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
+    --main-nav-text-smooth-color: rgb( 128, 128, 128 ); 
+    --main-nav-background-color: transparent; 
+    --main-nav-link-padding-x: 2em; 
+    --main-nav-link-padding-y: ""; 
+    --main-nav-link-current-mark-height: 2px; 
+    --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
+    --main-nav-subnav-background-color: var( --text-color-inverted ); 
+}
+
 
 /*-----------------------------------------------------------
     Forms

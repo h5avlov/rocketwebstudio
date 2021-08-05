@@ -12,13 +12,19 @@
 
 } 
 
+.main-nav > .nav { 
+    max-width: var( --page-inner-width ); width: 100%; 
+
+}
+
 .main-nav .entry-list { 
-    justify-content: center; 
+    justify-content: center;  
+    position: relative; 
 
 } 
 
 .nav-entry {   
-    position: relative; 
+    /* position: relative;  */ 
     color: var( --main-nav-text-color ); 
 } 
 
@@ -46,9 +52,56 @@
     display: block; 
     height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
+    position: relative; 
     text-align: center; 
     text-transform: uppercase;  
 } 
+
+.main-nav .subnav-entry-list { 
+    /* flex-direction: column;   */
+    /* min-width: var( --page-inner-width );  */
+    /* min-width: 20rem;  */ 
+    width: 100%; 
+    height: 0; overflow: hidden; 
+    position: absolute; left: 0; right: 0; 
+    /* left: 50%; transform: translateX( -50% );   */ 
+    background-color: var( --main-nav-subnav-background-color ); 
+
+} 
+
+.main-nav .subnav-entry-list .nav-entry { 
+    margin-top: 1.2rem; margin-bottom: 1.2rem; 
+
+}
+
+/* .main-nav .subnav-entry-list .nav-entry { 
+    align-self: center; 
+
+} */ 
+
+/* .main-nav .subnav-entry-list > :first-child { 
+    margin-top: 1.2rem; 
+
+} 
+
+.main-nav .subnav-entry-list > :last-child { 
+    margin-bottom: 1.2rem; 
+
+}  */
+
+.main-nav .nav-entry:hover .subnav-entry-list { 
+    height: auto; 
+
+}
+
+.main-nav .subnav-entry-list .nav-link { 
+    color: var( --text-color ); 
+} 
+
+.main-nav .subnav-entry-list .nav-link:after { 
+    background-color: var( --text-color ); 
+
+}
 
 .main-nav-button { 
     display: none;  

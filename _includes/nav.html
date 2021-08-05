@@ -6,6 +6,13 @@
             target= entry.target 
             text= entry.text 
         %} 
+
+        {% if entry.nav %} 
+            {% include nav.html 
+                className= "subnav-entry-list" 
+                data= entry.nav 
+            %} 
+        {% endif %}
     </li>
 {% endfor %}
 </ul> 
