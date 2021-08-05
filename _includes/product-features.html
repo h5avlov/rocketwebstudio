@@ -6,10 +6,20 @@
     %}
 
     <ul class= "entry-list product-features-entry-list"> 
-    {% for entry in include.data.body %} 
+    {% for entry in include.data.sections %} 
+        {% assign name= entry[ 0 ] %} 
+        {% assign data= entry[ 1 ] %}
+
         <li class= "entry product-feature"> 
-            <h5 class= "heading subheading product-feature-subheading">{{ entry.subheading.text }}</h5> 
-            <h3 class= "heading product-feature-heading">{{ entry.heading.text }}</h3> 
+            <h5 class= "heading subheading product-feature-subheading">{{ data.subheading.text }}</h5> 
+            <h3 class= "heading product-feature-heading">{{ data.heading.text }}</h3> 
+
+            {% assign linkTarget= "/features" | append: "#" | append: name | append: "-section" %} 
+            {% include link.html 
+                className= "button read-more-button" 
+                target= linkTarget
+                text= "Read More" 
+            %}
         </li>
     {% endfor %}
     </ul> 

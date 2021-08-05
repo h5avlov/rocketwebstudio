@@ -9,15 +9,15 @@
         }, 
 
         { 
+            "target": "/features", 
+            "text": "Качества", 
+            "className": "features" 
+        },
+
+        { 
             "target": "/workflow", 
             "text": "Работен процес", 
             "className": "workflow" 
-        }, 
-
-        { 
-            "target": "/building", 
-            "text": "Изграждане", 
-            "className": "building" 
         }, 
 
         { 
