@@ -16,7 +16,7 @@
 
         { 
             "target": "/building", 
-            "text": "Изграждане на сайта", 
+            "text": "Изграждане", 
             "className": "building" 
         }, 
 
@@ -28,7 +28,7 @@
 
         { 
             "target": "/about", 
-            "text": "За мен", 
+            "text": "За Rocket", 
             "className": "about" 
         }, 
 
