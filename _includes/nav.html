@@ -2,7 +2,7 @@
 {% for entry in include.data %} 
     <li class= "nav-entry {{ entry.className | prepend: 'nav-entry-' }}{% if entry.target == include.current %} nav-entry-current{% endif %}"> 
         {% if entry.nav %} 
-            <span class= "nav-entry-text subnav-label"">{{ entry.text }}</span> 
+            <span class= "nav-entry-text subnav-label">{{ entry.text }}</span> 
             {% include nav.html 
                 className= "subnav-entry-list" 
                 data= entry.nav 
