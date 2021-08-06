@@ -9,8 +9,47 @@
         }, 
 
         { 
+            "target": "/workflow", 
+            "text": "Работен процес", 
+            "className": "workflow", 
+
+            "nav": [ 
+                { 
+                    "target": "", 
+                    "text": "Анализ", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "", 
+                    "text": "Планиране", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "", 
+                    "text": "Изграждане", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "", 
+                    "text": "Пускане", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "", 
+                    "text": "Подобряване", 
+                    "className": "" 
+                } 
+
+            ]
+        }, 
+
+        { 
             "target": "/rocket-website", 
-            "text": "Rocket уебсайтът", 
+            "text": "Сайт от Rocket", 
             "className": "", 
 
             "nav": [ 
@@ -24,21 +63,15 @@
                     "target": "/features", 
                     "text": "Качества", 
                     "className": "features" 
-                }, 
-
-                { 
-                    "target": "/support", 
-                    "text": "Поддръжка", 
-                    "className": "support" 
                 } 
 
             ]
-        },
+        }, 
 
         { 
-            "target": "/workflow", 
-            "text": "Работен процес", 
-            "className": "workflow" 
+            "target": "/projects", 
+            "text": "Проекти", 
+            "className": "projects" 
         }, 
 
         { 
@@ -49,27 +82,27 @@
 
         { 
             "target": "/about", 
-            "text": "Rocket?", 
+            "text": "Rocket ли?", 
             "className": "about", 
 
             "nav": [ 
                 { 
                     "target": "/about", 
                     "text": "За мен", 
-                    "className": "" 
+                    "className": "about" 
                 }, 
 
                 { 
-                    "target": "/projects", 
-                    "text": "Проекти", 
-                    "className": "projects" 
-                }, 
-
-                { 
-                    "target": "", 
+                    "target": "/reviews", 
                     "text": "Ревюта", 
-                    "className": "" 
+                    "className": "reviews" 
                 }, 
+
+                { 
+                    "target": "/clients", 
+                    "text": "Клиенти", 
+                    "className": "clients" 
+                }
 
             ]
         }, 
