@@ -13,8 +13,9 @@
     background-size: cover; 
     /* background-position: center top;  */ 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
-    background-color: var( --text-color );  
-    border: 1px solid;  
+    /* background-color: var( --text-color );   */ 
+    /* color: white;  */ 
+    /* border: 1px solid;   */ 
 } 
 
 .text-entry + .product-features-entry-list {
@@ -26,11 +27,11 @@
     box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center; 
     min-height: 12rem; 
-    background-color: rgba( 255, 255, 255, 0.125 ); 
+    /* background-color: rgba( 255, 255, 255, 0.125 );  */ 
     border: 1px solid; border-width: 0 1px 1px 0; 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
     background-size: cover;  */ 
-    color: white;  
+    /* color: white;   */ 
 
 } 
 
