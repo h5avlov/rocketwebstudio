@@ -62,8 +62,10 @@
 :root { 
     --text-color: rgb( 0, 67, 78 );  
     --text-color-inverted: rgba( 255, 255, 255, 0.9 ); 
-    --background-color: ""; 
-    --highlight-color: ""; 
+    --primary-color: rgb( 0, 67, 78 ); 
+    --secondary-color: rgba( 255, 255, 255, 1 ); 
+    --background-color: var( --secondary-color ); 
+    --highlight-color: var( --primary-color ); 
     --overlay-color: ""; 
     
 }
@@ -110,7 +112,7 @@
 } 
 
 /*-----------------------------------------------------------
-    Forms
+    Main nav
 ------------------------------------------------------------*/
 
 :root { 
