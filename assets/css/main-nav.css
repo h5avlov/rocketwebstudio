@@ -14,7 +14,7 @@
 
 .main-nav > .nav { 
     max-width: var( --page-inner-width ); width: 100%; 
-
+    
 }
 
 .main-nav .entry-list { 
@@ -28,7 +28,7 @@
     color: var( --main-nav-text-color ); 
 } 
 
-.nav-link:after { 
+.nav-entry-text:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
@@ -36,19 +36,19 @@
     content: "";  
 }  
 
-.nav-link:after, 
-.main-nav .entry-list:hover .nav-link:after { 
+.nav-entry-text:after, 
+.main-nav .entry-list:hover .nav-entry-text:after { 
     opacity: 0; 
 }
 
-.main-nav .entry-list:hover .nav-link:hover:after, 
-.nav-entry-current .nav-link:after, 
+.main-nav .entry-list:hover .nav-entry-text:hover:after, 
+.nav-entry-current .nav-entry-text:after, 
 .nav-entry .nav-link:focus:after { 
     opacity: 1; 
 
 } 
 
-.nav-link { 
+.nav-entry-text { 
     display: block; 
     height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
@@ -56,6 +56,11 @@
     text-align: center; 
     text-transform: uppercase;  
 } 
+
+.subnav-label { 
+    cursor: default; 
+
+}
 
 .main-nav .subnav-entry-list { 
     /* flex-direction: column;   */
@@ -65,7 +70,7 @@
     height: 0; overflow: hidden; 
     position: absolute; left: 0; right: 0; 
     /* left: 50%; transform: translateX( -50% );   */ 
-    background-color: var( --background-color ); 
+    background-color: var( --background-color );  
 
 } 
 
@@ -159,10 +164,11 @@
 
     } 
 
-    .main-nav .nav { 
+    .main-nav > .nav { 
         display: flex; flex-direction: column; align-items: center; 
         width: 100%; 
         min-height: 100%; 
+        padding-top: 4rem; padding-bottom: 4rem; 
         position: absolute; left: -10000px; top: 0; 
         z-index: 2; 
         background-color: var( --text-color ); 
@@ -198,11 +204,17 @@
 
     .main-nav .subnav-entry-list { 
         position: relative; 
+        background-color: transparent; 
     
     } 
 
     .main-nav .subnav-entry-list .nav-entry { 
         margin-top: 0; margin-bottom: 0; 
+    
+    } 
+
+    .nav-entry:hover .subnav-label { 
+        border-bottom: 1px solid; 
     
     }
 
