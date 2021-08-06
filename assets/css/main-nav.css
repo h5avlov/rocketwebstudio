@@ -65,7 +65,7 @@
     height: 0; overflow: hidden; 
     position: absolute; left: 0; right: 0; 
     /* left: 50%; transform: translateX( -50% );   */ 
-    background-color: var( --main-nav-subnav-background-color ); 
+    background-color: var( --background-color ); 
 
 } 
 
@@ -110,7 +110,7 @@
 }
 
 .main-nav-button-close { 
-    position: absolute; right: 0; top: 0; 
+    position: absolute; right: 0; top: -10000px; 
 
 }
 
@@ -151,20 +151,42 @@
     /* .main-nav { 
         background-color: var( --text-color ); 
 
-    }  */
+    }  */ 
+
+    .main-nav { 
+        flex-direction: column; justify-content: flex-start; 
+        height: var( --main-nav-height ); overflow: hidden;  
+
+    } 
 
     .main-nav .nav { 
-        display: flex; flex-direction: column; justify-content: center; align-items: center; 
+        display: flex; flex-direction: column; align-items: center; 
         width: 100%; 
-        height: 0; overflow: hidden; 
-        position: fixed; left: 0; top: 0; 
-        /* height: 100%;  */ 
+        min-height: 100%; 
+        position: absolute; left: -10000px; top: 0; 
+        z-index: 2; 
         background-color: var( --text-color ); 
 
     } 
 
+    /* .main-nav:target .nav { 
+        height: 100vh; 
+
+    }  */ 
+
+    .main-nav:target { 
+        height: 100%; overflow: auto; 
+
+    } 
+
+    .main-nav:target .main-nav-button-close { 
+        top: 0; 
+
+    } 
+
     .main-nav:target .nav { 
-        height: 100%; 
+        justify-content: center;  
+        left: 0;  
 
     } 
 
@@ -174,7 +196,17 @@
 
     } 
 
-    .main-nav .nav-entry:after { 
+    .main-nav .subnav-entry-list { 
+        position: relative; 
+    
+    } 
+
+    .main-nav .subnav-entry-list .nav-entry { 
+        margin-top: 0; margin-bottom: 0; 
+    
+    }
+
+    .main-nav .nav-link:after { 
         content: none; 
 
     } 
@@ -192,7 +224,7 @@
     } 
 
     .main-nav-button {    
-        display: inline-block; 
+        display: block; margin-left: auto; margin-right: auto; 
         height: var( --sell-points-padding-y ); line-height: var( --sell-points-padding-y ); 
         border: none;  
         color: var( --text-color-inverted ); 
