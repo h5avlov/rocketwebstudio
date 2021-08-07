@@ -9,37 +9,36 @@
         }, 
 
         { 
-            "target": "/workflow", 
             "text": "Работен процес", 
             "className": "workflow", 
 
             "nav": [ 
                 { 
-                    "target": "", 
+                    "target": "/workflow#analysis-section", 
                     "text": "Анализ", 
                     "className": "" 
                 }, 
 
                 { 
-                    "target": "", 
+                    "target": "/workflow#planning-section", 
                     "text": "Планиране", 
                     "className": "" 
                 }, 
 
                 { 
-                    "target": "", 
+                    "target": "/workflow#building-section", 
                     "text": "Изграждане", 
                     "className": "" 
                 }, 
 
                 { 
-                    "target": "", 
+                    "target": "/workflow#deploying-section", 
                     "text": "Пускане", 
                     "className": "" 
                 }, 
 
                 { 
-                    "target": "", 
+                    "target": "/workflow#improving-section", 
                     "text": "Подобряване", 
                     "className": "" 
                 } 
@@ -48,9 +47,8 @@
         }, 
 
         { 
-            "target": "/rocket-website", 
             "text": "Сайт от Rocket", 
-            "className": "", 
+            "className": "rocket-website", 
 
             "nav": [ 
                 { 
@@ -81,9 +79,8 @@
         }, 
 
         { 
-            "target": "/about", 
             "text": "Rocket ли?", 
-            "className": "about", 
+            "className": "about-rocket", 
 
             "nav": [ 
                 { 
