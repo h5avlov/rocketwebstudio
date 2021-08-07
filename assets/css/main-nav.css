@@ -1,7 +1,7 @@
 .main-nav { 
     display: flex; flex-direction: row; justify-content: center; 
     width: 100%;   
-    padding-top: var( --main-nav-padding-top ); padding-bottom: var( --main-nav-padding-bottom );   
+    padding-top: var( --main-nav-padding-top ); padding-bottom: var( --main-nav-padding-bottom ); 
     position: absolute; z-index: 3;  
     background-color: var( --main-nav-background-color ); 
     font-family: "var( --main-nav-font-family )"; 
@@ -13,7 +13,7 @@
 } 
 
 .main-nav > .nav { 
-    max-width: var( --page-inner-width ); width: 100%; 
+    max-width: var( --page-inner-width ); 
     
 }
 
@@ -24,35 +24,48 @@
 } 
 
 .nav-entry {   
-    /* position: relative;  */ 
+    position: relative;  
     color: var( --main-nav-text-color ); 
 } 
 
-.nav-entry-text:after { 
+.nav-entry:after, 
+.nav-link:focus:after { 
     display: block; 
     width: 100%; height: var( --main-nav-link-current-mark-height ); 
     position: absolute; left: 0; top: 0; 
+    z-index: 1; 
     background-color: var( --main-nav-link-current-mark-color ); 
     content: "";  
-}  
+} 
 
-.nav-entry-text:after, 
-.main-nav .entry-list:hover .nav-entry-text:after { 
+.main-nav .subnav-entry-list .nav-entry:after { 
+    content: none; 
+
+}
+
+.nav-entry:after, 
+.main-nav .entry-list:hover .nav-entry:after { 
     opacity: 0; 
 }
 
-.main-nav .entry-list:hover .nav-entry-text:hover:after, 
-.nav-entry-current .nav-entry-text:after, 
-.nav-entry .nav-link:focus:after { 
+.main-nav .entry-list:hover .nav-entry:hover:after, 
+.nav-entry-current:after { 
     opacity: 1; 
 
 } 
+
+/* .main-nav .entry-list:hover .nav-entry:hover .subnav-label, 
+.nav-entry-current .subnav-label { 
+    background-color: var( --background-color ); 
+    color: var( --text-color ); 
+
+} */ 
 
 .nav-entry-text { 
     display: block; 
     height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
     padding-left: var( --main-nav-link-padding-x ); padding-right: var( --main-nav-link-padding-x ); 
-    position: relative; 
+    position: relative; z-index: 2; 
     text-align: center; 
     text-transform: uppercase;  
 } 
@@ -63,17 +76,57 @@
 }
 
 .main-nav .subnav-entry-list { 
-    width: 100%; 
-    position: absolute; left: -10000px; right: 0; 
+    min-width: 100%; 
+    padding: 0 1rem;  
+    position: absolute; top: -10000px; 
     z-index: 3; 
     background-color: var( --background-color );  
 
 } 
 
 .main-nav .subnav-entry-list .nav-entry { 
-    margin-top: 1.2rem; margin-bottom: 1.2rem; 
+    width: 100%; 
+    color: var( --text-color ); 
+
+} 
+
+.main-nav .subnav-entry-list .nav-link { 
+    padding: 0 8rem; 
+
+} 
+
+.main-nav .subnav-entry-list .nav-entry { 
+    background-clip: content-box; 
+
+} 
+
+.main-nav .subnav-entry-list .nav-entry:first-child { 
+    padding-top: 1rem; 
+
+} 
+
+.main-nav .subnav-entry-list .nav-entry:last-child { 
+    padding-bottom: 1rem; 
 
 }
+
+.main-nav .nav-entry:hover .nav-entry:first-child, 
+.main-nav .subnav-entry-list:hover .nav-entry:hover { 
+    background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); 
+
+} 
+
+.main-nav .subnav-entry-list:hover .nav-entry:not( :hover ), 
+.main-nav .subnav-entry-list:hover .nav-entry { 
+    background-color: transparent; 
+    color: var( --text-color ); 
+} 
+
+/* .main-nav .subnav-entry-list .nav-entry { 
+    margin-top: 1.2rem; margin-bottom: 1.2rem; 
+
+} */
 
 /* .main-nav .subnav-entry-list .nav-entry { 
     align-self: center; 
@@ -91,15 +144,11 @@
 }  */
 
 .main-nav .nav-entry:hover .subnav-entry-list { 
-    left: 0; 
+    top: 100%; 
 
 }
 
-.main-nav .subnav-entry-list .nav-link { 
-    color: var( --text-color ); 
-} 
-
-.main-nav .subnav-entry-list .nav-link:after { 
+.main-nav .subnav-entry-list .nav-entry:after { 
     background-color: var( --text-color ); 
 
 }
@@ -198,37 +247,88 @@
 
     } 
 
-    /* .main-nav .subnav-entry-list {  
-        background-color: transparent; 
+    /* .main-nav .nav-entry-list .nav-entry { 
+        overflow: hidden; 
     
-    }  */
+    }  */ 
 
-    .main-nav .subnav-entry-list .nav-entry { 
-        margin-top: 0; margin-bottom: 0; 
-    
-    } 
-
-    /* .nav-entry:hover .subnav-label { 
-        border-bottom: 1px solid; 
-    
-    } */ 
-
-    .main-nav .nav-link:after { 
+    .main-nav .nav-entry:after { 
         content: none; 
 
     } 
 
-    .main-nav .entry-list:hover .nav-entry { 
+    /* .main-nav .subnav-entry-list > .nav-entry:after { 
+        height: 100%; 
+        background-color: transparent; 
+        border: 1px solid; 
+
+    }  */ 
+
+    .main-nav .subnav-entry-list {  
+        box-sizing: border-box; 
+        flex-direction: row; 
+        min-width: unset; width: auto; 
+        /* padding: 1rem;   */ 
+        left: 5%; right: 5%; 
+        /* background-color: transparent;  */ 
+        /* border: 1px solid;  */ 
+        box-shadow: 0 0 15px 5px rgba( 0, 0, 0, 0.2 ); 
+    
+    } 
+
+    .main-nav .nav-entry:hover .subnav-entry-list { 
+        top: 80%; 
+    
+    }
+
+    .main-nav .subnav-entry-list .nav-entry { 
+        /* width: auto;  */ 
+        margin-top: 0; margin-bottom: 0; 
+    
+    } 
+
+    /* .main-nav .subnav-entry-list .nav-link { 
+        padding: 0 2rem; 
+    
+    } */ 
+
+    /* .subnav-label { 
+        position: relative; 
+
+    } 
+
+    .subnav-label:after { 
+        display: block; 
+        width: auto; height: 1px; 
+        position: absolute; left: 15%; right: 15%; top: auto; bottom: 0;  
+        background-color: var( --text-color ); 
+        content: ""; 
+        opacity: 1; 
+    
+    }  */
+
+    .main-nav > .nav > .entry-list:hover > .nav-entry { 
         background-color: transparent; 
         color: var( --text-color-inverted ); 
     }
 
-    .main-nav .entry-list:hover .nav-entry:hover, 
+    .main-nav > .nav > .entry-list:hover > .nav-entry:hover, 
     .nav-entry-current { 
         background-color: var( --text-color-inverted ); 
         color: var( --text-color ); 
 
     } 
+
+    .main-nav .subnav-entry-list:hover .nav-entry { 
+        background-color: transparent; 
+        color: var( --text-color ); 
+    }
+
+    .main-nav .subnav-entry-list:hover .nav-entry:hover { 
+        background-color: var( --text-color ); 
+        color: var( --text-color-inverted ); 
+
+    }
 
     .main-nav-button {    
         display: block; margin-left: auto; margin-right: auto; 
