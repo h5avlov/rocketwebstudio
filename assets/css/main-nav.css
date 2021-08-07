@@ -110,7 +110,7 @@
 
 }
 
-.main-nav .nav-entry:hover .nav-entry:first-child, 
+.main-nav .nav-entry:hover .nav-entry-current, 
 .main-nav .subnav-entry-list:hover .nav-entry:hover { 
     background-color: var( --text-color ); 
     color: var( --text-color-inverted ); 
