@@ -2,6 +2,8 @@
     --column-count: 3; 
     --column-gutter-x-width: 0rem;  
 
+    --icon-code: "\f383"; 
+
 } 
 
 /* .product-features-section { 
@@ -26,7 +28,7 @@
 .product-feature { 
     box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center; 
-    min-height: 12rem; 
+    min-height: 14rem; 
     /* background-color: rgba( 255, 255, 255, 0.125 );  */ 
     border: 1px solid; border-width: 0 1px 1px 0; 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
@@ -34,6 +36,12 @@
     /* color: white;   */ 
 
 } 
+
+.product-feature:before { 
+    margin-bottom: 0.8rem; 
+    font-size: var( --building-block-icon-font-size ); 
+
+}
 
 .product-feature-subheading { 
     margin-bottom: 0.2em; 
@@ -100,9 +108,10 @@
         --column-count: 1; 
     } 
 
-    .product-features-entry-list { 
-        border-style: solid; border-width: 1px 0; 
-    } 
+    .product-features-section .product-features-entry-list { 
+        margin-top: 1.2rem; 
+        /* border-style: solid; border-width: 1px 0;  */ 
+    }  
 
     .product-feature { 
         min-height: 10rem; 

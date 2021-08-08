@@ -9,7 +9,7 @@
     display: block; 
     margin-bottom: var( --building-block-icon-margin-bottom ); 
     content: var( --building-block-icon-code ); 
-    font-family: var( --icon-font-family ); font-size: var( --building-block-icon-font-size ); 
+    font-size: var( --building-block-icon-font-size ); 
 
 }
 
