@@ -1,0 +1,10 @@
+{% capture body %} 
+    {% include page-nav.html 
+        navEntryList= include.navEntryList 
+    %}
+{% endcapture %} 
+
+{% include simple-head.html 
+    title= include.title 
+    body= body 
+%}

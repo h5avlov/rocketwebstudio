@@ -1,0 +1,21 @@
+<section class= "page-head single-entry-page-head"> 
+    <article class= "page-head-entry"> 
+        <section class= "text-content page-head-text-content"> 
+            {% include logo.html %} 
+
+            {{ include.body }} 
+
+            {% if include.image %}
+                {% include featured-image.html 
+                    image= include.image 
+                %} 
+            {% endif %}
+        </section>
+
+        {% if include.image %}
+            {% include featured-image.html 
+                image= include.image 
+            %} 
+        {% endif %}     
+    </article>
+</section>

@@ -1,0 +1,10 @@
+{% capture body %} 
+    {% include paragraph.html  
+        className= "page-head-text-entry page-title" 
+        text= include.title 
+    %} 
+{% endcapture %} 
+
+{% include base-head.html 
+    body= body 
+%} 

@@ -1,5 +1,5 @@
 ---
-layout: inner-page 
+layout: default 
 type: project-page 
 dataLocation: data.projects 
 --- 
@@ -7,6 +7,13 @@ dataLocation: data.projects
 
 {% assign projectData= site.data.projects[ page.dataFileName ] %} 
 
+
+{% assign navEntryTextList= "описание, роли, изображения, клиент" | split: ", " %}
+{% include page-head.html 
+    title= projectData.title 
+    pageNavEntryList= pageNavEntryList 
+    image= projectData.image 
+%} 
 
 {% include project-page/description/description.html 
     paragraphs= projectData.sections.description.paragraphs 

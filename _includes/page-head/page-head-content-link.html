@@ -1,0 +1,11 @@
+{% capture body %} 
+    {% include inner-link.html 
+        target= entry.targetSectionID 
+        text= entry.text 
+    %}
+{% endcapture %} 
+
+{% include simple-head.html 
+    title= include.title 
+    body= body 
+%}

@@ -1,0 +1,10 @@
+<ul class= "page-nav"> 
+{% for entry in include.navEntryList %} 
+    <li class= "page-nav-entry"> 
+        {% include inner-link.html 
+            target= entry.targetSectionID 
+            text= entry.text 
+        %}
+    </li>
+{% endfor %}
+</ul>

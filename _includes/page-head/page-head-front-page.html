@@ -1,0 +1,18 @@
+{% capture body %} 
+    <h5 class= "heading subheading sell-points-entry-subheading">{{ include.subheading  }}</h5> 
+                
+    <h3 class= "heading sell-points-entry-heading">{{ include.heading }}</h3> 
+
+    {% include text-entry-list.html 
+        paragraphs= include.paragraphs 
+    %} 
+
+    {% include inner-link.html 
+        className= "button read-more-button has-icon" 
+        targetSectionID= "product-features-section" 
+    %}
+{% endcapture %} 
+
+{% include base-head.html 
+    body= body 
+%}
