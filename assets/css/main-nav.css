@@ -12,10 +12,10 @@
 
 } 
 
-.main-nav > .nav { 
+/* .main-nav > .nav { 
     max-width: var( --page-inner-width ); 
     
-}
+} */ 
 
 .main-nav .entry-list { 
     justify-content: center;  
@@ -76,9 +76,9 @@
 }
 
 .main-nav .subnav-entry-list { 
-    min-width: 100%; 
+    /* min-width: 100%;  */ 
     padding: 0 1rem;  
-    position: absolute; top: -10000px; 
+    position: absolute; top: -10000px; left: 0; 
     z-index: 3; 
     background-color: var( --background-color );  
 
@@ -144,7 +144,7 @@
 }  */
 
 .main-nav .nav-entry:hover .subnav-entry-list { 
-    top: 100%; 
+    top: var( --header-height );  
 
 }
 
@@ -189,7 +189,16 @@
     
 } 
 
-@media screen and ( max-width: 840px ) { 
+@media screen and ( max-width: 1020px ) and ( min-width: 921px ) { 
+    .main-nav .subnav-entry-list { 
+        left: 50%; transform: translateX( -50% ); 
+    
+    }
+
+
+}
+
+@media screen and ( max-width: 920px ) { 
 
     :root { 
         --sell-points-padding-y: 4.5rem; 
