@@ -9,4 +9,5 @@
 
     /* Sets icon font */
     font-family: var( --icon-font-family ); 
+    content: var( --icon-code ); 
 } 
