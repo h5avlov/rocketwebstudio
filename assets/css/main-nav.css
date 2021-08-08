@@ -71,7 +71,14 @@
 } 
 
 .subnav-label { 
+    display: inline-block; 
     cursor: default; 
+
+} 
+
+.subnav-label:before { 
+    position: absolute; right: 0;  
+    font-size: 1.4em; 
 
 }
 

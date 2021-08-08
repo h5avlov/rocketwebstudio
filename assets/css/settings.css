@@ -125,7 +125,7 @@
     --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
     --main-nav-text-smooth-color: rgb( 128, 128, 128 ); 
     --main-nav-background-color: transparent; 
-    --main-nav-link-padding-x: 2em; 
+    --main-nav-link-padding-x: 2.25em; 
     --main-nav-link-padding-y: ""; 
     --main-nav-link-current-mark-height: 2px; 
     --main-nav-link-current-mark-color: var( --main-nav-text-color ); 

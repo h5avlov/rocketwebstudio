@@ -4,7 +4,7 @@
         class= "nav-entry nav-entry-{{ entry.className }}{% if entry.target == page.url %}{{ ' nav-entry-current' }}{% endif %}" 
     > 
         {% if entry.nav %} 
-            <span class= "nav-entry-text subnav-label">{{ entry.text }}</span> 
+            <span class= "nav-entry-text subnav-label has-icon" style= "--icon-code: '\f3d0';">{{ entry.text }}</span> 
             {% include nav.html 
                 className= "subnav-entry-list" 
                 data= entry.nav 
@@ -19,3 +19,4 @@
     </li>
 {% endfor %}
 </ul> 
+
