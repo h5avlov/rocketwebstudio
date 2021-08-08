@@ -8,10 +8,10 @@ dataLocation: data.projects
 {% assign projectData= site.data.projects[ page.dataFileName ] %} 
 
 
-{% assign navEntryTextList= "описание, роли, изображения, клиент" | split: ", " %}
+{% assign projectPageNavEntryList= "description,описание|roles,отговорности|screenshots,изображения|client,клиент" | split: "|" %} 
 {% include page-head.html 
     title= projectData.title 
-    pageNavEntryList= pageNavEntryList 
+    pageNavEntryList= projectPageNavEntryList 
     image= projectData.image 
 %} 
 
