@@ -3,4 +3,8 @@ layout: inner-page
 permalink: /pricing
 dataFileName: pricingPage 
 label: pricing 
---- 
+---  
+
+{% include pricing-block-chart.html 
+    chartBlockList= site.data.pricingPage.sections 
+%} 

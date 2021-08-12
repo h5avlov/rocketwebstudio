@@ -1,0 +1,166 @@
+.pricing-chart { 
+    --chart-width: 960px; 
+    --chart-padding-y: 5em; 
+    --chart-padding-x: 1.25rem; 
+
+    --block-count: 5; 
+    --block-distance-x: 2em; 
+    --block-distance-y: 5em; 
+    --block-width: calc( ( 100% - calc( var( --block-count ) - 1 ) * var( --block-distance-x ) ) / var( --block-count ) ); 
+    --block-height: 15em; 
+    --block-indent-x: 4em; 
+
+    --line-width: 1px; 
+
+    --chart-background-color: transparent; 
+    --line-color: var( --text-color ); 
+    --block-background-color: white; 
+
+    --block-text-font-family: Arial; 
+    --block-text-font-size: 0.8rem; 
+
+}
+
+.pricing-chart {  
+    padding: var( --chart-padding-y ) var( --chart-padding-x ); 
+    background-color: var( --chart-background-color ); 
+    color: var( --line-color ); 
+    font-family: var( --block-text-font-family ); font-size: var( --block-text-font-size ); 
+    text-align: center; 
+
+} 
+
+.pricing-chart-body { 
+    display: flex; flex-direction: column; 
+    max-width: var( --chart-width ); margin-left: auto; margin-right: auto; 
+    position: relative; 
+
+}
+
+.chart-block-list { 
+    display: flex; flex-direction: row; justify-content: center; 
+    margin-bottom: var( --block-distance-y ); 
+    position: relative; 
+
+} 
+
+.pricing-chart .price-block { 
+    margin-bottom: 0; 
+
+}
+
+.chart-block { 
+    box-sizing: border-box; 
+    display: flex; flex-direction: column; justify-content: center; 
+    width: var( --block-width ); height: var( --block-height ); 
+    margin-right: var( --block-distance-x ); 
+    position: relative; z-index: 2; 
+    background-color: var( --block-background-color ); 
+    border: var( --line-width ) solid;  
+    text-transform: uppercase; 
+
+} 
+
+.chart-block:nth-child( 5n ), 
+.chart-block:nth-child( n + 5 ), 
+.enhancing-chart-block { 
+    margin-right: 0; 
+
+} 
+
+.chart-block:nth-child( -n + 5 ) { 
+    margin-top: 0; 
+
+} 
+
+.enhancing-chart-block { 
+    align-self: center; 
+
+}
+
+.process-flow { 
+    display: block; 
+    position: absolute; z-index: 1; 
+    left: calc( var( --block-width ) / 2 ); right: calc( var( --block-width ) / 2 ); top: calc( var( --block-height ) / 2 ); bottom: calc( var( --block-height ) / 2 ); 
+    border: 1px solid var( --line-color ); 
+
+}
+
+.process-flow:before, 
+.process-flow:after { 
+    box-sizing: border-box; 
+    display: block; 
+    width: 0; height: 0; 
+    position: absolute; z-index: 1; 
+    bottom: 0; margin-bottom: -10px; 
+    border-style: solid; border-color: transparent var( --line-color ); border-width: 10px 20px 10px 0; 
+    content: ""; 
+
+} 
+
+.process-flow:before {  
+    left: calc( ( 100% - var( --block-width ) ) / 4 ); margin-left: -10px; 
+
+} 
+
+.process-flow:after { 
+    right: calc( ( 100% - var( --block-width ) ) / 4 ); margin-right: -10px; 
+
+} 
+
+@media screen and ( max-width: 940px ) { 
+
+    .pricing-chart {  
+        --block-count: 1; 
+        --block-distance-x: 0em; 
+        --block-distance-y: 2em; 
+        --block-height: 12em; 
+    
+    } 
+
+    .pricing-chart-body { 
+        flex-direction: row; justify-content: space-between; 
+    
+    } 
+
+    .pricing-chart-body > * { 
+        width: 45%; 
+
+    }
+
+    .chart-block-list { 
+        display: block; 
+        margin-bottom: 0; 
+    
+    } 
+
+    .chart-block + .chart-block { 
+        margin-top: var( --block-distance-y ); 
+    
+    } 
+
+    .process-flow { 
+        width: auto; 
+        left: 22.5%; right: 22.5%; 
+    
+    } 
+
+    .process-flow:before, 
+    .process-flow:after { 
+        left: 100%; margin-left: -10px;  
+        border-color: var( --line-color ) transparent; border-width: 0 10px 20px 10px; 
+    
+    } 
+
+    .process-flow:before {  
+        top: calc( ( 100% - var( --block-height ) ) / 4 ); 
+    
+    } 
+    
+    .process-flow:after { 
+        bottom: calc( ( 100% - var( --block-height ) ) / 4 ); 
+    
+    } 
+    
+    
+}

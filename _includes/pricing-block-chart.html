@@ -1,0 +1,31 @@
+<div class= "block-chart pricing-chart"> 
+    
+    <div class= "chart-body pricing-chart-body"> 
+        <div class= "chart-block-list pricing-block-list"> 
+        {% for chartBlockEntry in include.chartBlockList %} 
+            {% if chartBlockEntry[ 0 ] == "enhancing" %} 
+                {% break %}
+            {% endif %} 
+
+            {% assign chartBlock= chartBlockEntry[ 1 ] %} 
+            <div class= "chart-block pricing-block analysis-chart-block">
+                {% include price-block.html 
+                    text= chartBlock.heading
+                    price= chartBlock.price 
+                %}
+            </div> 
+        {% endfor %}
+        </div> 
+
+        {% assign enhancingChartBlock= site.data.pricingPage.sections.enhancing %}
+        <div class= "chart-block pricing-block enhancing-chart-block">
+            {% include price-block.html 
+                text= enhancingChartBlock.heading 
+                price= enhancingChartBlock.price 
+            %}
+        </div> 
+
+        <div class= "process-flow"></div> 
+    </div> 
+
+</div> 
