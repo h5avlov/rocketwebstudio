@@ -1,8 +1,8 @@
 .website-structure-chart { 
     --chart-padding: 5em; 
 
-    --block-width: 15em; 
-    --block-height: 3em; 
+    --block-width: 20em; 
+    --block-height: 5em; 
     --block-distance-y: 2em; 
     --block-indent-x: 4em; 
 
