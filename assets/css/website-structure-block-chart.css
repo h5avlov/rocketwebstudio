@@ -1,0 +1,74 @@
+.website-structure-chart { 
+    --chart-padding: 5em; 
+
+    --block-width: 18em; 
+    --block-height: 5em; 
+    --block-distance-y: 2em; 
+    --block-indent-x: 4em; 
+
+    --line-width: 1px; 
+
+    --chart-background-color: transparent; 
+    --line-color: var( --text-color ); 
+
+    --block-text-font-family: Arial; 
+    --block-text-font-size: 1rem; 
+
+}
+
+.website-structure-chart { 
+    padding: var( --chart-padding ); 
+    background-color: var( --chart-background-color ); 
+    color: var( --line-color ); 
+    font-family: var( --block-text-font-family ); font-size: var( --block-text-font-size ); 
+    text-align: center; 
+
+} 
+
+.website-structure-chart .chart-body { 
+    display: inline-block; 
+
+} 
+
+.inner-page-block-list { 
+    margin-left: calc( var( --block-width ) / 2 ); 
+    padding-left: var( --block-indent-x ); 
+    position: relative; 
+
+} 
+
+.page-block { 
+    width: var( --block-width ); height: var( --block-height ); line-height: var( --block-height ); 
+    position: relative; 
+    border: var( --line-width ) solid;  
+    text-transform: uppercase; 
+
+} 
+
+.page-block + .page-block, 
+.inner-page-block-list { 
+    margin-top: var( --block-distance-y ); 
+
+} 
+
+.inner-page-block-list .page-block:after, 
+.inner-page-block-list:after { 
+    display: block; 
+    position: absolute; 
+    background-color: var( --line-color ); 
+    content: ""; 
+
+}
+
+.inner-page-block-list:after { 
+    width: var( --line-width ); 
+    left: 0; top: calc( -1 * var( --block-distance-y ) ); bottom: calc( var( --block-height ) / 2 ); 
+
+} 
+
+.page-block:after { 
+    height: var( --line-width ); 
+    left: calc( -1 * var( --block-indent-x ) ); right: 100%; top: 50%; 
+
+
+}
