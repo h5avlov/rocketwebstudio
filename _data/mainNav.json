@@ -21,9 +21,9 @@
 
             "nav": [ 
                 { 
-                    "target": "/structure", 
+                    "target": "/website-structure", 
                     "text": "Структура", 
-                    "className": "structure" 
+                    "className": "website-structure" 
                 }, 
 
                 { 
