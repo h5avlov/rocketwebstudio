@@ -1,8 +1,25 @@
 --- 
 layout: inner-page 
 permalink: /website-structure 
-dataFileName: websiteStructure 
+dataFileName: websiteStructurePage 
 label: website-structure 
 ---  
 
 {% include website-structure-block-chart.html %} 
+
+<ul class= "page-description-list"> 
+{% for entry in site.data.websiteStructurePage.sections %} 
+    {% assign section= entry[ 1 ] %}
+
+    <li class= "page-description"> 
+        {% include heading.html 
+            level= 3 
+            text= section.heading 
+        %} 
+
+        {% include text-entry-list.html 
+            paragraphs= section.paragraphs 
+        %}
+    </li>
+{% endfor %} 
+</ul>

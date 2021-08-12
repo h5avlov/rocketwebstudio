@@ -1,8 +1,8 @@
 .website-structure-chart { 
     --chart-padding: 5em; 
 
-    --block-width: 18em; 
-    --block-height: 5em; 
+    --block-width: 15em; 
+    --block-height: 3em; 
     --block-distance-y: 2em; 
     --block-indent-x: 4em; 
 
@@ -12,7 +12,7 @@
     --line-color: var( --text-color ); 
 
     --block-text-font-family: Arial; 
-    --block-text-font-size: 1rem; 
+    --block-text-font-size: 0.8rem; 
 
 }
 

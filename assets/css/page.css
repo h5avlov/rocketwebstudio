@@ -49,7 +49,7 @@
 .text-entry + .button { 
     margin-top: 2.5rem; 
 
-}
+} 
 
 .page-text-entry { 
     text-align: left; 
@@ -75,4 +75,9 @@
 .page-text-entry:last-of-type + :not( .page-featured-image ) { 
     margin-top: 4rem; 
 
-}
+} 
+
+.page-text-entry:last-of-type + .website-structure-chart { 
+    margin-top: 0; 
+
+} 
