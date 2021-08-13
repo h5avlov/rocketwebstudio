@@ -1,31 +1,38 @@
-<div class= "block-chart pricing-chart"> 
+<section class= "block-chart pricing-chart"> 
     
-    <div class= "chart-body pricing-chart-body"> 
-        <div class= "chart-block-list pricing-block-list"> 
+    <section class= "chart-body pricing-chart-body"> 
+        <ul class= "chart-block-list pricing-block-list"> 
         {% for chartBlockEntry in include.chartBlockList %} 
-            {% if chartBlockEntry[ 0 ] == "enhancing" %} 
-                {% break %}
-            {% endif %} 
+            {% assign chartBlockTarget= chartBlockEntry[ 0 ] %}
+            
+            <li class= "chart-block pricing-block {{ chartBlockTarget }}-chart-block"> 
+                {% assign chartBlock= chartBlockEntry[ 1 ] %} 
 
-            {% assign chartBlock= chartBlockEntry[ 1 ] %} 
-            <div class= "chart-block pricing-block analysis-chart-block">
-                {% include price-block.html 
+                {% include heading.html 
+                    className= "chart-block-heading" 
+                    level= 3 
                     text= chartBlock.heading
-                    price= chartBlock.price 
-                %}
-            </div> 
-        {% endfor %}
-        </div> 
+                %} 
 
-        {% assign enhancingChartBlock= site.data.pricingPage.sections.enhancing %}
-        <div class= "chart-block pricing-block enhancing-chart-block">
-            {% include price-block.html 
-                text= enhancingChartBlock.heading 
-                price= enhancingChartBlock.price 
-            %}
-        </div> 
+                {% if chartBlock.price %} 
+                    {% include price.html 
+                        price= chartBlock.price 
+                    %} 
+                {% endif %} 
+
+                {% if chartBlock.button %} 
+                    {% assign linkTarget= "/workflow" | append: "#" | append: sectionName | append: "-section" %} 
+                    {% include link.html 
+                        className= "button read-more-button has-icon" 
+                        target= linkTarget
+                        text= site.data.settings.buttons.outerPageLink.text 
+                    %} 
+                {% endif %}
+            </li> 
+        {% endfor %}
+        </ul> 
 
         <div class= "process-flow"></div> 
-    </div> 
+    </section> 
 
-</div> 
+</section> 
