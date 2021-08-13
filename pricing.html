@@ -8,3 +8,9 @@ label: pricing
 {% include pricing-block-chart.html 
     chartBlockList= site.data.pricingPage.sections 
 %} 
+
+{% include building.html 
+    head= site.data.building.head 
+    body= site.data.buildingPage.sections 
+    overallPrice= site.data.buildingPage.overallPrice 
+%}
