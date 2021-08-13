@@ -38,6 +38,13 @@
     content: "";  
 } 
 
+/* Clears highlight on click for subnavigation links */ 
+.subnav-entry-list .nav-link:focus:after { 
+    content: none; 
+
+}
+
+/* Clears main navigation top level link highlight for subnavigation links */
 .main-nav .subnav-entry-list .nav-entry:after { 
     content: none; 
 
@@ -150,7 +157,7 @@
 
 }  */
 
-.main-nav .nav-entry:hover .subnav-entry-list { 
+.main-nav .nav-entry .subnav-entry-list { 
     top: var( --header-height );  
 
 }
