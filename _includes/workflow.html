@@ -3,6 +3,10 @@
         head= include.head 
     %} 
 
+    {% include pricing-block-chart.html 
+        chartBlockList= site.data.pricingPage.sections 
+    %} 
+
     <ul class= "entry-list overview-section-entry-list workflow-section-entry-list"> 
     {% for entry in include.body %} 
         {% assign sectionName= entry[ 0 ] %} 
