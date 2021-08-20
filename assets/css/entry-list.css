@@ -16,6 +16,7 @@
 
 /* Sets entry width and represents gutters with entry margins */ 
 .entry { 
+    box-sizing: border-box; 
     width: var( --column-width ); 
     margin-right: var( --column-gutter-x-width ); margin-top: var( --column-gutter-y-width ); 
 
@@ -27,6 +28,6 @@
 } 
 
 /* Removes unneccessary margin right from entries, located on the last column */
-/* .entry:nth-child( 2n ) { 
+.entry:last-child { 
     margin-right: 0; 
-} */
+}
