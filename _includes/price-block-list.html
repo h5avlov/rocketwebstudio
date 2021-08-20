@@ -1,0 +1,34 @@
+<ul class= "entry-list price-entry-list {{ include.className }}-price-entry-list"> 
+{% for entry in include.blockEntryList %} 
+    {% assign sectionName= entry[ 0 ] %}
+    {% assign buildingBlock= entry[ 1 ] %} 
+
+    <li class= "entry price-entry {{ include.className }}-price-entry entry-expandable has-icon{% if include.price and buildingBlock.price.value.int != '0' %}{{ ' paid' }}{% endif %}"> 
+        <!-- {% include price-block.html 
+            text= buildingBlock.heading 
+            price= buildingBlock.price 
+        %}  --> 
+
+        {% include heading.html 
+            className= "price-block-heading" 
+            level= 3 
+            text= buildingBlock.heading 
+        %} 
+
+        {% if include.price %} 
+            {% include price.html 
+                price= buildingBlock.price 
+            %}
+        {% endif %}
+        
+        {% if include.button %} 
+            {% assign linkTarget= "/workflow" | append: "#" | append: sectionName | append: "-section" %} 
+            {% include link.html 
+                className= "button read-more-button has-icon" 
+                target= linkTarget
+                text= site.data.settings.buttons.outerPageLink.text 
+            %} 
+        {% endif %} 
+    </li>
+{% endfor %} 
+</ul> 

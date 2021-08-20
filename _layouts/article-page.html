@@ -4,7 +4,9 @@ type: article-page
 dataLocation: data 
 ---  
 
-{% assign pageData= site.data[ page.dataFileName ] %} 
+{{ content }} 
+
+{% assign pageData= site.data[ page.dataFileName ] %}  
 
 {% include article-page.html 
     articlePage= pageData 

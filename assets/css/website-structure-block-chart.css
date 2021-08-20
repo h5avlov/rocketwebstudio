@@ -1,74 +1,49 @@
 .website-structure-chart { 
-    --chart-padding: 5em; 
+    --chart-width: 20%; 
+    --chart-padding-y: 5em; 
+    --chart-padding-x: 1.25rem; 
 
-    --block-width: 20em; 
-    --block-height: 5em; 
-    --block-distance-y: 2em; 
-    --block-indent-x: 4em; 
+    --block-distance-y: 2em;  
+    --block-height: 10em; 
+    --block-indent-x: 50%; 
 
-    --line-width: 1px; 
+    --process-flow-line-left: 1; 
+    --process-flow-line-bottom: 1; 
 
-    --chart-background-color: transparent; 
-    --line-color: var( --text-color ); 
+} 
 
-    --block-text-font-family: Arial; 
-    --block-text-font-size: 0.8rem; 
+.website-structure-chart-block { 
+    position: relative; left: calc( -1 * var( --block-indent-x ) ); 
 
 }
 
-.website-structure-chart { 
-    padding: var( --chart-padding ); 
-    background-color: var( --chart-background-color ); 
-    color: var( --line-color ); 
-    font-family: var( --block-text-font-family ); font-size: var( --block-text-font-size ); 
-    text-align: center; 
+.website-structure-chart-block + .chart-block { 
+    left: var( --block-indent-x ); 
 
-} 
+}  
 
-.website-structure-chart .chart-body { 
-    display: inline-block; 
-
-} 
-
-.inner-page-block-list { 
-    margin-left: calc( var( --block-width ) / 2 ); 
-    padding-left: var( --block-indent-x ); 
-    position: relative; 
-
-} 
-
-.page-block { 
-    width: var( --block-width ); height: var( --block-height ); line-height: var( --block-height ); 
-    position: relative; 
-    border: var( --line-width ) solid;  
-    text-transform: uppercase; 
-
-} 
-
-.page-block + .page-block, 
-.inner-page-block-list { 
-    margin-top: var( --block-distance-y ); 
-
-} 
-
-.inner-page-block-list .page-block:after, 
-.inner-page-block-list:after { 
+.website-structure-chart-block + .chart-block:after { 
     display: block; 
-    position: absolute; 
+    width: var( --block-indent-x ); height: var( --line-width ); 
+    position: absolute; right: 100%; top: 50%; 
     background-color: var( --line-color ); 
     content: ""; 
 
+} 
+
+.website-structure-chart-block:last-child:after { 
+    content: none; 
+
 }
 
-.inner-page-block-list:after { 
-    width: var( --line-width ); 
-    left: 0; top: calc( -1 * var( --block-distance-y ) ); bottom: calc( var( --block-height ) / 2 ); 
+.website-structure-chart-process-flow { 
+    left: 0; right: 0; 
+    
 
 } 
 
-.page-block:after { 
-    height: var( --line-width ); 
-    left: calc( -1 * var( --block-indent-x ) ); right: 100%; top: 50%; 
+.website-structure-chart-process-flow:before, 
+.website-structure-chart-process-flow:after { 
+    content: none; 
 
-
-}
+} 

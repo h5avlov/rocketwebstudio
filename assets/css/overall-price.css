@@ -1,5 +1,7 @@
 .overall-price { 
+    box-sizing: border-box; 
     display: inline-block; 
+    /* width: 100%;  */ 
     margin-bottom: var( --overall-price-margin-bottom ); 
     padding: var( --overall-price-padding ); 
     border-width: var( --overall-price-border-width ); border-style: solid; 

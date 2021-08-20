@@ -14,7 +14,7 @@
 
     ], 
 
-    "pageNav": false, 
+    "pageNav": true, 
 
     "sections": { 
         "home": {  

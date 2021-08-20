@@ -1,0 +1,41 @@
+<section class= "block-chart {{ include.className }}"> 
+    
+    <section class= "chart-body {{ include.className }}-body"> 
+        <ul class= "chart-block-list {{ include.className }}-block-list"> 
+        {% for chartBlockEntry in include.chartBlockList %} 
+            {% assign chartBlockTarget= chartBlockEntry[ 0 ] %}
+            
+            {% assign chartBlockID= chartBlockTarget | append: "-chart-block" %}
+            <li id= "{{ chartBlockID }}" class= "chart-block {{ include.className }}-block {{ chartBlockID }}"> 
+                {% assign chartBlock= chartBlockEntry[ 1 ] %} 
+
+                {% include heading.html 
+                    className= "chart-block-heading" 
+                    level= 3 
+                    text= chartBlock.heading
+                %} 
+
+                {% if include.price %} 
+                    {% include price.html 
+                        price= chartBlock.price 
+                    %} 
+                {% endif %} 
+
+                {% if include.targetPage %} 
+                    {% assign linkTarget= include.targetPage | append: "#" | append: chartBlockTarget | append: "-section" %} 
+                    {% include link.html 
+                        className= "button read-more-button" 
+                        target= linkTarget
+                        text= site.data.settings.buttons.outerPageLink.text 
+                    %} 
+                {% endif %} 
+            </li> 
+        {% endfor %}
+        </ul> 
+
+        {% for i in ( 1..include.processFlowCount ) %} 
+            <div class= "chart-process-flow {{ include.className }}-process-flow"></div> 
+        {% endfor %}
+    </section> 
+
+</section> 

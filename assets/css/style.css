@@ -37,6 +37,8 @@
 @import url( "./overview-section.css" ); 
 @import url( "./overview-section-entry.css" );  
 
+@import url( "./block-chart.css" ); 
+
 @import url( "./front-page.css" ); 
 @import url( "./workflow-page.css" ); 
 @import url( "./contact-page.css" ); 

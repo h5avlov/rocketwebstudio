@@ -5,12 +5,57 @@ dataFileName: pricingPage
 label: pricing 
 ---  
 
-{% include pricing-block-chart.html 
-    chartBlockList= site.data.pricingPage.sections 
-%} 
+{% assign pricingData= site.data.buildingPage %} 
 
-{% include building.html 
-    head= site.data.building.head 
-    body= site.data.buildingPage.sections 
-    overallPrice= site.data.buildingPage.overallPrice 
-%}
+<article class= "pricing-data"> 
+    <ul class= "entry-list price-entry-list workflow-price-entry-list"> 
+    {% for entry in site.data.pricingPage.sections %} 
+        {% assign priceBlockKey= entry[ 0 ] %}
+        {% assign priceBlock= entry[ 1 ] %} 
+
+        <li class= "entry price-entry workflow-price-entry has-icon"> 
+            {% include heading.html 
+                className= "price-block-heading" 
+                level= 3 
+                text= priceBlock.heading 
+            %} 
+
+            {% include price.html 
+                price= priceBlock.price 
+            %}
+
+            {% if priceBlockKey == "building" %} 
+                {% include price-block-list.html 
+                    className= "building" 
+                    blockEntryList= site.data.buildingPage.sections 
+                    price= true 
+                %} 
+            {% endif %} 
+        </li>
+    {% endfor %} 
+    </ul>
+</article>
+
+{% comment %} 
+<!-- <article class= "pricing-data workflow-pricing-data">
+    {% include price-block-list.html 
+        className= "workflow" 
+        blockEntryList= site.data.pricingPage.sections 
+        price= true 
+    %} 
+</article> 
+
+<article class= "pricing-data building-pricing-data">   
+    {% include price-block.html 
+        className= "overall-price"
+        text= pricingData.overallPrice.text 
+        price= pricingData.overallPrice.price 
+    %} 
+
+    {% include price-block-list.html 
+        className= "building" 
+        blockEntryList= pricingData.sections 
+        price= true 
+    %} 
+</article>  --> 
+{% endcomment %} 

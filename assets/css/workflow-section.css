@@ -1,0 +1,115 @@
+.home-page .pricing-chart { 
+    --chart-width: 25%; 
+    --chart-padding-y: 5em; 
+    --chart-padding-x: 1.25rem;
+
+    --block-height: 10em; 
+
+    --block-text-font-family: "var( --heading-font-family )"; 
+    --block-text-font-size: 1rem; 
+
+}
+
+.home-page .pricing-chart .chart-block-list { 
+    counter-reset: workflow-entry-number; 
+} 
+
+.home-page .pricing-chart .chart-block { 
+    counter-increment: workflow-entry-number; 
+} 
+
+.home-page .pricing-chart .chart-block-heading:before {  
+    content: counter( workflow-entry-number ); 
+} 
+
+.home-page .pricing-chart .chart-block:hover { 
+    background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); 
+
+} 
+
+.home-page .pricing-chart {  
+
+    
+} 
+
+.home-page .pricing-chart .chart-block-heading:before { 
+    display: block; 
+    margin-bottom: 0.4em; 
+} 
+
+.home-page .pricing-chart .read-more-button { 
+    width: 100%; height: 100%; overflow: hidden; 
+    padding: 0; 
+    position: absolute; left: 0; top: 0; 
+    z-index: 1; 
+    border: none; border-radius: 0; 
+    text-indent: -10000px; 
+
+} 
+
+.home-page .pricing-chart .read-more-button:before { 
+    float: none;  
+    width: 100%; height: auto; 
+    margin-bottom: 0.5em; 
+    position: absolute; left: 0; bottom: 0; 
+    z-index: 2; 
+    text-indent: 0; 
+    content: none; 
+
+} 
+
+
+.home-page .pricing-chart {  
+    --block-count: 1; 
+    --block-distance-x: 0em; 
+    --block-distance-y: 2em; 
+    --block-height: 8em; 
+
+} 
+
+.home-page .chart-block-list { 
+    display: block; 
+    width: 100%;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+
+} 
+
+.home-page .chart-block { 
+    width: 100%; 
+
+} 
+
+.home-page .chart-block:nth-child( n + 5 ) { 
+    margin-bottom: 0; 
+
+} 
+
+.home-page .chart-block.enhancing-chart-block { 
+    left: 120%; bottom: 50%; margin-bottom: calc( -1 * var( --block-height ) / 2 ); 
+
+}
+
+.home-page .process-flow { 
+    width: auto; 
+    left: 50%; right: -70%; 
+
+} 
+
+.home-page .process-flow:before, 
+.home-page .process-flow:after { 
+    left: 100%; margin-left: -10px;  
+    border-color: var( --line-color ) transparent; border-width: 0 10px 20px 10px; 
+
+} 
+
+.home-page .process-flow:before {  
+    top: calc( ( 100% - var( --block-height ) ) / 4 ); 
+
+} 
+
+.home-page .process-flow:after { 
+    bottom: calc( ( 100% - var( --block-height ) ) / 4 ); 
+
+} 

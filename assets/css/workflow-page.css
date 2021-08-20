@@ -1,3 +1,5 @@
+@import url( "./workflow-block-chart.css" ); 
+
 /* .page-body { 
     width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
@@ -12,4 +14,58 @@
 
 /* .page-body .text-entry:last-of-type { 
     margin-bottom: 1.75rem; 
-}  */ 
+}   */
+
+.workflow-page .pricing-chart .chart-block-list { 
+    counter-reset: workflow-entry-number; 
+} 
+
+.workflow-page .pricing-chart .chart-block { 
+    counter-increment: workflow-entry-number; 
+} 
+
+.workflow-page .pricing-chart .chart-block-heading:before { 
+    content: counter( workflow-entry-number ); 
+} 
+
+.workflow-page .workflow-chart { 
+    margin-bottom: 4rem; 
+
+} 
+
+/* .workflow-page .workflow-chart { 
+    margin-bottom: 4rem; 
+
+}
+
+.workflow-page .pricing-chart .chart-block:hover { 
+    background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); 
+
+} 
+
+.workflow-page .pricing-chart .chart-block-heading:before { 
+    display: block; 
+    margin-bottom: 0.4em; 
+} 
+
+.workflow-page .pricing-chart .read-more-button { 
+    width: 100%; height: 100%; overflow: hidden; 
+    padding: 0; 
+    position: absolute; left: 0; top: 0; 
+    z-index: 1; 
+    border: none; border-radius: 0; 
+    text-indent: -10000px; 
+
+} 
+
+.workflow-page .pricing-chart .read-more-button:before { 
+    float: none;  
+    width: 100%; height: auto; 
+    margin-bottom: 0.5em; 
+    position: absolute; left: 0; bottom: 0; 
+    z-index: 2; 
+    text-indent: 0; 
+    content: "\f3d4"; 
+
+} */ 

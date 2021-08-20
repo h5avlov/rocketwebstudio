@@ -1,9 +1,10 @@
 @import url( "./price.css" ); 
 @import url( "./price-block.css" ); 
 @import url( "./overall-price.css" ); 
-@import url( "./building-block.css" ); 
+@import url( "./building-price-entry-list.css" ); 
 
 
 .building-section > .section-head-text-entry:last-of-type { 
     margin-bottom: var( --building-section-text-margin-bottom ); 
 } 
+

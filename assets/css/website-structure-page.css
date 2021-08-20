@@ -1,3 +1,17 @@
 @import url( "./website-structure-block-chart.css" ); 
 @import url( "./page-description-list.css" ); 
 
+.page-description-section { 
+    margin-bottom: 2.5rem; 
+
+} 
+
+.page-description-section .section-heading { 
+    font-size: 1.2rem; 
+
+} 
+
+.website-structure-page .website-structure-chart { 
+    max-width: none; 
+
+}

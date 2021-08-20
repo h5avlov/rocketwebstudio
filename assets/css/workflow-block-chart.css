@@ -1,0 +1,137 @@
+.workflow-chart { 
+    --chart-width: 20%; 
+    --chart-padding-y: 5em; 
+    --chart-padding-x: 1.25rem; 
+
+    --block-count: 1; 
+    --block-distance-x: 0em; 
+    --block-distance-y: 2em; 
+    --block-width: calc( ( 100% - calc( var( --block-count ) - 1 ) * var( --block-distance-x ) ) / var( --block-count ) ); 
+    --block-height: 10em; 
+    --block-indent-x: 4em; 
+    --enhancing-chart-block-gutter-x: 2rem; 
+    --enhancing-chart-block-position-x: calc( 100% + var( --enhancing-chart-block-gutter-x ) ); 
+
+    --line-width: 1px; 
+
+    --chart-background-color: transparent; 
+    --line-color: var( --text-color ); 
+    --block-background-color: white; 
+
+    --block-text-font-family: Arial; 
+    --block-text-font-size: 0.75rem; 
+
+}
+
+.workflow-chart {  
+    /* padding: var( --chart-padding-y ) var( --chart-padding-x );   */ 
+    /* margin-top: 0;  */ 
+    background-color: var( --chart-background-color ); 
+    color: var( --line-color ); 
+    font-family: var( --block-text-font-family ); font-size: var( --block-text-font-size );  
+    text-align: center; 
+
+} 
+
+.workflow-chart-body { 
+    display: flex; flex-direction: column; 
+    max-width: var( --chart-width ); margin-left: auto; margin-right: auto;  
+    position: relative; 
+
+} 
+
+.workflow-chart-block-list { 
+    display: block; 
+    width: 100%;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+
+} 
+
+.workflow-chart-block {  
+    box-sizing: border-box; 
+    display: flex; flex-direction: column; justify-content: center; align-items: center; 
+    width: 100%; min-height: var( --block-height );  
+    padding-top: 2.5rem; padding-bottom: 2.5rem; 
+    margin-right: var( --block-distance-x ); margin-top: var( --block-distance-y ); 
+    position: relative; z-index: 2; 
+    background-color: var( --block-background-color ); 
+    border: var( --line-width ) solid;  
+    text-transform: uppercase; 
+
+} 
+
+.workflow-chart-block:last-child, 
+.workflow-chart-block:nth-child( n + 5 ) { 
+    margin-bottom: 0; 
+
+} 
+
+.workflow-chart-block.enhancing-chart-block { 
+    margin-top: 0; 
+    position: absolute; 
+    left: var( --enhancing-chart-block-position-x ); top: 50%; transform: translateY( -50% ); 
+    bottom: auto; 
+} 
+
+.workflow-chart .read-more-button { 
+    width: 100%; height: 100%; 
+    position: absolute; 
+    border-radius: 0; border: none; 
+    text-indent: -10000px; 
+
+} 
+
+.workflow-chart-block:hover { 
+    background-color: var( --line-color ); 
+    color: white; 
+
+}
+
+.workflow-chart-process-flow { 
+    display: block; 
+    width: var( --enhancing-chart-block-position-x );
+    position: absolute; z-index: 1; 
+    left: 50%; top: calc( var( --block-height ) / 2 ); bottom: calc( var( --block-height ) / 2 ); 
+    border: 1px solid var( --line-color ); 
+    font-size: inehrit; 
+
+} 
+
+.workflow-chart-process-flow:before, 
+.workflow-chart-process-flow:after { 
+    box-sizing: border-box; 
+    display: block; 
+    width: 0; height: 0; 
+    position: absolute; z-index: 1; 
+    left: 100%; margin-left: -10px; margin-bottom: -10px; 
+    border-style: solid; border-color: var( --line-color ) transparent; border-width: 0 10px 20px 10px; 
+    content: ""; 
+
+} 
+
+.workflow-chart-process-flow:before {  
+    top: calc( ( 100% - var( --block-height ) ) / 4 ); 
+
+} 
+
+.workflow-chart-process-flow:after { 
+    bottom: calc( ( 100% - var( --block-height ) ) / 4 ); 
+
+} 
+
+
+.workflow-chart-block:nth-child( -n + 1 ) { 
+    margin-top: 0; 
+
+} 
+
+.workflow-chart-block .chart-block-heading { 
+    margin-bottom: 0.4em; 
+    font-family: inherit; 
+
+}
+
+
+
+    

@@ -1,7 +1,20 @@
 --- 
-layout: article-page 
+layout: inner-page 
 permalink: /workflow  
 dataFileName: workflowPage 
 label: workflow 
 ---  
 
+{% assign pageData= site.data[ page.dataFileName ] %}
+
+{% include block-chart.html 
+    className= "workflow-chart" 
+    chartBlockList= pageData.sections 
+    processFlowCount= 1 
+    price= false 
+    targetPage= "/workflow" 
+%}  
+
+{% include article-page.html 
+    articlePage= pageData 
+%} 

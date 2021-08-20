@@ -1,0 +1,21 @@
+/* Sets column gutters */
+.price-entry-list { 
+    --column-gutter-x-width: var( --price-entry-list-column-gutter-x-width ); 
+
+} 
+
+/* Inserts an icon in building block element */ 
+.price-entry:before { 
+    display: block; 
+    margin-bottom: var( --building-block-icon-margin-bottom ); 
+    content: var( --building-block-icon-code ); 
+    font-size: var( --building-block-icon-font-size ); 
+
+}
+
+.price-entry-list .price-block-heading { 
+    padding: var( --building-block-price-block-heading-padding ); 
+    background-color: var( --text-color ); 
+    color: var( --building-block-price-block-heading-color ); 
+
+} 
