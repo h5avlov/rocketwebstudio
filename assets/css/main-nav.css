@@ -26,6 +26,7 @@
 .nav-entry {   
     position: relative;  
     color: var( --main-nav-text-color ); 
+    white-space: nowrap; 
 } 
 
 .nav-entry:after, 
@@ -90,7 +91,7 @@
 }
 
 .main-nav .subnav-entry-list { 
-    /* min-width: 100%;  */ 
+    min-width: 100%;  
     padding: 0 1rem;  
     position: absolute; top: -10000px; left: 0; 
     z-index: 3; 
@@ -157,7 +158,7 @@
 
 }  */
 
-.main-nav .nav-entry .subnav-entry-list { 
+.main-nav .nav-entry:hover .subnav-entry-list { 
     top: var( --header-height );  
 
 }

@@ -49,7 +49,7 @@
 
         { 
             "target": "/about-rocket", 
-            "text": "Rocket ли?", 
+            "text": "Rocket?", 
             "className": "about-rocket", 
 
             "nav": [ 
@@ -57,19 +57,7 @@
                     "target": "/about", 
                     "text": "За мен", 
                     "className": "about" 
-                }, 
-
-                { 
-                    "target": "/reviews", 
-                    "text": "Ревюта", 
-                    "className": "reviews" 
-                }, 
-
-                { 
-                    "target": "/clients", 
-                    "text": "Клиенти", 
-                    "className": "clients" 
-                }
+                } 
 
             ]
         }, 
