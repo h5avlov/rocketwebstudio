@@ -1,35 +1,35 @@
 @import url( "./price-entry-list.css" ); 
 
 
-.home-page .building-price-entry-list { 
+.building-price-entry-list { 
     --column-gutter-x-width: 0.4rem; 
 
 }
 
-.home-page .building-price-entry-list { 
+.building-price-entry-list { 
     width: 100%; 
 
 }
 
 /* Defines 4 columns for screens that comfortably display 4 columns */
 @media screen and ( min-width: 881px ) { 
-    .home-page .building-price-entry-list { 
+    .building-price-entry-list { 
         --column-count: 4; 
 
     } 
 
-    .home-page .building-price-entry:nth-child( 4n ) { 
+    .building-price-entry:nth-child( 4n ) { 
         margin-right: 0; 
     } 
     
-    .home-page .building-price-entry:nth-child( -n + 4 ) { 
+    .building-price-entry:nth-child( -n + 4 ) { 
         margin-top: 0; 
     }  
   
 } 
 
 @media screen and ( max-width: 880px ) { 
-    .home-page .building-price-entry-list { 
+    .building-price-entry-list { 
         --column-gutter-y-width: 3.5rem; 
     } 
 
@@ -37,16 +37,16 @@
 
 /* Defines 2 columns for screens, that could not comfortably display 4 columns */
 @media screen and ( max-width: 880px ) and ( min-width: 641px ) { 
-    .home-page .building-price-entry-list { 
+    .building-price-entry-list { 
         --column-count: 2; 
 
     } 
     
-    .home-page .building-price-entry:nth-child( 2n ) { 
+    .building-price-entry:nth-child( 2n ) { 
         margin-right: 0; 
     } 
     
-    .home-page .building-price-entry:nth-child( -n + 2 ) { 
+    .building-price-entry:nth-child( -n + 2 ) { 
         margin-top: 0; 
     } 
     
@@ -54,15 +54,15 @@
 
 /* Defines 1 column on screens, that could not comfortably display 2 columns */
 @media screen and ( max-width: 640px ) { 
-    .home-page .building-price-entry-list { 
+    .building-price-entry-list { 
         --column-count: 1; 
     } 
     
-    .home-page .building-price-entry:nth-child( n ) { 
+    .building-price-entry:nth-child( n ) { 
         margin-right: 0; 
     } 
     
-    .home-page .building-price-entry:nth-child( -n + 1 ) { 
+    .building-price-entry:nth-child( -n + 1 ) { 
         margin-top: 0; 
     } 
     
