@@ -48,18 +48,9 @@
         }, 
 
         { 
-            "target": "/about-rocket", 
-            "text": "Rocket?", 
-            "className": "about-rocket", 
-
-            "nav": [ 
-                { 
-                    "target": "/about", 
-                    "text": "За мен", 
-                    "className": "about" 
-                } 
-
-            ]
+            "target": "/about", 
+            "text": "За Rocket", 
+            "className": "about" 
         }, 
 
         { 
