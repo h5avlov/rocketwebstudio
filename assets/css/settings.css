@@ -60,10 +60,11 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --text-color: rgb( 0, 67, 78 );  
+    /* --text-color: rgb( 0, 67, 78 );   */
     --text-color: rgb( 63, 59, 68 ); 
     --text-color-inverted: rgba( 255, 255, 255, 0.9 ); 
-    --primary-color: rgb( 0, 67, 78 ); 
+    /* --primary-color: rgb( 0, 67, 78 );  */ 
+    --primary-color: var( --text-color ); 
     --secondary-color: rgba( 255, 255, 255, 1 ); 
     --background-color: var( --secondary-color ); 
     --highlight-color: var( --primary-color ); 
@@ -85,17 +86,20 @@
     --button-margin-top: 1.2rem; 
 
     --button-border-width: calc( 1 / 12 * 1em ); 
-    --button-open-border-width: 1px; 
-    --button-border-color: red; 
+    --button-open-border-width: 1px;  
     --button-border-radius: 100px; 
-
-    --button-text-color: red; 
-    --button-background-color: transparent; 
     
     --button-font-family: Arial; 
     --button-font-size: 12px; 
 
     --button-icon: ""; 
+
+    --button-text-color: inherit; 
+    --button-background-color: transparent; 
+    --button-border-color: var( --button-text-color ); 
+
+    --button-hover-background-color: var( --primary-color ); 
+    --button-hover-text-color: var( --secondary-color ); 
     
 } 
 
@@ -314,10 +318,15 @@
     --sell-points-entry-heading-margin-bottom: 0.8em; 
     --sell-points-entry-text-entry-margin-bottom: 1em; 
     --sell-points-entry-text-margin-bottom: 2.5em; 
-
+   
     --sell-points-entry-heading-font-family: "A1SerifBold"; 
     --sell-points-entry-heading-font-size: 1.8rem; 
-   
+
+} 
+
+.sell-points{  
+    --button-hover-background-color: var( --secondary-color ); 
+    --button-hover-text-color: var( --primary-color ); 
 
 } 
 

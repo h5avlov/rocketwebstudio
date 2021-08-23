@@ -8,6 +8,6 @@
     text-align: center; 
 
     /* Sets icon font */
-    font-family: var( --icon-font-family ); 
+    font-family: var( --icon-font-family ); font-weight: normal; 
     content: var( --icon-code ); 
 } 
