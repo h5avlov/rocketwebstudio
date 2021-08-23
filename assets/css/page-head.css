@@ -16,7 +16,7 @@
     position: relative; 
 
     /* Sets default background color and restricts it from spreading over border */
-    background-color: var( --text-color ); background-clip: padding-box; 
+    background-color: var( --page-head-background-color ); background-clip: padding-box; 
 
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
     font-size: var( --page-head-font-size ); 
@@ -47,7 +47,7 @@
     z-index: 2; 
 
     /* Sets default text content background and text colors */ 
-    background-color: var( --text-color ); background-clip: padding-box; 
+    background-color: var( --page-head-background-color ); background-clip: padding-box; 
     color: var( --text-color-inverted ); 
 
     /* Applies a border and a drop shadow on page head text content */
@@ -62,8 +62,8 @@
     position: absolute; left: 0; top: 0; 
     z-index: 1; 
     /* background-position: center top; background-size: cover;  */ 
-    /* filter: grayscale( 100 ); 
-    opacity: 0.2;  */ 
+    filter: grayscale( 100 );  
+    opacity: 0.125;  
    
 } 
 

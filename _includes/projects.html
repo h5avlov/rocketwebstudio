@@ -23,10 +23,21 @@
 
         <ol class= "entry-list random-access-entry-list project-preview-random-access-entry-list"> 
         {% for entry in include.body %} 
+            {% assign projectEntry= site.data.projects[ entry.dataFileName ] %} 
+            
             <li class= "entry random-access-entry"> 
+                {% include heading.html 
+                    level= 4 
+                    text= projectEntry.title 
+                %} 
+                
                 {% assign targetSectionID= entry.label | append: "-project-entry" %} 
                 {% include inner-link.html 
-                    targetSectionID= targetSectionID 
+                    targetSectionID= targetSectionID  
+                %} 
+
+                {% include featured-image.html 
+                    image= projectEntry.image 
                 %} 
             </li> 
         {% endfor %}

@@ -61,6 +61,7 @@
 
 :root { 
     --text-color: rgb( 0, 67, 78 );  
+    --text-color: rgb( 70, 70, 70 ); 
     --text-color-inverted: rgba( 255, 255, 255, 0.9 ); 
     --primary-color: rgb( 0, 67, 78 ); 
     --secondary-color: rgba( 255, 255, 255, 1 ); 
@@ -259,6 +260,7 @@
 
 :root { 
     --page-head-margin-bottom: 5rem;  
+    --page-head-background-color: var( --text-color ); 
 
     --page-head-nav-text-content-padding-bottom: 4rem; 
     --page-head-nav-text-entry-height: 4em; 
