@@ -324,7 +324,9 @@
 
 } 
 
-.sell-points{  
+/* Overrides button default style change on hover */
+.sell-points, 
+.project-entry {  
     --button-hover-background-color: var( --secondary-color ); 
     --button-hover-text-color: var( --primary-color ); 
 

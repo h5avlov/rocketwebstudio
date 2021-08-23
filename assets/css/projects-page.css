@@ -30,7 +30,7 @@
     position: relative; z-index: 2; 
 } 
 
-.project-preview-text-content > * { 
+.project-preview-text-content > *:not( :last-child ) { 
     margin-bottom: 1em; 
 } 
 

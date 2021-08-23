@@ -26,10 +26,10 @@
             {% assign projectEntry= site.data.projects[ entry.dataFileName ] %} 
             
             <li class= "entry random-access-entry"> 
-                {% include heading.html 
+                <!-- {% include heading.html 
                     level= 4 
                     text= projectEntry.title 
-                %} 
+                %}  --> 
                 
                 {% assign targetSectionID= entry.label | append: "-project-entry" %} 
                 {% include inner-link.html 
