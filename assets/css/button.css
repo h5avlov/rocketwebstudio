@@ -48,7 +48,7 @@
 } 
 
 /* Sets button color on hover */
-.read-more-button:hover {  
+.read-more-button:not( .chart-block-read-more-button ):hover {  
     background-color: var( --button-hover-background-color ); 
     color: var( --button-hover-text-color ); 
     border-color: var( --button-hover-background-color ); 

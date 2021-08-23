@@ -24,7 +24,7 @@
                 {% if include.targetPage %} 
                     {% assign linkTarget= include.targetPage | append: "#" | append: chartBlockTarget | append: "-section" %} 
                     {% include link.html 
-                        className= "button read-more-button" 
+                        className= "button read-more-button chart-block-read-more-button" 
                         target= linkTarget
                         text= site.data.settings.buttons.outerPageLink.text 
                     %} 
