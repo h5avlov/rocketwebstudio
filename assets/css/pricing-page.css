@@ -11,7 +11,7 @@
 }  */ 
 
 .pricing-page .workflow-price-entry-list { 
-    width: 960px; 
+    max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
 
 } 
@@ -33,11 +33,11 @@
 
 }
 
-.pricing-page .building-price-entry-list { 
+/* .pricing-page .building-price-entry-list { 
     --column-count: 4; 
     --column-gutter-x-width: 0.4rem; 
 
-} 
+}  */ 
 
 .pricing-page .building-price-entry-list { 
     margin-top: 2.5rem; 
