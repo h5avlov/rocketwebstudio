@@ -5,10 +5,10 @@
 
 } 
 
-.pricing-page .page-body > * + * { 
+/* .pricing-page .page-body > * + * { 
     margin-top: 5rem; 
 
-} 
+}  */ 
 
 .pricing-page .workflow-price-entry-list { 
     width: 960px; 
@@ -18,6 +18,11 @@
 
 .pricing-page .workflow-price-entry { 
     text-align: center; 
+
+} 
+
+.pricing-page .workflow-price-entry + .workflow-price-entry { 
+    margin-top: 4rem; 
 
 }
 
@@ -33,6 +38,10 @@
     --column-gutter-x-width: 0.4rem; 
 
 } 
+
+.pricing-page .building-price-entry-list { 
+    margin-top: 2.5rem; 
+}
 
 .pricing-page .overall-price {  
     background-color: var( --text-color ); 
