@@ -1,10 +1,4 @@
 .website-structure-chart { 
-    --chart-width: 20%; 
-    --chart-padding-y: 5em; 
-    --chart-padding-x: 1.25rem; 
-
-    --block-distance-y: 2em;  
-    --block-height: 10em; 
     --block-indent-x: 50%; 
 
     --process-flow-line-left: 1; 

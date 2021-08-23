@@ -120,7 +120,21 @@
     margin-bottom: 0.4em; 
     font-family: inherit; 
 
-}
+} 
+
+
+@media screen and ( max-width: 840px ) { 
+    .block-chart { 
+        --chart-width: 40%; 
+        --chart-padding-y: 5em; 
+        --chart-padding-x: 1.25rem; 
+    
+        --block-distance-y: 1.25em; 
+        --block-height: 8em; 
+    
+    }
+
+} 
 
 
 
