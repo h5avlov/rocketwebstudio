@@ -59,11 +59,6 @@
 
 } 
 
-.project-page .project-screenshot-select-button:focus { 
-    background-color: red; 
-
-}
-
 .role-entry-list { 
     --column-count: 2; 
     --column-gutter-y-width: 0.4rem; 
