@@ -24,12 +24,13 @@ layout: default
 {% endif %} 
 
 
+{% assign pageHeadImage= site.data.settings.innerPage.pageHead.image %} 
 {% include page-head.html 
     idTagline= site.data.id.tagline 
     title= pageData.title 
     subtitle= pageData.subtitle 
     pageNavEntryList= pageNavEntryList 
-    image= pageData.image 
+    image= pageHeadImage 
 %} 
 
 <article id= "page-body" class= "page-body"> 

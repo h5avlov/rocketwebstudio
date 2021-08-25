@@ -8,12 +8,18 @@ dataLocation: data.projects
 {% assign projectData= site.data.projects[ page.dataFileName ] %} 
 
 
+{% assign pageHeadImage= site.data.settings.projectPage.pageHead.image %}
 {% assign projectPageNavEntryList= "description,описание|roles,отговорности|screenshots,изображения|client,клиент" | split: "|" %} 
 {% include page-head.html 
     title= projectData.title 
     pageNavEntryList= projectPageNavEntryList 
-    image= projectData.image 
+    image= pageHeadImage 
 %} 
+
+{% include project-screenshot-list.html 
+    projectScreenshotDirectory= projectData.sections.screenshots.body.directory
+    projectScreenshotEntryList= projectData.sections.screenshots.body.entryList 
+%}
 
 {% include project-page/description/description.html 
     paragraphs= projectData.sections.description.paragraphs 
@@ -23,11 +29,6 @@ dataLocation: data.projects
     paragraphs= projectData.sections.roles.paragraphs 
     image= projectData.sections.roles.image 
     body= projectData.sections.roles.body 
-%} 
-
-{% include project-page/screenshots/screenshots.html 
-    paragraphs= projectData.sections.screenshots.paragraphs 
-    body= projectData.sections.screenshots.body 
 %} 
 
 {% include project-page/client/client.html 
