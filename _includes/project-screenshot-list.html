@@ -11,6 +11,13 @@
         %}
     </li> 
 {% endfor %} 
+<li class= "project-screenshot-entry project-screenshot-entry-default"> 
+    {% assign imagePath= include.projectScreenshotDirectory | append: "/" | append: include.projectScreenshotEntryList[ 0 ].src %} 
+    {% include image.html 
+        className= "project-screenshot project-screenshot-default" 
+        src= imagePath 
+    %}
+</li>
 </ul> 
 
 <ol class= "project-screenshot-random-access-list"> 

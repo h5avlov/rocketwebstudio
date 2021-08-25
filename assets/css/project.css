@@ -21,20 +21,22 @@
 
 } 
 
-.project-page .project-screenshot-entry { 
+.project-page .project-screenshot-entry, 
+.project-page .project-screenshot-entry:target ~ .project-screenshot-entry-default { 
     width: 0; height: 0; overflow: hidden; 
+
+} 
+
+.project-page .project-screenshot-entry:target, 
+.project-page .project-screenshot-entry-default { 
+    width: 100%; height: 28rem; overflow: auto; 
+    margin-bottom: 3.5rem; 
 
 } 
 
 .project-page .project-screenshot { 
     display: block; 
     max-width: 100%; width: auto; height: auto; margin-left: auto; margin-right: auto; 
-
-}
-
-.project-page .project-screenshot-entry:target { 
-    width: 100%; height: 28rem; overflow: auto; 
-    margin-bottom: 3.5rem; 
 
 } 
 
