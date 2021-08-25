@@ -6,7 +6,7 @@
     "title": "Clima Energy", 
 
     "image": { 
-        "src": "screenshot-climachoice.github.io-2021.08.23-21_17_10.png", 
+        "src": "screenshot-localhost_4000-2021.08.24-15_41_07.png", 
         "alt": "Project Screenshot" 
     }, 
 
@@ -64,20 +64,95 @@
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
                 }
             ], 
-            "body": [
-                {
-                    "src": "" 
-                }, 
-                {
-                    "src": "" 
-                }, 
-                {
-                    "src": "" 
-                }, 
-                {
-                    "src": "" 
-                } 
-            ] 
+            "body": { 
+                "directory": "climaenergy", 
+                "entryList": [
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_29_46.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_30_08.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_30_18.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_30_29.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_30_39.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_30_46.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_31_15.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_31_41.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_32_09.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_32_49.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_33_14.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_43_37.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_43_59.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_44_04.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_44_22.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_44_26.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_44_54.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_45_24.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_45_34.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_45_44.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-localhost_4000-2021.08.24-18_45_51.png" 
+                    } 
+                    
+                ] 
+            }
         }, 
 
         "client": { 

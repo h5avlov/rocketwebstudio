@@ -64,23 +64,50 @@
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus."
                 }
             ], 
-            "body": [
-                {
-                    "src": "/" 
-                }, 
+            "body": { 
+                "directory": "georgistoynov",
+                "entryList": [
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_24_46.png" 
+                    }, 
 
-                {
-                    "src": "/" 
-                }, 
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_25_14.png" 
+                    }, 
 
-                {
-                    "src": "/" 
-                }, 
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_25_32.png" 
+                    }, 
 
-                {
-                    "src": "/" 
-                } 
-            ] 
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_25_58.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_26_14.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_26_26.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_26_49.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_27_16.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_27_52.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-georgistoynov.free.bg-2021.08.24-17_28_02.png" 
+                    }
+                ]
+            } 
         }, 
 
         "client": { 

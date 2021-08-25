@@ -64,23 +64,60 @@
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
                 }
             ], 
-            "body": [
-                {
-                    "src": "" 
-                }, 
+            "body": { 
+                "directory": "doshky", 
+                "entryList": [
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_44_24.png" 
+                    }, 
 
-                {
-                    "src": "" 
-                }, 
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_44_32.png" 
+                    }, 
 
-                {
-                    "src": "" 
-                }, 
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_44_45.png" 
+                    }, 
 
-                {
-                    "src": "" 
-                }
-            ] 
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_45_00.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_45_15.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_45_27.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_46_33.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_46_46.png" 
+                    },
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_46_54.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_47_02.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_47_39.png" 
+                    }, 
+
+                    {
+                        "src": "screenshot-doshky.com-2021.08.24-17_47_50.png" 
+                    } 
+
+                
+                ] 
+            }
         }, 
 
         "client": { 
