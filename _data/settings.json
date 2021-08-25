@@ -18,6 +18,24 @@
 
         } 
 
+    }, 
+    "innerPage": { 
+        "pageHead": { 
+            "image": { 
+                "src": "pexels-mateusz-dach-450035.jpg" 
+
+            }
+
+        } 
+    }, 
+    "projectPage": { 
+        "pageHead": { 
+            "image": { 
+                "src": "1540773736.jpeg" 
+
+            }
+
+        } 
     }
 
 }
