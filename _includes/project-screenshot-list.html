@@ -1,7 +1,7 @@
 {% capture body %}
 
 <ul class= "project-screenshot-list"> 
-{% assign last= include.projectScreenshotEntryList | size %} 
+{% assign last= include.projectScreenshotEntryList | size | minus: 1 %} 
 {% for i in ( 0..last ) %} 
     <li class= "project-screenshot-entry" id= "screenshot-{{ i | plus: 1 }}"> 
         {% assign imagePath= include.projectScreenshotDirectory | append: "/" | append: include.projectScreenshotEntryList[ i ].src %} 
@@ -14,7 +14,7 @@
 </ul> 
 
 <ol class= "project-screenshot-random-access-list"> 
-{% assign last= include.projectScreenshotEntryList | size %}
+{% assign last= include.projectScreenshotEntryList | size | minus: 1 %} 
 {% for i in ( 0..last ) %} 
     <li class= "project-screenshot-random-access-entry"> 
         <a class= "button project-screenshot-select-button" href= "#screenshot-{{ i | plus: 1 }}"></a> 
