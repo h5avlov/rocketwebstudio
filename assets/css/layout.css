@@ -17,7 +17,8 @@
 .text-entry, 
 .section > *, 
 .projects-page .project-entry-list, 
-.article-page .page-body > * { 
+.article-page .page-body > *, 
+.project-page .screenshots-section { 
     max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
 

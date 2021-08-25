@@ -1,7 +1,68 @@
+.project-page .section { 
+    margin-bottom: 0; 
+
+}
+
+.project-page .section + .section { 
+    margin-top: 4rem; 
+
+}
+
 /* .project-page .section-heading { 
     background-color: brown; 
 
 } */ 
+
+.project-page .project-screenshot-list { 
+    /* height: 28rem; overflow: auto;  */ 
+    position: relative; 
+    background-size: cover; 
+    /* border: 1px solid var( --project-showcase-image-border-color );  */ 
+
+} 
+
+.project-page .project-screenshot-entry { 
+    width: 0; height: 0; overflow: hidden; 
+
+} 
+
+.project-page .project-screenshot { 
+    display: block; 
+    max-width: 100%; width: auto; height: auto; margin-left: auto; margin-right: auto; 
+
+}
+
+.project-page .project-screenshot-entry:target { 
+    width: 100%; height: 28rem; overflow: auto; 
+    margin-bottom: 3.5rem; 
+
+} 
+
+.project-page .project-screenshot-random-access-list { 
+    display: flex; flex-direction: row; justify-content: center; 
+    /* margin-top: 3.5rem;  */ 
+
+} 
+
+.project-page .project-screenshot-random-access-entry { 
+    margin-right: 0.2em; 
+    position: relative;  
+
+} 
+
+.project-page .project-screenshot-select-button { 
+    display: block; 
+    width: 1.2em; height: 1.2em; 
+    padding: 0;  
+    background-color: var( --text-color ); 
+    border-radius: 0; 
+
+} 
+
+.project-page .project-screenshot-select-button:focus { 
+    background-color: red; 
+
+}
 
 .role-entry-list { 
     --column-count: 2; 
@@ -50,7 +111,7 @@
 
 } 
 
-.screenshots-section { 
+/* .screenshots-section { 
     padding-top: 5rem; padding-bottom: 5rem; 
     padding-right: 50%; 
     position: relative;  
@@ -68,7 +129,7 @@
     position: absolute; left: 50%; right: 0; top: 0; bottom: 0; 
     overflow-x: scroll; 
 
-}
+} */
 
 /* .screenshot-entry-list { 
     width: 50%; height: 100%; 
@@ -76,7 +137,7 @@
 
 }  */
 
-.screenshots-section .screenshot-entry-list { 
+/* .screenshots-section .screenshot-entry-list { 
     height: 100%; 
     margin-top: 0; 
     padding-right: 0; 
@@ -86,7 +147,7 @@
 .screenshot { 
     background-color: var( --text-color ); 
 
-} 
+}  */
 
 .client-section-entry { 
     display: flex; flex-direction: row; 
@@ -200,11 +261,11 @@
 
     } 
 
-    .screenshots-section, 
+    /* .screenshots-section, 
     .screenshots-section > .heading { 
         text-align: right; 
 
-    } 
+    }  */
 
     .roles-section .featured-image, 
     .screenshot-entry-list { 
