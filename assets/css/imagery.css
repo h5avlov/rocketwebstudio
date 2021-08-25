@@ -1,7 +1,13 @@
+@import url( "./showcase-image.css" ); 
+
 .featured-image { 
     background-size: cover; background-position: center top; 
-    /* background-color: var( --text-color );  */ 
-    /* background-image: none !important;   */ 
+
+} 
+
+.page-head .featured-image, 
+.project-entry .featured-image, 
+.random-access-entry .featured-image { 
     filter: grayscale( 100 );  
     opacity: 0.125; 
 
