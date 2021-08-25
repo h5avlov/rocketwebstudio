@@ -10,12 +10,13 @@ label: projects
 <ul class= "entry-list project-entry-list"> 
 {% for entry in ordered %}  
     {% assign projectEntry= site.data.projects[ entry.dataFileName ] %} 
+    {% assign projectEntryImage= projectEntry.sections.screenshots.body.entryList | first %} 
 
     <li id= "{{ entry.label }}-project-entry" class= "entry project-entry {{ entry.label }}-project-entry"> 
         {% include project-preview.html 
             heading= projectEntry.title 
             description= projectEntry.sections.description.paragraphs 
-            image= projectEntry.image 
+            image= projectEntryImage 
             url= entry.url 
         %} 
     </li> 
