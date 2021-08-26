@@ -1,0 +1,16 @@
+{% capture body %} 
+
+{% include link.html 
+    className= "visit-website-link has-icon" 
+    text= "Посетете сайта" 
+    target= projectData.url 
+%} 
+    
+{% endcapture %} 
+
+
+{% include project-page/project-section.html 
+    name= "visit-website" 
+    heading= "Посетете сайта" 
+    body= body 
+%} 

@@ -9,7 +9,7 @@ dataLocation: data.projects
 
 
 {% assign pageHeadImage= site.data.settings.projectPage.pageHead.image %}
-{% assign projectPageNavEntryList= "description,описание|roles,отговорности|screenshots,изображения|client,клиент" | split: "|" %} 
+{% assign projectPageNavEntryList= "screenshots,скрийншоти|description,описание|roles,отговорности" | split: "|" %} 
 {% include page-head.html 
     title= projectData.title 
     pageNavEntryList= projectPageNavEntryList 
@@ -29,4 +29,10 @@ dataLocation: data.projects
     paragraphs= projectData.sections.roles.paragraphs 
     image= projectData.sections.roles.image 
     body= projectData.sections.roles.body 
+%} 
+
+{% include project-page/visit-website/visit-website.html 
+    className= "project-website-link" 
+    text= "Разгледайте сайта" 
+    target= projectData.url 
 %} 
