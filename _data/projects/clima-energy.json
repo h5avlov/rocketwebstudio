@@ -6,9 +6,11 @@
     "title": "Clima Energy", 
 
     "image": { 
-        "src": "screenshot-localhost_4000-2021.08.24-15_41_07.png", 
+        "src": "screenshot-localhost_4000-2021.08.24-18_29_46.png", 
         "alt": "Project Screenshot" 
     }, 
+
+    "url": "https://climachoice.github.io/climachoice.com", 
 
     "pageNav": true, 
 
@@ -19,7 +21,7 @@
             },  
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "Изработих за 'Clima Energy' един средно голям сайт със семпъл, но в никакъв случай тривиален дизайн. Както винаги, и тук е наблегнато на удобството и леснотата, с която потребителите да ползват сайта. Бързината се подразбира, за което много голям принос има липсата на CMS и база данни. Основната цел беше яснота, простота, логичност в структурата на страниците, не на последно място очевидност и предвидимост на потребителското взаимодействие със страниците (натискане на бутон или плъзгане по екрана на телефона примерно)." 
                 }
             ] 
         }, 
@@ -30,7 +32,7 @@
             }, 
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "" 
                 }
             ], 
             "image": { 
@@ -39,17 +41,22 @@
             },
             "body": [ 
                 {
-                    "role": "Design", 
+                    "role": "Дизайн", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Code", 
+                    "role": "Код", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Copy", 
+                    "role": "Текст", 
+                    "description": "" 
+                }, 
+
+                {
+                    "role": "SEO", 
                     "description": "" 
                 } 
             ] 

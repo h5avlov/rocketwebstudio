@@ -10,6 +10,8 @@
         "alt": "Project Screenshot" 
     }, 
 
+    "url": "http://georgistoynov.free.bg", 
+
     "pageNav": true, 
 
     "sections": { 
@@ -19,8 +21,8 @@
             },  
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
-                }
+                    "text": "Малък сайт, целящ преди всичко да запознае потребителите с работата на Георги Стойнов и да не остави съмнение в неговите качества като много добър специалист в стругарските и фрезовите услуги. В сайта услугите му са разделени в няколко големи групи, така че потребителят да не се затрудни и бързо да разбере дали услугата, която го интересува може да се изпълни. Като всеки добър специалист, Георги не само че нямаше притеснения, а дори изпитваше основателно задоволство от качеството на работата си, което показахме в малка галерия със снимки на изработени от него детайли." 
+                }   
             ] 
         }, 
 
@@ -30,7 +32,7 @@
             }, 
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo." 
+                    "text": "" 
                 }
             ], 
             "image": { 
@@ -39,17 +41,22 @@
             },
             "body": [ 
                 {
-                    "role": "Design", 
+                    "role": "Дизайн", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Code", 
+                    "role": "Код", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Copy", 
+                    "role": "Текст", 
+                    "description": "" 
+                }, 
+
+                {
+                    "role": "SEO", 
                     "description": "" 
                 } 
             ] 
@@ -119,7 +126,7 @@
                     "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
                 }
             ] 
-        }
+        }  
     }
 
 }

@@ -88,7 +88,7 @@
 } 
 
 .home-page .project-entry:target .featured-image { 
-    animation: reveal 4s ease-out; 
+    animation: reveal 2.5s 0.125s ease-out;  
 
 } 
 
@@ -116,6 +116,12 @@
     position: relative; 
 
 } 
+
+.home-page .projects-section .random-access-entry:hover .featured-image { 
+    opacity: 0.8; 
+    transition: opacity 0.175s; 
+
+}
 
 /* .home-page .projects-section .random-access-entry:nth-child( -n + 2 ) { 
     border-bottom: 1px solid; 

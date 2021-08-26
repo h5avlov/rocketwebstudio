@@ -6,9 +6,11 @@
     "title": "Doshky", 
 
     "image": { 
-        "src": "screenshot-doshky.com-2021.08.23-21_14_14.png", 
+        "src": "screenshot-doshky.com-2021.08.24-17_44_24.png", 
         "alt": "Project Screenshot" 
     }, 
+
+    "url": "https://doshky.com", 
 
     "pageNav": true, 
 
@@ -19,7 +21,7 @@
             },  
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "Това е един малък и нестандартен сайт, представящ работата, накратко живота и цветното въображение на художник. Оказа, че този сайт е една от най-трудните задачи, с които съм се сблъсквал, защото един сайт, малко или много, налага най-малкото визуална, а обикновено и структурна рамка върху съдържанието, и когато става дума за изкуство, това не е никак добра идея." 
                 }
             ] 
         }, 
@@ -30,7 +32,7 @@
             }, 
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "" 
                 }
             ], 
             "image": { 
@@ -39,17 +41,17 @@
             }, 
             "body": [ 
                 {
-                    "role": "Design", 
+                    "role": "Дизайн", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Code", 
+                    "role": "Код", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Copy", 
+                    "role": "SEO", 
                     "description": "" 
                 } 
             ] 

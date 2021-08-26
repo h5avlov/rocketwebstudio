@@ -6,9 +6,11 @@
     "title": "Elli Bee Therapy", 
 
     "image": { 
-        "src": "screenshot-ellibeetherapy.com-2021.08.23-21_11_22.png", 
+        "src": "screenshot-ellibeetherapy.com-2021.08.24-17_31_19.png", 
         "alt": "Project Screenshot" 
     }, 
+
+    "url": "https://ellibeetherapy.com", 
 
     "pageNav": true, 
 
@@ -19,7 +21,7 @@
             },  
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "Изключително интересен сайт заради необичайния бизнес, който представя - пчелна терапия или т.нар. 'апитерапия', която има положително влияние върху много аспекти на нашето здраве. Основната цел беше да се обясни същността на пчелната терапия и да се опишат накратко положителните ефекти от нея, с което да дадем възможност на потребителите да разберат дали терапевтичните процедури са нещо, което искат да опитат." 
                 }
             ] 
         }, 
@@ -30,7 +32,7 @@
             }, 
             "paragraphs": [
                 {
-                    "text": "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+                    "text": "" 
                 }
             ], 
             "image": { 
@@ -39,17 +41,17 @@
             }, 
             "body": [ 
                 {
-                    "role": "Design", 
+                    "role": "Дизайн", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Code", 
+                    "role": "Код", 
                     "description": "" 
                 }, 
 
                 {
-                    "role": "Copy", 
+                    "role": "SEO", 
                     "description": "" 
                 } 
             ] 
