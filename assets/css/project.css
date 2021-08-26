@@ -299,6 +299,11 @@
     
     } 
 
+    .roles-section { 
+        padding-left: 0; 
+    
+    } 
+
     .project-section > * { 
         margin-top: 1.8em; 
 
