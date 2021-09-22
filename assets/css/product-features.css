@@ -18,6 +18,7 @@
     /* background-color: var( --text-color );   */ 
     /* color: white;  */ 
     /* border: 1px solid;   */ 
+    overflow: hidden; 
 } 
 
 .text-entry + .product-features-entry-list {
@@ -30,12 +31,24 @@
     display: flex; flex-direction: column; justify-content: center; 
     min-height: 14rem; 
     /* background-color: rgba( 255, 255, 255, 0.125 );  */ 
-    border: 1px solid; border-width: 0 1px 1px 0; 
+    /*border: 1px solid; border-width: 0 1px 1px 0; */ 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
     background-size: cover;  */ 
     /* background-color: var( --text-color );   */ 
     /* color: white;  */
     /* color: white;   */ 
+
+} 
+
+.product-feature { 
+    position: relative; 
+
+} 
+
+.product-feature:after { 
+    display: block; 
+    position: absolute; left: 0; top: 0; 
+    background-color: var( --text-color ); 
 
 } 
 
@@ -66,20 +79,21 @@
 
 @media screen and ( min-width: 841px ) { 
 
-    .product-feature:nth-child( 3n ) { 
-        margin-right: 0; 
-        border-right: none; 
-    } 
-    
-    .product-feature:nth-child( -n + 3 ) { 
-        margin-top: 0; 
-        /* border-top: none;  */ 
+    .product-feature:nth-child( -n + 3 ):not( :first-child ):after, 
+    .product-feature:nth-child( 3n + 1 ):not( :first-child ):after { 
+        content: ""; 
+
     } 
 
-    .product-feature:nth-last-child( 4 ) ~ .product-feature { 
-        border-bottom: none; 
+    .product-feature:nth-child( -n + 3 ):not( :first-child ):after { 
+        width: 1px; height: 1000vh;  
 
-    }
+    } 
+
+    .product-feature:nth-child( 3n + 1 ):not( :first-child ):after { 
+        width: 1000vw; height: 1px; 
+
+    } 
     
 }
 
@@ -88,18 +102,19 @@
         --column-count: 2; 
     } 
 
-    .product-feature:nth-child( 2n ) { 
-        margin-right: 0; 
-        border-right: none; 
-    } 
-    
-    .product-feature:nth-child( -n + 2 ) { 
-        margin-top: 0; 
-        /* border-top: none;  */
+    .product-feature:nth-child( -n + 2 ):not( :first-child ):after, 
+    .product-feature:nth-child( 2n + 1 ):not( :first-child ):after { 
+        content: ""; 
+
     } 
 
-    .product-feature:nth-last-child( 3 ) ~ .product-feature { 
-        border-bottom: none; 
+    .product-feature:nth-child( -n + 2 ):not( :first-child ):after { 
+        width: 1px; height: 1000vh;  
+
+    } 
+
+    .product-feature:nth-child( 2n + 1 ):not( :first-child ):after { 
+        width: 1000vw; height: 1px; 
 
     }
     
@@ -120,19 +135,14 @@
     
     } 
 
-    .product-feature:nth-child( n ) { 
-        margin-right: 0; 
-        border-right: none; 
-    } 
-    
-    .product-feature:nth-child( -n + 1 ) { 
-        margin-top: 0; 
-        /* border-top: none;  */
+    .product-feature:not( :first-child ):after { 
+        content: ""; 
+
     } 
 
-    .product-feature:nth-last-child( 1 ) { 
-        border-bottom: none; 
+    .product-feature:not( :first-child ):after { 
+        width: 1000vw; height: 1px; 
 
-    }
+    } 
     
 }
