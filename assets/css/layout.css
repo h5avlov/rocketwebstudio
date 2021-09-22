@@ -37,7 +37,7 @@
 .section > .text-entry, 
 .article-page .article-section, 
 .building-block-entry-list, 
-.product-features-entry-list, 
+/*.product-features-entry-list, */ 
 .quick-contact-entry-set, 
 .send-message-form { 
     padding-left: var( --page-inner-padding-x ); padding-right: var( --page-inner-padding-x ); 
