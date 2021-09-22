@@ -1,7 +1,23 @@
 <section class= "section page-preview-section about-section"> 
-    {% include section-head.html 
-        head= include.data.head 
+    {% include heading.html 
+        level= 5 
+        className= "subheading section-subheading" 
+        text= include.data.subheading.text 
     %} 
+    
+    {% include heading.html 
+        className= "section-heading page-heading" 
+        level= 1  
+        text= include.data.heading.text 
+    %} 
+    
+    {% for paragraph in include.data.paragraphs %} 
+        {% include paragraph.html 
+            className= "section-head-text-entry" 
+            text= paragraph.text 
+        %} 
+    {% endfor %} 
+
     {% include outer-page-link-button.html 
         className= "button read-more-button has-icon" 
         target= "/about" 

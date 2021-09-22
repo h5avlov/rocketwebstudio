@@ -11,14 +11,12 @@ label: home
     data= site.data.sellPoints 
 %} 
 
-{% include product-features.html 
-    data= site.data.productFeatures 
+{% include about.html 
+    data= site.data.about 
 %} 
 
-{% include heading.html 
-    className= "page-heading" 
-    level= 1 
-    text= "Rocket Web Studio" 
+{% include product-features.html 
+    data= site.data.productFeatures 
 %} 
 
 {% include workflow.html 
@@ -36,13 +34,4 @@ label: home
 {% include projects.html 
     head= site.data.projectsSection 
     body= ordered 
-%} 
-
-<!-- {% include reviews.html 
-    head= site.data.reviewsSection  
-    body= site.data.reviews 
-%}  --> 
-
-{% include about.html 
-    data= site.data.about 
 %} 

@@ -1,38 +1,17 @@
 {
-    "head": {
-        "heading": { 
-            "text": "За Rocket" 
-        }, 
-
-        "subheading": { 
-            "text": "Накрая, нещо и" 
-
-        }, 
-
-        "paragraphs": [ 
-            {
-                "text": "Здравейте, казвам се Христо. Надявам се тук да намерите това, което Ви трябва и да започнете едно ползотворно партньорство с моето студио за дизайн, редизайн, копирайтинг и оптимизация за търсене на сайтове - Rocket." 
-            }
-        ] 
+    "heading": { 
+        "text": "Дизайн, изграждане и оптимизация на Вашия уеб сайт" 
     }, 
 
-    "body": {
-        "heading": { 
-            "text": "About" 
-        }, 
+    "subheading": { 
+        "text": "Rocket Web Studio" 
 
-        "paragraphs": [ 
-            {
-                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-            }, 
+    }, 
 
-            {
-                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-            }, 
+    "paragraphs": [ 
+        {
+            "text": "Здравейте, казвам се Христо. Надявам се тук да намерите това, което Ви трябва и да започнете едно ползотворно партньорство с моето студио за дизайн, редизайн, копирайтинг и оптимизация за търсене на сайтове - Rocket." 
+        }
+    ] 
 
-            {
-                "text": "Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus." 
-            }
-        ]
-    }
 }
