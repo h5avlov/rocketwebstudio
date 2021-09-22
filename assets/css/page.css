@@ -16,7 +16,7 @@
     /* text-align: center;  */ 
 } 
 
-.page-heading { 
+.heading.page-heading { 
     font-size: var( --page-heading-font-size ); 
 } 
 
