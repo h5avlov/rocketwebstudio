@@ -3,7 +3,12 @@ permalink: /404.html
 layout: default 
 ---
 
-<style type="text/css" media="screen">
+<style type="text/css" media="screen"> 
+  .container { 
+    --box-size: 2.5em; 
+    --box-border-width: 10px; 
+
+  }
   .container {
     margin: 10px auto; 
     max-width: 600px; 
@@ -11,7 +16,7 @@ layout: default
     text-align: center;
   } 
   .site-header { 
-    margin-bottom: 10rem; 
+    margin-bottom: 5rem; 
     background-color: var( --text-color ); 
 
   }
@@ -19,10 +24,15 @@ layout: default
     position: relative; 
 
   }
-  h1 {
-    margin: 30px 0;
+  h1 { 
+    display: inline-block; 
+    width: var( --box-size ); height: var( --box-size ); 
+    margin: 30px 0; 
+    /*padding: 0.4em; */ 
+    border: var( --box-border-width ) solid; border-radius: 50%; 
     font-size: 10em;
-    line-height: 1;
+    line-height: var( --box-size ); 
+    text-align: center; 
     letter-spacing: -1px;
   }
 </style>
@@ -30,6 +40,6 @@ layout: default
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Page not found</strong></p> 
-  <p>The requested page could not be found.</p>
+  <p><strong>Страницата не беше намерена.</strong></p> 
+  <p>Моля, върнете се обратно или изберете друга страница.</p> 
 </div>
