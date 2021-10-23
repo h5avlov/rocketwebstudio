@@ -24,10 +24,9 @@ label: home
     body= site.data.workflowPage.sections 
 %} 
 
-{% include building.html 
-    head= site.data.building.head 
-    body= site.data.buildingPage.sections 
-    overallPrice= site.data.buildingPage.overallPrice 
+{% include services.html 
+    head= site.data.services.head 
+    body= site.data.servicesPage.sections 
 %} 
 
 {% assign ordered= site.projects | sort: "order" %}
