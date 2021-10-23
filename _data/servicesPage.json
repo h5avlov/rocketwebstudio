@@ -1,7 +1,7 @@
 { 
-    "title": "Цени", 
+    "title": "Услуги", 
 
-    "heading": "Цени за дизайн, изграждане, оптимизация на уеб сайт", 
+    "heading": "Услугите на Rocket, включващи дизайн, кодиране, оптимизация на уеб сайт", 
 
     "paragraphs": [ 
         {
@@ -17,33 +17,45 @@
     "pageNav": false, 
 
     "sections": { 
-        "analysis": {  
+        "design": {  
             "subheading": "Working Right", 
-            "heading": "Анализ",  
+            "heading": "Дизайн",  
             "price": { 
                 "value": { 
-                    "int": "0", 
+                    "int": "250", 
                     "fr": "00"
                 }
             } 
 
         }, 
 
-        "planning": {  
+        "coding": {  
             "subheading": "Working Right", 
-            "heading": "Планиране",  
+            "heading": "Кодиране",  
             "price": { 
                 "value": { 
-                    "int": "0", 
+                    "int": "450", 
                     "fr": "00"
                 }
             } 
 
         }, 
 
-        "building": {  
+        "seo": {  
             "subheading": "Working Right", 
-            "heading": "Изграждане",  
+            "heading": "SEO",  
+            "price": { 
+                "value": { 
+                    "int": "250", 
+                    "fr": "00"
+                }
+            } 
+
+        }, 
+
+        "website": {  
+            "subheading": "Working Right", 
+            "heading": "Цял уебсайт",  
             "price": { 
                 "value": { 
                     "int": "950", 
@@ -51,44 +63,7 @@
                 }
             } 
 
-        }, 
-
-        "deploying": {  
-            "subheading": "Working Right", 
-            "heading": "Пускане",  
-            "price": { 
-                "value": { 
-                    "int": "0", 
-                    "fr": "00"
-                }
-            } 
-
-        }, 
-
-        "improving": {  
-            "subheading": "Working Right", 
-            "heading": "Наблюдение",  
-            "price": { 
-                "value": { 
-                    "int": "0", 
-                    "fr": "00"
-                }
-            } 
-
-        }, 
-
-        "enhancing": {  
-            "subheading": "Working Right", 
-            "heading": "Разширяване",  
-            "price": { 
-                "value": { 
-                    "int": "*", 
-                    "fr": "" 
-                }
-            } 
-
         } 
-
        
     }
 

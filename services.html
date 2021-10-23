@@ -1,17 +1,17 @@
 --- 
 layout: inner-page 
-permalink: /ceni 
-title: "Цени за дизайн, изграждане, оптимизация на уеб сайт от Rocket Web Studio" 
+permalink: /uslugi 
+title: "Услуги, предоставяни от Rocket Web Studio" 
 description: "Ясно описание на услугите на Rocket, за които плащате... и на тези, за които не плащате." 
-dataFileName: pricingPage 
-label: pricing 
+dataFileName: servicesPage 
+label: services 
 ---  
 
 {% assign pricingData= site.data.buildingPage %} 
 
 <article class= "pricing-data"> 
     <ul class= "entry-list price-entry-list workflow-price-entry-list"> 
-    {% for entry in site.data.pricingPage.sections %} 
+    {% for entry in site.data.servicesPage.sections %} 
         {% assign priceBlockKey= entry[ 0 ] %}
         {% assign priceBlock= entry[ 1 ] %} 
 

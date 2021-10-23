@@ -42,9 +42,9 @@
         }, 
 
         { 
-            "target": "/ceni", 
-            "text": "Цени", 
-            "className": "pricing" 
+            "target": "/uslugi", 
+            "text": "Услуги", 
+            "className": "services" 
         }, 
 
         { 
