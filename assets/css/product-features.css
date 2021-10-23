@@ -17,11 +17,12 @@
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
     /* background-color: var( --text-color );   */ 
     /* color: white;  */ 
-    border: 1px solid;   
+    /*border: 1px solid;   */ 
     overflow: hidden; 
 } 
 
-.text-entry + .product-features-entry-list {
+.text-entry + .product-features-entry-list, 
+.heading + .product-features-entry-list {
     margin-top: calc( var( --text-margin-bottom  ) + 1.5rem ); 
 
 }
