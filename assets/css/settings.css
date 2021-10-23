@@ -70,6 +70,8 @@
     --highlight-color: var( --primary-color ); 
     --overlay-color: ""; 
 
+    --link-color: rgb(114, 114, 114); 
+
     --page-head-background-color: rgb( 50, 50, 50 ); 
     
 }

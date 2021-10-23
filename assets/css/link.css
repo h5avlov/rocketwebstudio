@@ -1,3 +1,9 @@
+.text-entry > .link { 
+    text-decoration: underline; 
+    /*color: var( --link-color ); */
+
+}
+
 .link.has-icon:before { 
     float: right; 
     font-size: 1.8em; 
