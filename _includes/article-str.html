@@ -1,8 +1,9 @@
-{% assign article= include.article %} 
+{% assign article= include.article.body %} 
+{% assign sections= include.article.sections %} 
 
 
 {% if include.level %} 
-	<h{{ level }} class= "heading section-heading article-section-heading">{{ article.heading }}</h{{ level }}> 
+	<h{{ level }} class= "heading section-heading article-section-heading">{{ article.heading }}</h{{ level }}>  
 {% else %} 
 	{% assign level= 1 %} 
 {% endif %}
@@ -37,11 +38,12 @@
 		{% continue %} 
 
 		{% when "sections" %} 
-			{% for section in element.body %} 
+			{% for section in sections %} 
+				{% assign value= section[ 1 ] %} 
 				{% assign level= level | plus: 1 %} 
 
-				{% include article.html 
-					article= section 
+				{% include article-str.html 
+					article= value 
 					level= level 
 				%} 
 

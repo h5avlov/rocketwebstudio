@@ -1,18 +1,22 @@
 { 
 	"title": "SEO", 
 
-	"heading": "Article Heading", 
+	"heading": "SEO: Оптимизация за търсене", 
 
 	"body": [ 
 		{ 
 			"type": "text", 
 			"body": [
 				{ 
-					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+					"text": "Идеята на настоящата страница е да ви даде кратка и разбираема представа за оптимизацията и някои основни понятия: какво е оптимизацията, как работят търсачките, как става класирането на страниците."
 				}, 
 
 				{
-					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+					"text": "Тук няма да намерите постъпково ръководство, съвети или някакви \"вътрешни\" тайни техники, с помощта на които сайтът ви да отиде на първа страница. Само преглед на оптимизацията като цяло, така че да придобиете обща представа за многообразността на този важен процес." 
+				}, 
+
+				{
+					"text": "Е, може би ще научите една \"тайна\" - добро съдържание. Ако трябва да запомните едно нещо всичко, което пише на тази страница, нека да е това." 
 				}
 			] 
 
@@ -23,99 +27,303 @@
 
 			"body": [ 
 				{ 
-					"heading": "Section Heading", 
+					"heading": "Какво е SEO?", 
 
 					"body": [ 
 						{ 
 							"type": "text", 
 							"body": [
 								{ 
-									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-								}, 
+									"text": "SEO (Search Engine Optimization) е процес, целта на който е един сайт да излезе колкото се може по-високо в резултатите от търсене, които показва Google (или друга търсачка като Bing, Yahoo, Yandex)." 
+								} 
+
+							] 
 				
-								{
-									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+						} 
+
+					] 
+				}, 
+
+				{ 
+					"heading": "Защо е необходимо SEO?", 
+
+					"body": [ 
+						{ 
+							"type": "text", 
+							"body": [
+								{ 
+									"text": "В действителност това не е толкова очевидно, защото както вече казах, няма магически начин един сайт да се озове на върха на класирането, или поне това не може да стане за дълго." 
+								}, 
+								
+								{ 
+									"text": "Съществуват техники, които могат да излъжат търсачките за важността на един сайт за потребителите. Те не само че ще бъдат хванати, а ще издействат и наказание за сайта, т.е. прибягването до тях е една от най-лошите грешки, които може да направите."
+								}, 
+
+								{ 
+									"text": "Затова е задължително да разберете какво е търсенето, как търсачките изпълняват тази задача и по какви причини. Ще разберете по-добре причините и начините, по които се подхожда към оптимизацията, ако имате по-добра представа за" 
+								} 
+
+							] 
+				
+						}, 
+
+						{ 
+							"type": "textList", 
+
+							"body": [ 
+								{ 
+									"text": "Какво цели Google всъщност?" 
+
+								}, 
+
+								{ 
+									"text": "Как работи Google?" 
+
+								}, 
+
+								{ 
+									"text": "Какви са факторите за класиране?" 
+
+								} 
+
+							]
+
+						}, 
+
+						{ 
+							"type": "sections", 
+				
+							"body": [ 
+								{ 
+									"heading": "Какво цели Google всъщност?", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Целта на Google е следната: потребителите имат да свършат някаква работа - искат да прочетат нещо, да сравнят характеристики или цени, или да купят нещо, а Google се опитва да им предложи най-подходящия сайт, на който могат да постигнат това."
+												}, 
+												
+												{ 
+													"text": "Най-важното за Google  е сайтът да е полезен на потребителя, т.е. да му свърши работа, и то колкото се може по-добра."
+												}, 
+
+												{ 
+													"text": "Горното е много важно, защото обяснява всичко, което Google “гледа” в един сайт, за да определи дали да го покаже на 2-ра позиция примерно или на 37-ма позиция в резултатите си."
+												}, 
+
+												{ 
+													"text": "Това е причината триковете да не работят и да няма никакъв смисъл да се използват - търсачката рано или късно ще “разбере”, че сайтът не върши никаква работа на потребителите. Ако си мислите, че това е доста пресилено твърдение, малко по-надолу ще разберете някои по-важни от огромния брой (предполага се, че са около 200) показатели, използвани от алгоритъма, който оценява полезността на съдържанието." 
+												} 
+				
+											] 
+								
+										} 
+				
+									] 
+								}, 
+
+								{ 
+									"heading": "Как работи Google?", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Google е търсачка (search engine), т.е. намира и показва страници, които отговарят на нашето търсене, примерно за магазин Lidl в района на пл. “Славейков”."
+												}, 
+
+												{ 
+													"text": "За да може да направи това, Google трябва да “знае” за тези страници, както и какво пише в тях, както и кои страници са добри относно търсенето и кои - не толкова."
+												}, 
+
+												{ 
+													"text": "Страницата с резултати на Google е краят на един дълъг и сложен процес, който може да бъде разделен на три етапа:"
+												} 
+				
+											] 
+								
+										}, 
+
+										{ 
+											"type": "textList", 
+											"body": [
+												{ 
+													"text": "Crawling"
+												}, 
+
+												{ 
+													"text": "Indexing"
+												}, 
+
+												{ 
+													"text": "Ranking"
+												} 
+				
+											] 
+								
+										}, 
+
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Целта на Google е да предложи на потребителите най-подходящите за търсенето им страници."
+												}, 
+
+												{ 
+													"text": "За да направи това, търсачката обхожда Интернет (crawling) и добавя намерените страници в базата си от данни (indexing). При търсене се показват такива страници, които отговарят на \"въпроса\" на потребителя, подредени (ranking)."
+												}, 
+
+												{ 
+													"text": "Интересно е как Google, като програма, макар и много сложна, \"разбира\" и сравнява различните страници, така че да може да ги подреди по релевантност." 
+												} 
+				
+											] 
+								
+										}
+				
+									] 
+								}, 
+
+								{ 
+									"heading": "Какви са факторите за класиране?", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "За да класира страниците, Google взема предвид измерими по един или друг начин параметри като"
+												} 
+				
+											] 
+								
+										}, 
+
+										{ 
+											"type": "textList", 
+											"body": [
+												{ 
+													"text": "времето, което потребителите прекарват на сайта,"
+												}, 
+
+												{ 
+													"text": "броя на страниците, които разглеждат,"
+												}, 
+
+												{ 
+													"text": "дали се връщат и колко често,"
+												}, 
+
+												{ 
+													"text": "броят на линковете от други сайтове, които водят към сайта"
+												}, 
+
+												{ 
+													"text": "и още… 200 подобни!" 
+												}
+				
+											] 
+								
+										}, 
+
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Твърди се, че пълният брой на факторите за класиране е около 200, като никой не знае всички - специалистите в областта на SEO само могат да се досещат за повечето от тях. Това е напълно разбираемо, след като класирането на страници трябва да е честно и независимо от собствениците на сайтове."
+												} 
+				
+											] 
+								
+										}, 
+
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Всичко това означава, че колкото по-добре е оптимизиран един сайт, толкова по-големи са шансовете му да изпревари алтернативните сайтове в класирането." 
+												} 
+				
+											] 
+								
+										} 
+				
+									] 
+								} 
+
+							]
+						}
+
+					] 
+					
+				}, 
+				
+				{ 
+					"heading": "Етапи на оптимизацията", 
+
+					"body": [ 
+						{ 
+							"type": "text", 
+							"body": [
+								{ 
+									"text": "Нека да започнем с цялостната картина, а след това да се фокусираме върху отделните й елементи по-подробно."
+								}, 
+								
+								{ 
+									"text": "Всички действия в цялата обширна и сложна област на SEO имат за цел да подобрят съдържанието, кода на страницата и външните линкове към страницата."
+								}, 
+
+								{ 
+									"text": "Самите етапи са:" 
 								}
+
 							] 
 				
 						}, 
 						
 						{ 
-							"type": "sections", 
-				
+							"type": "textList", 
+
 							"body": [ 
 								{ 
-									"heading": "Subsection Heading", 
-				
-									"body": [ 
-										{ 
-											"type": "text", 
-											"body": [
-												{ 
-													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-												}, 
+									"text": "Анализ на ключови думи" 
+
+								}, 
+
+								{ 
+									"text": "On-Page SEO" 
+
+								}, 
+
+								{ 
+									"text": "Off-Page SEO" 
+
+								}, 
 								
-												{
-													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
-												}
-											] 
-								
-										}, 
-										
-										{ 
-											"type": "list", 
+								{ 
+									"text": "Анализ на резултатите" 
 
-											"body": [ 
-												{ 
-													"heading": "List Item", 
-													"paragraphs": [ 
-														{ 
-															"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+								}
 
-														}
-
-													]
-
-												}, 
-
-												{ 
-													"heading": "List Item", 
-													"paragraphs": [ 
-														{ 
-															"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-
-														}
-
-													]
-
-												}
-
-											]
-
-										}
-				
-									] 
-								} 
 							]
-						}
 
-					] 
-				}, 
-				
-				{ 
-					"heading": "Section Heading", 
+						}, 
 
-					"body": [ 
 						{ 
 							"type": "text", 
 							"body": [
 								{ 
-									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-								}, 
-				
-								{
-									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+									"text": "Първите два се занимават със самия сайт (съдържание, структура, бързина, удобство) и целта им е да го приближат максимално до препоръките на Google, а третият - със спечелването на линкове към сайта от други сайтове."
+								},
+								
+								{ 
+									"text": "След цялата продължителна работа по оптимизиране на сайта, се прави анализ на данните от представянето му в търсачките, така че да може да се направи обективно заключение за ефективността на възприетата стратегия. Това е последният етап, който може да се разглежда и като първи в новото завъртане на процеса на оптимизацията."
 								}
+
 							] 
 				
 						}, 
@@ -125,81 +333,211 @@
 				
 							"body": [ 
 								{ 
-									"heading": "Subsection Heading", 
+									"heading": "Анализ на ключови думи", 
 				
 									"body": [ 
 										{ 
 											"type": "text", 
 											"body": [
 												{ 
-													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+													"text": "Целият процес започва с анализ на ключови думи/фрази. Ключовите думи са текстът, който потребителите въвеждат при търсене, един вид техният въпрос към Google."
 												}, 
+
+												{ 
+													"text": "Анализът на ключови думи на пръв поглед може би изглежда като нещо излишно. Всички си представяме авторството по един очевиден и привлекателен начин: наливаме си кафе, изпукваме си ставите на пръстите, протягаме се и сядаме, пишем, публикуваме на страницата ни, след което всички в Интернет нямат търпение да влязат на страницата и да се отдадат на това увлекателно и полезно четиво, нали? Истината е, че освен в много редки случаи, по темата която разглеждаме и информацията, която излагаме, вече съществуват десетки страници в Интернет."
+												}, 
+
+												{ 
+													"text": "Целта на анализа е да проучим как търсят потребителите това, което ние предлагаме - какви думи и комбинации от думи, и в каква последователност използват. Да не забравяме, че Google анализира нашата страница и страниците на конкуренцията ни, за да определи коя е по-подходяща за съответното търсене. А този анализ в най-голяма степен взема предвид думите, които са използвани на самите страници. \"Оптимизация\" в общи линии не означава \"страница на 1-ва позиция в Google\", а страница, която е съобразена с потребителите."
+												}, 
+
+												{ 
+													"text": "Много важен елемент на анализа е да определим каква е целта на потребителя: дали иска информация, да отиде на даден сайт (където да намери информация или да направи нещо друго), или е решил да купи нещо. Т.нар. \"user intent\" е реалната цел на потребителите, смисълът на тяхното търсене, проблемът, на който се опитват да намерят отговор. Тя често е трудно да се определи от думите, използвани в тяхното търсене."
+												}, 
+
+												{ 
+													"text": "Ако изберем да оптимизираме по ключови думи, с които потребителите търсят нещо различно от това, което ние искаме да предложим, Google, като услужлив техен помощник, няма да покаже нашата страница в резултатите. И това е напълно разбираемо: нашата страница не е от типа, който би свършил работа на потребителите при това търсене."
+												}, 
+
+												{ 
+													"text": "Избират се ключови думи на базата на броя търсения и трудността."
+												}, 
+
+												{ 
+													"text": "По избраните ключови думи се създава подходящо съдържание. То трябва да отговаря на т.нар. user intent. Това има голяма важност, защото никаква оптимизация не може да спаси лошо написана страница."
+												} 
+				
+											] 
 								
-												{
-													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
-												}
+										} 
+				
+									] 
+								}, 
+
+								{ 
+									"heading": "On-Page SEO", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Както показва името, тази оптимизация поставя фокуса върху страницата и сайта. On-Page оптимизацията може да се раздели на две: оптимизация на съдържанието и техническа оптимизация."
+												} 
+				
 											] 
 								
 										}, 
-
+										
 										{ 
 											"type": "sections", 
-								
-											"body": [ 
+											"body": [
 												{ 
-													"heading": "Subsection Subsection Heading", 
-								
+													"heading": "Оптимизация на съдържанието", 
+
 													"body": [ 
+														{ 
+															"type": "textList", 
+
+															"body": [ 
+																{
+																	"text": "Качество" 
+																}, 
+
+																{
+																	"text": "Структура" 
+																} 
+															]
+														}, 
+
 														{ 
 															"type": "text", 
 															"body": [
 																{ 
-																	"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-																}, 
-												
-																{
-																	"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
-																}
+																	"text": "Преди всичко, текстът трябва да е добре написан - ясно, разбираемо, интересно - и да съдържа отговор на потребителския \"въпрос\"." 
+																},  
+
+																{ 
+																	"text": "Структурирането на текста има за цел да се постигне максимална четливост, яснота и леснота за възприемане."
+																},
+
+																{ 
+																	"text": "Заглавията и подзаглавията имат най-голяма роля, защото помагат на потребителите да намерят по-бързо информацията, която търсят. Като не им пречат да прочетат и повече, разбира се."
+																},
+
+																{ 
+																	"text": "Разделянето на параграфи прави по-лесно четенето, по същата причина, а списъци, таблици, карета и т.н. улесняват възприемането на информация със съответната вътрешна структура, като я правят видима, показвайки връзките и логиката в нея."
+																},
+
+																{ 
+																	"text": "Оптимизацията на съдържанието засяга детайли като: заглавие и описание (title/description) на страницата, заглавия и текст на страницата (heading/body text), алтернативен текст за картинките (alt text), текст на линковете към други страници."
+																} 
+								
 															] 
 												
-														} 
-								
+														}
+
 													] 
+												}, 
+												
+												{ 
+													"heading": "Техническа оптимизация", 
+
+													"body": [ 
+														{ 
+															"type": "textList", 
+
+															"body": [ 
+																{
+																	"text": "Структура на сайта" 
+																}, 
+
+																{
+																	"text": "Скорост" 
+																}, 
+
+																{
+																	"text": "Мобилна използваемост" 
+																}, 
+
+																{
+																	"text": "Линкове" 
+																} 
+															]
+														}, 
+
+														{ 
+															"type": "text", 
+															"body": [
+																{ 
+																	"text": "Техническата оптимизация работи с кода на сайта. Целта е търсачката да го обходи максимално лесно и цялостно, както и потребителите да не напуснат разочаровани страница, която зарежда или се скролва прекалено бавно." 
+																},  
+
+																{ 
+																	"text": "По-важното е да се постигнат бързина на сайта и удобство при работа с него, особено на мобилни устройства, които да оставят потребителите доволни (освен че са намерили информацията, за която са дошли на сайта)."
+																},
+
+																{ 
+																	"text": "Когато последните остават по-дълго, посещават повече страници от сайта и натискат бутони и скролват, Google интерпретира това поведение като полезност на сайта и го rate-ва по-високо." 
+																}
+								
+															] 
+												
+														}
+
+													] 
+												}
+				
+											] 
+								
+										}
+				
+									] 
+								}, 
+
+								{ 
+									"heading": "Off-Page SEO", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "[ Следва ]"
 												} 
-											]
+				
+											] 
+								
 										} 
 				
 									] 
-								} 
+								}, 
+
+								{ 
+									"heading": "Анализ на резултатите", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "[ Следва ]" 
+												} 
+				
+											] 
+								
+										} 
+				
+									] 
+								}
+
 							]
-						} 
+						}
 
 					] 
-				} 
-			]
-		}, 
-
-		{ 
-			"type": "text", 
-			"body": [
-				{ 
-					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
-				}, 
-
-				{
-					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
 				}
-			] 
 
-		},
-
-		{ 
-			"type": "image", 
-			"body": { 
-				"src": "" 
-
-			}
-
+			]
 		} 
 
 	] 

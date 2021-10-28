@@ -1,31 +1,39 @@
-.article-section-heading { 
-	margin-top: 1.75em; 
+
+
+.heading.article-section-heading { 
+	margin-top: 1.3em; margin-bottom: 1em; 
 	text-align: left; 
 
 }
 
 h2.section-heading { 
-	font-size: 1.75em; 
+	font-size: 1.7em; 
 
 }
 
 h3.section-heading { 
-	font-size: 1.5em; 
+	font-size: 1.35em; 
 
 } 
 
 h4.section-heading { 
-	font-size: 1.25em; 
+	font-size: 1em; 
 
 } 
 
 .entry-list.article-section-list { 
-	margin-top: 1.5em; 
+	margin-top: 1.2em; margin-bottom: 1.2em;  
+	list-style: square inside;
 
 } 
 
-.article-section-list-entry + .article-section-list-entry { 
+/*.article-section-list-entry + .article-section-list-entry { 
 	margin-top: 1.25em; 
+
+} */ 
+
+.text-list-entry + .text-list-entry { 
+	margin-top: 0.4em; 
 
 }
 
@@ -33,4 +41,21 @@ h4.section-heading {
 	font-size: 1em; 
 	text-align: left; 
 
+} 
+
+/*h3.section-heading ~ * { 
+	position: absolute; left: -10000px; 
+
+} 
+
+label { 
+	display: block; 
+	width: 2rem; height: 2rem; 
+	border: 1px solid; 
+
 }
+
+.section-switch:checked ~ * { 
+	position: initial; 
+
+}*/ 
