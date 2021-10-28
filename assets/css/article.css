@@ -1,0 +1,36 @@
+.article-section-heading { 
+	margin-top: 1.75em; 
+	text-align: left; 
+
+}
+
+h2.section-heading { 
+	font-size: 1.75em; 
+
+}
+
+h3.section-heading { 
+	font-size: 1.5em; 
+
+} 
+
+h4.section-heading { 
+	font-size: 1.25em; 
+
+} 
+
+.entry-list.article-section-list { 
+	margin-top: 1.5em; 
+
+} 
+
+.article-section-list-entry + .article-section-list-entry { 
+	margin-top: 1.25em; 
+
+}
+
+.article-section-list-entry .heading { 
+	font-size: 1em; 
+	text-align: left; 
+
+}

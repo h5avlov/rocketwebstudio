@@ -1,0 +1,11 @@
+<ul class= "entry-list article-section-list"> 
+{% for entry in include.list %} 
+	<li class= "entry article-section-list-entry"> 
+
+		{% include list-block.html 
+			block= entry 
+		%} 
+
+	</li> 
+{% endfor %} 
+</ul>

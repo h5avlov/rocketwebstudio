@@ -1,0 +1,48 @@
+{% assign article= include.article %} 
+
+
+{% if include.level %} 
+	<h{{ level }} class= "heading section-heading article-section-heading">{{ article.heading }}</h{{ level }}>  
+{% else %} 
+	{% assign level= 1 %} 
+{% endif %}
+
+{% for element in article.body %} 
+
+	{% case element.type %} 
+
+		{% when "text" %} 
+			{% include text-entry-list.html 
+				paragraphs= element.body 
+			%} 
+		{% continue %} 
+
+		{% when "list" %} 
+			{% include list.html 
+				level= element.level 
+				list= element.body 
+			%} 
+		{% continue %} 
+
+		{% when "image" %} 
+			{% include image.html 
+				src= element.body.src 
+			%} 
+		{% continue %} 
+
+		{% when "sections" %} 
+			{% for section in element.body %} 
+				{% assign level= level | plus: 1 %} 
+
+				{% include article.html 
+					article= section 
+					level= level 
+				%} 
+
+				{% assign level= level | minus: 1 %}
+			{% endfor %}
+		{% continue %}
+
+	{% endcase %} 
+
+{% endfor %}

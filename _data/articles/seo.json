@@ -1,0 +1,207 @@
+{ 
+	"title": "SEO", 
+
+	"heading": "Article Heading", 
+
+	"body": [ 
+		{ 
+			"type": "text", 
+			"body": [
+				{ 
+					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+				}, 
+
+				{
+					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+				}
+			] 
+
+		}, 
+
+		{ 
+			"type": "sections", 
+
+			"body": [ 
+				{ 
+					"heading": "Section Heading", 
+
+					"body": [ 
+						{ 
+							"type": "text", 
+							"body": [
+								{ 
+									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+								}, 
+				
+								{
+									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+								}
+							] 
+				
+						}, 
+						
+						{ 
+							"type": "sections", 
+				
+							"body": [ 
+								{ 
+									"heading": "Subsection Heading", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+												}, 
+								
+												{
+													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+												}
+											] 
+								
+										}, 
+										
+										{ 
+											"type": "list", 
+
+											"body": [ 
+												{ 
+													"heading": "List Item", 
+													"paragraphs": [ 
+														{ 
+															"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+
+														}
+
+													]
+
+												}, 
+
+												{ 
+													"heading": "List Item", 
+													"paragraphs": [ 
+														{ 
+															"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+
+														}
+
+													]
+
+												}
+
+											]
+
+										}
+				
+									] 
+								} 
+							]
+						}
+
+					] 
+				}, 
+				
+				{ 
+					"heading": "Section Heading", 
+
+					"body": [ 
+						{ 
+							"type": "text", 
+							"body": [
+								{ 
+									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+								}, 
+				
+								{
+									"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+								}
+							] 
+				
+						}, 
+
+						{ 
+							"type": "sections", 
+				
+							"body": [ 
+								{ 
+									"heading": "Subsection Heading", 
+				
+									"body": [ 
+										{ 
+											"type": "text", 
+											"body": [
+												{ 
+													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+												}, 
+								
+												{
+													"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+												}
+											] 
+								
+										}, 
+
+										{ 
+											"type": "sections", 
+								
+											"body": [ 
+												{ 
+													"heading": "Subsection Subsection Heading", 
+								
+													"body": [ 
+														{ 
+															"type": "text", 
+															"body": [
+																{ 
+																	"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+																}, 
+												
+																{
+																	"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+																}
+															] 
+												
+														} 
+								
+													] 
+												} 
+											]
+										} 
+				
+									] 
+								} 
+							]
+						} 
+
+					] 
+				} 
+			]
+		}, 
+
+		{ 
+			"type": "text", 
+			"body": [
+				{ 
+					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget."
+				}, 
+
+				{
+					"text": "Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget." 
+				}
+			] 
+
+		},
+
+		{ 
+			"type": "image", 
+			"body": { 
+				"src": "" 
+
+			}
+
+		} 
+
+	] 
+
+}

@@ -1,0 +1,22 @@
+{% assign block= include.block %} 
+
+
+{% if block.heading %}
+    {% include heading.html 
+        level= 5 
+        text= block.heading 
+    %} 
+{% endif %}
+
+{% if block.paragraphs %} 
+    {% include text-entry-list.html 
+        paragraphs= block.paragraphs 
+    %} 
+{% endif %}
+
+{% if block.image %}
+    {% include image.html 
+        src= block.image.src 
+        alt= block.image.alt 
+    %} 
+{% endif %}
