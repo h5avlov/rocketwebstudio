@@ -24,15 +24,25 @@ label: services
 
             {% include price.html 
                 price= priceBlock.price 
-            %}
+            %} 
 
-            {% if priceBlockKey == "building" %} 
+            {% if site.data.articles[ priceBlockKey ] %} 
+
+                {% assign target= "/services/" | append: priceBlockKey %} 
+
+                {% include outer-page-link-button.html 
+                    target= target 
+                %} 
+
+            {% endif %}
+
+            <!--{% if priceBlockKey == "building" %} 
                 {% include price-block-list.html 
                     className= "building" 
                     blockEntryList= site.data.buildingPage.sections 
                     price= true 
                 %} 
-            {% endif %} 
+            {% endif %} --> 
         </li>
     {% endfor %} 
     </ul>
