@@ -33,7 +33,8 @@
 
 } 
 
-/* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */
+/* Sets side padding on section head text and all text entries on article pages, to provide default distance between text and screen edges on smaller screens */ 
+.page-body > *, 
 .page-heading, 
 .page-text-entry, 
 .section > .text-entry, 
