@@ -72,7 +72,7 @@
 
     --link-color: rgb(114, 114, 114); 
 
-    --page-head-background-color: rgb( 50, 50, 50 ); 
+    --page-head-background-color: var( --text-color ); 
     
 }
 
