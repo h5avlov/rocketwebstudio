@@ -19,7 +19,8 @@
 
     <title>{{ page.title }}</title> 
 
-    <link rel="stylesheet" href="/assets/css/style.css" /> 
+    <link rel= "canonical" href= "{{ site.url | append: page.permalink }}" /> 
+    <link rel="stylesheet" href= "/assets/css/style.css" /> 
 </head>
 <body class= "page {{ layout.type }} {{ page.label | split: ' ' | join: '-' }}-page"> 
     {% include header.html %} 
