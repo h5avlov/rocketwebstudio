@@ -10,9 +10,20 @@
         <ul class= "entry-list contact-entry-list {{ contact.type | append: '-entry-list' }}"> 
         {% for entry in contact.entryList %} 
             <li class= "entry contact-entry {{ contact.type | append: '-entry' }}"> 
+                {% assign value= entry.value %}
+                {% if contact.type == "phone" %} 
+                    {% capture callablePhone %} 
+                        {% assign target= "tel:" | append: entry.value %} 
+                        {% include link.html 
+                            target= target 
+                            text= entry.value 
+                        %} 
+                    {% endcapture %} 
+                    {% assign value= callablePhone %}
+                {% endif %} 
                 {% include contact-entry.html 
                     key= entry.key 
-                    value= entry.value 
+                    value= value  
                     text= entry.text 
                 %}
             </li>
