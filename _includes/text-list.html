@@ -1,5 +1,12 @@
+{% if include.list.head %} 
+	{% include paragraph.html 
+		className= "list-head" 
+		text= include.list.head 
+	%}
+{% endif %}
+
 <ul class= "entry-list article-section-list text-list"> 
-{% for entry in include.list %} 
-	<li class= "entry article-section-list-entry text-list-entry">{{ entry.text }}</li> 
+{% for entry in include.list.entries %} 
+	<li class= "entry article-section-list-entry text-list-entry">{{ entry }}</li> 
 {% endfor %} 
 </ul>
