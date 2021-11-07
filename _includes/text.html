@@ -1,0 +1,10 @@
+{% for entry in include.text %} 
+    {% assign paragraphs= entry.text | split: "<br />" %} 
+
+    {% for paragraph in paragraphs %} 
+        {% include paragraph.html 
+            className= include.className 
+            text= paragraph 
+        %} 
+    {% endfor %} 
+{% endfor %} 
