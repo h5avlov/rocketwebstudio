@@ -12,8 +12,8 @@
 	{% case element.type %} 
 
 		{% when "text" %} 
-			{% include text-entry-list.html 
-				paragraphs= element.body 
+			{% include text.html 
+				text= element.body 
 			%} 
 		{% continue %} 
 
