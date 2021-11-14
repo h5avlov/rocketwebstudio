@@ -5,31 +5,58 @@
 
 } 
 
-/* .services-page .page-body > * + * { 
-    margin-top: 5rem; 
-
-}  */ 
-
 .services-page .workflow-price-entry-list { 
-    max-width: var( --page-inner-width ); 
+    /*max-width: var( --page-inner-width ); */ 
     margin-left: auto; margin-right: auto; 
+    margin-top: 7rem; 
 
 } 
 
 .services-page .workflow-price-entry { 
-    text-align: center; 
+    /* Sets a kind of grid, controlled by element width */
+    display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; 
+    padding-left: 50%; 
+    position: relative; 
+
+} 
+
+.services-page .workflow-price-entry > * { 
+    text-align: left; 
 
 } 
 
 .services-page .workflow-price-entry + .workflow-price-entry { 
-    margin-top: 4rem; 
+    margin-top: 7rem; 
+
+} 
+
+/* Ensures heading and text on separate lines and price and button on the same line positioning */
+.services-page .workflow-price-entry > .price-block-heading, 
+.services-page .workflow-price-entry > .text-entry { 
+    width: 100%; 
 
 }
+
+.services-page .workflow-price-entry > .price-block-heading:before { 
+    margin-left: 0; 
+    /* Icon is placed next to entry on a larger screen */
+    position: absolute; right: calc( 50% + 3.5rem ); 
+    font-size: 1.8rem; 
+    content: "\f3a6"; 
+
+} 
 
 .services-page .workflow-price-entry > .price-block-heading { 
     border-bottom: 1px solid;   
     background-color: transparent; 
-    color: var( --text-color ); 
+    color: var( --text-color );  
+    font-size: 1.4rem; 
+
+} 
+
+.services-page .workflow-price-entry > .text-entry { 
+    max-width: none;  
+    margin-bottom: 1.25rem; 
 
 }
 
@@ -40,16 +67,44 @@
 }  */ 
 
 .services-page .building-price-entry-list { 
-    margin-top: 2.5rem; 
+    margin-top: 8rem; 
+} 
+
+.services-page .price, 
+.services-page .outer-page-link-button { 
+    margin-top: 0; 
+
 }
 
-.services-page .overall-price {  
-    background-color: var( --text-color ); 
-    color: var( --building-block-price-block-heading-color ); 
+.services-page .outer-page-link-button { 
+    margin-left: 1.25rem; 
+    
 
 } 
 
-.services-page .outer-page-link-button { 
-    margin-top: 1.2em; 
+
+@media screen and ( max-width: 920px ) { 
+
+    .services-page .workflow-price-entry { 
+        padding-left: 0; 
+    
+    } 
+
+    .services-page .workflow-price-entry-list { 
+        margin-top: 0rem; 
+    
+    } 
+    
+    .services-page .workflow-price-entry + .workflow-price-entry { 
+        margin-top: 4.5rem; 
+    
+    } 
+    
+
+    .services-page .workflow-price-entry > .price-block-heading:before { 
+        margin-bottom: 0.5em; 
+        position: initial; 
+    
+    } 
 
 }
