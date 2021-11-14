@@ -81,3 +81,13 @@
     margin-top: 0; 
 
 } 
+
+
+@media screen and ( max-width: 920px ) { 
+    /* Adjusts text-to-next-element distance on smaller screens */
+    .text-entry + :not( .text-entry ) { 
+        margin-top: 2rem; 
+
+    }  
+
+}
