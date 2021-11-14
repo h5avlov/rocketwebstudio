@@ -25,9 +25,12 @@
 @import url( "./page-head.css" );
 @import url( "./multiple-entry-page-head.css" );
 @import url( "./single-entry-page-head.css" ); 
+@import url( "./price.css" ); 
+@import url( "./entry-numbering.css" ); 
+@import url( "./building-price-entry-list.css" ); 
 @import url( "./sell-points.css" );   
 @import url( "./product-features.css" ); 
-@import url( "./building.css" ); 
+/*@import url( "./building.css" ); */ 
 @import url( "./projects.css" );  
 /* @import url( "./reviews.css" );  */ 
 @import url( "./footer.css" ); 

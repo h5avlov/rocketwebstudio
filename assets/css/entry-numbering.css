@@ -1,0 +1,13 @@
+.entry-numbering { 
+    counter-reset: section-number; 
+} 
+
+/* Each section increments the counter */
+.entry-numbering > * { 
+    counter-increment: section-number; 
+} 
+
+/* Sets current section number */
+.entry-numbering > *:before { 
+    content: counter( section-number ); 
+}
