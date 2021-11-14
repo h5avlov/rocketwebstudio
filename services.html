@@ -1,8 +1,8 @@
 --- 
 layout: inner-page 
 permalink: /services 
-title: "Услуги, предоставяни от Rocket Web Studio" 
-description: "Ясно описание на услугите на Rocket, за които плащате... и на тези, за които не плащате." 
+title: "Услуги, предоставяни от Rocket" 
+description: "Кратък преглед на услугите на Rocket, включващи дизайн, кодиране и оптимизация (SEO) на уебсайт." 
 dataFileName: servicesPage 
 label: services 
 ---  
@@ -15,12 +15,16 @@ label: services
         {% assign priceBlockKey= entry[ 0 ] %}
         {% assign priceBlock= entry[ 1 ] %} 
 
-        <li class= "entry price-entry workflow-price-entry has-icon"> 
+        <li class= "entry price-entry workflow-price-entry"> 
             {% include heading.html 
-                className= "price-block-heading" 
+                className= "price-block-heading has-icon" 
                 level= 3 
                 text= priceBlock.heading 
             %} 
+
+            {% include text.html 
+				text= priceBlock.paragraphs 
+			%} 
 
             {% include price.html 
                 price= priceBlock.price 
@@ -34,7 +38,7 @@ label: services
                     target= target 
                 %} 
 
-            {% endif %}
+            {% endif %} 
 
             <!--{% if priceBlockKey == "building" %} 
                 {% include price-block-list.html 
