@@ -47,6 +47,7 @@
 } 
 
 .services-page .workflow-price-entry > .price-block-heading { 
+    padding-left: 0; 
     border-bottom: 1px solid;   
     background-color: transparent; 
     color: var( --text-color );  
