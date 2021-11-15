@@ -1,18 +1,14 @@
 --- 
-layout: article-page 
+layout: inner-page 
 permalink: /workflow 
 title: "Работен процес на Rocket Web Studio"  
 description: "Запознайте се с отделните етапи, през които минава създаването на един Rocket сайт." 
 dataFileName: workflowPage 
-label: workflow 
+label: "workflow" 
 ---  
 
 {% assign pageData= site.data[ page.dataFileName ] %}
 
-{% include block-chart.html 
-    className= "workflow-chart" 
-    chartBlockList= pageData.sections 
-    processFlowCount= 1 
-    price= false 
-    targetPage= "/workflow" 
-%}  
+{% include article.html 
+	article= site.data.workflowPage
+%}
