@@ -2,7 +2,14 @@
 
 
 {% if include.level %} 
-	<h{{ level }} class= "heading section-heading article-section-heading">{{ article.heading }}</h{{ level }}> 
+	<h{{ level }} 
+		class= "heading section-heading article-section-heading" 
+		{% if article.attributes.id %}
+			id= {{ article.attributes.id | append: "-section" }}
+		{% endif %} 
+	>
+		{{ article.heading }} 
+	</h{{ level }}> 
 {% else %} 
 	{% assign level= 1 %} 
 {% endif %}

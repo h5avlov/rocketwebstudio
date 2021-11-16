@@ -9,7 +9,7 @@ label: home
 
 {% include sell-points.html 
     data= site.data.sellPoints 
-%}  
+%}   
 
 {% include about.html 
     data= site.data.about 
@@ -19,9 +19,10 @@ label: home
     data= site.data.productFeatures 
 %} 
 
+{% assign workflowSections= site.data.workflowPage.body | where: "type", "sections" | first %} 
 {% include workflow.html 
     head= site.data.workflow.head
-    body= site.data.workflowPage.sections 
+    body= workflowSections.body 
 %} 
 
 {% include services.html 

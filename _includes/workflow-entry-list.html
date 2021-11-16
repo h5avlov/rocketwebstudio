@@ -1,23 +1,16 @@
 <ul class= "entry-list overview-section-entry-list workflow-section-entry-list"> 
 {% for entry in include.workflowEntryList %} 
-    {% assign sectionName= entry[ 0 ] %} 
-    {% assign sectionData= entry[ 1 ] %}
+    {% assign sectionID= entry.attributes.id %} 
 
     <li class= "entry overview-section-entry workflow-section-entry{% if sectionData.price.value.int != '0' %}{{ ' paid' }}{% endif %}"> 
         {% include heading.html 
             className= "overview-section-entry-heading" 
             level= 3 
-            text= sectionData.heading 
+            text= entry.heading 
         %} 
-
-        {% if include.price %} 
-            {% include price.html 
-                price= sectionData.price 
-            %}
-        {% endif %}
         
         {% if include.button %} 
-            {% assign linkTarget= "/workflow" | append: "#" | append: sectionName | append: "-section" %} 
+            {% assign linkTarget= "/workflow" | append: "#" | append: sectionID | append: "-section" %} 
             {% include link.html 
                 className= "button read-more-button has-icon" 
                 target= linkTarget

@@ -66,6 +66,11 @@
 				{ 
 					"heading": "Анализ", 
 
+					"attributes": { 
+						"id": "analysis" 
+
+					}, 
+
 					"body": [ 
 						{ 
 							"type": "text", 
@@ -99,6 +104,11 @@
 				{ 
 					"heading": "Планиране", 
 
+					"attributes": { 
+						"id": "planning" 
+
+					}, 
+
 					"body": [ 
 						{ 
 							"type": "text", 
@@ -115,6 +125,11 @@
 
 				{ 
 					"heading": "Изграждане", 
+
+					"attributes": { 
+						"id": "building" 
+
+					}, 
 
 					"body": [ 
 						{ 
@@ -149,6 +164,11 @@
 
 				{ 
 					"heading": "Имплементиране", 
+
+					"attributes": { 
+						"id": "implementing" 
+
+					}, 
 
 					"body": [ 
 						{ 
@@ -247,6 +267,11 @@
 				{ 
 					"heading": "Мониторинг", 
 
+					"attributes": { 
+						"id": "monitoring" 
+
+					}, 
+
 					"body": [ 
 						{ 
 							"type": "text", 
@@ -289,6 +314,11 @@
 
 				{ 
 					"heading": "Оптимизиране", 
+
+					"attributes": { 
+						"id": "optimizing" 
+
+					}, 
 
 					"body": [ 
 						{ 
