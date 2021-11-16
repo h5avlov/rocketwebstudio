@@ -6,17 +6,26 @@
 
 } 
 
-/* .product-features-section { 
+.product-feature:nth-child( 3n ) { 
+    margin-right: 0; 
+} 
+
+.product-feature:nth-child( -n + 3 ) { 
+    margin-top: 0; 
+}
+
+.product-features-section { 
     max-width: none; 
 
-} */ 
+} 
 
 .product-features-entry-list { 
+    max-width: none; 
     background-size: cover; 
     /* background-position: center top;  */ 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" );  */ 
-    /* background-color: var( --text-color );   */ 
-    /* color: white;  */ 
+    background-color: var( --text-color );   
+    color: white; 
     /*border: 1px solid;   */ 
     overflow: hidden; 
 } 
@@ -30,7 +39,7 @@
 .product-feature { 
     box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center; 
-    min-height: 14rem; 
+    min-height: 17rem; 
     /* background-color: rgba( 255, 255, 255, 0.125 );  */ 
     /*border: 1px solid; border-width: 0 1px 1px 0; */ 
     /* background-image: url( "/assets/images/pexels-aksonsat-uanthoeng-1078850.jpg" ); 
@@ -48,8 +57,10 @@
 
 .product-feature:after { 
     display: block; 
-    position: absolute; left: 0; top: 0; 
+    position: absolute; 
+    left: 0; top: 0; 
     background-color: var( --text-color ); 
+    background-color: var( --text-color-inverted ); 
 
 } 
 
@@ -67,6 +78,10 @@
 
 .product-feature-heading { 
     margin-bottom: 0; 
+    padding: 0.5em; 
+    /*border: 1px solid; */ 
+    /*background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); */ 
     font-size: 1.4em; 
     line-height: 1; 
 
@@ -81,9 +96,20 @@
 
 } 
 
-.product-feature:hover { 
-    background-color: var( --text-color ); 
-    color: var( --text-color-inverted ); 
+.product-features-entry-list:hover .product-feature { 
+    /*border: none; */
+    /*background-color: transparent; 
+    color: var( --text-color ); */
+
+}
+
+/*.product-feature:first-child, */ 
+.product-features-entry-list:hover .product-feature:hover .product-feature-heading { 
+    /*border: 1px solid; */ 
+    /*background-color: var( --text-color ); 
+    color: var( --text-color-inverted ); */
+    background-color: var( --text-color-inverted ); 
+    color: var( --text-color ); 
 
 }
 
@@ -93,7 +119,24 @@
 }
 
 
-@media screen and ( min-width: 841px ) { 
+@media screen and ( min-width: 1201px ) { 
+ 
+    /*.product-feature:nth-child( 2n + 1 ):after { 
+        content: ""; 
+        opacity: 0.5; 
+
+    } 
+
+    .product-feature:first-child:after { 
+        width: 1px; height: 1000vh;  
+        left: 100%; 
+
+    } 
+
+    .product-feature:nth-child( 2n + 1 ):not( :first-child ):after { 
+        width: 1000vw; height: 1px; 
+
+    } */
 
     .product-feature:nth-child( -n + 3 ):not( :first-child ):after, 
     .product-feature:nth-child( 3n + 1 ):not( :first-child ):after { 
@@ -113,7 +156,7 @@
     
 }
 
-@media screen and ( max-width: 840px ) and ( min-width: 541px ) { 
+@media screen and ( max-width: 1200px ) and ( min-width: 921px ) { 
     .product-features-entry-list { 
         --column-count: 2; 
     } 
@@ -136,18 +179,18 @@
     
 } 
 
-@media screen and ( max-width: 540px ) { 
+@media screen and ( max-width: 920px ) { 
     .product-features-entry-list { 
         --column-count: 1; 
     } 
 
     .product-features-section .product-features-entry-list { 
-        margin-top: 1.2rem; 
+        /*margin-top: 1.2rem; */ 
         /* border-style: solid; border-width: 1px 0;  */ 
     }  
 
     .product-feature { 
-        min-height: 10rem; 
+        min-height: 14rem; 
     
     } 
 
