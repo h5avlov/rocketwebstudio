@@ -1,4 +1,4 @@
-.heading { 
+.heading {  
     margin-bottom: var( --heading-margin-bottom ); 
     font-family: "var( --heading-font-family )"; 
     text-transform: uppercase; 
@@ -15,6 +15,12 @@
     margin-left: auto; margin-right: auto; 
     /* text-align: center;  */ 
 } 
+
+.heading.page-heading { 
+    box-sizing: border-box; 
+    padding-left: 5em; padding-right: 5em; 
+
+}
 
 .heading.page-heading { 
     font-size: var( --page-heading-font-size ); 
