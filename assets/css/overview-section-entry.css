@@ -3,7 +3,7 @@
 
 .overview-section-entry { 
     /*height: 14rem; */ 
-    padding-top: 4rem; padding-bottom: 4rem; 
+    padding-top: 2.5em; padding-bottom: 2.5em; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
     position: relative; 
     
@@ -46,3 +46,12 @@
     margin-top: 4rem; 
 } 
 
+
+/*@media screen and ( max-width: 940px ) { 
+
+    .overview-section-entry { 
+        padding-top: 2em; padding-bottom: 2em; 
+        
+    }
+    
+}*/
