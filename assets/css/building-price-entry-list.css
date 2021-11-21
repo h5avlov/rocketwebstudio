@@ -2,17 +2,28 @@
 
 
 .building-price-entry-list { 
-    --column-gutter-x-width: 0.4rem; 
+    --column-count: 2; 
+    --column-gutter-x-width: 1.2rem; 
+    --column-gutter-y-width: 3.5rem; 
 
-}
+} 
+
+.building-price-entry:nth-child( 2n ) { 
+    margin-right: 0; 
+} 
+
+.building-price-entry:nth-child( -n + 2 ) { 
+    margin-top: 0; 
+} 
 
 .building-price-entry-list { 
     width: 100%; 
+    margin-top: 5rem; 
 
 }
 
 /* Defines 4 columns for screens that comfortably display 4 columns */
-@media screen and ( min-width: 881px ) { 
+/*@media screen and ( min-width: 881px ) { 
     .building-price-entry-list { 
         --column-count: 4; 
 
@@ -26,19 +37,19 @@
         margin-top: 0; 
     }  
   
-} 
+} */
 
-@media screen and ( max-width: 880px ) { 
+/*@media screen and ( max-width: 880px ) { 
     .building-price-entry-list { 
         --column-gutter-y-width: 3.5rem; 
     } 
 
-}
+}*/ 
 
 /* Defines 2 columns for screens, that could not comfortably display 4 columns */
-@media screen and ( max-width: 880px ) and ( min-width: 641px ) { 
+/*@media screen and ( min-width: 641px ) { 
     .building-price-entry-list { 
-        --column-count: 2; 
+        --column-count: 2;  
 
     } 
     
@@ -50,12 +61,14 @@
         margin-top: 0; 
     } 
     
-} 
+} */
 
 /* Defines 1 column on screens, that could not comfortably display 2 columns */
-@media screen and ( max-width: 640px ) { 
+/*@media screen and ( max-width: 640px ) { 
     .building-price-entry-list { 
         --column-count: 1; 
+        --column-gutter-y-width: 4rem; 
+
     } 
     
     .building-price-entry:nth-child( n ) { 
@@ -66,4 +79,4 @@
         margin-top: 0; 
     } 
     
-}
+}*/

@@ -15,7 +15,8 @@
 
 .price-entry-list .price-block-heading { 
     padding: var( --building-block-price-block-heading-padding ); 
-    background-color: var( --text-color ); 
-    color: var( --building-block-price-block-heading-color ); 
+    border-bottom: 1px dashed; 
+    /*background-color: var( --text-color ); 
+    color: var( --building-block-price-block-heading-color ); */ 
 
 } 
