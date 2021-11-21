@@ -199,10 +199,10 @@
 
 } */
 
-/*@media screen and ( max-width: 920px ) { 
+@media screen and ( max-width: 880px ) { 
     .product-features-entry-list { 
         --column-count: 1; 
-    } */
+    }
 
     /*.product-features-section .product-features-entry-list { 
         margin-top: 1.2rem; 
@@ -222,6 +222,6 @@
     .product-feature:not( :first-child ):after { 
         width: 1000vw; height: 1px; 
 
-    } 
+    } */ 
     
-}*/ 
+} 

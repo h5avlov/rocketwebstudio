@@ -72,7 +72,7 @@
 
 } 
 
-.home-page .project-entry > * { 
+.home-page .project-preview-text-content  { 
     box-sizing: border-box; 
     width: 50%; 
     /*height: 20rem; */ 
@@ -103,17 +103,6 @@
 
 } */ 
 
-.home-page .project-entry:nth-child( 2n + 1 ) .featured-image { 
-    left: 50%; 
-    /*border-left: 1px solid; */
-
-} 
-
-/*.home-page .project-entry:nth-child( 2n ) .featured-image { 
-    border-right: 1px solid; 
-
-} */
-
 
 /*.home-page .project-preview-text-content { 
     color: var( --text-color ); 
@@ -134,8 +123,8 @@
 } 
 
 .home-page .project-entry .featured-image { 
-    box-sizing: border-box; 
-    width: 50%; 
+    /*box-sizing: border-box; */
+    /*width: 50%; */ 
     /*border: 1px dashed; */ 
     /*border: 1px solid; */
     overflow: hidden; 
@@ -253,14 +242,55 @@
 
 } 
 
+@media screen and ( min-width: 741px ){ 
+
+    .home-page .project-entry:nth-child( 2n + 1 ) .featured-image { 
+        left: 50%; 
+
+    } 
+
+    .home-page .project-entry:nth-child( 2n ) .featured-image { 
+        right: 50%; 
+
+    } 
+
+}
 
 @media screen and ( max-width: 740px ) { 
-    .home-page .project-preview-section-body { 
+    /*.home-page .project-preview-section-body { 
         flex-direction: column; 
+    
+    } */ 
+
+    .home-page .project-entry { 
+        display: flex; flex-direction: column; 
+        border: 1px dashed; 
+        border-radius: 10px; 
+
+    }
+
+    /*.home-page .project-entry { 
+        border: 1px dashed; 
+        border-radius: 10px; 
+    
+    } */ 
+
+    .home-page .project-entry .project-preview-text-content { 
+        order: 2; 
+        width: 100%; 
+        padding-top: 1.5rem; padding-bottom: 2rem; 
+        border: none; 
     
     } 
 
-    .home-page .project-preview-section-body > * { 
+    .home-page .project-entry .featured-image { 
+        order: 1; 
+        height: 18rem; 
+        position: relative; 
+    
+    } 
+
+    /*.home-page .project-preview-section-body > * { 
         width: 100%; 
         margin-top: var( --column-gutter-x-width ); 
 
@@ -274,7 +304,7 @@
     .home-page .projects-section .random-access-entry-list {  
         margin-left: 0; 
     
-    }
+    }*/ 
 
     
 }
