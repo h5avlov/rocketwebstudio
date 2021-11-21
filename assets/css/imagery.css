@@ -13,12 +13,13 @@
 } 
 
 .page-head .featured-image, 
+.project-entry .featured-image, 
 .random-access-entry .featured-image {  
-    opacity: 0.125; 
+    opacity: 0.5; 
 
 } 
 
-.project-entry .featured-image, 
+.home-page .project-entry .featured-image, 
 .random-access-entry .featured-image {  
     opacity: 1; 
 
