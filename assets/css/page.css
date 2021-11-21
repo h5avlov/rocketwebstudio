@@ -17,8 +17,7 @@
 } 
 
 .heading.page-heading { 
-    box-sizing: border-box; 
-    padding-left: 5em; padding-right: 5em; 
+    box-sizing: border-box;  
 
 }
 
@@ -105,5 +104,13 @@
         margin-top: 2rem; 
 
     }  
+
+} 
+
+@media screen and ( min-width: 721px ) { 
+    .heading.page-heading { 
+        padding-left: 10%; padding-right: 10%; 
+    
+    }
 
 }
