@@ -2,7 +2,7 @@
     position: relative; 
     overflow: hidden; 
     /* background-color: red;  */  
-    color: white; 
+    /*color: white; */ 
     text-align: center; 
 
 } 
@@ -26,7 +26,8 @@
 }
 
 .project-preview-text-content { 
-    padding-top: 5rem; padding-bottom: 5rem; padding-left: 2rem; padding-right: 2rem; 
+    padding-top: 5rem; padding-bottom: 5rem; 
+    /*padding-left: 2rem; padding-right: 2rem; */ 
     position: relative; z-index: 2; 
 } 
 
