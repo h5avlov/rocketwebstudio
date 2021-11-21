@@ -10,7 +10,7 @@
 
 }
 
-.home-page .pricing-chart .chart-block-list { 
+/*.home-page .pricing-chart .chart-block-list { 
     counter-reset: workflow-entry-number; 
 } 
 
@@ -20,7 +20,7 @@
 
 .home-page .pricing-chart .chart-block-heading:before {  
     content: counter( workflow-entry-number ); 
-} 
+} */ 
 
 .home-page .pricing-chart .chart-block:hover { 
     background-color: var( --text-color ); 
