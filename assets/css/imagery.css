@@ -9,9 +9,25 @@
 .project-entry .featured-image, 
 .random-access-entry .featured-image { 
     filter: grayscale( 100 );  
+
+} 
+
+.page-head .featured-image, 
+.random-access-entry .featured-image {  
     opacity: 0.125; 
 
 } 
+
+.project-entry .featured-image, 
+.random-access-entry .featured-image {  
+    opacity: 1; 
+
+}
+ 
+/*.random-access-entry .featured-image { 
+    opacity: 0.35; 
+
+}*/ 
 
 .featured-image img { 
     display: none; 
