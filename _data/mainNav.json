@@ -11,25 +11,43 @@
         { 
             "target": "/workflow", 
             "text": "Работен процес", 
-            "className": "workflow" 
-        }, 
-
-        { 
-            "target": "/rocket-website", 
-            "text": "Сайт от Rocket", 
-            "className": "rocket-website", 
+            "className": "workflow", 
 
             "nav": [ 
                 { 
-                    "target": "/rocket-website-structure", 
-                    "text": "Структура", 
-                    "className": "website-structure" 
+                    "target": "/workflow#analysis-section", 
+                    "text": "Анализ", 
+                    "className": "" 
                 }, 
 
                 { 
-                    "target": "/rocket-website-features",  
-                    "text": "Качества", 
-                    "className": "features" 
+                    "target": "/workflow#planning-section", 
+                    "text": "Планиране", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/workflow#building-section", 
+                    "text": "Изграждане", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/workflow#implementing-section", 
+                    "text": "Имплементиране", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/workflow#monitoring-section", 
+                    "text": "Мониторинг", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/workflow#optimizing-section", 
+                    "text": "Оптимизация", 
+                    "className": "" 
                 } 
 
             ]
@@ -44,7 +62,34 @@
         { 
             "target": "/services",  
             "text": "Услуги", 
-            "className": "services" 
+            "className": "services", 
+
+            "nav": [ 
+                { 
+                    "target": "/services#design-service", 
+                    "text": "Дизайн на сайт", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/services#coding-service", 
+                    "text": "Кодиране на дизайн", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/services#seo-service", 
+                    "text": "Оптимизация на сайт (SEO)", 
+                    "className": "" 
+                }, 
+
+                { 
+                    "target": "/services#website-service", 
+                    "text": "Завършен уебсайт", 
+                    "className": "" 
+                } 
+
+            ]
         }, 
 
         { 
