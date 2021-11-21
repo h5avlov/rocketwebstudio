@@ -2,8 +2,16 @@
 
 
 .overview-section-entry { 
+    /*height: 14rem; */ 
+    padding-top: 4rem; padding-bottom: 4rem; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
+    position: relative; 
+    
 } 
+
+/*.overview-section-entry + .overview-section-entry { 
+    border-top: 1px solid; 
+} */ 
 
 .overview-section-entry:last-of-type { 
     margin-bottom: 0; 
@@ -11,16 +19,30 @@
 
 .overview-section-entry .heading:before { 
     display: block;  
+    margin-bottom: 0.5em;
+    padding: 0.2em; 
+    border-bottom: 1px dashed; 
+
 } 
 
 .overview-section-entry-heading { 
     margin-bottom: var( --workflow-entry-heading-margin-bottom ); 
+    /*padding-bottom: 0.8em; 
+    border-bottom: 1px dashed; */ 
     /* font-family: "var( --heading-font-family )";  */ 
     font-size: var( --workflow-entry-heading-font-size ); 
     text-transform: uppercase; 
 } 
 
+.overview-section-entry .read-more-button {  
+    margin-top: 1.2em; 
+    /*border: transparent; */ 
+    /*background-color: var( --text-color ); 
+    color: var( --text-color-inverted );*/ 
+
+} 
+
 .page-body .overview-section-entry-list { 
     margin-top: 4rem; 
-}
+} 
 
