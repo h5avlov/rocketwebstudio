@@ -15,7 +15,7 @@ label: services
         {% assign priceBlockKey= entry[ 0 ] %}
         {% assign priceBlock= entry[ 1 ] %} 
 
-        <li class= "entry price-entry workflow-price-entry"> 
+        <li id= "{{ priceBlockKey }}-service" class= "entry price-entry workflow-price-entry"> 
             {% include heading.html 
                 className= "price-block-heading has-icon" 
                 level= 3 
