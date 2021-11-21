@@ -82,8 +82,8 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: 3em; 
-    --button-padding-x: 1.7em; 
+    --button-height: 3.5em; 
+    --button-padding-x: 2em; 
     --button-padding-y: ""; 
     --button-margin-top: 1.2rem; 
 
@@ -173,8 +173,8 @@
 ------------------------------------------------------------*/ 
 
 :root {  
-    --price-block-margin-bottom: 1.5rem; 
-    --price-block-heading-margin-bottom: 0.2rem; 
+    --price-block-margin-bottom: 1.5em; 
+    --price-block-heading-margin-bottom: 0.2em; 
 
     --price-block-font-size: 0.85rem; 
    
@@ -210,7 +210,7 @@
     --building-block-add-block-side: 1.5rem; 
     --building-block-add-block-margin-bottom: 0.8rem; 
 
-    --building-block-price-block-heading-padding: 0.4em; 
+    --building-block-price-block-heading-padding: 0.5em; 
     --building-block-price-block-heading-color: var( --text-color-inverted ); 
 
 } 
@@ -255,7 +255,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --workflow-entry-margin-bottom: 2rem; 
+    --workflow-entry-margin-bottom: 0rem; 
     --workflow-entry-heading-margin-bottom: 0.75em; 
     --workflow-entry-heading-font-size: 1.2rem; 
 
@@ -327,8 +327,9 @@
 } 
 
 /* Overrides button default style change on hover */
-.sell-points, 
-.project-entry {  
+.sell-points  
+/*.project-entry */ 
+{  
     --button-hover-background-color: var( --secondary-color ); 
     --button-hover-text-color: var( --primary-color ); 
 
