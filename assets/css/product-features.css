@@ -207,7 +207,12 @@
     /*.product-features-section .product-features-entry-list { 
         margin-top: 1.2rem; 
         border-style: solid; border-width: 1px 0;  
-    }  */
+    }  */ 
+
+    .product-feature { 
+        padding-top: 2em; padding-bottom: 2em; 
+    
+    } 
 
     /*.product-feature { 
         min-height: 14rem; 
