@@ -57,6 +57,16 @@
 
 } 
 
+.price + .button { 
+    margin-top: 2.25em; 
+
+}
+
+/** + .button { 
+    margin-top: 1.2em; 
+
+}*/
+
 .page-text-entry { 
     text-align: left; 
 
