@@ -3,7 +3,7 @@
 
 .overview-section-entry { 
     /*height: 14rem; */ 
-    padding-top: 2.5em; padding-bottom: 2.5em; 
+    padding-top: 3.5em; padding-bottom: 3.5em; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
     position: relative; 
     
