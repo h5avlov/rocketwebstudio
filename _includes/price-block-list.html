@@ -22,7 +22,12 @@
         {% endif %}
         
         {% if include.button %} 
-            {% assign linkTarget= "/services" | append: "#" | append: sectionName | append: "-service" %} 
+            {% if site.data.articles[ sectionName ] %} 
+                {% assign linkTarget= "/services" | append: "/" | append: sectionName %} 
+            {% else %}
+                {% assign linkTarget= "/services" | append: "#" | append: sectionName | append: "-service" %} 
+            {% endif %} 
+
             {% include link.html 
                 className= "button read-more-button has-icon" 
                 target= linkTarget
