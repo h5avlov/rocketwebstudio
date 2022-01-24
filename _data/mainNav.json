@@ -78,7 +78,7 @@
                 }, 
 
                 { 
-                    "target": "/services#seo-service", 
+                    "target": "/services/seo", 
                     "text": "Оптимизация на сайт (SEO)", 
                     "className": "" 
                 }, 
