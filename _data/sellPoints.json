@@ -21,10 +21,19 @@
                 "src": "WBIR-Go-Green.jpg", 
                 "alt": "" 
             }, 
-            "button": { 
-                "text": "Научете как" 
+            "buttons": [
+                { 
+                    "text": "Научете защо", 
+                    "targetSectionID": "product-features-section" 
 
-            }
+                }, 
+
+                { 
+                    "text": "Научете как", 
+                    "targetSectionID": "workflow-section" 
+
+                } 
+            ]
         } 
     ]
 
