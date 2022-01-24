@@ -19,10 +19,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta name="description" content="{{ page.description }}" /> 
 
+    {% if page.canonical %} 
+        <link rel= "canonical" href= "{{ site.url | append: page.canonical }}" /> 
+
+        {% if page.canonical != page.permalink %} 
+            <meta name="robots" content="noindex" /> 
+        {% endif %} 
+    {% endif %}
+
     <title>{{ page.title }}</title> 
 
     <link rel="shortcut icon" href= "/favicon/favicon.png"> 
-    <link rel= "canonical" href= "{{ site.url | append: page.permalink }}" />  
 </head>
 <body class= "page {{ layout.type }} {{ page.label | split: ' ' | join: '-' }}-page"> 
     {% include header.html %} 
