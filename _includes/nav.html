@@ -1,22 +1,37 @@
 <ul class= "entry-list nav-entry-list{% if include.className %} {{ include.className }}{% endif %}"> 
+
+{% assign i = 1 %} 
 {% for entry in include.data %}  
+    {% assign classNames = "nav-entry,nav-entry-" | append: entry.className | append: "," %} 
+    {% if entry.nav %}   
+        {% assign classNames = classNames | append: "has-subnav" | append: "," %} 
+    {% endif %} 
+    {% if entry.target == page.url %}
+        {% assign classNames = classNames | append: "nav-entry-current" | append: "," %} 
+    {% endif %} 
+
     <li 
-        class= "nav-entry nav-entry-{{ entry.className }}{% if entry.target == page.url %}{{ ' nav-entry-current' }}{% endif %}" 
+        class= "{{ classNames | split: ',' | join: ' ' }}" 
     > 
-        {% if entry.nav %} 
-            <span class= "nav-entry-text subnav-label has-icon" style= "--icon-code: '\f3d0';">{{ entry.text }}</span> 
+        {% include link.html 
+            className= "nav-entry-text nav-link" 
+            target= entry.target 
+            text= entry.text 
+        %}  
+        {% if entry.nav %}   
+            <input id= "switch-subnav-checkbox-{{ i }}" class= "checkbox switch-subnav-checkbox" type= "checkbox" /> 
+            <label for= "switch-subnav-checkbox-{{ i }}" class= "subnav-label has-icon" style= "--icon-code: '\f3d0';">
+                <span class= "label-text">Падащо меню</span>    
+            </label> 
+
             {% include nav.html 
                 className= "subnav-entry-list" 
                 data= entry.nav 
             %} 
-        {% else %} 
-            {% include link.html 
-                className= "nav-entry-text nav-link" 
-                target= entry.target 
-                text= entry.text 
-            %}  
-        {% endif %}
-    </li>
+            
+            {% assign i = i | plus: 1 %} 
+        {% endif %} 
+    </li>  
 {% endfor %}
 </ul> 
 
