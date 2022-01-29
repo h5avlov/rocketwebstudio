@@ -2,26 +2,33 @@
 
 
 .overview-section-entry { 
+    width: 50%; 
     /*height: 14rem; */ 
-    padding-top: 3.5em; padding-bottom: 3.5em; 
+    padding-top: 2.5em; padding-bottom: 2.5em; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
     position: relative; 
+    /*border: 1px dashed; border-radius: 10px; */ 
     
 } 
 
 /*.overview-section-entry + .overview-section-entry { 
-    border-top: 1px solid; 
-} */ 
+    border-top: 1px dashed; 
+} */
 
 .overview-section-entry:last-of-type { 
     margin-bottom: 0; 
 }
 
 .overview-section-entry .heading:before { 
+    --icon-size: 2em; 
+
     display: block;  
-    margin-bottom: 0.5em;
-    padding: 0.2em; 
-    border-bottom: 1px dashed; 
+    margin: 0 auto; 
+    /*width: var( --icon-size ); height: var( --icon-size ); line-height: var( --icon-size ); */ 
+    /*margin-bottom: 0.75em; 
+    padding: 0.2em; */ 
+    /*border: 1px dashed; border-width: 1px 0; */ 
+    /*border: 1px solid; border-radius: 50%; */ 
 
 } 
 

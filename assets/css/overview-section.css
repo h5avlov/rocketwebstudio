@@ -1,5 +1,10 @@
-.overview-section-entry-list { 
+/*.overview-section-entry-list { 
     --column-count: 1; 
+
+} */    
+
+.overview-section-entry-list { 
+    flex-direction: column; align-items: center; 
 
 } 
 
