@@ -15,9 +15,13 @@
                 
                 <h3 class= "heading sell-points-entry-heading">{{ entry.heading.text }}</h3> 
 
-                {% include text-entry-list.html 
+                <!--{% include text-entry-list.html 
                     paragraphs= entry.paragraphs 
-                %} 
+                %} --> 
+
+                <!--{% include text-list.html 
+                    list= entry.list 
+                %} --> 
 
                 {% for button in entry.buttons %} 
                     {% include inner-link.html 

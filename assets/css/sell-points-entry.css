@@ -17,6 +17,51 @@
 
 } 
 
+.sell-points-entry .text-list { 
+    --column-count: 2; 
+    --column-gutter-x-width: 0.8em; 
+    text-align: left; 
+
+} 
+
+/*.sell-points-entry .text-list { 
+    justify-content: center; 
+
+}*/ 
+
+.sell-points-entry .text-list-entry:nth-child( 2n ) { 
+    margin-right: 0; 
+
+} 
+
+.sell-points-entry .text-list-entry:nth-child( n - 2 ) { 
+    margin-top: 0; 
+
+}
+
+.sell-points-entry .text-list-entry { 
+    /*width: auto; */ 
+    padding: 0.2em 0; 
+    /*background-color: var( --background-color ); 
+    color: var( --text-color ); */ 
+
+} 
+
+/*.sell-points-entry .text-list-entry {
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.2 ); 
+
+} */ 
+
+.sell-points-entry .text-list-entry + .text-list-entry { 
+    margin-top: 0; 
+
+} 
+
+/*.sell-points-entry .text-list-entry { 
+    margin-left: 1.2em; 
+
+}*/ 
+
 /* .sell-points-entry .text-entry:last-of-type + :not( .text-entry ) {
     margin-top: var( --sell-points-entry-text-margin-bottom ); 
 }  */ 
