@@ -15,6 +15,7 @@
 
     "sections": [ 
         { 
+            "name": "business-model-creation", 
             "icon": { 
                 "name": "analytics" 
             }, 
@@ -29,6 +30,7 @@
         }, 
 
         { 
+            "name": "workflow",
             "icon": { 
                 "name": "git-compare" 
             }, 
@@ -43,6 +45,7 @@
         }, 
 
         { 
+            "name": "service-prices", 
             "icon": { 
                 "name": "extension-puzzle" 
             }, 
