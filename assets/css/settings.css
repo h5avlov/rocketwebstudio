@@ -45,7 +45,7 @@
     --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) );
 
     --subheading-margin-bottom: 0.5em; 
-    --subheading-font-family: Tahoma; 
+    --subheading-font-family: MS-Sans; 
     --subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --heading-font-size ) ); 
 
     --text-entry-margin-bottom: 0.5em; 

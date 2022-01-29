@@ -25,6 +25,11 @@
 @font-face {
     font-family: "var( --main-nav-font-family )"; 
     src: url( "/assets/fonts/micross.ttf" ); 
+} 
+
+@font-face {
+    font-family: "var( --subheading-font-family )"; 
+    src: url( "/assets/fonts/micross.ttf" ); 
 }
 
 
