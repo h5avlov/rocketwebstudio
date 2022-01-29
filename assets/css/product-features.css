@@ -2,7 +2,13 @@
     --icon-font-size: 2rem; 
     --icon-holder-width: 5rem; 
     --icon-holder-height: 2.5em; 
+    --icon-holder-border-color: rgba( 0, 0, 0, 0.4 ); 
     /*--icon-holder-border-width: 0; */ 
+
+} 
+
+.product-feature { 
+    min-height: 17em; 
 
 } 
 
