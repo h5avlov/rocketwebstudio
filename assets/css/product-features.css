@@ -1,5 +1,6 @@
 .product-feature { 
     --icon-font-size: 2rem; 
+    --icon-corrected-font-size: calc( 1.15 * var( --icon-font-size ) ); 
     --icon-holder-width: 5rem; 
     --icon-holder-height: 2.5em; 
     --icon-holder-border-color: rgba( 0, 0, 0, 0.4 ); 
@@ -9,6 +10,11 @@
 
 .product-feature { 
     min-height: 17em; 
+
+} 
+
+.product-feature ion-icon[ name="code-slash" ] {  
+    font-size: var( --icon-corrected-font-size ); 
 
 } 
 

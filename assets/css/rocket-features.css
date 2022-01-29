@@ -1,12 +1,15 @@
 .rocket-feature { 
-    --icon-holder-width: 50%; 
-    --icon-holder-height: 0.3em; 
-    /*--icon-holder-border-width: 0; */ 
+    --icon-font-size: 4rem;  
+    --icon-corrected-font-size: calc( 1.3 * var( --icon-font-size ) ); 
+    --icon-holder-width: 55%; 
+    --icon-holder-height: 0.4em; 
+    /*--icon-holder-border-width: 0; */
     --icon-holder-border-radius: 0; 
+    --icon-holder-margin-bottom: 1.2em; 
+    --icon-holder-border-color: rgba( 255, 255, 255, 0.2 ); 
+    --icon-holder-background-color: rgba( 255, 255, 255, 0.02 ); 
     /*--icon-holder-background-color: rgb(56, 68, 61); */ 
     /*--icon-color: rgb(47, 49, 46); */ 
-    /*--icon-border-width: 2px; 
-    --icon-border-color: white; */ 
 
 } 
 
@@ -17,7 +20,7 @@
 
 } 
 
-.rocket-features-section > .subheading:before{ 
+/*.rocket-features-section > .subheading:before{ 
     --icon-code: "?";  
     --icon-font-size: 2.5em; 
     --icon-side:  calc( 0.7 * var( --icon-font-size ) ); 
@@ -30,11 +33,34 @@
     font-family: Arial; 
     font-size: var( --icon-font-size ); 
 
-} 
+} */ 
 
 .rocket-feature { 
     padding: 2.2em;  
 
+} 
+
+.rocket-feature ion-icon[ name="analytics" ] { 
+    font-size: var( --icon-corrected-font-size ); 
+
+} 
+
+@media screen and ( max-width: 960px ) { 
+    .rocket-feature { 
+        --icon-holder-width: 20%; 
+        --icon-holder-height: 0.4em; 
+    
+    } 
+
+    .rocket-features-entry-list { 
+        --column-count: 1; 
+    }
+
+    /*.rocket-feature { 
+        padding-top: 3.5em; padding-bottom: 3.5em; 
+    
+    } */ 
+    
 } 
 
 /*@media screen and ( min-width: 881px ) { 
