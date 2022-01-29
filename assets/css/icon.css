@@ -1,7 +1,7 @@
 .has-icon:before { 
     display: block; 
     /* Sets icon size */ 
-    width: var( --icon-side ); height: inherit; line-height: inherit; 
+    width: var( --icon-side ); height: var( --icon-side ); line-height: var( --icon-side ); 
     /* Centers icon element in horizontal direction */
     margin-left: auto; margin-right: auto;  
     /* Centers icon character in horizontal and vertical direction */ 
