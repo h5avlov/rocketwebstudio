@@ -9,7 +9,7 @@
 
     /* Sets button border */
     border-width: var( --button-border-width ); border-style: solid; border-color: unset; 
-    /*border-radius: var( --button-border-radius ); */ 
+    border-radius: var( --button-border-radius ); 
 
     /* Sets button color */
     background-color: var( --button-background-color ); 
