@@ -28,12 +28,15 @@
 }
 
 .feature { 
-    --icon-font-size: 5rem; 
-    --icon-holder-width: 50%; 
+    --icon-font-size: 5rem;  
     --icon-holder-height: 0.5em; 
-    --icon-background-color: transparent; 
+    --icon-holder-width: 50%;
     --icon-holder-border-width: 1px; 
-    --icon-holder-border-color: rgba( 0, 0, 0, 0.4 );  
+    --icon-holder-border-color: inherit; 
+    --icon-holder-border-radius: 8px; 
+    --icon-holder-background-color: transparent; 
+    --icon-color: inherit; 
+    --icon-background-color: transparent; 
     --icon-code-font-size: calc( 1.2 * var( --icon-font-size ) ); 
 
 } 
@@ -43,20 +46,21 @@
     box-sizing: border-box; 
     display: flex; justify-content: center; align-items: center; 
     height: 2rem; width: var( --icon-holder-width ); height: var( --icon-holder-height ); 
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.8em; 
     margin-left: auto; margin-right: auto; 
-    background-color: var( --icon-background-color ); 
-    border: var( --icon-holder-border-width ) solid var( --icon-holder-border-color ); 
-    border-radius: 8px; 
-    opacity: 1; 
+    background-color: var( --icon-holder-background-color ); 
+    border-width: var( --icon-holder-border-width ); border-style: solid; border-color: var( --icon-holder-border-color ); 
+    border-radius: var( --icon-holder-border-radius );
     font-size: var( --icon-font-size ); 
+    transform: rotateZ( -45deg ); 
 
 } 
 
 .feature ion-icon {  
     font-size: inherit; 
+    color: var( --icon-color ); 
     background-color: var( --icon-background-color ); 
-    opacity: 1; 
+    transform: rotateZ( 45deg ); 
 
 } 
 
