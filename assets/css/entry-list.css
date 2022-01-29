@@ -23,11 +23,11 @@
 } 
 
 /* Removes unneccessary margin top from entries, located on the first row */
-.entry:nth-child( -n + var( --column-count ) ) { 
+/*.entry:nth-child( 1 ) { 
     margin-top: 0; 
-} 
+} */ 
 
 /* Removes unneccessary margin right from entries, located on the last column */
-.entry:last-child { 
+/*.entry:nth-child( n ) { 
     margin-right: 0; 
-}
+}*/ 
