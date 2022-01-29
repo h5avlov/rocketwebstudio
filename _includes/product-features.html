@@ -1,25 +1,29 @@
-<section id= "product-features-section" class= "section page-preview-section product-features-section"> 
+<section id= "product-features-section" class= "section page-preview-section features-section product-features-section"> 
     <h5 class= "heading subheading section-subheading">{{ include.data.subheading }}</h5> 
     <h2 class= "heading section-heading">{{ include.data.heading }}</h2> 
     <!--{% include text-entry-list.html 
         paragraphs= include.data.paragraphs 
     %} --> 
 
-    <ul class= "entry-list product-features-entry-list"> 
+    <ul class= "entry-list features-entry-list product-features-entry-list"> 
     {% for entry in include.data.sections %} 
         {% assign sectionName= entry[ 0 ] %} 
         {% assign data= entry[ 1 ] %}
 
-        <li class= "entry product-feature has-icon"> 
-            <h5 class= "heading subheading product-feature-subheading">{{ data.subheading }}</h5> 
-            <h3 class= "heading product-feature-heading">{{ data.heading }}</h3> 
+        <li class= "entry feature product-feature has-icon"> 
+            <figure class= "icon-holder"> 
+                <ion-icon name="{{ data.icon.name }}"></ion-icon> 
+            </figure> 
 
-            {% assign linkTarget= "/rocket-website-features" | append: "#" | append: sectionName | append: "-section" %} 
+            <h5 class= "heading subheading feature-subheading product-feature-subheading">{{ data.subheading | split: ", " | join: " + " }}</h5> 
+            <h3 class= "heading feature-heading product-feature-heading">{{ data.heading }}</h3> 
+
+            <!--{% assign linkTarget= "/rocket-website-features" | append: "#" | append: sectionName | append: "-section" %} 
             {% include link.html 
                 className= "button read-more-button has-icon" 
                 target= linkTarget 
-                text= site.data.settings.buttons.outerPageLink.text 
-            %}
+                text= site.data.settings.buttons.outerPageLink.text  
+            %} -->
         </li>
     {% endfor %}
     </ul> 

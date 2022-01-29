@@ -15,9 +15,13 @@ label: home
     data= site.data.about 
 %} 
 
+{% include rocket-features.html 
+    data= site.data.rocketFeatures 
+%} 
+
 {% include product-features.html 
     data= site.data.productFeatures 
-%} 
+%}
 
 {% assign workflowSections= site.data.workflowPage.body | where: "type", "sections" | first %} 
 {% include workflow.html 

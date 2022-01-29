@@ -1,0 +1,59 @@
+{ 
+    "title": "Качества", 
+
+    "subheading": "Защо да изберете", 
+
+    "heading": "Rocket Web Studio",  
+
+    "paragraphs": [ 
+        {
+            "text": "Един добър сайт трябва да притежава няколко качества. Не едно, две или повечето от тях, а всички. Липсата на което и да е от тях намалява значително вероятността Вашият потребител да стане Ваш клиент." 
+        }
+    ], 
+
+    "pageNav": true,  
+
+    "sections": [ 
+        { 
+            "icon": { 
+                "name": "analytics" 
+            }, 
+            "subheading": "Безплатно", 
+            "heading": "Създаване на бизнес модел", 
+            "paragraphs": [ 
+                {
+                    "text": "" 
+                }
+
+            ]
+        }, 
+
+        { 
+            "icon": { 
+                "name": "git-compare" 
+            }, 
+            "subheading": "Доказано ефективен", 
+            "heading": "Работен процес", 
+            "paragraphs": [ 
+                {
+                    "text": "" 
+                }
+
+            ]
+        }, 
+
+        { 
+            "icon": { 
+                "name": "extension-puzzle" 
+            }, 
+            "subheading": "Вие избирате", 
+            "heading": "За какво плащате", 
+            "paragraphs": [ 
+                {
+                    "text": "" 
+                }
+
+            ]
+        } 
+    ] 
+}

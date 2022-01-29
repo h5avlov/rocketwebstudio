@@ -1,0 +1,20 @@
+<section id= "rocket-features-section" class= "section page-preview-section features-section rocket-features-section"> 
+    <h5 class= "heading subheading section-subheading">{{ include.data.subheading }}</h5> 
+    <h2 class= "heading section-heading">{{ include.data.heading }}</h2> 
+    <!--{% include text-entry-list.html 
+        paragraphs= include.data.paragraphs 
+    %} --> 
+
+    <ul class= "entry-list features-entry-list rocket-features-entry-list"> 
+    {% for entry in include.data.sections %} 
+        <li class= "entry feature rocket-feature has-icon"> 
+            <figure class= "icon-holder"> 
+                <ion-icon name="{{ entry.icon.name }}"></ion-icon> 
+            </figure> 
+
+            <h5 class= "heading subheading feature-subheading">{{ entry.subheading | split: ", " | join: " + " }}</h5> 
+            <h3 class= "heading feature-heading">{{ entry.heading }}</h3> 
+        </li>
+    {% endfor %}
+    </ul> 
+</section>
