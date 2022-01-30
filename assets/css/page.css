@@ -88,7 +88,7 @@
 } 
 
 @media screen and ( max-width: 520px ) { 
-    /* Aligns all section headings and subheadings text to center */
+    /* Left aligns section headings and subheadings text where a paragraph (with left aligned text) comes right after */
     .section-heading:not( .sell-points .heading ):not( .features-section .heading ), 
     .section-subheading:not( .sell-points .heading ):not( .features-section .heading ) {  
         text-align: left; 
