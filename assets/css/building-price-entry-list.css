@@ -4,7 +4,7 @@
 .building-price-entry-list { 
     /*--column-count: 2; */ 
     --column-gutter-x-width: 1.2rem; 
-    --column-gutter-y-width: 5rem; 
+    --column-gutter-y-width: 7em; 
 
 } 
 
@@ -67,7 +67,7 @@
 @media screen and ( max-width: 780px ) { 
     .building-price-entry-list { 
         --column-count: 1; 
-        --column-gutter-y-width: 7em; 
+        --column-gutter-y-width: 4em; 
 
     } 
     
