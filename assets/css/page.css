@@ -87,6 +87,15 @@
 
 } 
 
+@media screen and ( max-width: 520px ) { 
+    /* Aligns all section headings and subheadings text to center */
+    .section-heading:not( .sell-points .heading ):not( .features-section .heading ), 
+    .section-subheading:not( .sell-points .heading ):not( .features-section .heading ) {  
+        text-align: left; 
+    } 
+
+} 
+
 @media screen and ( min-width: 721px ) { 
     .heading.page-heading { 
         padding-left: 10%; padding-right: 10%; 
