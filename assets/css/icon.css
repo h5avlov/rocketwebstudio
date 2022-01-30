@@ -1,15 +1,24 @@
 .has-icon:before { 
     display: block; 
-    /* Sets icon size */ 
-    width: var( --icon-side ); height: var( --icon-side ); line-height: var( --icon-side ); 
-    /* Centers icon element in horizontal direction */
-    margin-left: auto; margin-right: auto;  
-    /* Centers icon character in horizontal and vertical direction */ 
-    text-align: center; 
+    
+    /* Sets icon size and shapes the icon as a square */ 
+    width: var( --icon-side ); height: var( --icon-side ); 
 
+    /* Centers icon in horizontal direction */
+    margin-left: auto; margin-right: auto;
+
+    /* Centers icon character in vertical direction */
+    line-height: var( --icon-side ); 
+    /* Centers icon character in horizontal direction */ 
+    text-align: center;
+   
     /* Sets icon font */
     font-family: var( --icon-font-family ); font-weight: normal; 
-    text-indent: 0;
+
+    /* Turns back icon character in place */
+    text-indent: 0; 
+
+    /* Sets icon character */ 
     content: var( --icon-code ); 
     
 } 
