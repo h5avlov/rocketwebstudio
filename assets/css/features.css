@@ -16,10 +16,14 @@
 
 .feature { 
     box-sizing: border-box; 
-    padding: 2.2em;
     position: relative;
 
 }  
+
+.feature + .feature { 
+    margin-top: 5em; 
+
+}
 
 .feature:before { 
     margin-bottom: 2em; 
