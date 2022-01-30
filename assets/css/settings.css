@@ -82,7 +82,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: 3rem; 
+    --button-height: 2.5rem; 
     --button-padding-x: 2em; 
     --button-padding-y: ""; 
     --button-margin-top: 1.2rem; 
