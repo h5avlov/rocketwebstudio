@@ -2,18 +2,11 @@
 
 
 .overview-section-entry { 
-    /*max-width: 50%; width: auto;  */ 
-    /*height: 14rem; */ 
     padding-top: 2.5em; padding-bottom: 2.5em; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
     position: relative; 
-    /*border: 1px dashed; border-radius: 10px; */ 
     
 } 
-
-/*.overview-section-entry + .overview-section-entry { 
-    border-top: 1px dashed; 
-} */
 
 .overview-section-entry:last-of-type { 
     margin-bottom: 0; 
@@ -24,28 +17,15 @@
 
     display: block;  
     margin: 0 auto; 
-    /*width: var( --icon-size ); height: var( --icon-size ); line-height: var( --icon-size ); */ 
-    /*margin-bottom: 0.75em; 
-    padding: 0.2em; */ 
-    /*border: 1px dashed; border-width: 1px 0; */ 
-    /*border: 1px solid; border-radius: 50%; */ 
-
 } 
 
 .overview-section-entry-heading { 
-    margin-bottom: var( --workflow-entry-heading-margin-bottom ); 
-    /*padding-bottom: 0.8em; 
-    border-bottom: 1px dashed; */ 
-    /* font-family: "var( --heading-font-family )";  */ 
-    font-size: var( --workflow-entry-heading-font-size ); 
+    margin-bottom: var( --workflow-entry-heading-margin-bottom );  
     text-transform: uppercase; 
 } 
 
 .overview-section-entry .read-more-button {  
     margin-top: 1.2em; 
-    /*border: transparent; */ 
-    /*background-color: var( --text-color ); 
-    color: var( --text-color-inverted );*/ 
 
 } 
 

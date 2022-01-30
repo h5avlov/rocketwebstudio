@@ -39,19 +39,16 @@
 :root { 
     --heading-margin-bottom: 1em; 
     --heading-font-family: A1SerifBold; 
-    --heading-font-size: 1.7em;  
-    --heading-subheading-font-size-ratio: 0.5; 
-    --page-heading-font-size: 2em; 
-    --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) );
+    /*--page-heading-font-size: 2em; 
+    --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) );*/ 
 
     --subheading-margin-bottom: 0.5em; 
     --subheading-font-family: MS-Sans; 
-    --subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --heading-font-size ) ); 
 
     --text-entry-margin-bottom: 0.5em; 
     --text-margin-bottom: 3rem; 
     --text-font-family: Arial; 
-    --text-font-size: 14px; 
+    --text-font-size: 16px; 
     --text-line-height: 1.4;  
 }
 
@@ -82,7 +79,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: 2.5rem; 
+    --button-height: 2.8rem; 
     --button-padding-x: 2em; 
     --button-padding-y: ""; 
     --button-margin-top: 1.2rem; 
@@ -322,7 +319,7 @@
     --sell-points-entry-text-margin-bottom: 2.5em; 
    
     --sell-points-entry-heading-font-family: "A1SerifBold"; 
-    --sell-points-entry-heading-font-size: 1.8rem; 
+    --sell-points-entry-heading-font-size: var( --page-heading-font-size ); 
 
 } 
 

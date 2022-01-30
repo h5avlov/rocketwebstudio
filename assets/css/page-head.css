@@ -19,7 +19,7 @@
     background-color: var( --page-head-background-color ); background-clip: padding-box; 
 
     /* Sets page head font size to page heading font size to give page head border width 'em's equal output value to page heading 'em's */
-    font-size: var( --page-head-font-size ); 
+    /*font-size: var( --page-head-font-size ); */ 
     /* Centers page head text horizontally */
     text-align: center; 
 

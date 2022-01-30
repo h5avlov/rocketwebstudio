@@ -1,6 +1,12 @@
+:root { 
+    --heading-font-size: 1.8em;  
+    --subheading-font-size: 0.8rem; 
+
+} 
+
 .heading {  
-    margin-bottom: var( --heading-margin-bottom ); 
     font-family: "var( --heading-font-family )"; 
+    font-size: var( --heading-font-size ); 
     text-transform: uppercase; 
     text-align: center; 
 } 
@@ -8,12 +14,12 @@
 .subheading { 
     margin-bottom: var( --subheading-margin-bottom ); 
     font-family: "var( --subheading-font-family )"; 
+    font-size: var( --subheading-font-size ); 
 } 
 
 .page-body { 
-    /* width: var( --page-inner-width );  */ 
     margin-left: auto; margin-right: auto; 
-    /* text-align: center;  */ 
+
 } 
 
 .heading.page-heading { 
@@ -21,13 +27,13 @@
 
 }
 
-.heading.page-heading { 
+/*.heading.page-heading { 
     font-size: var( --page-heading-font-size ); 
 } 
 
 .page-subheading { 
     font-size: var( --page-subheading-font-size ); 
-} 
+} */
 
 /* Sets paragraph to paragraph vertical distance */ 
 .text-entry + .text-entry { 
@@ -40,26 +46,15 @@
 
 }  
 
-/* .text-entry + .entry-list { 
-    margin-top: 3rem; 
-
-} 
-*/ 
-
 .page-text-entry { 
     text-align: left; 
 
 }
 
-/* .text-entry:not( :last-child ) { 
-    margin-bottom: var( --text-margin-bottom ); 
-}   */
-
 .page-body .featured-image { 
-    /* margin-top: 2rem;  */ 
     height: 20rem; max-width: var( --page-inner-width ); 
     margin-left: auto; margin-right: auto; 
-    /* background-color: red;  */ 
+
 } 
 
 .page-featured-image + * { 
@@ -87,6 +82,14 @@
 
 } 
 
+@media screen and ( min-width: 721px ) { 
+    .heading.page-heading { 
+        padding-left: 10%; padding-right: 10%; 
+    
+    }
+
+}
+
 @media screen and ( max-width: 520px ) { 
     /* Left aligns section headings and subheadings text where a paragraph (with left aligned text) comes right after */
     .section-heading:not( .sell-points .heading ):not( .features-section .heading ), 
@@ -96,10 +99,15 @@
 
 } 
 
-@media screen and ( min-width: 721px ) { 
-    .heading.page-heading { 
-        padding-left: 10%; padding-right: 10%; 
+@media screen and ( max-width: 480px ) { 
+    :root { 
+        --text-font-size: 14px; 
+        
+    } 
+
+    .text-entry { 
+        font-size: 1em; 
     
     }
 
-}
+} 

@@ -1,24 +1,29 @@
 @import url( "./page.css" ); 
 
+.section:not( .about-section ) {  
+    --heading-font-size: 1.6em; 
+    /*--heading-subheading-font-size-ratio: 0.6; */
+
+} 
+
+.section .entry-list {  
+    --heading-font-size: 1.4em; 
+
+} 
+
 .section {  
-    /* max-width: var( --page-inner-width );  */ 
-    /* margin-left: auto; margin-right: auto;  */
     margin-bottom: var( --section-margin-bottom ); 
-    /* text-align: center;  */ 
+
 } 
 
 .section:last-child {
     margin-bottom: 0; 
 }
 
-/* .section-head-text-entry:last-of-type { 
-    margin-bottom: var( --text-margin-bottom ); 
-}  */
-
-.section-heading { 
+/*.section-heading { 
     font-size: var( --heading-font-size ); 
 } 
 
 .section-subheading { 
     font-size: var( --subheading-font-size ); 
-} 
+} */
