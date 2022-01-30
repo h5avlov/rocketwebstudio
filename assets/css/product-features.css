@@ -8,15 +8,18 @@
 
 } 
 
-.product-feature { 
-    min-height: 17em; 
-
-} 
-
 .product-feature ion-icon[ name="code-slash" ] {  
     font-size: var( --icon-corrected-font-size ); 
 
 } 
+
+@media screen and ( min-width: 881px ) { 
+    .product-feature { 
+        min-height: 17em; 
+    
+    } 
+
+}
 
 /*.product-features-entry-list { 
     max-width: none;  
