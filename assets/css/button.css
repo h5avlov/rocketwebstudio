@@ -34,4 +34,24 @@
     color: var( --button-hover-text-color ); 
     border-color: var( --button-hover-background-color ); 
 
+} 
+
+/* Sets button default vertical distance from a paragraph */
+.text-entry + .button { 
+    margin-top: 2rem; 
+
+}  
+
+/* Sets button default vertical distance from a list */
+.text-list + .button { 
+    margin-top: 2rem; 
+
 }
+
+/* Sets button default vertical distance from a price block */
+.price + .button { 
+    margin-top: 2.25em; 
+
+} 
+
+

@@ -44,32 +44,7 @@
     margin-top: 3rem; 
 
 } 
-
-.text-entry + .button { 
-    margin-top: 2rem; 
-
-} */ 
-
-.text-list + .button { 
-    margin-top: 2rem; 
-
-}
-
-/* Overrides default top margin */ 
-.text-entry + .button { 
-    margin-top: 2.5rem; 
-
-} 
-
-.price + .button { 
-    margin-top: 2.25em; 
-
-}
-
-/** + .button { 
-    margin-top: 1.2em; 
-
-}*/
+*/ 
 
 .page-text-entry { 
     text-align: left; 
