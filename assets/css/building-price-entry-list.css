@@ -67,7 +67,7 @@
 @media screen and ( max-width: 780px ) { 
     .building-price-entry-list { 
         --column-count: 1; 
-        --column-gutter-y-width: 4em; 
+        --column-gutter-y-width: 3em; 
 
     } 
     
@@ -77,6 +77,12 @@
     
     .building-price-entry:nth-child( -n + 1 ) { 
         margin-top: 0; 
+    } 
+
+    /* Sets button vertical distance from a price block */
+    .building-price-entry-list .price + .button { 
+        margin-top: 0.2em; 
+
     } 
     
 } 
