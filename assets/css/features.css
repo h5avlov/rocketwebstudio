@@ -1,3 +1,10 @@
+/* Sets default feature gutters */
+.features-entry-list {  
+    --column-gutter-x-width: 0em; 
+    --column-gutter-y-width: var( --features-entry-gutter-y-width ); 
+
+} 
+
 .features-entry-list {  
     --icon-code: "\f383"; 
 
@@ -8,22 +15,16 @@
 
 } 
 
-.text-entry + .features-entry-list, 
-.heading + .features-entry-list {
-    margin-top: var( --text-margin-bottom  ); 
+.features-entry-list {
+    margin-top: var( --features-entry-gutter-y-width ); 
 
-}
+} 
 
 .feature { 
     box-sizing: border-box; 
     position: relative;
 
 }  
-
-.feature + .feature { 
-    margin-top: 5em; 
-
-}
 
 .feature:before { 
     margin-bottom: 2em; 
@@ -92,31 +93,3 @@
 
 } 
 
-
-@media screen and ( min-width: 881px ) { 
-    .features-entry-list { 
-        --column-count: 3; 
-        --column-gutter-x-width: 1.5em;  
-
-    } 
-
-    .feature:nth-child( 3n ) { 
-        margin-right: 0; 
-    } 
-    
-    .feature:nth-child( -n + 3 ) { 
-        margin-top: 0; 
-    } 
-
-    .feature { 
-        min-height: 14em; 
-
-    } 
-    
-} 
-
-
-@media screen and ( max-width: 880px ) { 
-    
-    
-} 
