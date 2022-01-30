@@ -325,7 +325,7 @@
 
 @media screen and ( max-width: 420px ) { 
 
-    .home-page .project-entry .project-preview-text-content { 
+    /*.home-page .project-entry .project-preview-text-content { 
         margin-top: 1em; 
         padding-top: 0; padding-bottom: 0; 
         border: none; 
@@ -334,7 +334,6 @@
 
     .home-page .heading.project-preview-heading { 
         margin-bottom: 0; 
-        /*line-height: 1.4; */ 
        
     } 
 
@@ -349,7 +348,7 @@
     .home-page .projects-section .read-more-button:before {  
         float: none; 
     
-    }
+    }*/
 
     
 }

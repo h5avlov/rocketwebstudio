@@ -2,7 +2,7 @@
 
 
 .overview-section-entry { 
-    width: 50%; 
+    /*max-width: 50%; width: auto;  */ 
     /*height: 14rem; */ 
     padding-top: 2.5em; padding-bottom: 2.5em; 
     margin-bottom: var( --workflow-entry-margin-bottom ); 
@@ -57,8 +57,8 @@
 /*@media screen and ( max-width: 940px ) { 
 
     .overview-section-entry { 
-        padding-top: 2em; padding-bottom: 2em; 
+        max-width: none; 
         
     }
     
-}*/
+}*/ 
