@@ -67,10 +67,24 @@
 }  */ 
 
 
-@media screen and ( max-width: 580px ) { 
-    .page-head-text-content { 
-       --sell-points-entry-padding-x: 1.25rem; 
+@media screen and ( max-width: 420px ) { 
+    .sell-points { 
+        --sell-points-entry-padding-top: 4em; 
+        --sell-points-entry-padding-bottom: 5em; 
+    
+    }
 
+    .page-head-text-content { 
+       --sell-points-entry-padding-x: 0; 
+
+    } 
+    
+} 
+
+@media screen and ( max-width: 320px ) { 
+    .sell-points { 
+        --sell-points-entry-padding-bottom: var( --sell-points-entry-padding-top ); 
+    
     } 
     
 }
