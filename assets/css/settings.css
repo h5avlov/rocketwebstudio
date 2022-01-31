@@ -236,15 +236,15 @@
     --copyright-notice-element-margin-x: 0.7rem; 
 
     --copyright-notice-font-family: inherit; 
-    --copyright-notice-font-size: 1.2em; 
+    --copyright-notice-font-size: 14px; 
     
     --copyright-notice-background-color: var( --text-color ); 
     --copyright-notice-text-color: white; 
 
-    --copyright-notice-separator-icon-code: "\f21b"; 
+    --copyright-notice-separator-icon-code: "\f487"; 
     --copyright-notice-separator-width: 1.5rem; 
     --copyright-notice-separator-height: 1.2rem; 
-    --copyright-notice-separator-font-size: 0.5em; 
+    --copyright-notice-separator-font-size: 1em; 
 
 } 
 
