@@ -48,8 +48,8 @@
     --text-entry-margin-bottom: 0.5em; 
     --text-margin-bottom: 3rem; 
     --text-font-family: Arial; 
-    --text-font-size: 16px; 
-    --text-line-height: 1.4;  
+    /*--text-font-size: 16px; 
+    --text-line-height: 1.4;  */
 }
 
 /*-----------------------------------------------------------
@@ -127,7 +127,7 @@
     --main-nav-padding-bottom: 0.8rem; 
     --main-nav-margin-bottom: 0; 
     --main-nav-font-family: MS-Sans; 
-    --main-nav-font-size: 0.75em; 
+    --main-nav-font-size: 1em; 
     --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
     --main-nav-text-smooth-color: rgb( 128, 128, 128 ); 
     --main-nav-background-color: transparent; 
