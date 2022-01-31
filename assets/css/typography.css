@@ -44,14 +44,3 @@
     font-family: "var( --price-font-family )"; 
     src: url( "/assets/fonts/RobotoSlab-Bold.ttf" ); 
 } 
-
-body { 
-    font-family: var( --text-font-family ); 
-    font-size: var( --text-font-size ); 
-    line-height: var( --text-line-height ); 
-} 
-
-.text-entry { 
-    font-size: 0.9em; 
-
-}
