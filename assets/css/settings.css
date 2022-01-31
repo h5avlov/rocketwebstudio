@@ -11,8 +11,8 @@
     --header-margin-bottom: 0; 
     --header-padding-top: 1.5rem; 
     --header-padding-bottom: 0; 
-    --logo-width: 8rem; 
-    --logo-height: 8rem; 
+    --logo-width: 9rem; 
+    --logo-height: var( --logo-width ); 
   
     --id-margin-bottom-inner-page: 0em; 
 
