@@ -111,6 +111,11 @@ body {
 
 
 @media screen and ( max-width: 920px ) { 
+    :root { 
+        --section-margin-bottom: 11rem; 
+
+    }    
+
     /* Adjusts text-to-next-element distance on smaller screens */
     /*.text-entry + :not( .text-entry ) { 
         margin-top: 2rem; 
