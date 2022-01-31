@@ -20,14 +20,14 @@
 } 
 
 .overview-section-entry-heading { 
-    margin-bottom: var( --workflow-entry-heading-margin-bottom );  
+    /*margin-bottom: var( --workflow-entry-heading-margin-bottom );  */ 
     text-transform: uppercase; 
 } 
 
-.overview-section-entry .read-more-button {  
+/*.overview-section-entry .read-more-button {  
     margin-top: 1.2em; 
 
-} 
+} */
 
 .page-body .overview-section-entry-list { 
     margin-top: 4rem; 
