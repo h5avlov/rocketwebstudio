@@ -28,7 +28,7 @@
 
 } 
 
-/* Sets button appearance on hover */
+/* Defines button appearance on hover */
 .read-more-button:hover {  
     background-color: var( --button-hover-background-color ); 
     color: var( --button-hover-text-color ); 
@@ -36,22 +36,57 @@
 
 } 
 
-/* Sets button default vertical distance from a paragraph */
-.text-entry + .button { 
+/* Sets button default vertical distance from a preceding element */
+.button { 
     margin-top: 2rem; 
 
-}  
+} 
 
-/* Sets button default vertical distance from a list */
-.text-list + .button { 
-    margin-top: 2rem; 
+/* Sets button default vertical distance from a heading */
+.heading + .button { 
+    margin-top: 1.5rem; 
 
 }
 
 /* Sets button default vertical distance from a price block */
 .price + .button { 
-    margin-top: 2.25em; 
+    margin-top: 2.7em; 
 
+} 
+
+/* Removes vertical distance between buttons */
+.button + .link.button { 
+    margin-top: 0; 
+
+}
+
+
+@media screen and ( max-width: 780px ) { 
+    
+} 
+
+@media screen and ( max-width: 420px ) { 
+
+    /* Resets button vertical distance from a price block */
+    .price + .button { 
+        margin-top: 0.8em; 
+
+    } 
+
+    /* Resets button default vertical distance from a heading */
+    .heading + .button { 
+        margin-top: 1em; 
+    
+    } 
+
+    .button + .link.button { 
+        /* Sets a line between two or more buttons for improving visual separation */
+        border-top: 1px solid rgba( 255, 255, 255, 0.2 ); 
+        /*background-color: white; 
+        color: var( --text-color ); */
+    
+    }
+    
 } 
 
 
