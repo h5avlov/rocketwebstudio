@@ -48,7 +48,7 @@
     --text-entry-margin-bottom: 0.5em; 
     --text-margin-bottom: 3rem; 
     --text-font-family: Arial; 
-    /*--text-font-size: 16px; 
+    /*--base-font-size: 16px; 
     --text-line-height: 1.4;  */
 }
 
@@ -231,11 +231,12 @@
 ------------------------------------------------------------*/ 
 
 :root { 
+    --copyright-notice-height: 2em; 
     --copyright-notice-padding-y: 1.5rem; 
     --copyright-notice-element-margin-x: 0.7rem; 
 
     --copyright-notice-font-family: inherit; 
-    --copyright-notice-font-size: 1em; 
+    --copyright-notice-font-size: 1.2em; 
     
     --copyright-notice-background-color: var( --text-color ); 
     --copyright-notice-text-color: white; 

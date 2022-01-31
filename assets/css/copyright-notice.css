@@ -1,6 +1,6 @@
 .copyright-notice { 
     /* Places elements on a row and centers them */ 
-    display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; 
+    display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;
     /* margin-left: var( --page-inner-padding-x-correction ); margin-right: var( --page-inner-padding-x-correction );  */
     padding-top: var( --copyright-notice-padding-y ); padding-bottom: var( --copyright-notice-padding-y ); 
 
@@ -12,9 +12,20 @@
     font-family: var( --copyright-notice-font-family ); 
     font-size: var( --copyright-notice-font-size ); 
 
-    /* text-align: center;  */ 
+    text-align: center;  
     overflow: auto; 
 } 
+
+.copyright-notice > * {  
+    height: var( --copyright-notice-height ); line-height: var( --copyright-notice-height );  
+    font-size: inherit; 
+
+} 
+
+/*.copyright-notice > *:not( :first-child ) { 
+    margin-left: 0.5em; 
+
+} */ 
 
 /* Sets horizontal distance between elements */ 
 /* .copyright-notice > *:not( :last-child ) { 
@@ -26,28 +37,42 @@
 
 } 
 
-.copyright-notice > *:not( :last-child ) { 
-    padding-right: var( --copyright-notice-separator-width ); 
-    position: relative; 
-}
-
 /* .copyright-notice > *, 
 .copyright-notice .value { 
     display: inline-block; 
 
-} */
+} */ 
 
-.copyright-notice > *:not( :last-child ):after { 
-    display: block; 
-    width: var( --copyright-notice-separator-width ); height: var( --copyright-notice-separator-height ); line-height: var( --copyright-notice-separator-height ); 
-    position: absolute; right: 0; 
-    top: 0; 
-    /* background-color: var( --text-color-inverted );   */ 
-    font-family: var( --icon-font-family ); font-size: var( --copyright-notice-separator-font-size ); 
-    text-align: center; 
-    content: var( --copyright-notice-separator-icon-code ); 
+.copyright-notice > :first-child { 
+    border: 1px solid; 
 
 } 
+
+.copyright-notice > :last-child { 
+    border-left: 1px solid; 
+
+}
+
+.copyright-notice .value, 
+.copyright-notice .notice { 
+    padding: 0 0.8em; 
+
+}
+
+.copyright-notice .value { 
+    box-sizing: border-box; 
+    height: inherit;   
+    position: relative; 
+
+}
+
+/*.copyright-notice .value:after {  
+    width: var( --copyright-notice-separator-width ); 
+    position: absolute; right: 0; top: 0; 
+    font-family: var( --icon-font-family ); font-size: var( --copyright-notice-separator-font-size ); 
+    content: var( --copyright-notice-separator-icon-code ); 
+
+} */
 
 @media screen and ( max-width: 480px ) { 
     
