@@ -79,7 +79,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: 2.8rem; 
+    --button-height: 4rem; 
     --button-padding-x: 2em; 
     --button-padding-y: ""; 
     --button-margin-top: 1.2rem; 

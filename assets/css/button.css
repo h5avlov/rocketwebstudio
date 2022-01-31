@@ -3,10 +3,12 @@
     display: inline-block; 
 
     /* Sets button height without restricting it */
-    min-height: var( --button-height ); 
+    /*min-height: var( --button-height ); */ 
 
     /* Centers button text vertically */ 
     line-height: var( --button-height ); 
+
+    /*padding-top: 0.5em; padding-bottom: 0.5em; */ 
 
     /* Gives horizontal space around button text  */
     padding-left: var( --button-padding-x ); padding-right: calc( var( --button-padding-x ) / 2.5 ); 
