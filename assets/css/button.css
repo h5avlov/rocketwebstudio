@@ -6,7 +6,7 @@
     /*min-height: var( --button-height ); */ 
 
     /* Centers button text vertically */ 
-    line-height: var( --button-height ); 
+    line-height: var( --icon-side ); 
 
     /*padding-top: 0.5em; padding-bottom: 0.5em; */ 
 
@@ -68,6 +68,11 @@
 } 
 
 @media screen and ( max-width: 420px ) { 
+
+    :root { 
+        --icon-side: 3rem; 
+
+    }
 
     /* Resets button vertical distance from a price block */
     .price + .button { 

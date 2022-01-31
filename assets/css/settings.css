@@ -79,7 +79,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --button-height: 4rem; 
+    /*--button-height: 4rem; */ 
     --button-padding-x: 2em; 
     --button-padding-y: ""; 
     --button-margin-top: 1.2rem; 
@@ -107,7 +107,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --icon-side: var( --button-height ); 
+    --icon-side: 4rem; 
     --icon-font-family: Ionicons; 
 
     --contact-icon-font-size: 1.4rem; 
