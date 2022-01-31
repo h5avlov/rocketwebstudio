@@ -157,11 +157,11 @@
 
 :root { 
     --price-font-family: Impact; 
-    --price-base-font-size: 1rem; 
+    --price-base-font-size: 1.4rem; 
     --price-accent-font-size: 2.5em; 
 
     --price-currency-font-family: Tahoma; 
-    --price-currency-font-size: 0.85rem; 
+    --price-currency-font-size: 1.1rem; 
    
 } 
 
@@ -173,7 +173,7 @@
     --price-block-margin-bottom: 1.5em; 
     --price-block-heading-margin-bottom: 0.2em; 
 
-    --price-block-font-size: 0.85rem; 
+    --price-block-font-size: 1rem; 
    
 } 
 

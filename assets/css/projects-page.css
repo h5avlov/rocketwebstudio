@@ -31,19 +31,19 @@
     position: relative; z-index: 2; 
 } 
 
-.project-preview-text-content > *:not( :last-child ) { 
+/*.project-preview-text-content > *:not( :last-child ) { 
     margin-bottom: 1em; 
-} 
+} */ 
 
 .project-details-button-set > *:not( :last-child ) { 
     margin-right: 0.7rem; 
 
 } 
 
-.project-preview-heading { 
+/*.project-preview-heading { 
     font-size: 1.5rem; 
 
-}
+}*/
 
 .project-entry .featured-image {  
     height: 100%; 

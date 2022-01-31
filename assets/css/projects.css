@@ -2,6 +2,8 @@
     --column-gutter-x-width: 0.2rem; 
     --column-gutter-y-width: 2.5em; 
 
+    --subheading-font-size: 1.2rem; 
+
 } 
 
 /* Removes unneccessary margin top from entries, located on the first row */
@@ -282,7 +284,7 @@
     } 
 
     .home-page .heading.project-preview-heading { 
-        padding-top: 1em; padding-bottom: 1em; 
+        /*padding-top: 1em; padding-bottom: 1em; */ 
         line-height: 1.2; 
        
     }
