@@ -27,9 +27,9 @@
         margin-right: 0; 
     } 
     
-    .product-feature:nth-child( -n + 3 ) { 
+    /*.product-feature:nth-child( -n + 3 ) { 
         margin-top: 0; 
-    } 
+    } */
     
 } 
 
@@ -44,9 +44,9 @@
         margin-right: 0; 
     } 
     
-    .product-feature:first-child { 
+    /*.product-feature:first-child { 
         margin-top: 0; 
-    } 
+    } */
     
     
 } 

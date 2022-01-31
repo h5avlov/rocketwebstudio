@@ -32,10 +32,10 @@
 
 } 
 
-.features-entry-list {
+/*.features-entry-list {
     margin-top: var( --features-entry-gutter-y-width ); 
 
-} 
+} */ 
 
 .feature { 
     box-sizing: border-box; 
@@ -84,8 +84,8 @@
 
 } 
 
-.features-section .read-more-button { 
+/*.features-section .read-more-button { 
     margin-top: 2.5em; 
 
-} 
+} */
 

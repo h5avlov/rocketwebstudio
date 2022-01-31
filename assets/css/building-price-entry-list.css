@@ -18,7 +18,7 @@
 
 .building-price-entry-list { 
     width: 100%; 
-    margin-top: 5rem; 
+    /*margin-top: 5rem; */ 
 
 }
 
@@ -57,9 +57,9 @@
         margin-right: 0; 
     } 
     
-    .building-price-entry:nth-child( -n + 2 ) { 
+    /*.building-price-entry:nth-child( -n + 2 ) { 
         margin-top: 0; 
-    } 
+    } */
     
 } 
 

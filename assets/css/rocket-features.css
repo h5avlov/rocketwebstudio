@@ -42,9 +42,9 @@
         margin-right: 0; 
     } 
     
-    .rocket-feature:nth-child( -n + 3 ) { 
+    /*.rocket-feature:nth-child( -n + 3 ) { 
         margin-top: 0; 
-    } 
+    } */
     
 } 
 
@@ -59,9 +59,9 @@
         margin-right: 0; 
     } 
     
-    .rocket-feature:first-child { 
+    /*.rocket-feature:first-child { 
         margin-top: 0; 
-    } 
+    } */
     
 } 
 

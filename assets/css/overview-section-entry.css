@@ -1,9 +1,15 @@
 @import url( "./overview-section.css" ); 
 
 
+.overview-section-entry-list { 
+    --column-gutter-y-width: 5em; 
+
+}
+
 .overview-section-entry { 
-    padding-top: 2.5em; padding-bottom: 2.5em; 
-    margin-bottom: var( --workflow-entry-margin-bottom ); 
+    /*padding-top: 2.5em; padding-bottom: 2.5em; */
+    /*margin-bottom: var( --workflow-entry-margin-bottom ); */ 
+    /*margin-top: var( --workflow-entry-margin-top ); */
     position: relative; 
     
 } 

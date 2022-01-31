@@ -1,33 +1,29 @@
 .home-page .project-entry-list { 
     --column-gutter-x-width: 0.2rem; 
+    --column-gutter-y-width: 2.5em; 
 
 } 
 
 /* Removes unneccessary margin top from entries, located on the first row */
-.projects-section .project-entry:nth-child( -n + 1 ) { 
+/*.projects-section .project-entry:nth-child( -n + 1 ) { 
     margin-top: 0; 
-} 
+} */ 
 
 /* Removes unneccessary margin right from entries, located on the last column */
 .projects-section .project-entry:nth-child( n ) { 
     margin-right: 0; 
 } 
 
-.home-page .project-preview-section-body { 
-    /*max-width: none; */ 
-
-} 
-
-.home-page .projects-section .random-access-entry-list { 
+/*.home-page .projects-section .random-access-entry-list { 
     --column-count: 2; 
     --column-gutter-x-width: 0.4rem; 
 
-} 
+} */
 
 /* Removes unneccessary margin top from entries, located on the first row */
-.home-page .projects-section .random-access-entry:nth-child( -n + 2 ) { 
+/*.home-page .projects-section .random-access-entry:nth-child( -n + 2 ) { 
     margin-top: 0; 
-} 
+} */
 
 /* Removes unneccessary margin right from entries, located on the last column */
 .home-page .projects-section .random-access-entry:nth-child( 2n ) { 
@@ -60,17 +56,17 @@
 
 .home-page .project-entry { 
     /*height: 100%; */ 
-    margin: 0; 
+    /*margin: 0; */ 
     /*position: absolute; left: 0; top: 100%; z-index: 1;  */ 
     /*background-color: white; 
     color: var( --text-color ); */ 
    
 } 
 
-.home-page .project-entry:not( :first-child ) { 
+/*.home-page .project-entry:not( :first-child ) { 
     margin-top: 2.5rem; 
 
-} 
+} */ 
 
 .home-page .project-preview-text-content  { 
     box-sizing: border-box; 
