@@ -1,16 +1,5 @@
 @import url( "./page.css" ); 
 
-.section:not( .about-section ) {  
-    --heading-font-size: 1.6em; 
-    /*--heading-subheading-font-size-ratio: 0.6; */
-
-} 
-
-.section .entry-list {  
-    --heading-font-size: 1.4em; 
-
-} 
-
 .section {  
     margin-bottom: var( --section-margin-bottom ); 
 

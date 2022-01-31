@@ -1,8 +1,39 @@
 :root { 
-    --heading-font-size: 1.8em;  
+    /* Sets default general font size */
+    --text-font-size: 12px; 
+    /* Sets default heading and subheading font size in relation to general font size */
+    --heading-font-size: 2.3em;  
     --subheading-font-size: 0.8rem; 
 
+    /* Sets default text line height */
+    --text-line-height: 1.4;
+
 } 
+
+/* Sets section heading font size */
+.section:not( .about-section ) {  
+    --heading-font-size: 2em; 
+    /*--heading-subheading-font-size-ratio: 0.6; */
+
+} 
+
+/* Sets entry heading font size */
+.section .entry-list {  
+    --heading-font-size: 1.7em; 
+
+} 
+
+body { 
+    font-family: var( --text-font-family ); 
+    font-size: var( --text-font-size ); 
+    line-height: var( --text-line-height ); 
+} 
+
+.text-entry { 
+    font-size: 16px; 
+
+}
+
 
 .heading {  
     font-family: "var( --heading-font-family )"; 
@@ -25,7 +56,7 @@
 .heading.page-heading { 
     box-sizing: border-box;  
 
-}
+} 
 
 /*.heading.page-heading { 
     font-size: var( --page-heading-font-size ); 
@@ -41,10 +72,10 @@
 } 
 
 /* Sets last paragraph from a sequence of paragraphs vertical distance to any element, that follows */ 
-.text-entry + :not( .text-entry ) { 
+/*.text-entry + :not( .text-entry ) { 
     margin-top: var( --text-margin-bottom ); 
 
-}  
+}  */
 
 .page-text-entry { 
     text-align: left; 
@@ -62,10 +93,10 @@
 
 } 
 
-.page-text-entry:last-of-type + :not( .page-featured-image ) { 
+/*.page-text-entry:last-of-type + :not( .page-featured-image ) { 
     margin-top: 4rem; 
 
-} 
+} */
 
 .page-text-entry:last-of-type + .website-structure-chart { 
     margin-top: 0; 
@@ -75,10 +106,10 @@
 
 @media screen and ( max-width: 920px ) { 
     /* Adjusts text-to-next-element distance on smaller screens */
-    .text-entry + :not( .text-entry ) { 
+    /*.text-entry + :not( .text-entry ) { 
         margin-top: 2rem; 
 
-    }  
+    }  */
 
 } 
 
@@ -99,15 +130,18 @@
 
 } 
 
-@media screen and ( max-width: 480px ) { 
+@media screen and ( max-width: 680px ) { 
     :root { 
-        --text-font-size: 14px; 
+        --text-font-size: 11px; 
         
     } 
 
-    .text-entry { 
-        font-size: 1em; 
-    
-    }
+} 
+
+@media screen and ( max-width: 320px ) { 
+    :root { 
+        --text-font-size: 10px; 
+        
+    } 
 
 } 
