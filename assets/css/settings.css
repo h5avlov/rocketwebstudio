@@ -122,7 +122,7 @@
 ------------------------------------------------------------*/
 
 :root { 
-    --main-nav-height: 4rem; 
+    --main-nav-height: 5rem; 
     --main-nav-padding-top: 2.5rem; 
     --main-nav-padding-bottom: 0.8rem; 
     --main-nav-margin-bottom: 0; 
@@ -309,7 +309,7 @@
 ------------------------------------------------------------*/ 
 
 :root {  
-    --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-padding-bottom ) + var( --main-nav-height ) ); 
+    --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-height ) + var( --main-nav-padding-bottom ) ); 
     --sell-points-entry-padding-x: 5%; 
     --sell-points-entry-padding-top: var( --page-head-text-content-default-padding-y ); 
     --sell-points-entry-padding-bottom: calc( 1.4 * var( --sell-points-entry-padding-top ) ); 

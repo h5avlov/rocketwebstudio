@@ -1,6 +1,6 @@
 { 
     "title": "Отидете на страница", 
-    "labelOnMobile": "Навигация", 
+    "labelOnMobile": "Изберете страница", 
     "entryList": [ 
         { 
             "target": "/", 

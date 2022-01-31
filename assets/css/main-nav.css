@@ -191,6 +191,12 @@
 .main-nav .subnav-entry-list .nav-entry:after { 
     background-color: var( --text-color ); 
 
+} 
+
+/* Removes default button-after-heading top margin */
+.main-nav .button { 
+    margin-top: 0; 
+
 }
 
 .main-nav-button { 
@@ -254,7 +260,7 @@
 @media screen and ( max-width: 920px ) { 
 
     :root { 
-        --sell-points-padding-y: 4.5rem; 
+        /*--sell-points-padding-y: 4.5rem; */ 
         --main-nav-padding-top: 0rem; 
         --main-nav-padding-bottom: 0rem; 
 
@@ -267,7 +273,8 @@
 
     .main-nav { 
         flex-direction: column; justify-content: flex-start; 
-        height: var( --main-nav-height ); overflow: hidden;  
+        /*height: var( --main-nav-height ); */ 
+        overflow: hidden;  
 
     } 
 
