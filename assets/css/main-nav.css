@@ -2,7 +2,7 @@
     display: flex; flex-direction: row; justify-content: center; 
     width: 100%;   
     padding-top: var( --main-nav-padding-top ); padding-bottom: var( --main-nav-padding-bottom ); 
-    position: absolute; z-index: 3;  
+    /*position: absolute; z-index: 3;  */ 
     background-color: var( --main-nav-background-color ); 
     font-family: "var( --main-nav-font-family )"; 
     font-size: var( --main-nav-font-size ); 
@@ -39,11 +39,11 @@
     content: "";  
 } 
 
-.main-nav .has-subnav .nav-entry-text { 
+/*.main-nav .has-subnav .nav-entry-text { 
     padding-right: 0; 
 
 
-}
+}*/
 
 /* Clears highlight on click for subnavigation links */ 
 .subnav-entry-list .nav-link:focus:after { 
@@ -84,8 +84,15 @@
     text-transform: uppercase;  
 } 
 
+.nav-entry-text:not( :last-child ) { 
+    padding-right: 0; 
+    margin-right: 0.4em; 
+
+}
+
 .subnav-label { 
     display: inline-block;   
+    /*background-color: var( --background-color ); color: var( --text-color ); */ 
     cursor: pointer; 
 
 } 
@@ -110,16 +117,18 @@
 }
 
 .main-nav .subnav-entry-list { 
-    min-width: 20rem;  
-    padding: 0 1rem;  
-    position: absolute; top: -10000px; left: 0; 
+    /*min-width: 20em;  */
+    /*padding: 0 1rem;  */ 
+    padding-left: 1em; padding-right: 1em; 
+    position: absolute; top: -10000px; 
+    left: 0; 
     z-index: 3; 
     background-color: var( --background-color );  
 
 } 
 
 .main-nav .subnav-entry-list .nav-entry { 
-    width: 100%; 
+    width: 100%; min-width: 35em; 
     color: var( --text-color ); 
 
 } 
@@ -279,10 +288,10 @@
     } 
 
     .main-nav > .nav { 
-        display: flex; flex-direction: column; align-items: center; 
+        display: flex; flex-direction: column; justify-content: center; align-items: center; 
         width: 100%; 
-        min-height: 100%; 
-        padding-top: 4rem; padding-bottom: 4rem; 
+        min-height: 100vh; 
+        /*padding-top: 4rem; padding-bottom: 4rem; */ 
         position: absolute; left: -10000px; top: 0; 
         z-index: 2; 
         background-color: var( --text-color ); 
@@ -316,10 +325,10 @@
 
     } 
 
-    .main-nav .has-subnav .nav-entry-text { 
+    /*.main-nav .has-subnav .nav-entry-text { 
         padding-right: 0.75rem; 
     
-    }
+    }*/
 
     .main-nav .nav-entry:after { 
         content: none; 
@@ -333,8 +342,10 @@
 
     .subnav-label:before { 
         display: block; 
-        border-left-style: solid; border-left-width: 1px; 
+        /*border-left-style: solid; border-left-width: 1px; */
         /*border-radius: 20%; */ 
+        background-color: var( --text-color ); 
+        color: var( --text-color-inverted ); 
 
     } 
 
@@ -418,7 +429,7 @@
 
     .main-nav-button {    
         display: block; margin-left: auto; margin-right: auto; 
-        height: var( --main-nav-height-full ); line-height: var( --main-nav-height-full ); 
+        height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
         border: none;  
         color: var( --text-color-inverted ); 
     

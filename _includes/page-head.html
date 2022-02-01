@@ -1,5 +1,6 @@
 <section class= "page-head single-entry-page-head{% if include.pageNavEntryList %} has-page-nav{% endif %}"> 
     <article class= "page-head-entry"> 
+        {% include header.html %} 
         <section class= "text-content page-head-text-content"> 
             {% include id.html 
                 tagline= include.idTagline 
@@ -13,7 +14,7 @@
             {% endif %}
 
             {% include paragraph.html  
-                className= "page-head-text-entry" 
+                className= "page-head-title" 
                 text= include.title 
             %} 
 

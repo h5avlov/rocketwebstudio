@@ -138,12 +138,12 @@
     --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
     --main-nav-subnav-background-color: var( --text-color-inverted ); 
 
-    --main-nav-height-full: calc( 
+    /*--main-nav-height-full: calc( 
         ( var( --main-nav-padding-top ) + var( --main-nav-height ) + var( --main-nav-padding-bottom ) ) 
     ); 
     --sell-points-padding-y: calc( 
         var( --main-nav-font-size-ratio ) * var( --main-nav-height-full ) 
-    ); 
+    ); */ 
 }
 
 

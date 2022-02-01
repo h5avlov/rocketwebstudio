@@ -5,7 +5,7 @@
 
 .page-head { 
     /* Sets a bottom border on page head to compensate for text content moving down and thus prevent it from sticking out of page head */
-    border-style: solid; border-color: transparent; border-bottom-width: var( --sell-points-padding-y ); 
+    border-style: solid; border-color: transparent; border-bottom-width: 5em; 
 
     /* Sets distance to next content section */
     margin-bottom: var( --section-margin-bottom ); 
@@ -39,12 +39,14 @@
     /* Centers text vertically */ 
     margin-left: auto; margin-right: auto; 
 
+    margin-bottom: -5em; 
+
     /* Sets default top and bottom padding */
     padding-top: var( --page-head-text-content-default-padding-y ); padding-bottom: var( --page-head-text-content-default-padding-y ); 
 
     /* Moves page head text content visually out of page head in vertical direction */
-    position: relative; top: var( --sell-points-padding-y ); 
-    z-index: 2; 
+    /*position: relative; top: var( --sell-points-padding-y ); 
+    z-index: 2; */ 
 
     /* Sets default text content background and text colors */ 
     background-color: var( --page-head-background-color ); background-clip: padding-box; 
