@@ -67,7 +67,7 @@
 @media screen and ( max-width: 780px ) { 
     .building-price-entry-list { 
         --column-count: 1; 
-        --column-gutter-y-width: 5em; 
+        --column-gutter-y-width: 4em; 
 
     } 
     

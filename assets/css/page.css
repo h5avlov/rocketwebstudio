@@ -1,26 +1,30 @@
 :root { 
-    /* Sets default general font size */
-    --base-font-size: 12px; 
+    /* Sets default general font size */ 
+    --base-font-size: 16px;  
     --text-font-size: 16px; 
     /* Sets default heading and subheading font size in relation to general font size */
-    --heading-font-size: 2.4em;  
-    --subheading-font-size: 1rem; 
 
     /* Sets default text line height */
     --text-line-height: 1.4;
 
 } 
 
+.page { 
+    --heading-font-size: 1.8em;  
+    --subheading-font-size: calc( 0.75 * var( --text-font-size ) ); 
+
+}
+
 /* Sets section heading font size */
 .section:not( .about-section ) {  
-    --heading-font-size: 2.1em; 
+    --heading-font-size: 1.6em; 
     /*--heading-subheading-font-size-ratio: 0.6; */
 
 } 
 
 /* Sets entry heading font size */
 .section .entry-list {  
-    --heading-font-size: 1.6em; 
+    --heading-font-size: 1.3em; 
 
 } 
 
@@ -111,10 +115,10 @@ body {
 
 
 @media screen and ( max-width: 920px ) { 
-    :root { 
-        --section-margin-bottom: 11rem; 
+    /*:root { 
+        --section-margin-bottom: 8rem; 
 
-    }    
+    }    */
 
     /* Adjusts text-to-next-element distance on smaller screens */
     /*.text-entry + :not( .text-entry ) { 
@@ -141,18 +145,27 @@ body {
 
 } 
 
-@media screen and ( max-width: 680px ) { 
+@media screen and ( max-width: 740px ) { 
     :root { 
-        --base-font-size: 11px; 
+        --base-font-size: 14px; 
+        --section-margin-bottom: 7rem; 
         
     } 
 
 } 
 
-@media screen and ( max-width: 320px ) { 
+/*@media screen and ( max-width: 420px ) { 
     :root { 
-        --base-font-size: 10px; 
+        --base-font-size: 14px; 
         
     } 
 
-} 
+} */
+
+/*@media screen and ( max-width: 320px ) { 
+    :root { 
+        --base-font-size: 13px; 
+        
+    } 
+
+} */

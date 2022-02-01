@@ -2,7 +2,7 @@
 
 
 .overview-section-entry-list { 
-    --column-gutter-y-width: 5em; 
+    --column-gutter-y-width: 4em; 
 
 }
 
@@ -18,12 +18,10 @@
     margin-bottom: 0; 
 }
 
-.overview-section-entry .heading:before { 
-    --icon-size: 2em; 
-
+.overview-section-entry:before { 
     display: block;  
-    margin: 0 auto; 
-    font-family: var( --text-font-family ); 
+    font-family: "var( --subheading-font-family )"; 
+    font-size: 1em; 
 
 } 
 
@@ -37,9 +35,9 @@
 
 } */
 
-.page-body .overview-section-entry-list { 
+/*.page-body .overview-section-entry-list { 
     margin-top: 4rem; 
-} 
+} */
 
 
 /*@media screen and ( max-width: 940px ) { 

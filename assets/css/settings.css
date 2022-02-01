@@ -11,12 +11,12 @@
     --header-margin-bottom: 0; 
     --header-padding-top: 1.5rem; 
     --header-padding-bottom: 0; 
-    --logo-width: 9rem; 
+    --logo-width: 7rem; 
     --logo-height: var( --logo-width ); 
   
     --id-margin-bottom-inner-page: 0em; 
 
-    --section-margin-bottom: 12rem; 
+    --section-margin-bottom: 9rem; 
     --heading-margin-bottom: ""; 
     --subheading-margin-bottom: ""; 
     --paragraph-margin-bottom: ""; 
@@ -37,7 +37,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --heading-margin-bottom: 1em; 
+    /*--heading-margin-bottom: 1em; */ 
     --heading-font-family: A1SerifBold; 
     /*--page-heading-font-size: 2em; 
     --page-subheading-font-size: calc( var( --heading-subheading-font-size-ratio ) * var( --page-heading-font-size ) );*/ 
@@ -107,7 +107,7 @@
 ------------------------------------------------------------*/ 
 
 :root { 
-    --icon-side: 4rem; 
+    --icon-side: 3rem; 
     --icon-font-family: Ionicons; 
 
     --contact-icon-font-size: 1.4rem; 
@@ -122,12 +122,13 @@
 ------------------------------------------------------------*/
 
 :root { 
-    --main-nav-height: 5rem; 
-    --main-nav-padding-top: 2.5rem; 
-    --main-nav-padding-bottom: 0.8rem; 
+    --main-nav-height: 5em; 
+    --main-nav-padding-top: 2.5em; 
+    --main-nav-padding-bottom: 1em; 
     --main-nav-margin-bottom: 0; 
     --main-nav-font-family: MS-Sans; 
-    --main-nav-font-size: 1em; 
+    --main-nav-font-size-ratio: 0.7; 
+    --main-nav-font-size: calc( var( --main-nav-font-size-ratio ) * var( --text-font-size ) ); 
     --main-nav-text-color: rgba( 255, 255, 255, 0.8 ); 
     --main-nav-text-smooth-color: rgb( 128, 128, 128 ); 
     --main-nav-background-color: transparent; 
@@ -136,6 +137,13 @@
     --main-nav-link-current-mark-height: 2px; 
     --main-nav-link-current-mark-color: var( --main-nav-text-color ); 
     --main-nav-subnav-background-color: var( --text-color-inverted ); 
+
+    --main-nav-height-full: calc( 
+        ( var( --main-nav-padding-top ) + var( --main-nav-height ) + var( --main-nav-padding-bottom ) ) 
+    ); 
+    --sell-points-padding-y: calc( 
+        var( --main-nav-font-size-ratio ) * var( --main-nav-height-full ) 
+    ); 
 }
 
 
@@ -157,11 +165,11 @@
 
 :root { 
     --price-font-family: Impact; 
-    --price-base-font-size: 1.4rem; 
+    --price-base-font-size: 1.1rem; 
     --price-accent-font-size: 2.5em; 
 
     --price-currency-font-family: Tahoma; 
-    --price-currency-font-size: 1.1rem; 
+    --price-currency-font-size: 0.9rem; 
    
 } 
 
@@ -198,7 +206,7 @@
 :root { 
     --building-block-entry-list-column-gutter-x-width: 0.8em; 
 
-    --building-block-icon-margin-bottom: 1.2em;   
+    --building-block-icon-margin-bottom: 0.5em;   
     --building-block-icon-font-size: 1.8em; 
     --building-block-icon-code: "\f383"; 
 
@@ -277,7 +285,7 @@
     --page-head-no-nav-line-pull-x: 25%; 
     --page-head-no-nav-text-entry-margin-up: 0.5em; 
 
-    --page-head-text-content-default-padding-y: 7rem; 
+    --page-head-text-content-default-padding-y: 5rem; 
     --page-head-text-content-border-width: 1px; 
     --page-head-text-content-border-color: rgba( 255, 255, 255, 0.4 ); 
     --page-head-text-content-box-shadow-spread: 5px;
@@ -309,7 +317,6 @@
 ------------------------------------------------------------*/ 
 
 :root {  
-    --sell-points-padding-y: calc( var( --main-nav-padding-top ) + var( --main-nav-height ) + var( --main-nav-padding-bottom ) ); 
     --sell-points-entry-padding-x: 5%; 
     --sell-points-entry-padding-top: var( --page-head-text-content-default-padding-y ); 
     --sell-points-entry-padding-bottom: calc( 1.4 * var( --sell-points-entry-padding-top ) ); 

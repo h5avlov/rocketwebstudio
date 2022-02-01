@@ -16,6 +16,6 @@
     counter-increment: workflow-entry-number; 
 } 
 
-.overview-section-entry-heading:before { 
+.overview-section-entry:before { 
     content: counter( workflow-entry-number ); 
 } 

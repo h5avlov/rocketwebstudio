@@ -1,5 +1,5 @@
 .product-features-section { 
-    --features-entry-gutter-y-width: 7em; 
+    --features-entry-gutter-y-width: 6em; 
 
 } 
 
@@ -34,6 +34,10 @@
 } 
 
 @media screen and ( max-width: 880px ) { 
+    .product-features-section { 
+        --features-entry-gutter-y-width: 4em; 
+    
+    } 
 
     .product-features-entry-list { 
         --column-count: 1; 
