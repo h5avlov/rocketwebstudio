@@ -5,9 +5,3 @@ dataLocation: data
 ---  
 
 {{ content }} 
-
-{% assign pageData= site.data[ page.dataFileName ] %}  
-
-{% include article-page.html 
-    articlePage= pageData 
-%} 
