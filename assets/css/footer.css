@@ -11,15 +11,10 @@
 } 
 
 /* Specifies footer members vertical distance */
-.footer > * { 
-    margin-bottom: var( --footer-members-margin-bottom ); 
+.footer > * + * { 
+    margin-top: var( --footer-members-margin-bottom ); 
 
 } 
-
-.footer > :last-child { 
-    margin-bottom: 0; 
-
-}
 
 .footer-section-heading, 
 .footer-section-text-entry { 

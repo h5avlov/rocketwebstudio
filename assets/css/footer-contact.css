@@ -89,13 +89,18 @@
 } 
 
 @media screen and ( max-width: 480px ) { 
-    .quick-contact-entry-set { 
+    .footer .quick-contact-entry-set { 
         --column-count: 1;                  
         --column-gutter-x-width: 0rem; 
         --column-gutter-y-width: 2.5em; 
     } 
 
-    .quick-contact-entry:not( :last-child ):after { 
+    .footer .quick-contact-entry-set { 
+        margin-top: 0; 
+    
+    } 
+
+    .footer .quick-contact-entry:not( :last-child ):after { 
         content: none; 
     
     }

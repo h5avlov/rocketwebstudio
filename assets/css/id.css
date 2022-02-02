@@ -19,7 +19,7 @@
 }
 
 .footer .id { 
-    margin-bottom: var( --footer-id-margin-bottom ); 
+    /*margin-bottom: var( --footer-id-margin-bottom ); */ 
     text-align: center;  
 } 
 
