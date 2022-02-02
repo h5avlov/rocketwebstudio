@@ -16,17 +16,24 @@
 }
 
 /* Sets section heading font size */
-.section:not( .about-section ) {  
+.section:not( .about-section ), 
+.article-page h2 {  
     --heading-font-size: 1.6em; 
-    /*--heading-subheading-font-size-ratio: 0.6; */
+    /*--heading-subheading-font-size-ratio: 0.6; */ 
 
 } 
 
 /* Sets entry heading font size */
-.section .entry-list {  
+.section .entry-list, 
+.article-page h3 {  
     --heading-font-size: 1.3em; 
 
 } 
+
+.article-page h4 { 
+    --heading-font-size: 1.1em; 
+
+}
 
 html, 
 body { 
@@ -39,7 +46,8 @@ body {
     line-height: var( --text-line-height ); 
 } 
 
-.text-entry { 
+.text-entry, 
+.text-list-entry { 
     font-size: var( --text-font-size ); 
 
 }
@@ -53,7 +61,7 @@ body {
 } 
 
 .subheading { 
-    margin-bottom: var( --subheading-margin-bottom ); 
+    /*margin-bottom: var( --subheading-margin-bottom ); */ 
     font-family: "var( --subheading-font-family )"; 
     font-size: var( --subheading-font-size ); 
 } 
@@ -68,6 +76,11 @@ body {
 
 } 
 
+.subheading + .heading { 
+    margin-top: 0.2em; 
+
+}
+
 /*.heading.page-heading { 
     font-size: var( --page-heading-font-size ); 
 } 
@@ -75,6 +88,11 @@ body {
 .page-subheading { 
     font-size: var( --page-subheading-font-size ); 
 } */
+
+.heading + .text-entry { 
+    margin-top: 1em; 
+
+}
 
 /* Sets paragraph to paragraph vertical distance */ 
 .text-entry + .text-entry { 
@@ -138,8 +156,9 @@ body {
 
 @media screen and ( max-width: 520px ) { 
     /* Left aligns section headings and subheadings text where a paragraph (with left aligned text) comes right after */
-    .section-heading:not( .sell-points .heading ):not( .features-section .heading ), 
-    .section-subheading:not( .sell-points .heading ):not( .features-section .heading ) {  
+    .section-heading:not( .sell-points .heading ):not( .features-section .heading ):not( .contact-page .section-heading ), 
+    .section-subheading:not( .sell-points .heading ):not( .features-section .heading ):not( .contact-page .section-subheading ), 
+    .page-heading {  
         text-align: left; 
     } 
 
