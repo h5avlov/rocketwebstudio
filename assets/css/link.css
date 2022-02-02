@@ -1,3 +1,9 @@
+/* Decreases default right padding of buttons with an icon on the right */
+.read-more-button.has-icon { 
+    padding-right: calc( var( --button-padding-x ) / 2.5 ); 
+
+}
+
 /* Turns back the CSS reset removed default link underlining in text */
 .text-entry > .link { 
     text-decoration: underline; 

@@ -1,4 +1,4 @@
-<ul class= "entry-list nav-entry-list{% if include.className %} {{ include.className }}{% endif %}"> 
+<ul class= "entry-list nav-entry-list{% if include.className %} {{ include.className }}{% endif %}" style= "--icon-code: '\f3d0';"> 
 
 {% assign i = 1 %} 
 {% for entry in include.data %}  
@@ -20,7 +20,7 @@
         %}  
         {% if entry.nav %}   
             <input id= "switch-subnav-checkbox-{{ i }}" class= "checkbox switch-subnav-checkbox" type= "checkbox" /> 
-            <label for= "switch-subnav-checkbox-{{ i }}" class= "subnav-label has-icon" style= "--icon-code: '\f3d0';">
+            <label for= "switch-subnav-checkbox-{{ i }}" class= "subnav-label has-icon">
                 <span class= "label-text">Падащо меню</span>    
             </label> 
 
