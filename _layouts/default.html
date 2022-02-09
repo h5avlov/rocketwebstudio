@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta name="description" content="{{ page.description }}" /> 
 
-    {% if page.indexing == false or page.canonical != page.permalink %} 
+    {% if page.noindex == true %} 
         <meta name="robots" content="noindex" /> 
     {% endif %} 
 
