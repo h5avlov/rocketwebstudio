@@ -1,41 +1,41 @@
 ---
 layout: front-page 
 permalink: / 
-title:  "Дизайн, изграждане и оптимизация на уеб сайт от Rocket Web Studio" 
-description: "Спечелете нови клиенти с атрактивен сайт, представящ Вашия бизнес в най-добрата му светлина." 
-label: home 
+title:  "Дизайн, изработване и оптимизация (SEO) на уеб сайт от Rocket" 
+description: "Спечелете нови клиенти с бърз, атрактивен и оптимизиран сайт." 
+label: "home" 
 --- 
 
 
 {% include sell-points.html 
-    data= site.data.sellPoints 
+    data = site.data.sellPoints 
 %}   
 
 {% include about.html 
-    data= site.data.about 
+    data = site.data.about 
 %} 
 
 {% include rocket-features.html 
-    data= site.data.rocketFeatures 
+    data = site.data.rocketFeatures 
 %} 
 
 {% include product-features.html 
-    data= site.data.productFeatures 
+    data = site.data.productFeatures 
 %}
 
-{% assign workflowSections= site.data.workflowPage.body | where: "type", "sections" | first %} 
+{% assign workflowSections = site.data.workflowPage.body | where: "type", "sections" | first %} 
 {% include workflow.html 
-    head= site.data.workflow.head
-    body= workflowSections.body 
+    head = site.data.workflow.head
+    body = workflowSections.body 
 %} 
 
 {% include services.html 
-    head= site.data.services.head 
-    body= site.data.servicesPage.sections 
+    head = site.data.services.head 
+    body = site.data.servicesPage.sections 
 %} 
 
-{% assign ordered= site.projects | sort: "order" %}
+{% assign ordered = site.projects | sort: "order" %}
 {% include projects.html 
-    head= site.data.projectsSection 
-    body= ordered 
+    head = site.data.projectsSection 
+    body = ordered 
 %} 
