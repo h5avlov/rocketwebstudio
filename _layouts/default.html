@@ -19,9 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta name="description" content="{{ page.description }}" /> 
 
-    {% if page.noindex == true %} 
+    <!--{% if page.noindex == true %} 
         <meta name="robots" content="noindex" /> 
-    {% endif %} 
+    {% endif %} --> 
+
+    <meta name="robots" content="noindex,nofollow" /> 
 
     {% if page.canonical %} 
         <link rel= "canonical" href= "{{ site.url | append: page.canonical }}" />  
