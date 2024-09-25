@@ -11,8 +11,14 @@
 
         gtag('config', 'G-N0SQ1L2Q14');
     </script>-->
-    
-    <link rel="stylesheet" href= "/assets/css/style.css" /> 
+     
+    {%- if jekyll.environment == "production" -%}
+        {%- assign base_url = site.base_url -%} 
+    {%- elsif jekyll.environment == "development" -%} 
+        {%- assign base_url = "" -%}
+    {%- endif -%} 
+
+    <link rel="stylesheet" href= "{{ base_url }}/assets/css/style.css" /> 
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,7 +37,7 @@
 
     <title>{{ page.title }}</title> 
 
-    <link rel="shortcut icon" href= "/favicon/favicon.png"> 
+    <link rel="shortcut icon" href= "{{ base_url }}/favicon/favicon.png"> 
 </head>
 <body class= "page {{ layout.type }} {{ page.label | split: ' ' | join: '-' }}-page"> 
 

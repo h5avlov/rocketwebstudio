@@ -5,7 +5,7 @@
 
 <figure 
     class= "{{ prefixClassNames }} {{ include.className }}" 
-    style= "background-image: url( '/assets/images/{{ include.image.src }}' )" 
+    style= "background-image: url( '{{ base_url }}/assets/images/{{ include.image.src }}' )" 
 > 
     {% include image.html 
         src= include.image.src 
