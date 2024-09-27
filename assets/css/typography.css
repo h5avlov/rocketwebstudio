@@ -1,46 +1,36 @@
+--- 
+--- 
 
 /* Registers heading font */ 
-/* @font-face {
-    font-family: var( --heading-font-family );
-    src: url( "/assets/fonts/impact.ttf" ); 
-}   */
-
 @font-face {
     font-family: "var( --heading-font-family )"; 
-    src: url( "/assets/fonts/RobotoSlab-Black.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/RobotoSlab-Black.ttf" ); 
 }
 
 /* Registers icon font */ 
 @font-face {
     font-family: Ionicons; 
-    src: url( "/assets/fonts/ionicons.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/ionicons.ttf" ); 
 } 
 
 /* Registers sell points entry heading font */ 
 @font-face {
     font-family: "var( --sell-points-entry-heading-font-family )"; 
-    src: url( "/assets/fonts/A1SerifBold.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/A1SerifBold.ttf" ); 
 } 
 
 @font-face {
     font-family: "var( --main-nav-font-family )"; 
-    src: url( "/assets/fonts/micross.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/micross.ttf" ); 
 } 
 
 @font-face {
     font-family: "var( --subheading-font-family )"; 
-    src: url( "/assets/fonts/micross.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/micross.ttf" ); 
 }
-
-
-/* Registers price font */ 
-/* @font-face {
-    font-family: "var( --price-font-family )"; 
-    src: url( "/assets/fonts/AlfaSlabOneRegular.ttf" ); 
-}   */
 
 /* Registers price font */ 
 @font-face {
     font-family: "var( --price-font-family )"; 
-    src: url( "/assets/fonts/RobotoSlab-Bold.ttf" ); 
+    src: url( "{{ base_url }}/assets/fonts/RobotoSlab-Bold.ttf" ); 
 } 
