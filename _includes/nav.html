@@ -13,6 +13,7 @@
     <li 
         class= "{{ classNames | split: ',' | join: ' ' }}" 
     > 
+        {%- include set-base-url.html -%} 
         {%- assign target = base_url | append: entry.target -%} 
     
         {% include link.html 

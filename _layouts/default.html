@@ -12,11 +12,7 @@
         gtag('config', 'G-N0SQ1L2Q14');
     </script>-->
      
-    {%- if jekyll.environment == "production" -%}
-        {%- assign base_url = site.base_url -%} 
-    {%- elsif jekyll.environment == "development" -%} 
-        {%- assign base_url = "" -%}
-    {%- endif -%} 
+    {%- include set-base-url.html -%} 
 
     <link rel="stylesheet" href= "{{ base_url }}/assets/css/style.css" /> 
 

@@ -1,0 +1,5 @@
+{%- if jekyll.environment == "production" -%}
+    {%- assign base_url = site.base_url -%} 
+{%- elsif jekyll.environment == "development" -%} 
+    {%- assign base_url = "" -%}
+{%- endif -%} 
