@@ -1,7 +1,7 @@
 .logo { 
     display: inline-block; 
     width: var( --logo-width ); height: var( --logo-height ); 
-    background-image: url( "/assets/images/logo.png" ); 
+    /* background-image: url( "/assets/images/logo.png" );   */
     background-size: contain; background-repeat: no-repeat; background-position: center bottom; 
     text-indent: -10000px; 
 }
@@ -26,7 +26,7 @@
 .footer .logo { 
     margin-bottom: var( --footer-logo-margin-bottom ); 
     background-color: var( --text-color );  
-    background-image: url( "/assets/images/rocket-web-studio-logo-color.png" ); 
+    /* background-image: url( "/assets/images/rocket-web-studio-logo-color.png" );  */
 } 
 
 
