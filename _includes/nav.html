@@ -13,9 +13,11 @@
     <li 
         class= "{{ classNames | split: ',' | join: ' ' }}" 
     > 
+        {%- assign target = base_url | append: entry.target -%} 
+    
         {% include link.html 
             className= "nav-entry-text nav-link" 
-            target= entry.target 
+            target= target   
             text= entry.text 
         %}  
         {% if entry.nav %}   
