@@ -38,6 +38,42 @@
     <title>{{ page.title }}</title> 
 
     <link rel="shortcut icon" href= "{{ base_url }}/favicon/favicon.png"> 
+
+    <style>
+        /* Registers heading font */ 
+        @font-face {
+            font-family: "var( --heading-font-family )"; 
+            src: url( "{{ base_url }}/assets/fonts/RobotoSlab-Black.ttf" ); 
+        }
+
+        /* Registers icon font */ 
+        @font-face {
+            font-family: Ionicons; 
+            src: url( "{{ base_url }}/assets/fonts/ionicons.ttf" ); 
+        } 
+
+        /* Registers sell points entry heading font */ 
+        @font-face {
+            font-family: "var( --sell-points-entry-heading-font-family )"; 
+            src: url( "{{ base_url }}/assets/fonts/A1SerifBold.ttf" ); 
+        } 
+
+        @font-face {
+            font-family: "var( --main-nav-font-family )"; 
+            src: url( "{{ base_url }}/assets/fonts/micross.ttf" ); 
+        } 
+
+        @font-face {
+            font-family: "var( --subheading-font-family )"; 
+            src: url( "{{ base_url }}/assets/fonts/micross.ttf" ); 
+        }
+
+        /* Registers price font */ 
+        @font-face {
+            font-family: "var( --price-font-family )"; 
+            src: url( "{{ base_url }}/assets/fonts/RobotoSlab-Bold.ttf" ); 
+        } 
+    </style> 
 </head>
 <body class= "page {{ layout.type }} {{ page.label | split: ' ' | join: '-' }}-page"> 
 
@@ -49,4 +85,4 @@
 
     {% include footer.html %} 
 </body>
-</html>
+</html> 
