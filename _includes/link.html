@@ -1,6 +1,9 @@
+{%- include set-base-url.html -%} 
+{%- assign target = base_url | append: include.target -%} 
+
 <a 
     class= "link{% if include.className %} {{ include.className }}{% endif %}" 
-    href= "{{ include.target }}" 
+    href= "{{ target }}" 
 >
     {{ include.text }} 
 </a>
